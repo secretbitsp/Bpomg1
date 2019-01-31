@@ -7,3 +7,9 @@ def homepage(request):
 
 def contact(request):
     return render(request,'kapcsolat.html')
+
+def szerviz(request):
+    return render(request,'szerviz.html')
+
+def ujautok(request):
+    return render(request,'ujautok.html')
