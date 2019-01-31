@@ -1,5 +1,13 @@
 from django.shortcuts import render
-
+from .models import Post
+from django.http import HttpResponse
 # Create your views here.
-def post_list(request):
-    return render(request, 'bpcore/about.html', {})
+def ujautok(request):
+    autok = Post.objects.all().order_by('published_date')
+    return render(request, 'bpcore/ujautok.html',{'autok':autok})
+
+
+def ujautok_detail(request, slug):
+#return HttpResponse(slug)
+    details = Post.objects.get(slug=slug)
+    return render(request,'bpcore/ujautooldal.html',{'ujauto':details})

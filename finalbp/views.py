@@ -11,5 +11,6 @@ def contact(request):
 def szerviz(request):
     return render(request,'szerviz.html')
 
-def ujautok(request):
-    return render(request,'ujautok.html')
+#def ujautok(request):
+#    return render(request,'ujautok.html')
+#
