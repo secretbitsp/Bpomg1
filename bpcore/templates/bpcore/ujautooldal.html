@@ -31,22 +31,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-ujauto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Új autók
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" class="opelbar" href=""><img src="/static/opellogo.png"></a>
-                <a class="dropdown-item" href=""></a>
-                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/opellogo.png"></a>
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Mitsubishi-logo.png"></a>
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Subaru-logo.png"></a>
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Ssangyong-logo.png"></a>
               </div>
             </li>
-            <li class="nav-item">
+          <!--  <li class="nav-item">
               <a class="nav-link" href="">Használt</a>
-            </li>
+            </li>-->
             <li class="nav-item">
               <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
             </li>
@@ -54,7 +53,7 @@
               <a class="nav-link" href="{% url 'kapcsolat' %}">Kapcsolat</a>
             </li>
 
-            <li class="nav-item dropdown">
+            <!--<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Kollégáink
               </a>
@@ -75,7 +74,7 @@
                 <a class="dropdown-item" href="404.html">404</a>
                 <a class="dropdown-item" href="pricing.html">Pricing Table</a>
               </div>
-            </li>
+            </li>-->
           </ul>
         </div>
       </div>
@@ -84,8 +83,8 @@
 <div class="container">
 
   <!-- Portfolio Item Heading -->
-  <h1 class="my-4">Page Heading
-    <small>Secondary Text</small>
+  <h1 class="my-4">{{ ujauto.title }}
+    <small></small>
   </h1>
 
   <!-- Portfolio Item Row -->
@@ -97,14 +96,14 @@
 
     <div class="col-md-4">
       <h3 class="my-3">{{ ujauto.title }}</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-      <h3 class="my-3">{{ ujauto.body}}</h3>
-      <ul>
+      <p>{{ ujauto.text}}</p>
+      <h3 class="my-3"></h3>
+      <!--<ul>
         <li>{{ autp.date}}</li>
         <li>Dolor Sit Amet</li>
         <li>Consectetur</li>
         <li>Adipiscing Elit</li>
-      </ul>
+      </ul>-->
     </div>
 
   </div>
@@ -177,3 +176,24 @@
 </body>
 
 </html>
+
+<!-- Page Heading -->
+<h1 class="my-4">
+  <small>Autóink</small>
+</h1>
+{% for auto in autok  %}
+<!-- Autó One -->
+<div class="row">
+  <div class="col-md-7">
+    <a href="#">
+      <img class="img-fluid rounded mb-3 mb-md-0" src="{{ auto.thumb.url }}" alt="700#300">
+    </a>
+  </div>
+
+  <div class="col-md-5">
+    <h3><a href="{% url 'autolista:detail' slug=auto.slug %}">{{auto.title}}</a></h3>
+    <p>{{ auto.text }}.</p>
+    <a class="btn btn-primary" href="{% url 'autolista:detail' slug=auto.slug %}">{{ auto.title}}</a>
+  </div>
+</div>
+{% endfor%}

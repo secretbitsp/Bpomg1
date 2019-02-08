@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Budapest Autószalon</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
@@ -30,28 +30,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'ujautok' %}">Új autók</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Új autók
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/opellogo.png"></a>
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Mitsubishi-logo.png"></a>
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Subaru-logo.png"></a>
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Ssangyong-logo.png"></a>
+              </div>
             </li>
+          <!--  <li class="nav-item">
+              <a class="nav-link" href="">Használt</a>
+            </li>-->
             <li class="nav-item">
               <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'kapcsolat' %}">Kapcsolat</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Használtautó
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
+
+            <!--<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Kollégáink
               </a>
@@ -72,7 +72,7 @@
                 <a class="dropdown-item" href="404.html">404</a>
                 <a class="dropdown-item" href="pricing.html">Pricing Table</a>
               </div>
-            </li>
+            </li>-->
           </ul>
         </div>
       </div>
@@ -95,13 +95,13 @@
       <!-- Content Row -->
       <div class="row">
         <!-- Map Column -->
-        <div class="col-lg-8 mb-4">
+        <div class="col-lg-12 mb-5">
           <!-- Embedded Google Map -->
-          <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-        </div>
+          <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.699700237101!2d19.07857421559379!3d47.573630979182525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd5e619943f5%3A0x10cc18acc136afcc!2zQnVkYXBlc3QgQXV0w7NzemFsb24gw7pqIMOpcyBoYXN6bsOhbHRhdXTDsyBrZXJlc2tlZMOpcyDDqXMgc3plcnZpeg!5e0!3m2!1sen!2shu!4v1549012906222" width="800" height="450" frameborder="0"style="border:0" ></iframe>
         <!-- Contact Details Column -->
-        <div class="col-lg-4 mb-4">
-          <h3>Címünk</h3>
+        <div class="col-lg-12 mb-2">
+          <h2>Címünk</h2>
           <p>
             1044 Budapest
             <br>Külső Váci út , 76-80.
@@ -125,37 +125,37 @@
       <!-- Contact Form -->
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">
-        <div class="col-lg-8 mb-4">
+        <div class="col-lg-12 mb-4">
           <h3>Küldjön nekünk üzenetet</h3>
           <form name="sentMessage" id="contactForm" novalidate>
             <div class="control-group form-group">
               <div class="controls">
-                <label>Full Name:</label>
-                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                <label>Teljes Név:</label>
+                <input type="text" class="form-control" id="name" required data-validation-required-message="A név hiányzik.">
                 <p class="help-block"></p>
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
-                <label>Phone Number:</label>
-                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                <label>Telefonszám:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Hiányzik a telefonszám.">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
-                <label>Email Address:</label>
-                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                <label>Email címe:</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Írja be az emil címét.">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
-                <label>Message:</label>
-                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                <label>Üzenet:</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Írja be az üzenetét" maxlength="999" style="resize:none"></textarea>
               </div>
             </div>
             <div id="success"></div>
             <!-- For success/fail messages -->
-            <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">Küldés</button>
           </form>
         </div>
 
@@ -168,8 +168,8 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Minden jog fenntartva &copy; ESKILD 2019</p>
-        <p>A honlapunkon szereplő információk nem minősülnek teljes körű tájékoztatásnak, konkrét árajánlatért és részletes tájékoztatásért kérjük, forduljon márkakereskedéseinkhez.</p>
+        <p class="m-0 text-center text-white">Minden jog fenntartva &copy; ESKILD 2019</br>
+        A honlapunkon szereplő információk nem minősülnek teljes körű tájékoztatásnak, konkrét árajánlatért és részletes tájékoztatásért kérjük, forduljon márkakereskedéseinkhez.</p>
       </div>
       <!-- /.container -->
     </footer>
