@@ -25,7 +25,7 @@ SECRET_KEY = 'yn16*n1ri^(ay31_*xivhts1=m=*&jl(o33eoj1&*y5%9@o4d1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','localhost']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','localhost','.budapestautoszalon.hu']
 
 # Application definition
 
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'finalbp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [[os.path.join(BASE_DIR,'templates')],],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

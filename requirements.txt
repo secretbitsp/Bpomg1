@@ -1,0 +1,9 @@
+beautifulsoup4==4.7.1
+certifi==2018.11.29
+Django==2.1.5
+Pillow==5.4.1
+pipenv==2018.11.26
+pytz==2018.9
+soupsieve==1.7.3
+virtualenv==16.3.0
+virtualenv-clone==0.5.1
