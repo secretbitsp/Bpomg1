@@ -23,7 +23,7 @@ SECRET_KEY = 'yn16*n1ri^(ay31_*xivhts1=m=*&jl(o33eoj1&*y5%9@o4d1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','localhost','116.203.79.255']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','localhost','116.203.79.255','server.budapestautoszalon.hu','budapestautoszalon.hu']
 
 # Application definition
 
@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bpcore',
     'sendemail',
+    'django_ssh_deployer',
 ]
 
 MIDDLEWARE = [
@@ -76,9 +77,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-                'USER': '',
-        'PASSWORD': '',
-        'HOST': ' ',
+                'USER': 'root',
+        'PASSWORD': 'bCdM9RNR7P3sF9RwWW4k',
+        'HOST': 'server.budapestautoszalon.hu ',
         'PORT': '',
     }
     }
@@ -123,18 +124,18 @@ USE_TZ = True
 #STATIC_URL = '/static/'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-'''
+
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
 STATICFILES_DIRS = (
      os.path.join(BASE_DIR, 'static'),
 )
-'''
-STATIC_ROOT = '/static/'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
+
 
 STATIC_URL = '/static/'
 
 MEDIA_URL ='/media/'
 
-MEDIA_ROOT = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
