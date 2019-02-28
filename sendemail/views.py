@@ -27,11 +27,11 @@ def kapcsolat(request):
             Email = form.cleaned_data['Email']
             Üzenet = form.cleaned_data['Üzenet']
             try:
-                send_mail(Név, Email, Üzenet, ['admin@example.com'])
+                send_mail(Név, Email, Üzenet, ['yepense@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             #return redirect('')
-    return render(request, "sendemail/kapcsolat.html", {'form': form})
+    return render(request, "sendemail/email.html", {'form': form})
 
 def successView(request):
     return HttpResponse('Success! Thank you for your message.')
