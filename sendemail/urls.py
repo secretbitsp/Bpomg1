@@ -7,5 +7,5 @@ app_name ='kapcsolat'
 
 urlpatterns = [
     url(r'^$',views.kapcsolat, name="kapcsolat"),
-
+    url('success', views.successView, name='success'),
 ]

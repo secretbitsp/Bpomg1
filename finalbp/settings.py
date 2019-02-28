@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bpcore',
     'sendemail',
-    'crispy_forms',
+    'sendy',
 
 ]
 
