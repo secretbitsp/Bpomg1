@@ -1,0 +1,382 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:hex="http://hex.hasznaltauto.hu/ns" targetNamespace="http://hex.hasznaltauto.hu/ns" elementFormDefault="qualified">
+<xs:complexType name="ar">
+<xs:simpleContent>
+<xs:annotation>
+<xs:documentation xml:lang="hu" source="http://hex.hasznaltauto.hu/doc/ar/"> Vételár típusú mezők </xs:documentation>
+</xs:annotation>
+<xs:extension base="xs:string">
+ <!--  Megnevezés  -->
+<xs:attribute name="megnevezes" type="xs:string" use="required"/>
+ <!--  Nyers adat (Csak szám formázás és egységek nélkül)  -->
+<xs:attribute name="nyersadat" type="xs:float"/>
+ <!--  Kiemelt (kiemelt tipográfiai megjelenítés)  -->
+<xs:attribute name="kiemelt" type="xs:boolean"/>
+ <!--  ÁFA százalék (opcionális) -->
+<xs:attribute name="afa" type="xs:nonNegativeInteger"/>
+ <!--  Bruttó összeg (opcionális) -->
+<xs:attribute name="brutto" type="xs:integer"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+<xs:complexType name="altalanos">
+<xs:simpleContent>
+<xs:annotation>
+<xs:documentation xml:lang="hu" source="http://hex.hasznaltauto.hu/doc/"> Általános mezők </xs:documentation>
+</xs:annotation>
+<xs:extension base="xs:string">
+ <!--  Megnevezés  -->
+<xs:attribute name="megnevezes" type="xs:string" use="required"/>
+ <!--  Nyers adat (Csak szám formázás és egységek nélkül)  -->
+<xs:attribute name="nyersadat" type="xs:string"/>
+ <!--  Mértékegység  -->
+<xs:attribute name="mertekegyseg" type="xs:string"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+<xs:element name="hirdetesek">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="hirdetes" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+ <!--  Vételár mezői  -->
+<xs:element name="alapar" type="hex:ar" minOccurs="0" maxOccurs="1"/>
+<xs:element name="ar" type="hex:ar"/>
+<xs:element name="eredetiar" type="hex:ar" minOccurs="0" maxOccurs="1"/>
+<xs:element name="akciosar" type="hex:ar" minOccurs="0" maxOccurs="1"/>
+<xs:element name="ar_eur" type="hex:ar" minOccurs="0" maxOccurs="1"/>
+ <!--  Egyéb költségek  -->
+<xs:element name="koltsegek" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+ <!--
+ Teljes vételár magyarországi forgalomba helyezés esetén
+-->
+<xs:element name="vetelar_teljes" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+ <!--  Bérelhető  -->
+<xs:element name="berelheto" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="finanszirozas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="finanszirozas_tipusa_cascoval" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="kezdoreszlet" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="havireszlet" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="futamido" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="finanszirozas_tipusa_casco_nelkul" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="kezdoreszlet_casco_nelkul" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="havireszlet_casco_nelkul" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="futamido_casco_nelkul" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="bevizsgalt" minOccurs="0" maxOccurs="1">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="hex:altalanos">
+<xs:attribute name="url" type="xs:anyURI" use="required"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name="garancia_tipus" minOccurs="0" maxOccurs="1">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="hex:altalanos">
+<xs:attribute name="garancia_id" type="xs:nonNegativeInteger"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name="evjarat" type="hex:altalanos"/>
+<xs:element name="veteran" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="alvazszam" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="okmany" type="hex:altalanos"/>
+<xs:element name="muszaki" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="vizsga" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="futottkm" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="kivitel" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="uzemora" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+ <!--  MOTOR  -->
+<xs:element name="hengerelrendezes" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="szelep_per_henger" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hutes" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajtas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="keverekkepzes" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+ <!--  HASZONGÉPJÁRMŰ  -->
+<xs:element name="hajtott_tengelyekszama" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="valto" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="kihajtas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="differencialzar" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="osszkerek_hajtas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="teljesitmeny_igeny" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="munkamelyseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="munkamagassag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="szallitasi_szelesseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="sebesseg_min" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="sebesseg_max" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="szallithatosag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="csukas_szallitashoz" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="mozgatas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="kapacitas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="fordulasi_kor" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="gemkinyulas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="talpalasi_szelesseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hidraulika_csatlakozo" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="fejek_szama" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="sorok_szama" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="munkaszelesseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="terfogat_m3" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="terfogat_liter" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="feldolgozokepesseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="emelesi_magassag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="szarnyhossz" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="anyagmozgatas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="vizszallitas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hasmagassag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="terhelhetoseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+ <!--  HAJÓ  -->
+<xs:element name="arbocok_szama" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="arboc_magassag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="arboc_anyag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajo_fajtaja" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajotest" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajotest_anyaga" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="vizkiszoritas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="max_teherbiras" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="meghajtas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="megnevezes" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="sporteszkoz_kategoria" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="egyeb_kategoria" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="motor_szama" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="motor_helye" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="motor_gyartmany" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="motor_tipus" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="motor_fajta" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="motor_hajtoszar" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="motor_inditas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="kormanyzas" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="kormany_rendszer" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="motor_tomeg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="iranyvalto" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajocsavar" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajocsavar_forgasirany" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajocsavar_anyaga" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajocsavar_atmero" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajocsavar_menetemelkedes" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="kihajtasok_szama" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="tokesuly" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="vitorla" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="vitorla_nagysaga" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="vitorla_rendszer" minOccurs="0" maxOccurs="1">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="hex:altalanos">
+<xs:attribute name="kutter" type="xs:boolean"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name="vizvonalhossz" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajotest_oldalmagassag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="szallito_magassag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="merules_min" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="merules_max" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="szallitasi_ido" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hajolevel_ervenyesseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="nyilvantartasba_vetel" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="horgony" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="atmero" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="meret" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="allapot" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="teljeskoru_garancia" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="atrozsdasodasi_garancia" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="szavatossagi_garancia" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="uzemanyag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="kornyezetvedelmi_osztaly" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="karosanyag_osztaly" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="sebessegvalto" minOccurs="0" maxOccurs="1">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="hex:altalanos">
+<xs:attribute name="felezo_valto" type="xs:boolean"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name="utem" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hengerurtartalom" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hengerek_szama" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="teljesitmeny" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="nyomatek" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="szallithato_szemelyek" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="ajtok" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="fekvohelyekszama" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="klima" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="szin" minOccurs="0" maxOccurs="1">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="hex:altalanos">
+<xs:attribute name="metal" type="xs:boolean"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name="karpitszin_1" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="karpitszin_2" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="sajat_tomeg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="ossztomeg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="csomagtarto" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="teto" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="rakter_terfogat" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="rakter_hossz" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="rakter_szelesseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="rakter_magassag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="doblemeztavolsag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="fekrendszer" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="rogzitofek" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="ossz_hossz" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="felepitmeny_hossz" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="tengelyek_szama" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="abroncsmeret" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="atvetel_datuma" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="futasido" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="magassag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="hosszusag" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="szelesseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="leiras" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:choice>
+<xs:sequence>
+<xs:element name="szeria_felszereltseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="extra_felszereltseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
+<xs:element name="felszereltseg" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+</xs:choice>
+<xs:element name="telefonszam">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="hex:altalanos">
+<xs:attribute name="orszagkod_1" type="xs:string" use="required"/>
+<xs:attribute name="telefonszam_1" type="xs:string" use="required"/>
+<xs:attribute name="mellek_1" type="xs:string"/>
+<xs:attribute name="orszagkod_2" type="xs:string"/>
+<xs:attribute name="telefonszam_2" type="xs:string"/>
+<xs:attribute name="mellek_2" type="xs:string"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:choice>
+<xs:element name="megtekintheto" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="cim" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+</xs:choice>
+<xs:element name="emailcim" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="kepek" minOccurs="0" maxOccurs="1">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="kep" minOccurs="0" maxOccurs="12">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="xs:anyURI">
+<xs:attribute name="kicsi" type="xs:anyURI" use="required"/>
+<xs:attribute name="kozepes" type="xs:anyURI" use="required"/>
+<xs:attribute name="orias" type="xs:anyURI"/>
+<xs:attribute name="kepalairas" type="xs:string"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="videok" minOccurs="0" maxOccurs="1">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="video" type="xs:string" minOccurs="0" maxOccurs="12"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="partner_adatai" minOccurs="0" maxOccurs="1">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="partnernev" type="xs:string" minOccurs="0" maxOccurs="1"/>
+<xs:element name="partnercim" type="xs:string" minOccurs="0" maxOccurs="1"/>
+<xs:element name="nyitva_hetkoznap" type="xs:string" minOccurs="0" maxOccurs="1"/>
+<xs:element name="nyitva_szombat" type="xs:string" minOccurs="0" maxOccurs="1"/>
+<xs:element name="terkep_lat" type="xs:string" minOccurs="0" maxOccurs="1"/>
+<xs:element name="terkep_lng" type="xs:string" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="statisztika" minOccurs="0" maxOccurs="1">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="megtekintve" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="xs:nonNegativeInteger">
+<xs:attribute name="datum" type="xs:date"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+ <!--  Hirdetéskód  -->
+<xs:attribute name="hirdeteskod" type="xs:positiveInteger" use="required"/>
+ <!--  Partnerkód  -->
+<xs:attribute name="partnerkod" type="xs:positiveInteger" use="required"/>
+ <!--  Kategória  -->
+<xs:attribute name="kategoria" type="xs:string" use="required"/>
+ <!--  Gyártmány  -->
+<xs:attribute name="gyartmany" type="xs:string" use="required"/>
+ <!--  Modell  -->
+<xs:attribute name="modell" type="xs:string"/>
+ <!--  Típus  -->
+<xs:attribute name="tipus" type="xs:string" use="required"/>
+ <!--  Alkategória  -->
+<xs:attribute name="alkategoria" type="xs:string"/>
+ <!--  Belső azonosító  -->
+<xs:attribute name="belsoazonosito" type="xs:string"/>
+ <!--  Aktív  -->
+<xs:attribute name="aktiv" type="xs:boolean"/>
+</xs:complexType>
+</xs:element>
+<xs:element name="partnerek" minOccurs="0" maxOccurs="1">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="partner" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="partnercim" type="hex:altalanos" minOccurs="0" maxOccurs="1"/>
+<xs:element name="telefonszam">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="hex:altalanos">
+<xs:attribute name="orszagkod_1" type="xs:string" use="required"/>
+<xs:attribute name="telefonszam_1" type="xs:string" use="required"/>
+<xs:attribute name="mellek_1" type="xs:string"/>
+<xs:attribute name="orszagkod_2" type="xs:string"/>
+<xs:attribute name="telefonszam_2" type="xs:string"/>
+<xs:attribute name="mellek_2" type="xs:string"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1"/>
+<xs:element name="internet" type="xs:string" minOccurs="0" maxOccurs="1"/>
+<xs:element name="nyitva_hetkoznap" type="xs:string" minOccurs="0" maxOccurs="1"/>
+<xs:element name="nyitva_szombat" type="xs:string" minOccurs="0" maxOccurs="1"/>
+<xs:element name="terkep_lat" type="xs:string" minOccurs="0" maxOccurs="1"/>
+<xs:element name="terkep_lng" type="xs:string" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
+<xs:attribute name="partnerkod" type="xs:positiveInteger"/>
+<xs:attribute name="nev" type="xs:string"/>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="megjegyzes" minOccurs="0" maxOccurs="1" type="xs:string"/>
+</xs:sequence>
+ <!--  Legkisebb kliens verzio  -->
+<xs:attribute name="min_client_version" type="xs:string"/>
+ <!--  Legmagasabb kliens verzio  -->
+<xs:attribute name="max_client_version" type="xs:string"/>
+</xs:complexType>
+</xs:element>
+</xs:schema>

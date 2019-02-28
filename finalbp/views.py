@@ -46,15 +46,20 @@ def hello2(request):
         # timeout in seconds
         #timeout = 10
         # socket.setdefaulttimeout(timeout)
-        url = "http://hex.hasznaltauto.hu/1.0/xml/szszigetautohaz_hex "
+        url = "http://hex.hasznaltauto.hu/1.0/hex.xsd"
         assembled_request = urllib.request.Request(url)
         response = urllib.request.urlopen(assembled_request)
         print('RESPONSE:', response)
         print('URL     :', response.geturl())
-
-        data_content = response.read()
+        data_content = response.read().decode('utf-8')
         soup = BeautifulSoup(data_content, features="html.parser")
-        genTable = soup
+        print('!!!!!!!!!!!!!!!ITT------------------')
+        genTable = soup.find(name="megnevezes")
+        #genTable = soup.find_all() # You can also use this too: all_xml_element_tags = soup.find_all("xs:element", {"minOccurs":"0"})
+        for link in soup.find_all():
+                print(link(name="megnevezes"))
+        #print(genTable)
+        #print(soup.prettify())
         headers = response.info()
         print('DATE    :', headers['date'])
         print('HEADERS :')
@@ -65,8 +70,9 @@ def hello2(request):
         print('DATA    :')
         print('---------')
         print(data)
-        context_dict['genTable'] = genTable
-        print(genTable)
+        #print(genTable)
+        #print ("Value : %s" % context_dict.get('alapar'))
+        print(context_dict)
     except URLError as e:
         if hasattr(e, 'reason'):
             print ('We failed to reach a server')
@@ -75,53 +81,16 @@ def hello2(request):
             print ('The server couldn\'t fulfill the request.')
             print ('Error code: '), e.code
     else:
-        print("fine")
-        return render(request,'hasznaltauto.html', context_dict)
+        print("----------END--------------")
+
+        return render(request,'hasznaltauto.html', context_dict )
+
+
 
 
 
 # our view
 # add to the top
-from finalbp.forms import ContactForm
 
 # add to your views
 # our view
-def contact(request):
-    form_class = ContactForm
-
-    # new logic!
-    if request.method == 'POST':
-        form = form_class(data=request.POST)
-
-        if form.is_valid():
-            contact_name = request.POST.get(
-                'contact_name'
-            , '')
-            contact_email = request.POST.get(
-                'contact_email'
-            , '')
-            form_content = request.POST.get('content', '')
-
-            # Email the profile with the
-            # contact information
-            template =get_template('contact_template.txt')
-            context = {
-                'contact_name': contact_name,
-                'contact_email': contact_email,
-                'form_content': form_content,
-            }
-            content = template.render(context)
-
-            email = EmailMessage(
-                "New contact form submission",
-                content,
-                "Your website" +'',
-                ['yepense@gmail.com'],
-                headers = {'Reply-To': contact_email }
-            )
-            email.send()
-            return redirect('kapcsolat')
-
-    return render(request, 'kapcsolat.html', {
-        'form': form_class,
-    })

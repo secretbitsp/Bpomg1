@@ -3,8 +3,13 @@
     <title>One post</title>
 </head>
 <body>
-<pre>
-    
-</pre>
+  <h1>{{ symbol }}</h1>
+  {% for item in context_dict %}
+    <li>{{ item|safe }}</li>
+  {% endfor %}
+
+
+
+
 </body>
 </html>
