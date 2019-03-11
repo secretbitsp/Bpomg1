@@ -11,9 +11,9 @@ urlpatterns = [
     #url(r'^kapcsolat/$',views.contact, name='kapcsolat'),
     url(r'^szerviz/$',views.szerviz, name="szerviz"),
     url(r'^ujautok/', include('bpcore.urls')),
-    url(r'^hasznaltauto/$',views.hello2, name="hasznalt"),
+    url(r'^hasznaltauto/$',views.regcar, name="hasznalt"),
     url(r'^kapcsolat/', include('sendemail.urls')),
-
+    #url(r'^feeds/models-by-make-id/(\d+)/$', 'autos.views.feed_models'),
 
 
 

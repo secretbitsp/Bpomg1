@@ -12,3 +12,10 @@ class ContactForm(forms.Form):
         required=True,
         widget=forms.Textarea
     )
+
+
+
+
+class Hasznalt(models.Model):
+    name = models.CharField(max_length=60)
+    age = models.CharField(max_length=60)

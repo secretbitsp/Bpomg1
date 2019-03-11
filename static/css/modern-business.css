@@ -22,3 +22,9 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+
+.formi{
+  margin: 0 auto;
+  width:80% /* value of your choice which suits your alignment */
+}

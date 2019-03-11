@@ -18,7 +18,7 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 
 def kapcsolat(request):
-    if request.method == 'GET':
+    if request.method == 'POST':
         form = ContactForm()
     else:
         form = ContactForm(request.POST)
