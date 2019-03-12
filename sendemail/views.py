@@ -35,3 +35,20 @@ def kapcsolat(request):
 
 def successView(request):
     return HttpResponse('Success! Thank you for your message.')
+
+
+def ajanlatkeres(request):
+    if request.method == 'POST':
+        form = ContactForm()
+    else:
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            Név = form.cleaned_data['Név']
+            Email = form.cleaned_data['Email']
+            Üzenet = form.cleaned_data['Üzenet']
+            try:
+                send_mail(Név, Email, Üzenet, ['yepense@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            #return redirect('')
+    return render(request, "bpcore/ujautooldal.html", {'form': form})

@@ -41,11 +41,12 @@ def hello2(request):
     #list_dict = []
     for base_category in student:
         name = base_category.find("name").text
+        tagline = base_category.find("major").text
         #list_dict.append({
         #    "name": base_category.find("name").text,
         #    "age": int(base_category.find("age").text),
         #})
-    b = Blog(name=name, tagline='All the latest Beatles news.')
+    b = Blog(name=name, tagline=tagline)
     b.save()
     details = Blog.objects.all()
 

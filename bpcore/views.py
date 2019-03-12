@@ -3,7 +3,7 @@ from .models import Post
 from django.http import HttpResponse
 # Create your views here.
 def ujautok(request):
-    autok = Post.objects.filter(title__startswith="Opel").order_by('published_date')
+    autok = Post.objects.all()  #filter#(title__startswith="Opel").order_by('published_date')
     mitsu = Post.objects.filter(title__startswith="Mitsubishi").order_by('published_date')
     return render(request, 'bpcore/ujautok.html',{'autok':autok})
 
