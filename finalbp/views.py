@@ -18,6 +18,7 @@ from django.shortcuts import render
 from .forms import RegCarForm
 import sqlite3
 from finalbp.models import Blog
+from xml.dom import minidom
 
 def homepage(request):
    return render(request,'homepage.html')
@@ -30,25 +31,44 @@ def szerviz(request):
 
 
 def hello2(request):
-    file = urllib.request.urlopen('https://www.brics.dk/ixwt/exercises/students.xml')
-    data = file.read()
-    xml_data = et.fromstring(data)
-    print(xml_data)
-    file.close()
+    file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
+    #data = file.read()
+    #file.close()
+    tree = et.parse(file)
+    root = tree.getroot()
+    #print(root.attrib)
+    list_dict = []
+    for child in root:
+        atr = child.attrib
+        list_dict.append(atr)
+        print(atr)
+        #print(child.tag, child.attrib)
+
+    #for movie in root.findall("./hirdetes"):
+    #print(et.tostring(root, encoding='utf8').decode('utf8'))
+
+    #xpars = xmltodict.parse(data)
+    #json2 = json.dumps(xpars)
+
+    #print(json2)
+    #data = xmltodict.parse(data)
+#    codes = []
+    #for hirdetes in data['hirdetesek']['hirdetes']:
+#        codes.append(hirdetes['megnevezes'])
+#    print(codes)
     #data = json.dumps(xmltodict.parse(data))
-    student = xml_data.findall("./student")
-    print("Found %s student." % len(student))
+    #student = xml_data.findall("./student")
+    #print("Found %s student." % len(student))
     #list_dict = []
-    for base_category in student:
-        name = base_category.find("name").text
-        tagline = base_category.find("major").text
+
+        #tagline = base_category.find("major").text
         #list_dict.append({
         #    "name": base_category.find("name").text,
         #    "age": int(base_category.find("age").text),
         #})
-    b = Blog(name=name, tagline=tagline)
-    b.save()
-    details = Blog.objects.all()
+    #b = Blog(name=name, tagline=tagline)
+    #b.save()
+    #details = Blog.objects.all()
 
     #    list_dict.append({
     #        "name": base_category.find("name").text,
@@ -58,7 +78,7 @@ def hello2(request):
     #data2 = json.dumps(list_dict)
     print("Data updated")
     #print(data2)
-    return render(request, 'hasznaltauto.html', {'data': details})
+    return render(request, 'hasznaltauto.html', {'data': list_dict[1]})
 
 
 
