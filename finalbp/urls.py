@@ -14,7 +14,7 @@ urlpatterns = [
     url(r'^hasznaltauto/$',views.hello2, name="hasznalt"),
     url(r'^kapcsolat/', include('sendemail.urls')),
     #url(r'^feeds/models-by-make-id/(\d+)/$', 'autos.views.feed_models'),
-
+    url(r'^szerviz-kapcsolat/', include('polls.urls')),
 
 
 ]

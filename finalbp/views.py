@@ -36,12 +36,24 @@ def hello2(request):
     #file.close()
     tree = et.parse(file)
     root = tree.getroot()
-    #print(root.attrib)
+    print(root)
     list_dict = []
-    for child in root:
-        atr = child.attrib
-        list_dict.append(atr)
-        print(atr)
+    #print(root.attrib)
+    for hirdetes in root.findall('{http://hex.hasznaltauto.hu/ns}hirdetes'):
+        rank = hirdetes.get('hirdeteskod')
+        gyartmany = hirdetes.get('gyartmany')
+        kategoria = hirdetes.get('kategoria')
+        modell = hirdetes.get('modell')
+        tipus = hirdetes.get('tipus')
+        aktiv = hirdetes.get('aktiv')
+    #b = Blog(name=name, tagline=tagline)
+    #b.save()
+    #details = Blog.objects.all()
+    #list_dict = []
+    #for child in root:
+    #    atr = child.attrib
+    #    list_dict.append(atr)
+        #print(atr)
         #print(child.tag, child.attrib)
 
     #for movie in root.findall("./hirdetes"):
@@ -66,9 +78,7 @@ def hello2(request):
         #    "name": base_category.find("name").text,
         #    "age": int(base_category.find("age").text),
         #})
-    #b = Blog(name=name, tagline=tagline)
-    #b.save()
-    #details = Blog.objects.all()
+
 
     #    list_dict.append({
     #        "name": base_category.find("name").text,
@@ -78,7 +88,7 @@ def hello2(request):
     #data2 = json.dumps(list_dict)
     print("Data updated")
     #print(data2)
-    return render(request, 'hasznaltauto.html', {'data': list_dict[1]})
+    return render(request, 'hasznaltauto.html', {'data': gyartmany})
 
 
 
