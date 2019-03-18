@@ -13,6 +13,8 @@
     <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
+
   </head>
   <body>
     <!-- Navigation -->
@@ -422,80 +424,55 @@
 
 
     <!-- Footer -->
-
-    <footer class="py-2 bg-dark">
-
-      <div class="container">
-
-      </div>
-      <div class="row">
-
-        <div class="col-lg-6 text-white">
-
-          </br>
-
-          <p class="m-5 text-center text-white">
-
-             Opel - Mitsubishi - Subaru - Ssangyong</br>Márkakereskedés, használtautó-kereskedés és szerviz</br>
-
-              h-1044 Budapest (Külső) Váci út 76-80 </br>Tel: 061-803-6050  </br>Fax: 061-803-6051</br>
-
-            </br>
-
-
-          </p>
-
-          <p>
-
-
-
-          </p>
-
-        </div>
-
-        <div class="col-lg-6 text-white">
-
-          <p class="m-5 text-center text-white">
-            <!-- Begin Mailchimp Signup Form -->
-            <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-            	#mc_embed_signup{background:#000; clear:left; font:14px Helvetica,Arial,sans-serif; }
-            	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-            	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-            <div id="mc_embed_signup">
-            <form action="https://opelsziget.us17.list-manage.com/subscribe/post?u=30d306cead538ea1c6345349a&amp;id=867012eebc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-            	<label for="mce-EMAIL">Iratkozzon fel hírlevelünkre</label>
-            	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email címe" required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -3000px;" aria-hidden="true"><input type="text" name="b_30d306cead538ea1c6345349a_867012eebc" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Kezdőlap</h5>
+                    <ul>
+                        <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                        <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                        <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                    </ul>
                 </div>
-            </form>
+                <div class="col-sm-3">
+                    <h5>Rólunk</h5>
+                    <ul>
+                        <li><a href="#">Cégünkről</a></li>
+                        <li><a href="#">Szerviz bejelentkezés</a></li>
+                        <li><a href="#">Vélemények</a></li>
+                    </ul>
+                </div>
+                <!--
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>-->
+                <div class="col-sm-3 info">
+                    <h5>Budapest Autószalon</h5>
+                    <p>   Opel-Mitsubishi-Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+
+                        h-1044 Budapest Váci út 76-80</br>Tel: 061-803-6050  </br>Fax: 061-803-6051</br>  </p>
+                </div>
             </div>
-
-            <!--End mc_embed_signup-->
-            </p>
-
         </div>
-
-      </div>
-
-      <!-- /.container -->
-
+        <div class="second-bar">
+           <div class="container">
+                <h2 class="logo"><a href="{% url 'fooldal' %}"> LOGO </a></h2>
+                <div class="social-icons">
+                  <!--  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>-->
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <!---<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
+                </div>
+            </div>
+        </div>
     </footer>
-
-
-
-    <!-- Bootstrap core JavaScript -->
-
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 
 

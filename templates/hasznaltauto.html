@@ -72,31 +72,58 @@
     <!-- Page Content -->
     <div class="container">
       <!-- Page Heading -->
+
       <h1 class="my-4">
         <small>Használt autók </small>
       </h1>
-    {% for item in data  %}
       <!-- Autó One -->
+      {% for item in  data %}
+
       <div class="row">
+
+
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="{{ auto.thumb.url }}" alt="700#300">
+            {% for dat in kepek %}
+
+            <img class="img-fluid rounded mb-3 mb-md-0" src="{{ dat.kep }}" alt="700#300">
+            {% endfor %}
+
+
           </a>
         </div>
         <div class="col-md-5">
-          <p>{{data}}</p>
+          <p> {{ item.tipus }}</p>
+          <p> {{ item.modell }}</p>
+          <p> {{ item.kategoria }}</p>
         </div>
+        {% endfor %}
+
       </div>
-
       <!-- /.row -->
-
       <hr>
-    {% endfor %}
-
     </div>
+
     <!-- /.container -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+        <span class="step-links">
+            {% if data.has_previous %}
+                <a href="?page=1">&laquo; Első</a>
+                <li class="page-item"><a class="page-link" href="?page={{ data.previous_page_number }}">Következő</a></li>
+            {% endif %}
 
+            <span class="current">
+                Oldal {{ data.number }} Összesen {{ data.paginator.num_pages }}.
+            </span>
 
+            {% if data.has_next %}
+                <a href="?page={{ data.next_page_number }}">Tovább</a>
+                <a href="?page={{ data.paginator.num_pages }}">Elöző &raquo;</a>
+            {% endif %}
+        </span>
+  </ul>
+ </nav>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">

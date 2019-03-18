@@ -6,19 +6,21 @@ from xml.dom import minidom
 #from xml.etree.ElementTree import ElementTree
 from urllib.request import Request, urlopen, URLError
 import urllib.request
-import xml.etree.ElementTree as et
 import urllib.request
 # new imports that go at the top of the file
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
-import xmltodict
-import json
 from django.shortcuts import render
 from .forms import RegCarForm
-import sqlite3
-from finalbp.models import Blog
-from xml.dom import minidom
+from .models import Hahudeta
+
+try:
+    import xml.etree.cElementTree as ET
+except ImportError:
+    import xml.etree.ElementTree as ET
+from django.core.paginator import Paginator
+from .models import Hahuautok
 
 def homepage(request):
    return render(request,'homepage.html')
@@ -31,64 +33,44 @@ def szerviz(request):
 
 
 def hello2(request):
-    file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
-    #data = file.read()
-    #file.close()
-    tree = et.parse(file)
-    root = tree.getroot()
-    print(root)
-    list_dict = []
-    #print(root.attrib)
-    for hirdetes in root.findall('{http://hex.hasznaltauto.hu/ns}hirdetes'):
-        rank = hirdetes.get('hirdeteskod')
-        gyartmany = hirdetes.get('gyartmany')
-        kategoria = hirdetes.get('kategoria')
-        modell = hirdetes.get('modell')
-        tipus = hirdetes.get('tipus')
-        aktiv = hirdetes.get('aktiv')
-    #b = Blog(name=name, tagline=tagline)
-    #b.save()
-    #details = Blog.objects.all()
-    #list_dict = []
-    #for child in root:
-    #    atr = child.attrib
-    #    list_dict.append(atr)
-        #print(atr)
-        #print(child.tag, child.attrib)
-
-    #for movie in root.findall("./hirdetes"):
-    #print(et.tostring(root, encoding='utf8').decode('utf8'))
-
-    #xpars = xmltodict.parse(data)
-    #json2 = json.dumps(xpars)
-
-    #print(json2)
-    #data = xmltodict.parse(data)
-#    codes = []
-    #for hirdetes in data['hirdetesek']['hirdetes']:
-#        codes.append(hirdetes['megnevezes'])
-#    print(codes)
-    #data = json.dumps(xmltodict.parse(data))
-    #student = xml_data.findall("./student")
-    #print("Found %s student." % len(student))
-    #list_dict = []
-
-        #tagline = base_category.find("major").text
-        #list_dict.append({
-        #    "name": base_category.find("name").text,
-        #    "age": int(base_category.find("age").text),
-        #})
-
-
-    #    list_dict.append({
-    #        "name": base_category.find("name").text,
-    #        "age": int(base_category.find("age").text),
-    #    })
-
-    #data2 = json.dumps(list_dict)
+    #file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
+    #tree = ET.ElementTree()
+    #tree.parse(file)
+    #root = tree.getroot()
+    #ET.dump(tree)
+    #for elem in tree.iter():
+    #    print (elem.tag, elem.attrib)
+    #Hahuautok.objects.all().delete()
+    #x = root.iter('{http://hex.hasznaltauto.hu/ns}kep')
+    #for k in x:
+    #    kep = k.get('kicsi')
+        #b = Hahuautok.objects.create(kep=kep)
+        #b.save()
+    #x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
+    #for autok in x:
+    #        rank = autok.get('hirdeteskod')
+    #        marka = autok.get('gyartmany')
+    #        kategoria = autok.get('kategoria')
+    #        modell = autok.get('modell')
+    #        tipus = autok.get('tipus')
+    #        print(tipus)
+            #a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus)
+            #a.save()
+    kep_list = Hahuautok.objects.filter()[:5]
+    contact_list = Hahudeta.objects.get_queryset().order_by('id')
+    paginator = Paginator(contact_list, 25) # Show 25 contacts per page
+    page = request.GET.get('page')
+    data = paginator.get_page(page)
     print("Data updated")
-    #print(data2)
-    return render(request, 'hasznaltauto.html', {'data': gyartmany})
+    return render(request, 'hasznaltauto.html', {'data': data, 'kepek' : kep_list})
+
+
+
+
+
+
+
+
 
 
 

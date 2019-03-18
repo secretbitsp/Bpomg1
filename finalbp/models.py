@@ -1,5 +1,8 @@
 from django.db import models
 
+
+
+
 class Brand(models.Model):
     company_name = models.CharField(max_length=100)
 
@@ -31,9 +34,19 @@ class Fleet(models.Model):
         return self.description
 
 
-class Blog(models.Model):
-    name = models.CharField(max_length=100)
-    tagline = models.TextField()
 
-    def __str__(self):
-        return self.name
+class Hahuautok(models.Model):
+    kep = models.ImageField(blank=True, null=True)
+
+
+
+class Hahudeta(models.Model):
+        rank = models.CharField(max_length=100)
+        marka = models.CharField(max_length=100)
+        kategoria = models.CharField(max_length=100)
+        modell = models.CharField(max_length=100)
+        tipus = models.CharField(max_length=100)
+
+
+        def __str__(self):
+            return self.rank
