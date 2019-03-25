@@ -77,14 +77,15 @@
         <small>Használt autók </small>
       </h1>
       <!-- Autó One -->
+
       {% for item in  data %}
 
       <div class="row">
 
+        {% for dat in kepek %}
 
         <div class="col-md-7">
           <a href="#">
-            {% for dat in kepek %}
 
             <img class="img-fluid rounded mb-3 mb-md-0" src="{{ dat.kep }}" alt="700#300">
             {% endfor %}
@@ -92,16 +93,19 @@
 
           </a>
         </div>
+
         <div class="col-md-5">
           <p> {{ item.tipus }}</p>
           <p> {{ item.modell }}</p>
           <p> {{ item.kategoria }}</p>
         </div>
-        {% endfor %}
+
 
       </div>
       <!-- /.row -->
       <hr>
+      {% endfor %}
+
     </div>
 
     <!-- /.container -->

@@ -33,39 +33,39 @@ def szerviz(request):
 
 
 def hello2(request):
-    #file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
-    #tree = ET.ElementTree()
-    #tree.parse(file)
-    #root = tree.getroot()
-    #ET.dump(tree)
+    file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
+    tree = ET.ElementTree()
+    tree.parse(file)
+    root = tree.getroot()
+    ET.dump(tree)
     #for elem in tree.iter():
     #    print (elem.tag, elem.attrib)
-    #Hahuautok.objects.all().delete()
-    #x = root.iter('{http://hex.hasznaltauto.hu/ns}kep')
-    #for k in x:
-    #    kep = k.get('kicsi')
-        #b = Hahuautok.objects.create(kep=kep)
-        #b.save()
-    #x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
-    #for autok in x:
-    #        rank = autok.get('hirdeteskod')
-    #        marka = autok.get('gyartmany')
-    #        kategoria = autok.get('kategoria')
-    #        modell = autok.get('modell')
-    #        tipus = autok.get('tipus')
-    #        print(tipus)
-            #a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus)
-            #a.save()
-    kep_list = Hahuautok.objects.filter()[:5]
+    x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
+    for autok in x:
+            rank = autok.get('hirdeteskod')
+            marka = autok.get('gyartmany')
+            kategoria = autok.get('kategoria')
+            modell = autok.get('modell')
+            tipus = autok.get('tipus')
+            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus)
+            a.save()
+    x = root.iter('{http://hex.hasznaltauto.hu/ns}kep')
+    for k in x:
+        kepdocument = k.get('kicsi')
+        b = pictures.objects.create(kepdocument=imagefile)
+        b.save()
+        newdoc = Document(imagefile=request.FILES['imagefile'])
+        newdoc.save()
+        latest_documents = Document.objects.all().order_by('-id')[0]
+        print(latest_documents)
+
+    #kep_list = Hahuautok.objects.filter()[:1]
     contact_list = Hahudeta.objects.get_queryset().order_by('id')
     paginator = Paginator(contact_list, 25) # Show 25 contacts per page
     page = request.GET.get('page')
     data = paginator.get_page(page)
     print("Data updated")
-    return render(request, 'hasznaltauto.html', {'data': data, 'kepek' : kep_list})
-
-
-
+    return render(request, 'hasznaltauto.html', {'data': data})
 
 
 
