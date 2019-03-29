@@ -5,7 +5,7 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <!-- Bootstrap core CSS -->
-        <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+        <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
 
         <!-- Custom styles for this template -->
         <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
@@ -15,21 +15,24 @@
         <title>Update Drop-Down Without Refresh</title>
     </head>
     <body>
-        <p>This is a proof of concept to update a select (drop-down) list of values, based on the selection of another select (drop-down) element using ajax.</p>
-        <form action="" method="get" accept-charset="utf-8">
-            <select name="makes" id="makes">
+    <form action="" method="get" accept-charset="utf-8">
+      <div class="row">
+          <div class="form-group">
+            <select name="makes" id="makes" class="form-control">
                 <option>Márka</option>
                 {% for make in makes %}
                   <option value="{{make}}" {% if make == selected_make %}selected{% endif %}>{{make}}</option>
                 {% endfor %}
             </select>
-            <select name="models" id="models">
+            <select name="models" id="models" class="form-control">
                 <option>Model</option>
                 {% for model in models%}
                   <option value='{{model}}' {% if model == selected_model %}selected{% endif %}>{{model}}</option>
                 {% endfor %}
             </select>
-        </form>
+          </div>
+      </div>
+    </form>
 <!--
     <div class="container">
 
@@ -67,16 +70,12 @@
             <img class="locandina" src="{{e.images.first.url}}"/>
             <h1>{{ e.modell}}</h1>
             <h4>{{e.tipus}}</h4>
-            <span class="minutes">117 min</span>
-            <p class="type">Action, Crime, Fantasy</p>
+            <span class="minutes">Véltelár: 2.550.000Ft</span>
+            <p class="type">Üzemanyag: Benzin</p>
             <p class="type">{{e.kategoria}}</p>
           </div>
-          <div class="movie_desc">
-            <p class="text">
 
-
-            </p>
-          </div>
+          <!--
           <div class="movie_social">
             <ul>
               <li><i class="material-icons">share</i></li>
@@ -85,7 +84,7 @@
 
 
             </ul>
-          </div>
+          </div>-->
         </div>
       </div>
     {% endfor %}
