@@ -9,6 +9,8 @@
 
         <!-- Custom styles for this template -->
         <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+        <link href="{% static 'css/card.css' %}" rel="stylesheet">
+
 
         <title>Update Drop-Down Without Refresh</title>
     </head>
@@ -28,13 +30,13 @@
                 {% endfor %}
             </select>
         </form>
+<!--
     <div class="container">
-      <!-- Page Heading -->
 
       <h1 class="my-4">
         <small>Használt autók </small>
       </h1>
-      <!-- Autó One -->
+
 
       {% for e in  data %}
 
@@ -54,10 +56,41 @@
           <p> {{ e.kategoria }}</p>
         </div>
       </div>
-      <!-- /.row -->
+
       <hr>
       {% endfor %}
-    </div>
+    </div>-->
+    {% for e in  data %}
+      <div class="movie_card" id="tomb">
+        <div class="info_section">
+          <div class="movie_header">
+            <img class="locandina" src="{{e.images.first.url}}"/>
+            <h1>{{ e.modell}}</h1>
+            <h4>{{e.tipus}}</h4>
+            <span class="minutes">117 min</span>
+            <p class="type">Action, Crime, Fantasy</p>
+            <p class="type">{{e.kategoria}}</p>
+          </div>
+          <div class="movie_desc">
+            <p class="text">
+
+
+            </p>
+          </div>
+          <div class="movie_social">
+            <ul>
+              <li><i class="material-icons">share</i></li>
+              <li><i class="material-icons"></i></li>
+              <li><i class="material-icons">chat_bubble</i></li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+
     <!-- /.PAGINATOR -->
 <nav aria-label="Page navigation example">
   <ul class="pagination">
