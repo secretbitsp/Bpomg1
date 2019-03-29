@@ -54,7 +54,8 @@ class Hahudeta(models.Model):
 
 class CachedImage(models.Model):
     url = models.CharField(max_length=255, unique=True)
-    photo = models.ImageField(upload_to=static\HahuImg, blank=True)
+    photo = models.ImageField(upload_to='HahuImg', blank=True, null=True)
+    car = models.ForeignKey(Hahudeta, on_delete = models.CASCADE, related_name='images')
 
     def cache(self):
         """Store image locally if we have a URL"""

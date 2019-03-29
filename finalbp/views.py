@@ -1,10 +1,12 @@
+import os
+from django.core.files import File
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import Context, loader
 from django.http import HttpRequest
 from xml.dom import minidom
 #from xml.etree.ElementTree import ElementTree
-from urllib.request import Request, urlopen, URLError
+from urllib.request import Request, urlopen, URLError, urlretrieve
 import urllib.request
 import urllib.request
 # new imports that go at the top of the file
@@ -13,7 +15,7 @@ from django.shortcuts import redirect
 from django.template.loader import get_template
 from django.shortcuts import render
 from .forms import RegCarForm
-from .models import Hahudeta
+from .models import Hahudeta, CachedImage
 
 try:
     import xml.etree.cElementTree as ET
@@ -33,39 +35,66 @@ def szerviz(request):
 
 
 def hello2(request):
-    file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
-    tree = ET.ElementTree()
-    tree.parse(file)
-    root = tree.getroot()
-    ET.dump(tree)
+    #file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
+    #tree = ET.ElementTree()
+    #tree.parse(file)
+    #root = tree.getroot()
+    #ET.dump(tree)
     #for elem in tree.iter():
     #    print (elem.tag, elem.attrib)
-    x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
-    for autok in x:
-            rank = autok.get('hirdeteskod')
-            marka = autok.get('gyartmany')
-            kategoria = autok.get('kategoria')
-            modell = autok.get('modell')
-            tipus = autok.get('tipus')
-            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus)
-            a.save()
-    x = root.iter('{http://hex.hasznaltauto.hu/ns}kep')
-    for k in x:
-        kepdocument = k.get('kicsi')
-        b = pictures.objects.create(kepdocument=imagefile)
-        b.save()
-        newdoc = Document(imagefile=request.FILES['imagefile'])
-        newdoc.save()
-        latest_documents = Document.objects.all().order_by('-id')[0]
-        print(latest_documents)
+    #x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
+    #cars = {}
+    #for autok in x:
+    #        rank = autok.get('hirdeteskod')
+    #        marka = autok.get('gyartmany')
+    #        kategoria = autok.get('kategoria')
+    #        modell = autok.get('modell')
+    #        tipus = autok.get('tipus')
+    #        a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus)
+    #        a.save()
+    #        cars[rank] = a
+    #x = root.iter('{http://hex.hasznaltauto.hu/ns}kep')
+    #for k in x:
+    #    url = k.get('kicsi')
+    #    filename = os.path.basename(url)
 
-    #kep_list = Hahuautok.objects.filter()[:1]
-    contact_list = Hahudeta.objects.get_queryset().order_by('id')
+    #    car_code = filename.split('_')[0]
+    #    car = cars.get(car_code)
+    #    if not car:
+    #        continue
+    #    image = urlretrieve(url)
+    #    cached_image = CachedImage.objects.create(url=url, car=car)
+    #for image in car.images.all():
+    #    print(image.photo.url)
+    #    cached_image.photo.save(filename, File(open(image[0], errors='ignore')))
+    #    kepdocument = k.get('kicsi')
+    #    b = pictures.objects.create(kepdocument=imagefile)
+    #    b.save()
+    #    newdoc = Document(imagefile=request.FILES['imagefile'])
+    #    newdoc.save()
+    #    latest_documents = Document.objects.all().order_by('-id')[0]
+    #    print(latest_documents)
+
+    # kep_list = Hahuautok.objects.filter()[:1]
+    make = request.GET.get('make')
+    model = request.GET.get('model')
+    contact_list = Hahudeta.objects.all()
+    if make:
+        contact_list = contact_list.filter(marka=make)
+    if model:
+        contact_list = contact_list.filter(modell=model)
+
     paginator = Paginator(contact_list, 25) # Show 25 contacts per page
     page = request.GET.get('page')
     data = paginator.get_page(page)
     print("Data updated")
-    return render(request, 'hasznaltauto.html', {'data': data})
+    makes = list(set(Hahudeta.objects.values_list('marka',  flat=True)))
+    if make:
+        models = list(set(Hahudeta.objects.filter(marka=make).values_list('modell', flat=True)))
+    else:
+        models = list(set(Hahudeta.objects.values_list('modell', flat=True)))
+    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models, 'selected_make': make, 'selected_model': model })
+
 
 
 
