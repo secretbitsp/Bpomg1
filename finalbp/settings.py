@@ -28,6 +28,8 @@ INSTALLED_APPS = [
     'finalbp',
     'polls',
     'phone_field',
+    'hahu_kapcsolat',
+    'szervizkapcsolat',
 
 ]
 

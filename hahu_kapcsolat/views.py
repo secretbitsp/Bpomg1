@@ -1,25 +1,15 @@
 from django.shortcuts import render
-
-# Create your views here.
-from django.shortcuts import render
+from django.views.generic import View
 from django.http import HttpResponse # Add this
 from django.core.mail import send_mail
 
-from .forms import ContactForm # Add this
+from .forms import HahuKapcsolat # Add this
 
 
 
-
-
-# sendemail/views.py
-from django.core.mail import send_mail, BadHeaderError
-from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render, redirect
-from .forms import ContactForm
-
-def kapcsolat(request):
+def contact_us(request):
     if request.method == 'POST':
-        form = ContactForm(request.POST)
+        form = HahuKapcsolat(request.POST)
         if form.is_valid():
             sender_name = form.cleaned_data['név']
             sender_email = form.cleaned_data['email']
@@ -28,8 +18,6 @@ def kapcsolat(request):
             send_mail('New Enquiry', message, sender_email, ['yepense@gmail.com'])
             return HttpResponse('Thanks for contacting us!')
     else:
-        form = ContactForm()
+        form = HahuKapcsolat()
 
-    return render(request, 'sendemail/kapcsolat.html', {'form': form})
-
-#    return render(request, "sendemail/email.html", {'form': form})
+    return render(request, 'hahu_kapcsolat/Hahu-kapcsolat.html', {'form': form})
