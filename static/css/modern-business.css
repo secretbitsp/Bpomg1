@@ -1,7 +1,19 @@
 
-body {
-  padding-top: 120px;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
 }
+
+html, body{
+  margin: 0;
+  background: white;
+  font-family: 'Montserrat', helvetica, arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 
 @media (min-width: 992px) {
   body {
@@ -21,10 +33,4 @@ body {
 
 .portfolio-item {
   margin-bottom: 30px;
-}
-
-
-.formi{
-  margin: 0 auto;
-  width:80% /* value of your choice which suits your alignment */
 }

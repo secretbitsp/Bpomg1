@@ -3,7 +3,7 @@ from django.core.files import File
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import Context, loader
-from django.http import HttpRequest
+from django.http import HttpRequest, HttpResponseRedirect
 from xml.dom import minidom
 #from xml.etree.ElementTree import ElementTree
 from urllib.request import Request, urlopen, URLError, urlretrieve
@@ -35,13 +35,22 @@ def szerviz(request):
 
 
 def hello2(request):
-    #file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
-    #tree = ET.ElementTree()
-    #tree.parse(file)
-    #root = tree.getroot()
+    file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
+    tree = ET.ElementTree()
+    tree.parse(file)
+    root = tree.getroot()
     #ET.dump(tree)
     #for elem in tree.iter():
-    #    print (elem.tag, elem.attrib)
+        #print (elem.tag, elem.attrib)
+    x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
+    for arak in x:
+        for elem in arak.iter():
+
+            print(elem.tag)
+            if elem.tag == '{http://hex.hasznaltauto.hu/ns}uzemanyag':
+                print(elem.text)
+        # print(arak.findall('uzemanyag'))
+        #print(araks)
     #x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
     #cars = {}
     #for autok in x:
@@ -50,6 +59,7 @@ def hello2(request):
     #        kategoria = autok.get('kategoria')
     #        modell = autok.get('modell')
     #        tipus = autok.get('tipus')
+    #       uzemanyag = autok.get'{http://hex.hasznaltauto.hu/ns}uzemanyag'()
     #        a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus)
     #        a.save()
     #        cars[rank] = a
@@ -96,25 +106,10 @@ def hello2(request):
     return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models, 'selected_make': make, 'selected_model': model })
 
 
-
-
-
-
-
-
-
-def regcar(request):
-    if request.method == 'POST':
-        car_form = RegCarForm(data=request.POST)
-
-        if car_form.is_valid():
-            cdata = car_form.cleaned_data.get
-            car_selected = Car.objects.filter(name=cdata('car_select'))
-            reg1 = Fleet(car_id=car_selected[0].id, description=cdata('description'))
-            reg1.save()
-        else:
-            print ('Invalid')
-
-    else:
-        car_form = RegCarForm()
-    return render(request, 'ajanlatok.html', {'car_form': car_form})
+def car_detail(request, car_id):
+    try:
+        print(car_id)
+        car = Hahudeta.objects.get(id=car_id)
+    except Hahudeta.DoesNotExist:
+        return HttpResponseRedirect('/hahudeta')
+    return render(request, 'car_detail.html', {'car': car})

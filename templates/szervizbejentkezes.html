@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Budapest Autószalon</title>
+    <title> Szerviz Ajanlat Budapest Autószalon</title>
+
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
-
     <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
     <!-- Custom styles for this template -->
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
+
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
   </head>
   <body>
@@ -43,7 +45,7 @@
               <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.hasznaltauto.hu/partner/budapest_autoszalon-7972">Használt autó</a>
+              <a class="nav-link" href="{% url 'hasznalt' %}">Használt autó</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
@@ -53,60 +55,83 @@
       </div>
     </nav>
     <body>
-      <div class="container">
 
+        <div class="container-fluid">
+          <div class="szerviz-text" class="page-header">
+            <h2>Ön pontosan tudja, hogy mi a baja autójának, vagy nem is sejti?  <br />
+            Már régi Ügyfelünk, vagy most lépne velünk kapcsolatba először? <br />Küldje el üzenetét és kollégáink válaszolnak Önnek!</h2>
+          </div>
+        <div class="row">
+        <div class="col-xs-7 col-sm-6 col-lg-6" >
         <form method="post">
           {% csrf_token %}
-          {{ form.as_p }}
-          <button type ="submit">Küldés</button>
+          {{ form.as_p }}</div>
+        <div class="col-xs-5 col-sm-6 col-lg-4" >
+          <div class="card bg-light mb-3">
+              <div class="card-header bg-dark text-white text-uppercase"><i class="fa fa-home"></i> Cimünk </div>
+                <div class="card-body">
+                    <p>Váci út 76-80</p>
+                    <p>1044 Budapest</p>
+                    <p>Budapest</p>
+                    <p>Email : info@budapestautszalon.hu</p>
+                    <p>Tel. +33 12 56 11 51 84</p>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
-    <!-- Footer -->
-    <footer id="myFooter">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 info">
-                    <h5>Information</h5>
-                    <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
-                </div>
-            </div>
-        </div>
-        <div class="second-bar">
-           <div class="container">
-                <h2 class="logo"><a href="#"> LOGO </a></h2>
-                <div class="social-icons">
-                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <!-- Footer -->
+      <footer id="myFooter">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <h5>Kezdőlap</h5>
+                      <ul>
+                          <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                          <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                          <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-3">
+                      <h5>Rólunk</h5>
+                      <ul>
+                          <li><a href="#">Cégünkről</a></li>
+                          <li><a href="#">Szerviz bejelentkezés</a></li>
+                          <li><a href="#">Vélemények</a></li>
+                      </ul>
+                  </div>
+                  <!--
+                  <div class="col-sm-3">
+                      <h5>Support</h5>
+                      <ul>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Help desk</a></li>
+                          <li><a href="#">Forums</a></li>
+                      </ul>
+                  </div>-->
+                  <div class="col-sm-3 info">
+                      <h5>Budapest Autószalon</h5>
+                      <p>   Opel-Mitsubishi-Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+
+                          h-1044 Budapest Váci út 76-80</br>Tel: 061-803-6050  </br>Fax: 061-803-6051</br>  </p>
+                  </div>
+              </div>
+          </div>
+          <div class="second-bar">
+             <div class="container">
+                  <h2 class="logo"><a href="{% url 'fooldal' %}"> Budapest Autószalon </a></h2>
+                  <div class="social-icons">
+                    <!--  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>-->
+                      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                      <!---<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+      <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   </body>
 
 

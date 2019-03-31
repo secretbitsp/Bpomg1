@@ -13,6 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
@@ -20,11 +21,10 @@
   </head>
 
   <body>
-
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="{% url 'fooldal' %}">Budapest Autószalon</a>
+        <a class="navbar-brand" class="img-fluid" href="{% url 'fooldal' %}"><img src="/static/.jpg"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,48 +32,28 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Új autók
+                Ajánlataink
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+
                 <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/opellogo.png"></a>
+
                 <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Mitsubishi-logo.png"></a>
+
                 <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Subaru-logo.png"></a>
+
                 <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Ssangyong-logo.png"></a>
               </div>
             </li>
-          <!--  <li class="nav-item">
-              <a class="nav-link" href="">Használt</a>
-            </li>-->
             <li class="nav-item">
               <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="">Kapcsolat</a>
+              <a class="nav-link" href="{% url 'hasznalt' %}">Használt autó</a>
             </li>
-
-            <!--<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Kollégáink
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Pages
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
-                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-              </div>
-            </li>-->
           </ul>
         </div>
       </div>
@@ -109,8 +89,8 @@
             <br>
           </p>
           <p>
-            <abbr title="Hívjon minket">Telefonszámunk</abbr>:
-          </p>
+            <abbr title="Hívjon minket">Telefonszámunk</abbr>: +36 1 770 7080
+           </p>
           <p>
             <abbr title="Küldjön üzenetet">Email:</abbr>:
             <a href="mailto:recepcio@budapestautoszalon.hu">recepcio@budapestautoszalon.hu
@@ -121,94 +101,110 @@
           </p>
         </div>
       </div>
-    </div>
-  </div>
-    <!-- /.container -->
-    <!-- templates/email.html -->
-  <div class="formi">
-    <h1>Kapcsolat</h1>
-    <form method="post">{% csrf_token %}
-        <div class="form-control">
-        {{form.as_p}}
-        <div class="form-actions">
-          <button type="submit">Send</button>
-        </div>
-    </form>
-  </div>
+      <!-- /.row -->
 
+      <div class="table-responsive">
+
+        <!--Table-->
+        <table class="table">
+
+          <!--Table head-->
+          <thead>
+            <tr>
+              <th>#</th>
+              <th class="th-sm">Lorem ipsum dolor</th>
+              <th class="th-sm">Lorem ipsum dolor</th>
+              <th class="th-sm">Lorem ipsum dolor</th>
+            </tr>
+          </thead>
+          <!--Table head-->
+
+          <!--Table body-->
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
+            </tr>
+          </tbody>
+          <!--Table body-->
+
+        </table>
+        <!--Table-->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
 
     <!-- Footer -->
-
-        <footer class="py-2 bg-dark">
-
-          <div class="container">
-
-
-
-          </div>
-
-          <div class="row">
-
-            <div class="col-lg-6 text-white">
-
-              </br>
-
-              <p class="m-5 text-center text-white">
-
-                 Opel - Mitsubishi - Subaru - Ssangyong</br>Márkakereskedés, használtautó-kereskedés és szerviz</br>
-
-                  h-1044 Budapest (Külső) Váci út 76-80 </br>Tel: 061-803-6050  </br>Fax: 061-803-6051</br>
-
-                </br>
-
-
-              </p>
-
-              <p>
-
-
-
-              </p>
-
-            </div>
-
-            <div class="col-lg-6 text-white">
-
-              <p class="m-5 text-center text-white">
-                <!-- Begin Mailchimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                	#mc_embed_signup{background:#000; clear:left; font:14px Helvetica,Arial,sans-serif; }
-                	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
-                <div id="mc_embed_signup">
-                <form action="https://opelsziget.us17.list-manage.com/subscribe/post?u=30d306cead538ea1c6345349a&amp;id=867012eebc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                	<label for="mce-EMAIL">Iratkozzon fel hírlevelünkre</label>
-                	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email címe" required>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -3000px;" aria-hidden="true"><input type="text" name="b_30d306cead538ea1c6345349a_867012eebc" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                    </div>
-                </form>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Kezdőlap</h5>
+                    <ul>
+                        <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                        <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                        <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                    </ul>
                 </div>
+                <div class="col-sm-3">
+                    <h5>Rólunk</h5>
+                    <ul>
+                        <li><a href="#">Cégünkről</a></li>
+                        <li><a href="#">Szerviz bejelentkezés</a></li>
+                        <li><a href="#">Vélemények</a></li>
+                    </ul>
+                </div>
+                <!--
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>-->
+                <div class="col-sm-3 info">
+                    <h5>Budapest Autószalon</h5>
+                    <p>   Opel-Mitsubishi-Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
 
-                <!--End mc_embed_signup-->
-                </p>
-
+                        h-1044 Budapest Váci út 76-80</br>Tel: 061-803-6050  </br>Fax: 061-803-6051</br>  </p>
+                </div>
             </div>
-
-          </div>
-
-          <!-- /.container -->
-
-        </footer>
+        </div>
+        <div class="second-bar">
+           <div class="container">
+                <h2 class="logo"><a href="{% url 'fooldal' %}"> Budapest Autószalon </a></h2>
+                <div class="social-icons">
+                  <!--  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>-->
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <!---<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
     <!-- Contact form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
