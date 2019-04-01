@@ -14,7 +14,6 @@ from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
 from django.shortcuts import render
-from .forms import RegCarForm
 from .models import Hahudeta, CachedImage
 
 try:
@@ -42,50 +41,60 @@ def hello2(request):
     #ET.dump(tree)
     #for elem in tree.iter():
         #print (elem.tag, elem.attrib)
-    x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
-    for arak in x:
-        for elem in arak.iter():
+    #x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
+    #for arak in x:
+        #for elem in arak.iter():
 
-            print(elem.tag)
-            if elem.tag == '{http://hex.hasznaltauto.hu/ns}uzemanyag':
-                print(elem.text)
+        #    print(elem.tag)
+        #    if elem.tag == '{http://hex.hasznaltauto.hu/ns}uzemanyag':
+        #        print(elem.text)
         # print(arak.findall('uzemanyag'))
         #print(araks)
     #x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
     #cars = {}
     #for autok in x:
+    #        print([elem.tag for elem in autok.iter()])
+    #        print(autok.findall('{http://hex.hasznaltauto.hu/ns}uzemanyag'))
     #        rank = autok.get('hirdeteskod')
     #        marka = autok.get('gyartmany')
     #        kategoria = autok.get('kategoria')
     #        modell = autok.get('modell')
     #        tipus = autok.get('tipus')
-    #       uzemanyag = autok.get'{http://hex.hasznaltauto.hu/ns}uzemanyag'()
-    #        a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus)
-    #        a.save()
-    #        cars[rank] = a
-    #x = root.iter('{http://hex.hasznaltauto.hu/ns}kep')
-    #for k in x:
-    #    url = k.get('kicsi')
-    #    filename = os.path.basename(url)
+    #        uzemanyag = autok.findall('{http://hex.hasznaltauto.hu/ns}uzemanyag')
+    #        if uzemanyag:
+    #            uzemanyag = uzemanyag[0].text
+    '''        else:
+                uzemanyag = None
 
-    #    car_code = filename.split('_')[0]
-    #    car = cars.get(car_code)
-    #    if not car:
-    #        continue
-    #    image = urlretrieve(url)
-    #    cached_image = CachedImage.objects.create(url=url, car=car)
-    #for image in car.images.all():
-    #    print(image.photo.url)
-    #    cached_image.photo.save(filename, File(open(image[0], errors='ignore')))
-    #    kepdocument = k.get('kicsi')
-    #    b = pictures.objects.create(kepdocument=imagefile)
-    #    b.save()
-    #    newdoc = Document(imagefile=request.FILES['imagefile'])
-    #    newdoc.save()
-    #    latest_documents = Document.objects.all().order_by('-id')[0]
-    #    print(latest_documents)
+            evjarat = autok.findall('{http://hex.hasznaltauto.hu/ns}evjarat')[0].text
+            futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
+            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm)
+            a.save()
+            cars[rank] = a
+    x = root.iter('{http://hex.hasznaltauto.hu/ns}kep')
+    for k in x:
+        url = k.get('kicsi')
+        filename = os.path.basename(url)
 
-    # kep_list = Hahuautok.objects.filter()[:1]
+        car_code = filename.split('_')[0]
+        car = cars.get(car_code)
+        if not car:
+            continue
+        image = urlretrieve(url)
+        cached_image = CachedImage.objects.create(url=url, car=car)
+
+    for image in car.images.all():
+        # print(image.photo.url)
+        cached_image.photo.save(filename, File(open(image[0], errors='ignore')))
+        kepdocument = k.get('kicsi')
+        b = pictures.objects.create(kepdocument=imagefile)
+        b.save()
+        newdoc = Document(imagefile=request.FILES['imagefile'])
+        newdoc.save()
+        latest_documents = Document.objects.all().order_by('-id')[0]
+        print(latest_documents)'''
+
+    kep_list = Hahuautok.objects.filter()[:1]
     make = request.GET.get('make')
     model = request.GET.get('model')
     contact_list = Hahudeta.objects.all()
@@ -113,3 +122,10 @@ def car_detail(request, car_id):
     except Hahudeta.DoesNotExist:
         return HttpResponseRedirect('/hahudeta')
     return render(request, 'car_detail.html', {'car': car})
+
+
+
+
+
+
+#carouselExampleControls-{{e.id}}
