@@ -55,24 +55,28 @@
           </div>
         </div>
       </nav>
-    <form action="" method="get" accept-charset="utf-8">
-      <div class="row">
-          <div class="form-group">
-            <select name="makes" id="makes" class="form-control">
-                <option>Márka</option>
-                {% for make in makes %}
-                  <option value="{{make}}" {% if make == selected_make %}selected{% endif %}>{{make}}</option>
-                {% endfor %}
-            </select>
-            <select name="models" id="models" class="form-control">
-                <option>Model</option>
-                {% for model in models%}
-                  <option value='{{model}}' {% if model == selected_model %}selected{% endif %}>{{model}}</option>
-                {% endfor %}
-            </select>
-          </div>
-      </div>
-    </form>
+      <div class="filter_container">
+        <form action="" method="get" accept-charset="utf-8">
+          <div class="row">
+            <div class="col-sm-3"
+              <div class="form-group">
+                <select name="makes" id="makes" class="form-control">
+                    <option>Márka</option>
+                    {% for make in makes %}
+                      <option value="{{make}}" {% if make == selected_make %}selected{% endif %}>{{make}}</option>
+                    {% endfor %}
+                </select>
+                <select name="models" id="models" class="form-control">
+                    <option>Model</option>
+                    {% for model in models%}
+                      <option value='{{model}}' {% if model == selected_model %}selected{% endif %}>{{model}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+
 <!--
     <div class="container">
 
@@ -104,30 +108,34 @@
       {% endfor %}
     </div>-->
     {% for e in  data %}
-      <div class="movie_card" id="tomb">
-        <div class="info_section">
-          <div class="movie_header">
-            <img class="locandina" src="{{e.images.first.url}}"/>
-            <a  href="/cars/{{e.id}}"><h1>{{ e.modell}}</h1></a>
-            <h4>{{e.tipus}}</h4>
-            <span class="minutes">Véltelár: 2.550.000Ft</span>
-            <p class="type">Üzemanyag: Benzin</p>
-            <p class="type">{{e.kategoria}}</p>
+      <div class="container-fluid">
+        <div class="movie_card" id="tomb">
+          <div class="info_section">
+            <div class="movie_header">
+              <a  href="/cars/{{e.id}}">
+              <img class="locandina" src="{{e.images.first.url}}"/>
+              <h1>{{ e.marka}} - {{ e.modell}}  </h1>
+              <h4>{{e.tipus}}</h4>
+              <span class="minutes"></span>
+              <p class="minutes">Üzemanyag: {{ e.uzemanyag}}</p>
+              <p class="minutes">Évjárat: {{e.evjarat}}</p></a>
+            </div>
+
+            <!--
+            <div class="movie_social">
+              <ul>
+                <li><i class="material-icons">share</i></li>
+                <li><i class="material-icons"></i></li>
+                <li><i class="material-icons">chat_bubble</i></li>
+
+
+              </ul>
+            </div>-->
           </div>
-
-          <!--
-          <div class="movie_social">
-            <ul>
-              <li><i class="material-icons">share</i></li>
-              <li><i class="material-icons"></i></li>
-              <li><i class="material-icons">chat_bubble</i></li>
-
-
-            </ul>
-          </div>-->
         </div>
       </div>
     {% endfor %}
+
         <!-- /.PAGINATOR -->
    <div class="paginator">
     <nav aria-label="...">

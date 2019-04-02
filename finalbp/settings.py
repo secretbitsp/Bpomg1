@@ -34,16 +34,12 @@ INSTALLED_APPS = [
 ]
 
 #... add the following line to the END of the settings.py file
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-#DEFAULT_FROM_EMAIL = 'testing@example.com'
-#EMAIL_HOST_USER = ''
-#EMAIL_HOST_PASSWORD = ''
-#EMAIL_USE_TLS = False
-#EMAIL_PORT = 1025
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'mail.budapestautoszalon.hu'
+EMAIL_HOST_USER = 'varga.laszlo@budapestautoszalon.hu'
+EMAIL_HOST_PASSWORD = 'sajtoskenyer12'
+EMAIL_PORT = 465
 
 
 

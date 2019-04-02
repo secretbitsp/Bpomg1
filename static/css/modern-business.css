@@ -39,3 +39,23 @@ html, body{
 .carditem{
   margin: 10px;
 }
+
+
+.w_text{
+    padding-top: 5.25rem;
+    padding-bottom: 2.25rem;
+
+}
+
+.w_button{
+  padding-top: 0.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.filter_container{
+  padding-top: 5.25rem;
+}
+
+a{
+  text-decoration: none;
+}

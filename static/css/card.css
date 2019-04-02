@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
 
-*{
-  box-sizing: border-box;
-  margin: 0;
-}
+  *{
+    box-sizing: border-box;
+    margin: 0;
+  }
 
-html, body{
-  margin: 0;
-  background: white;
-  font-family: 'Montserrat', helvetica, arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
+  html, body{
+    margin: 0;
+    background: white;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
 
 .link{
   display: block;

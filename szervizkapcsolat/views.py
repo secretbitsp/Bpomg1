@@ -15,7 +15,7 @@ def szervizkapcsi(request):
             sender_email = form.cleaned_data['email']
 
             message = "{0} has sent you a new message:\n\n{1}".format(sender_name, form.cleaned_data['üzenet'])
-            send_mail('New Enquiry', message, sender_email, ['yepense@gmail.com'])
+            send_mail('New Enquiry', message, sender_email, ['varga.laszlo@budapestautoszalon.hu'])
             return HttpResponse('Thanks for contacting us!')
     else:
         form = szervizkapcsolat2()

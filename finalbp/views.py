@@ -34,10 +34,10 @@ def szerviz(request):
 
 
 def hello2(request):
-    file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
-    tree = ET.ElementTree()
-    tree.parse(file)
-    root = tree.getroot()
+    #file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
+    #tree = ET.ElementTree()
+    #tree.parse(file)
+    #root = tree.getroot()
     #ET.dump(tree)
     #for elem in tree.iter():
         #print (elem.tag, elem.attrib)
