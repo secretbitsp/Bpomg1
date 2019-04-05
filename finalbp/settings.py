@@ -33,7 +33,9 @@ INSTALLED_APPS = [
 
 ]
 
+
 #... add the following line to the END of the settings.py file
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 EMAIL_HOST = 'mail.budapestautoszalon.hu'

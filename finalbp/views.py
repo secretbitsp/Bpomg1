@@ -8,14 +8,12 @@ from xml.dom import minidom
 #from xml.etree.ElementTree import ElementTree
 from urllib.request import Request, urlopen, URLError, urlretrieve
 import urllib.request
-import urllib.request
 # new imports that go at the top of the file
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
 from django.shortcuts import render
 from .models import Hahudeta, CachedImage
-
 try:
     import xml.etree.cElementTree as ET
 except ImportError:
@@ -34,10 +32,10 @@ def szerviz(request):
 
 
 def hello2(request):
-    #file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
-    #tree = ET.ElementTree()
-    #tree.parse(file)
-    #root = tree.getroot()
+    file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
+    tree = ET.ElementTree()
+    tree.parse(file)
+    root = tree.getroot()
     #ET.dump(tree)
     #for elem in tree.iter():
         #print (elem.tag, elem.attrib)
@@ -50,30 +48,32 @@ def hello2(request):
         #        print(elem.text)
         # print(arak.findall('uzemanyag'))
         #print(araks)
-    #x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
-    #cars = {}
-    #for autok in x:
-    #        print([elem.tag for elem in autok.iter()])
-    #        print(autok.findall('{http://hex.hasznaltauto.hu/ns}uzemanyag'))
-    #        rank = autok.get('hirdeteskod')
-    #        marka = autok.get('gyartmany')
-    #        kategoria = autok.get('kategoria')
-    #        modell = autok.get('modell')
-    #        tipus = autok.get('tipus')
-    #        uzemanyag = autok.findall('{http://hex.hasznaltauto.hu/ns}uzemanyag')
-    #        if uzemanyag:
-    #            uzemanyag = uzemanyag[0].text
-    '''        else:
+    x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
+    cars = {}
+    for autok in x:
+            #print([elem.tag for elem in autok.iter()])
+            #print(autok.findall('{http://hex.hasznaltauto.hu/ns}uzemanyag'))
+            rank = autok.get('hirdeteskod')
+            marka = autok.get('gyartmany')
+            kategoria = autok.get('kategoria')
+            modell = autok.get('modell')
+            tipus = autok.get('tipus')
+            uzemanyag = autok.findall('{http://hex.hasznaltauto.hu/ns}uzemanyag')
+            if uzemanyag:
+                uzemanyag = uzemanyag[0].text
+            else:
                 uzemanyag = None
-
             evjarat = autok.findall('{http://hex.hasznaltauto.hu/ns}evjarat')[0].text
+            felszereltseg = autok.findall('{http://hex.hasznaltauto.hu/ns}felszereltseg')[0].text
+            Telefonszám = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam_1')[0].text
             futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
-            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm)
+            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm,
+                                        felszereltseg=felszereltseg)
             a.save()
             cars[rank] = a
     x = root.iter('{http://hex.hasznaltauto.hu/ns}kep')
     for k in x:
-        url = k.get('kicsi')
+        url = k.get('kozepes')
         filename = os.path.basename(url)
 
         car_code = filename.split('_')[0]
@@ -82,19 +82,16 @@ def hello2(request):
             continue
         image = urlretrieve(url)
         cached_image = CachedImage.objects.create(url=url, car=car)
-
+    ''''
     for image in car.images.all():
         # print(image.photo.url)
-        cached_image.photo.save(filename, File(open(image[0], errors='ignore')))
-        kepdocument = k.get('kicsi')
+        #cached_image.photo.save(filename, File(open(image[0], errors='ignore')))
+        kepdocument = k.get('kozepes')
         b = pictures.objects.create(kepdocument=imagefile)
         b.save()
         newdoc = Document(imagefile=request.FILES['imagefile'])
         newdoc.save()
-        latest_documents = Document.objects.all().order_by('-id')[0]
-        print(latest_documents)'''
-
-    kep_list = Hahuautok.objects.filter()[:1]
+        latest_documents = Document.objects.all().order_by('-id')[0]'''
     make = request.GET.get('make')
     model = request.GET.get('model')
     contact_list = Hahudeta.objects.all()

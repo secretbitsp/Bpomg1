@@ -1,10 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-from django.shortcuts import render
 from django.http import HttpResponse # Add this
 from django.core.mail import send_mail
-
 from .forms import ContactForm # Add this
 
 
@@ -23,10 +21,9 @@ def kapcsolat(request):
         if form.is_valid():
             sender_name = form.cleaned_data['név']
             sender_email = form.cleaned_data['email']
-
-            message = "{0} has sent you a new message:\n\n{1}".format(sender_name, form.cleaned_data['üzenet'])
-            send_mail('New Enquiry', message, sender_email, ['yepense@gmail.com'])
-            return HttpResponse('Thanks for contacting us!')
+            message = "{0} nevü ügyfelünk üzenetet küldött neked:\n\n{1}".format(sender_name, sender_email, form.cleaned_data['üzenet'])
+            send_mail('Új ügyfélkapcsolat a weboldalról', message, sender_email, [settings.EMAIL_HOST_USER])
+            return HttpResponse('Üzeneted elküldve!')
     else:
         form = ContactForm()
 

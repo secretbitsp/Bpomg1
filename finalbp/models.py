@@ -17,6 +17,7 @@ class Hahudeta(models.Model):
         uzemanyag = models.CharField(max_length=15)
         futottkm = models.CharField(max_length=10)
         evjarat = models.CharField(max_length=4)
+        felszereltseg = models.CharField(max_length=500)
 
         def __str__(self):
             return self.rank

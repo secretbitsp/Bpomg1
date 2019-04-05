@@ -17,9 +17,10 @@
 </head>
 <body>
   <!-- Navigation -->
+  <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" class="img-fluid" href="{% url 'fooldal' %}"><img src="/static/.jpg"></a>
+      <a class="navbar-brand" class="img-fluid" href="{% url 'fooldal' %}">Budapest Autószalon</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -53,7 +54,6 @@
       </div>
     </div>
   </nav>
-
     <!-- Page Content -->
     <div class="container">
 
@@ -145,20 +145,20 @@ Foglalj most időpontot!</p>
                 <div class="col-sm-3">
                     <h5>Rólunk</h5>
                     <ul>
-                        <li><a href="#">Cégünkről</a></li>
-                        <li><a href="#">Szerviz bejelentkezés</a></li>
-                        <li><a href="#">Vélemények</a></li>
+                        <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                        <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                        <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
                     </ul>
                 </div>
-                <!--
+
                 <div class="col-sm-3">
-                    <h5>Support</h5>
+                    <h5>Külső linkek</h5>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
+                        <li><a href="http://www.ssangyongbudapest.hu/">Sangyong Budapest</a></li>
+                        <li><a href="http://www.mitsubishibudapest.hu/">Mitsubishi Budapest</a></li>
+                        <li><a href="http://www.subarubudapest.hu/">Subaru Budapest</a></li>
                     </ul>
-                </div>-->
+                </div>
                 <div class="col-sm-3 info">
                     <h5>Budapest Autószalon</h5>
                     <p>   Opel-Mitsubishi-Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
@@ -167,21 +167,24 @@ Foglalj most időpontot!</p>
                 </div>
             </div>
         </div>
-        <div class="second-bar">
-           <div class="container">
-                <h2 class="logo"><a href="{% url 'fooldal' %}"> LOGO </a></h2>
-                <div class="social-icons">
-                  <!--  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>-->
-                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <!---<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                </div>
-            </div>
-        </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Start of LiveChat code -->
+    <script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 8624479;
+    window.__lc.chat_between_groups = false;
+    (function() {
+      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    })();
+    </script>
+    <!-- End of LiveChat code -->
 
   </body>
 
