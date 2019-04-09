@@ -83,6 +83,7 @@ def hello2(request):
         image = urlretrieve(url)
         cached_image = CachedImage.objects.create(url=url, car=car)
     ''''
+    #####THIS IS SHIT####
     for image in car.images.all():
         # print(image.photo.url)
         #cached_image.photo.save(filename, File(open(image[0], errors='ignore')))
