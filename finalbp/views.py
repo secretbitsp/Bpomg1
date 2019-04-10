@@ -65,34 +65,36 @@ def hello2(request):
                 uzemanyag = None
             evjarat = autok.findall('{http://hex.hasznaltauto.hu/ns}evjarat')[0].text
             felszereltseg = autok.findall('{http://hex.hasznaltauto.hu/ns}felszereltseg')[0].text
-            Telefonszám = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam_1')[0].text
+            #Telefonszám = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam_1')[0].text
             futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
             a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm,
                                         felszereltseg=felszereltseg)
             a.save()
             cars[rank] = a
-    x = root.iter('{http://hex.hasznaltauto.hu/ns}kep')
+    x = root.iter('{http://hex.hasznaltauto.hu/ns}kepek')
     for k in x:
-        url = k.get('kozepes')
-        filename = os.path.basename(url)
+        print("ookok")
+        print(k.findall('{http://hex.hasznaltauto.hu/ns}kep'))
+        for kep in k.findall('{http://hex.hasznaltauto.hu/ns}kep'):
+            url = kep.text
+            print(url)
+            filename = os.path.basename(url)
+            car_code = filename.split('_')[0]
+            car = cars.get(car_code)
+            if not car:
+                continue
+            image = urlretrieve(url)
+            cached_image = CachedImage.objects.create(url=url, car=car)'''
 
-        car_code = filename.split('_')[0]
-        car = cars.get(car_code)
-        if not car:
-            continue
-        image = urlretrieve(url)
-        cached_image = CachedImage.objects.create(url=url, car=car)
-    ''''
-    #####THIS IS SHIT####
     for image in car.images.all():
-        # print(image.photo.url)
-        #cached_image.photo.save(filename, File(open(image[0], errors='ignore')))
+        print(image.photo.url)
+        cached_image.photo.save(filename, File(open(image[0], errors='ignore')))
         kepdocument = k.get('kozepes')
         b = pictures.objects.create(kepdocument=imagefile)
         b.save()
         newdoc = Document(imagefile=request.FILES['imagefile'])
         newdoc.save()
-        latest_documents = Document.objects.all().order_by('-id')[0]'''
+        latest_documents = Document.objects.all().order_by('-id')[0]
     make = request.GET.get('make')
     model = request.GET.get('model')
     contact_list = Hahudeta.objects.all()
