@@ -24,8 +24,8 @@
 .movie_card{
   position: relative;
   display: block;
-  width: 50%;
-  margin: 50px auto;
+  width: 70%;
+  margin: 30px auto;
   overflow: hidden;
   border-radius: 10px;
   transition: all 0.4s;
