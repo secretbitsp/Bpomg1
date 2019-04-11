@@ -16,7 +16,7 @@ class Hahudeta(models.Model):
         tipus = models.CharField(max_length=100)
         uzemanyag = models.CharField(max_length=15)
         futottkm = models.CharField(max_length=10)
-        evjarat = models.CharField(max_length=4)
+        evjarat = models.CharField(max_length=10)
         felszereltseg = models.CharField(max_length=500)
 
         def __str__(self):
