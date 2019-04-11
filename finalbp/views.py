@@ -35,7 +35,7 @@ def hello2(request):
     '''file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
     tree = ET.ElementTree()
     tree.parse(file)'''
-    '''tree = ET.parse('alphamobil_hex.xml')
+    tree = ET.parse('alphamobil_hex.xml')
     root = tree.getroot()
     #ET.dump(tree)
     #for elem in tree.iter():
@@ -59,16 +59,33 @@ def hello2(request):
             kategoria = autok.get('kategoria')
             modell = autok.get('modell')
             tipus = autok.get('tipus')
+            print(rank)
             uzemanyag = autok.findall('{http://hex.hasznaltauto.hu/ns}uzemanyag')
             if uzemanyag:
                 uzemanyag = uzemanyag[0].text
             else:
                 uzemanyag = None
             evjarat = autok.findall('{http://hex.hasznaltauto.hu/ns}evjarat')[0].text
-            #felszereltseg = autok.findall('{http://hex.hasznaltauto.hu/ns}felszereltseg')[0].text
-            #Telefonszám = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam_1')[0].text
+            try:
+                hengerelrendezes  = autok.findall('{http://hex.hasznaltauto.hu/ns}hengerelrendezes')[0].text
+            except IndexError:
+                hengerelrendezes = None
+            try:
+                teljesitmeny = autok.findall('{http://hex.hasznaltauto.hu/ns}teljesitmeny')[0].text
+            except IndexError:
+                teljesitmeny = None
+            hengerurtartalom  = autok.findall('{http://hex.hasznaltauto.hu/ns}hengerurtartalom')[0].text
+            #klima  = autok.findall('{http://hex.hasznaltauto.hu/ns}klima')[1].text
+            try:
+                sebessegvalto   = autok.findall('{http://hex.hasznaltauto.hu/ns}sebessegvalto')[0].text
+            except IndexError:
+                sebessegvalto = None
+            felszereltseg = autok.findall('{http://hex.hasznaltauto.hu/ns}felszereltseg')[0].text
+            telefonszam  = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam')[0].text
             futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
-            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm)
+            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm,
+                                        teljesitmeny = teljesitmeny, hengerurtartalom = hengerurtartalom,
+                                        sebessegvalto = sebessegvalto, felszereltseg = felszereltseg, telefonszam = telefonszam)
             a.save()
             cars[rank] = a
     x = root.iter('{http://hex.hasznaltauto.hu/ns}kepek')
@@ -83,17 +100,8 @@ def hello2(request):
             car = cars.get(car_code)
             if not car:
                 continue
-            image = urlretrieve(url)
+            # image = urlretrieve(url)
             cached_image = CachedImage.objects.create(url=url, car=car)
-
-    for image in car.images.all():
-        cached_image.photo.save(filename, File(open(image[0], errors='ignore')))
-        kepdocument = k.get('kozepes')
-        b = pictures.objects.create(kepdocument=imagefile)
-        b.save()
-        newdoc = Document(imagefile=request.FILES['imagefile'])
-        newdoc.save()
-        latest_documents = Document.objects.all().order_by('-id')[0]'''
     make = request.GET.get('make')
     model = request.GET.get('model')
     contact_list = Hahudeta.objects.all()
@@ -101,6 +109,7 @@ def hello2(request):
         contact_list = contact_list.filter(marka=make)
     if model:
         contact_list = contact_list.filter(modell=model)
+        #contact_list = contact_list.filter(price__gt=1000)
 
     paginator = Paginator(contact_list, 25) # Show 25 contacts per page
     page = request.GET.get('page')

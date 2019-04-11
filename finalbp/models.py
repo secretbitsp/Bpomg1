@@ -14,10 +14,16 @@ class Hahudeta(models.Model):
         kategoria = models.CharField(max_length=100)
         modell = models.CharField(max_length=100)
         tipus = models.CharField(max_length=100)
-        uzemanyag = models.CharField(max_length=15)
+        uzemanyag = models.CharField(max_length=15, null=True)
         futottkm = models.CharField(max_length=10)
         evjarat = models.CharField(max_length=10)
-        felszereltseg = models.CharField(max_length=500)
+        #klima = models.CharField(max_length=100)
+        sebessegvalto = models.CharField(max_length=30, null=True)
+        hengerurtartalom = models.CharField(max_length=30, null=True)
+        felszereltseg = models.CharField(max_length=500, null=True)
+        teljesitmeny = models.CharField(max_length=30, null=True)
+        hengerelrendezes = models.CharField(max_length=30, null=True)
+        telefonszam = models.CharField(max_length=30, null=True)
 
         def __str__(self):
             return self.rank
