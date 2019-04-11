@@ -9,21 +9,21 @@ class Hahuautok(models.Model):
 
 
 class Hahudeta(models.Model):
-        rank = models.CharField(max_length=100)
-        marka = models.CharField(max_length=100)
-        kategoria = models.CharField(max_length=100)
-        modell = models.CharField(max_length=100)
-        tipus = models.CharField(max_length=100)
-        uzemanyag = models.CharField(max_length=15, null=True)
-        futottkm = models.CharField(max_length=10)
-        evjarat = models.CharField(max_length=10)
+        rank = models.CharField(max_length=255)
+        marka = models.CharField(max_length=255)
+        kategoria = models.CharField(max_length=255)
+        modell = models.CharField(max_length=255)
+        tipus = models.CharField(max_length=255)
+        uzemanyag = models.CharField(max_length=255, null=True)
+        futottkm = models.CharField(max_length=255)
+        evjarat = models.CharField(max_length=255)
         #klima = models.CharField(max_length=100)
-        sebessegvalto = models.CharField(max_length=100, null=True)
-        hengerurtartalom = models.CharField(max_length=30, null=True)
-        felszereltseg = models.CharField(max_length=500, null=True)
-        teljesitmeny = models.CharField(max_length=30, null=True)
-        hengerelrendezes = models.CharField(max_length=30, null=True)
-        telefonszam = models.CharField(max_length=30, null=True)
+        sebessegvalto = models.CharField(max_length=255, null=True)
+        hengerurtartalom = models.CharField(max_length=255, null=True)
+        felszereltseg = models.CharField(max_length=255, null=True)
+        teljesitmeny = models.CharField(max_length=255, null=True)
+        hengerelrendezes = models.CharField(max_length=255, null=True)
+        telefonszam = models.CharField(max_length=255, null=True)
 
         def __str__(self):
             return self.rank
