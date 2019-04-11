@@ -35,7 +35,7 @@ def hello2(request):
     '''file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
     tree = ET.ElementTree()
     tree.parse(file)'''
-    '''tree = ET.parse('alphamobil_hex.xml')
+    tree = ET.parse('alphamobil_hex.xml')
     root = tree.getroot()
     #ET.dump(tree)
     #for elem in tree.iter():
@@ -86,15 +86,15 @@ def hello2(request):
                 continue
             image = urlretrieve(url)
             cached_image = CachedImage.objects.create(url=url, car=car)
-            '''
-    '''for image in car.images.all():
+
+    for image in car.images.all():
         cached_image.photo.save(filename, File(open(image[0], errors='ignore')))
         kepdocument = k.get('kozepes')
         b = pictures.objects.create(kepdocument=imagefile)
         b.save()
         newdoc = Document(imagefile=request.FILES['imagefile'])
         newdoc.save()
-        latest_documents = Document.objects.all().order_by('-id')[0]'''
+        latest_documents = Document.objects.all().order_by('-id')[0]
     make = request.GET.get('make')
     model = request.GET.get('model')
     contact_list = Hahudeta.objects.all()

@@ -22,7 +22,6 @@ html, body{
 }
 
 .carousel-item {
-  height: 65vh;
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -54,4 +53,9 @@ html, body{
 
 .filter_container{
   padding-top: 5.25rem;
+}
+
+.max-width{
+  padding-left: 200px;
+  padding-right: 200px;
 }

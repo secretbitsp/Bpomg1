@@ -15,6 +15,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','localhost','116.203.79.255', 'finalbp.herokuapp.com','www.budapestautoszalon.hu']
 
 # Application definition
+#136.243.150.82
 
 INSTALLED_APPS = [
     'django.contrib.admin',
