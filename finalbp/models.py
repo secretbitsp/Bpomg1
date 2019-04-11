@@ -18,7 +18,7 @@ class Hahudeta(models.Model):
         futottkm = models.CharField(max_length=10)
         evjarat = models.CharField(max_length=10)
         #klima = models.CharField(max_length=100)
-        sebessegvalto = models.CharField(max_length=30, null=True)
+        sebessegvalto = models.CharField(max_length=100, null=True)
         hengerurtartalom = models.CharField(max_length=30, null=True)
         felszereltseg = models.CharField(max_length=500, null=True)
         teljesitmeny = models.CharField(max_length=30, null=True)
