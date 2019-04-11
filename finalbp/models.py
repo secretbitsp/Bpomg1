@@ -17,13 +17,13 @@ class Hahudeta(models.Model):
         uzemanyag = models.CharField(max_length=255, null=True)
         futottkm = models.CharField(max_length=255)
         evjarat = models.CharField(max_length=255)
+        telefonszam = models.CharField(max_length=255, null=True)
         #klima = models.CharField(max_length=100)
-        sebessegvalto = models.CharField(max_length=255, null=True)
+        '''sebessegvalto = models.CharField(max_length=255, null=True)
         hengerurtartalom = models.CharField(max_length=255, null=True)
         felszereltseg = models.TextField(null=True)
         teljesitmeny = models.CharField(max_length=255, null=True)
-        hengerelrendezes = models.CharField(max_length=255, null=True)
-        telefonszam = models.CharField(max_length=255, null=True)
+        hengerelrendezes = models.CharField(max_length=255, null=True)'''
 
         def __str__(self):
             return self.rank

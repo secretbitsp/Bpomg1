@@ -84,8 +84,7 @@ def hello2(request):
             telefonszam  = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam')[0].text
             futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
             a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm,
-                                        teljesitmeny = teljesitmeny, hengerurtartalom = hengerurtartalom,
-                                        sebessegvalto = sebessegvalto, felszereltseg = felszereltseg, telefonszam = telefonszam)
+                                         telefonszam = telefonszam)
             a.save()
             cars[rank] = a
     x = root.iter('{http://hex.hasznaltauto.hu/ns}kepek')
