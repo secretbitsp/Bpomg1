@@ -16,7 +16,7 @@ def szervizkapcsi(request):
             sender_phone = form.cleaned_data['telefonszám']
             message = "{0}  ügyfelünk üzenetet küldött neked:\n\n{1}".format(sender_name, sender_email, sender_phone, form.cleaned_data['üzenet'])
             send_mail('Új ügyfélkapcsolat a weboldalról', message, 'varga.laszlo@budapestautoszalon.hu', ['varga.laszlo@budapestautoszalon.hu'],)
-            return HttpResponse('Thanks for contacting us!')
+            return render(request, 'szervizkapcsolat/szervizkapcsolat.html', {'form': form})
     else:
         form = szervizkapcsolat2()
 
