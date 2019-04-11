@@ -65,17 +65,16 @@ def hello2(request):
             else:
                 uzemanyag = None
             evjarat = autok.findall('{http://hex.hasznaltauto.hu/ns}evjarat')[0].text
-            felszereltseg = autok.findall('{http://hex.hasznaltauto.hu/ns}felszereltseg')[0].text
+            #felszereltseg = autok.findall('{http://hex.hasznaltauto.hu/ns}felszereltseg')[0].text
             #Telefonszám = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam_1')[0].text
             futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
-            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm,
-                                        felszereltseg=felszereltseg)
+            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm)
             a.save()
             cars[rank] = a
     x = root.iter('{http://hex.hasznaltauto.hu/ns}kepek')
     for k in x:
         print("ookok")
-        print(k.findall('{http://hex.hasznaltauto.hu/ns}kep'))
+        #print(k.findall('{http://hex.hasznaltauto.hu/ns}kep'))
         for kep in k.findall('{http://hex.hasznaltauto.hu/ns}kep'):
             url = kep.text
             print(url)
