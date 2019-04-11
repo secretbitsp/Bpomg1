@@ -78,13 +78,13 @@
       <!-- The slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="la.jpg" alt="Los Angeles" width="500" height="500">
+          <img class="img-fluid" src="/static/banner2.jpg" alt="Los Angeles">
         </div>
         <div class="carousel-item">
-          <img src="chicago.jpg" alt="Chicago" width="500" height="500">
+          <img src="/static/banner2.jpg" alt="Chicago" width="50" height="50">
         </div>
         <div class="carousel-item">
-          <img src="/static/ssangyong.jpg" alt="New York" width="1100" height="500">
+          <img src="/static/ssangyong.jpg" alt="New York" width="50" height="50">
         </div>
       </div>
 
@@ -439,20 +439,7 @@
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    <script>
 
-
-      $(document).ready(function () {
-          if (screen.width < 768) {
-              $(".max-width").hide();
-          }
-          else {
-
-              $(".max-width").show();
-          }
-
-      });
-  </script>
     <!-- Start of LiveChat code -->
   <script type="text/javascript">
   window.__lc = window.__lc || {};

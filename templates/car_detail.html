@@ -17,7 +17,7 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" class="img-fluid" href="{% url 'fooldal' %}"><img src="/static/.jpg"></a>
+        <a class="navbar-brand" class="img-fluid" href="{% url 'fooldal' %}">Budapest Autószalon</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,100 +51,179 @@
         </div>
       </div>
     </nav>
-	<div class="container">
-		<div class="card">
-			<div class="container-fluid">
-				<div class="wrapper row">
-          <div class="container my-4">
-            <!--Carousel Wrapper-->
-            <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
-              <!--Slides-->
-              <div class="carousel-inner" role="listbox">
-                {% for image in car.images.all %}
-                <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                  <img class="d-block w-100" src="{{image.url}}" alt="First slide">
-                </div>
-                {%endfor%}
 
-              <!--/.Slides-->
-              <!--Controls-->
-              <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-              <!--/.Controls-->
 
-              <ol class="carousel-indicators">
-                {% for image in car.images.all %}
-                <li data-target="#carousel-thumb" data-slide-to="{{forloop.counter0}}" class="active"> <img class="d-block w-100" src="{{image.url}}"class="img-fluid"></li>
-                {% endfor %}
-              </ol>
+  <!--Main layout-->
+  <main class="mt-5 pt-4">
+    <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <!--Carousel Wrapper-->
+          <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              {% for image in car.images.all %}
+              <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                <img class="d-block w-70" class="img-fluid" src="{{image.url}}" alt="First slide">
+              </div>
+              {%endfor%}
+
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+
+            <ol class="carousel-indicators">
+              {% for image in car.images.all %}
+              <li data-target="#carousel-thumb" data-slide-to="{{forloop.counter0}}" class="active"> <img class="d-block w-100" src="{{image.url}}"class="img-fluid"></li>
+              {% endfor %}
+            </ol>
+          </div>
+          <!--/.Carousel Wrapper-->
+        </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <!--Content-->
+          <div class="p-4">
+
+            <div class="mb-3">
+              <a href="">
+                <span class="badge purple mr-1">{{ car.rank}}</span>
+              </a>
+              <a href="">
+                <span class="badge blue mr-1">{{car.kategoria}}</span>
+              </a>
+              <a href="">
+                <span class="badge red mr-1">{{car.modell}}</span>
+              </a><br/>
             </div>
-            <!--/.Carousel Wrapper-->
+
+            <p class="lead">
+              <span class="mr-1">
+              <!--  <del>futottkm: {{car.futottkm}}</del>-->
+              </span>
+              <span>{{car.tipus}}</span>,>
+              <span>{{car.uzemanyag}}</span>
+
+              <span>100</span>
+
+
+            </p>
+
+            <p class="lead font-weight-bold">Felszereltség</p>
+
+            <p>{{car.felszereltseg}}</p>
+
+            <form class="d-flex justify-content-left">
+              <!-- Default input -->
+              <button class="btn btn-primary btn-md my-0 p" type="submit">Érdekel
+                <i class="fas fa-shopping-cart ml-1"></i>
+              </button>
+
+            </form>
 
           </div>
-					<div class="preview col-md-6">
+          <!--Content-->
 
-						<div class="preview-pic tab-content">
-						  <div class="tab-pane active" id="pic-1"><img src="" /></div>
-						</div>
+        </div>
+        <!--Grid column-->
 
-						<ul class="preview-thumbnail nav nav-tabs">
-              {% for image in car.images.all %}
-						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="{{image.url}}" /></a></li>
-              {% endfor %}
-						</ul>
-					</div>
+      </div>
+      <!--Grid row-->
 
-					<div class="details col-md-6">
-						<h3 class="product-title">      {{car.marka}} - {{car.modell}}</h3>
-            <p class="product-title">    {{car.tipus}}</p>
+      <hr>
 
-            <div class="action">
-              <a href="{% url 'HahuKapcsolat:HahuKapcsolat' %}" class="btn btn-primary">Érdekel az autó</a>
-              <button class="like btn btn-default" type="button">Telefon:<span class="fa fa-heart"></span></button>
-            </div>
-            <br />
-            <h4 class="price">Vételár: <span></span></h4>
-            <h5 class="sizes">Évjárat: {{car.evjarat}}						</h5>
-            <h5 class="sizes">Üzemanyag: 		{{car.uzemanyag}}				</h5>
-            <p class="sizes">Állapot: 						</p>
-            <p class="sizes">Kivitel: 						</p>
-            <h5 class="sizes">Jármű adatok: 						</h5>
-            <p  class="sizes">Ajtók száma: 						</p>
-            <p class="sizes">Klíma fajtája: 						</p>
-            <p class="sizes">Hengerűrtartalom: 						</p>
-            <p class="sizes">Teljesítmény: 						</p>
-            <p class="sizes">Henger-elrendezés: 						</p>
-            <p class="sizes">Teljesítmény: 						</p>
+    </div>
+  </main>
+  <!--Main layout-->
+  <!-- Footer -->
+  <footer id="myFooter">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-3">
+                  <h5>Kezdőlap</h5>
+                  <ul>
+                      <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                      <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                      <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-3">
+                  <h5>Rólunk</h5>
+                  <ul>
+                      <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                      <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                      <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
+                  </ul>
+              </div>
 
+              <div class="col-sm-3">
+                  <h5>Külső linkek</h5>
+                  <ul>
+                      <li><a href="http://www.ssangyongbudapest.hu/">Sangyong Budapest</a></li>
+                      <li><a href="http://www.mitsubishibudapest.hu/">Mitsubishi Budapest</a></li>
+                      <li><a href="http://www.subarubudapest.hu/">Subaru Budapest</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-3 info">
+                  <h5>Budapest Autószalon</h5>
+                  <p>   Opel-Mitsubishi-Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
 
+                      h-1044 Budapest Váci út 76-80</br>Tel: 061-803-6050  </br>Fax: 061-803-6051</br>  </p>
+              </div>
+          </div>
+      </div>
 
-
-
-            <div class="action">
-              <button class="btn btn-light" type="button"><span class="fa fa-phone"> </span>+36</button>
-            </div>
-						<p class="product-description">Leiras</p>
-
-
-						<div class="action">
-              <a href="{% url 'HahuKapcsolat:HahuKapcsolat' %}" class="btn btn-primary">Érdekel az autó</a>
-							<!--<button class="add-to-cart btn btn-default" type="button">Érdekel az autó</button>-->
-							<button class="like btn btn-default" type="button">Telefon:<span class="fa fa-heart"></span></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+  </footer>
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
-  </body>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script>
+
+
+    $(document).ready(function () {
+        if (screen.width < 768) {
+            $(".max-width").hide();
+        }
+        else {
+
+            $(".max-width").show();
+        }
+
+    });
+</script>
+  <!-- Start of LiveChat code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 8624479;
+window.__lc.chat_between_groups = false;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<!-- End of LiveChat code -->
+
+</body>
+
+
+
 </html>
