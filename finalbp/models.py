@@ -20,7 +20,7 @@ class Hahudeta(models.Model):
         #klima = models.CharField(max_length=100)
         sebessegvalto = models.CharField(max_length=255, null=True)
         hengerurtartalom = models.CharField(max_length=255, null=True)
-        felszereltseg = models.CharField(max_length=255, null=True)
+        felszereltseg = models.TextField(null=True)
         teljesitmeny = models.CharField(max_length=255, null=True)
         hengerelrendezes = models.CharField(max_length=255, null=True)
         telefonszam = models.CharField(max_length=255, null=True)
