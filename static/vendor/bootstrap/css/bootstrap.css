@@ -35,6 +35,10 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.ctk{
+  width: 80%;
+}
+
 *,
 *::before,
 *::after {
@@ -5968,9 +5972,9 @@ button.close {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 20px;
+  width: 50px;
   height: 50%;
-  background: transparent no-repeat center center;
+  background: #fff;
   background-size: 100% 100%;
 }
 

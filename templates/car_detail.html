@@ -52,27 +52,28 @@
       </div>
     </nav>
 
+<!--Main layout-->
+<main class="mt-5 pt-4">
+  <div class="container dark-grey-text mt-5">
+    <hr>
 
-  <!--Main layout-->
-  <main class="mt-5 pt-4">
-    <div class="container dark-grey-text mt-5">
+    <!--Grid row-->
+    <div class="row wow fadeIn">
 
-      <!--Grid row-->
-      <div class="row wow fadeIn">
-
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
+      <!--Grid column-->
+      <div class="col-md-6 mb-4">
 
           <!--Carousel Wrapper-->
           <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
             <!--Slides-->
-            <div class="carousel-inner" role="listbox">
+            <div class="ctk" role="listbox">
               {% for image in car.images.all %}
               <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                <img class="d-block w-70" class="img-fluid" src="{{image.url}}" alt="First slide">
+                <img class="img-fluid" src="{{image.url}}" alt="First slide">
               </div>
               {%endfor%}
 
+            </div>
             <!--/.Slides-->
             <!--Controls-->
             <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
@@ -84,75 +85,73 @@
               <span class="sr-only">Next</span>
             </a>
             <!--/.Controls-->
-
             <ol class="carousel-indicators">
               {% for image in car.images.all %}
-              <li data-target="#carousel-thumb" data-slide-to="{{forloop.counter0}}" class="active"> <img class="d-block w-100" src="{{image.url}}"class="img-fluid"></li>
+                        <li data-target="#carousel-thumb" data-slide-to="{{forloop.counter0}}" class="active"> <img class="d-block w-100" src="{{image.url}}"class="img-fluid"></li>
               {% endfor %}
             </ol>
           </div>
           <!--/.Carousel Wrapper-->
-        </div>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
-
-          <!--Content-->
-          <div class="p-4">
-
-            <div class="mb-3">
-              <a href="">
-                <span class="badge purple mr-1">{{ car.rank}}</span>
-              </a>
-              <a href="">
-                <span class="badge blue mr-1">{{car.kategoria}}</span>
-              </a>
-              <a href="">
-                <span class="badge red mr-1">{{car.modell}}</span>
-              </a><br/>
-            </div>
-
-            <p class="lead">
-              <span class="mr-1">
-              <!--  <del>futottkm: {{car.futottkm}}</del>-->
-              </span>
-              <span>{{car.tipus}}</span>,>
-              <span>{{car.uzemanyag}}</span>
-
-              <span>100</span>
-
-
-            </p>
-
-            <p class="lead font-weight-bold">Felszereltség</p>
-
-            <p>{{car.felszereltseg}}</p>
-
-            <form class="d-flex justify-content-left">
-              <!-- Default input -->
-              <button class="btn btn-primary btn-md my-0 p" type="submit">Érdekel
-                <i class="fas fa-shopping-cart ml-1"></i>
-              </button>
-
-            </form>
-
-          </div>
-          <!--Content-->
-
-        </div>
-        <!--Grid column-->
 
       </div>
-      <!--Grid row-->
+      <!--Grid column-->
 
-      <hr>
+      <!--Grid column-->
+      <div class="col-md-6 mb-4">
+
+        <!--Content-->
+        <div class="p-4">
+
+          <div class="mb-3">
+            <a href="">
+              <span class="badge purple mr-1">{{ car.rank}}</span>
+            </a>
+            <a href="">
+              <span class="badge blue mr-1">Kategoria: {{car.kategoria}}</span>
+            </a>
+            <a href="">
+              <span class="badge red mr-1">Modell: {{car.modell}}</span>
+            </a>
+          </div>
+
+          <p class="lead ">
+
+            <h3 font-weight-bold>{{car.marka}}</h3>
+
+            <h4 >{{car.tipus}}</h4>
+          </p>
+
+         <p class="lead font-weight-bold"></p>
+
+          <p>Évjárat: {{car.evjarat}}</p>
+          <p>Futott Km: {{car.futottkm}}</p>
+          <p>Üzemanyag: {{car.uzemanyag}}</p>
+
+            <!-- Default input -->
+
+            <button class="btn btn-primary btn-md my-0 p" type="submit"> Telefoszám: {{car.telefonszam}}
+              <i class="fas ml-1"></i>
+            </button>
+
+
+        </div>
+        <!--Content-->
+
+      </div>
+      <!--Grid column-->
 
     </div>
-  </main>
-  <!--Main layout-->
+    <!--Grid row-->
+
+    <hr>
+
+
+  </div>
+</main>
+<!--Main layout-->
+
+</footer>
+<!--/.Footer-->
   <!-- Footer -->
   <footer id="myFooter">
       <div class="container">

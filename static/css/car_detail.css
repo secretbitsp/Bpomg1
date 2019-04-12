@@ -122,7 +122,14 @@ img {
   color: #555;
   font-weight: 800; }
 
+.carousel-inner2{
+  position: relative;
+  width: 100%;!important
+  overflow: hidden;
+  left: 3%;!important
+  top: -9px;
 
+}
 
 
 .add-to-cart, .like {
@@ -178,4 +185,4 @@ img {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
-/*# sourceMappingURL=style.css.map
+/*  sourceMappingURL=style.css.map*/
