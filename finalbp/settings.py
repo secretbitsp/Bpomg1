@@ -2,8 +2,7 @@
 import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'media_root')
-# Quick-start development settings - unsuitable for production
+                # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -154,7 +153,7 @@ TEMPLATE_DIRS = (
 MEDIA_URL ='/media/'
 
 MEDIA_ROOT = '/media/'
-
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 
 
 
