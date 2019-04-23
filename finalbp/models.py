@@ -18,6 +18,7 @@ class Hahudeta(models.Model):
         futottkm = models.CharField(max_length=255)
         evjarat = models.CharField(max_length=255)
         telefonszam = models.CharField(max_length=255, null=True)
+        ar = models.CharField(max_length=255, null=True)
         #klima = models.CharField(max_length=100)
         '''sebessegvalto = models.CharField(max_length=255, null=True)
         hengerurtartalom = models.CharField(max_length=255, null=True)

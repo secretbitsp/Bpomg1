@@ -35,7 +35,7 @@ def hello2(request):
     '''file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
     tree = ET.ElementTree()
     tree.parse(file)'''
-    '''tree = ET.parse('alphamobil_hex.xml')
+    tree = ET.parse('alphamobil_hex.xml')
     root = tree.getroot()
     #ET.dump(tree)
     #for elem in tree.iter():
@@ -83,8 +83,11 @@ def hello2(request):
             felszereltseg = autok.findall('{http://hex.hasznaltauto.hu/ns}felszereltseg')[0].text
             telefonszam  = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam')[0].text
             futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
+            ar = autok.findall('{http://hex.hasznaltauto.hu/ns}ar')[0].text
+            print(ar)
+
             a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm,
-                                         telefonszam = telefonszam)
+                                         telefonszam=telefonszam, ar=ar)
             a.save()
             cars[rank] = a
     x = root.iter('{http://hex.hasznaltauto.hu/ns}kepek')
@@ -100,7 +103,7 @@ def hello2(request):
             if not car:
                 continue
             # image = urlretrieve(url)
-            cached_image = CachedImage.objects.create(url=url, car=car)'''
+            cached_image = CachedImage.objects.create(url=url, car=car)
     make = request.GET.get('make')
     model = request.GET.get('model')
     contact_list = Hahudeta.objects.all()
