@@ -106,11 +106,14 @@ def hello2(request):
             cached_image = CachedImage.objects.create(url=url, car=car)'''
     make = request.GET.get('make')
     model = request.GET.get('model')
+    fuel = request.GET.get('fuel')
     contact_list = Hahudeta.objects.all()
     if make:
         contact_list = contact_list.filter(marka=make)
     if model:
         contact_list = contact_list.filter(modell=model)
+    if fuel:
+        contact_list = contact_list.filter(uzemanyag=fuel)
         #contact_list = contact_list.filter(price__gt=1000)
 
     paginator = Paginator(contact_list, 25) # Show 25 contacts per page
@@ -122,7 +125,7 @@ def hello2(request):
         models = list(set(Hahudeta.objects.filter(marka=make).values_list('modell', flat=True)))
     else:
         models = list(set(Hahudeta.objects.values_list('modell', flat=True)))
-    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models, 'selected_make': make, 'selected_model': model })
+    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models, 'selected_make': make, 'selected_model': model, 'fuels': fuel, 'selected_fuel' : fuel})
 
 
 def car_detail(request, car_id):

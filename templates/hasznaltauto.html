@@ -12,6 +12,8 @@
         <link href="{% static 'css/card.css' %}" rel="stylesheet">
         <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
 
+        <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
 
         <title>Budapest Autószalon használt autók</title>
     </head>
@@ -66,9 +68,15 @@
                     {% endfor %}
                 </select>
                 <select name="models" id="models" class="form-control">
-                    <option>Model</option>
+                    <option>Modell</option>
                     {% for model in models%}
                       <option value='{{model}}' {% if model == selected_model %}selected{% endif %}>{{model}}</option>
+                    {% endfor %}
+                </select>
+                <select name="price" id="price" class="form-control">
+                    <option>Üzemanyag</option>
+                    {% for fuel in fuels%}
+                      <option value='{{fuel}}' {% if model == selected_fuel %}selected{% endif %}>{{fuels}}</option>
                     {% endfor %}
                 </select>
               </div>
@@ -115,11 +123,10 @@
               <img class="locandina" src="{{e.images.first.url}}"/>
               <h1>{{ e.marka}} {{ e.modell}}  </h1>
               <h4>{{e.tipus}}</h4>
-              <h5 class="minutes">Ár: {{e.ar}}</h5>
+              <h5 class="minutes"><i class="fas fa-tags"></i>Ár: {{e.ar}}</h5>
 
-              <span class="minutes"></span>
-              <p class="minutes">Üzemanyag: {{ e.uzemanyag}}</p>
-              <p class="minutes">Évjárat: {{e.evjarat}}</p></a>
+              <p class="minutes"><i class="fas fa-gas-pump"></i> Üzemanyag: {{ e.uzemanyag}}</p>
+              <p class="minutes"><i class="far fa-calendar-alt"></i>Évjárat: {{e.evjarat}}</p></a>
             </div>
 
             <!--
