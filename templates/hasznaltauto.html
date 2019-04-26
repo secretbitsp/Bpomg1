@@ -113,8 +113,10 @@
             <div class="movie_header">
               <a  href="/cars/{{e.id}}">
               <img class="locandina" src="{{e.images.first.url}}"/>
-              <h1>{{ e.marka}} - {{ e.modell}}  </h1>
+              <h1>{{ e.marka}} {{ e.modell}}  </h1>
               <h4>{{e.tipus}}</h4>
+              <h5 class="minutes">Ár: {{e.ar}}</h5>
+
               <span class="minutes"></span>
               <p class="minutes">Üzemanyag: {{ e.uzemanyag}}</p>
               <p class="minutes">Évjárat: {{e.evjarat}}</p></a>
