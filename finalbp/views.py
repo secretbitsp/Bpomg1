@@ -121,11 +121,15 @@ def hello2(request):
     data = paginator.get_page(page)
     print("Data updated")
     makes = list(set(Hahudeta.objects.values_list('marka',  flat=True)))
+    fuels = list(set(Hahudeta.objects.values_list('uzemanyag',  flat=True)))
     if make:
         models = list(set(Hahudeta.objects.filter(marka=make).values_list('modell', flat=True)))
+        fuels = list(set(Hahudeta.objects.filter(marka=make).values_list('uzemanyag', flat=True)))
     else:
         models = list(set(Hahudeta.objects.values_list('modell', flat=True)))
-    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models, 'selected_make': make, 'selected_model': model, 'fuels': fuel, 'selected_fuel' : fuel})
+    '''else:
+        models = list(set(Hahudeta.objects.values_list('modell', flat=True)))'''
+    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models, 'fuels':fuels, 'selected_make': make, 'selected_model': model, 'selected_model': fuel})
 
 
 def car_detail(request, car_id):
