@@ -1,4 +1,5 @@
 import os
+
 from django.core.files import File
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -35,7 +36,7 @@ def hello2(request):
     '''file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
     tree = ET.ElementTree()
     tree.parse(file)'''
-    '''tree = ET.parse('alphamobil_hex.xml')
+    tree = ET.parse('alphamobil_hex.xml')
     root = tree.getroot()
     #ET.dump(tree)
     #for elem in tree.iter():
@@ -72,6 +73,7 @@ def hello2(request):
                 hengerelrendezes = None
             try:
                 teljesitmeny = autok.findall('{http://hex.hasznaltauto.hu/ns}teljesitmeny')[0].text
+                print(teljesitmeny)
             except IndexError:
                 teljesitmeny = None
             hengerurtartalom  = autok.findall('{http://hex.hasznaltauto.hu/ns}hengerurtartalom')[0].text
@@ -80,14 +82,31 @@ def hello2(request):
                 sebessegvalto   = autok.findall('{http://hex.hasznaltauto.hu/ns}sebessegvalto')[0].text
             except IndexError:
                 sebessegvalto = None
+            try:
+                szin   = autok.findall('{http://hex.hasznaltauto.hu/ns}szin')[0].text
+            except IndexError:
+                szin = None
+            try:
+                muszaki = autok.findall('{http://hex.hasznaltauto.hu/ns}muszaki')[0].text
+            except IndexError:
+                muszaki = None
             felszereltseg = autok.findall('{http://hex.hasznaltauto.hu/ns}felszereltseg')[0].text
             telefonszam  = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam')[0].text
             futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
             ar = autok.findall('{http://hex.hasznaltauto.hu/ns}ar')[0].text
+            allapot = autok.findall('{http://hex.hasznaltauto.hu/ns}allapot')[0].text
+            email = autok.findall('{http://hex.hasznaltauto.hu/ns}emailcim')[0].text
+
             print(ar)
 
-            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria, modell=modell, tipus=tipus, uzemanyag=uzemanyag, evjarat=evjarat, futottkm=futottkm,
-                                         telefonszam=telefonszam, ar=ar)
+            a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria,
+                                        modell=modell, tipus=tipus, uzemanyag=uzemanyag,
+                                        evjarat=evjarat, futottkm=futottkm,
+                                         telefonszam=telefonszam, ar=ar,
+                                         sebessegvalto=sebessegvalto,
+                                         hengerelrendezes=hengerelrendezes,
+                                         allapot=allapot, teljesitmeny=teljesitmeny,
+                                         muszaki=muszaki, szin=szin, email=email)
             a.save()
             cars[rank] = a
     x = root.iter('{http://hex.hasznaltauto.hu/ns}kepek')
@@ -103,7 +122,7 @@ def hello2(request):
             if not car:
                 continue
             # image = urlretrieve(url)
-            cached_image = CachedImage.objects.create(url=url, car=car)'''
+            cached_image = CachedImage.objects.create(url=url, car=car)
     make = request.GET.get('make')
     model = request.GET.get('model')
     fuel = request.GET.get('fuel')

@@ -126,13 +126,19 @@
 
           </p>
 
-         <p class="lead font-weight-bold"></p>
+         <p class="lead font-weight-bold"> Műszaki paraméterek</p>
 
-          <p><i class="far fa-calendar-alt"></i> Évjárat: {{car.evjarat}}</p>
-          <p><i class="fas fa-road"></i> Futott Km: {{car.futottkm}}</p>
-          <p><i class="fas fa-gas-pump"></i> Üzemanyag: {{car.uzemanyag}}</p>
+          <p> <b>Évjárat:</b> {{car.evjarat}}</p>
+          <p><b>Futott Km:</b> {{car.futottkm}}</p>
+          <p><b> Motor:</b> {{car.teljesitmeny}}; hengerelrendezés: {{car.hengerelrendezes}}</p>
+          <p><b> Váltó:</b> {{car.sebessegvalto}}</p>
+          <p><b> Szín:</b> {{car.szin}}</p>
+          <p><b> Műszaki vizsga:</b> {{car.muszaki}}</p>
+          <p><b> Üzemanyag:</b>  {{car.uzemanyag}}</p>
           <hr>
           <p><i class="fas fa-phone-square"></i> Elérhetőségeink: {{car.telefonszam}}</p>
+          <p><i class="fas fa-envelope"></i>Email: <a href = "mailto: {{car.email}}">{{car.email}}</a></p>
+
 
             <!-- Default input
 

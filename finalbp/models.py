@@ -20,11 +20,14 @@ class Hahudeta(models.Model):
         telefonszam = models.CharField(max_length=255, null=True)
         ar = models.CharField(max_length=255, null=True)
         #klima = models.CharField(max_length=100)
-        '''sebessegvalto = models.CharField(max_length=255, null=True)
-        hengerurtartalom = models.CharField(max_length=255, null=True)
-        felszereltseg = models.TextField(null=True)
+        sebessegvalto = models.CharField(max_length=255, null=True)
+        hengerelrendezes = models.CharField(max_length=255, null=True)
+        allapot = models.TextField(null=True)
         teljesitmeny = models.CharField(max_length=255, null=True)
-        hengerelrendezes = models.CharField(max_length=255, null=True)'''
+        muszaki = models.CharField(max_length=255, null=True)
+        szin =  models.CharField(max_length=255, null=True)
+        email =  models.CharField(max_length=255, null=True)
+
 
         def __str__(self):
             return self.rank
