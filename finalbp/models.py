@@ -26,7 +26,6 @@ class Hahudeta(models.Model):
         muszaki = models.CharField(max_length=255, null=True)
         szin =  models.CharField(max_length=255, null=True)
         email =  models.CharField(max_length=255, null=True)
-        leiras =  models.CharField(max_length=255, null=True)
 
 
         def __str__(self):

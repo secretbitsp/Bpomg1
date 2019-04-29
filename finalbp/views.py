@@ -90,10 +90,6 @@ def hello2(request):
                 muszaki = autok.findall('{http://hex.hasznaltauto.hu/ns}muszaki')[0].text
             except IndexError:
                 muszaki = None
-            try:
-                leiras = autok.findall('{http://hex.hasznaltauto.hu/ns}leiras')[0].text
-            except IndexError:
-                leiras = None
             felszereltseg = autok.findall('{http://hex.hasznaltauto.hu/ns}felszereltseg')[0].text
             telefonszam  = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam')[0].text
             futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
@@ -110,7 +106,7 @@ def hello2(request):
                                          sebessegvalto=sebessegvalto,
                                          hengerelrendezes=hengerelrendezes,
                                          allapot=allapot, teljesitmeny=teljesitmeny,
-                                         muszaki=muszaki, szin=szin, email=email, leiras=leiras)
+                                         muszaki=muszaki, szin=szin, email=email)
             a.save()
             cars[rank] = a
     x = root.iter('{http://hex.hasznaltauto.hu/ns}kepek')
