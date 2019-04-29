@@ -19,7 +19,6 @@ class Hahudeta(models.Model):
         evjarat = models.CharField(max_length=255)
         telefonszam = models.CharField(max_length=255, null=True)
         ar = models.CharField(max_length=255, null=True)
-        #klima = models.CharField(max_length=100)
         sebessegvalto = models.CharField(max_length=255, null=True)
         hengerelrendezes = models.CharField(max_length=255, null=True)
         allapot = models.TextField(null=True)
@@ -27,6 +26,7 @@ class Hahudeta(models.Model):
         muszaki = models.CharField(max_length=255, null=True)
         szin =  models.CharField(max_length=255, null=True)
         email =  models.CharField(max_length=255, null=True)
+        leiras =  models.CharField(max_length=255, null=True)
 
 
         def __str__(self):

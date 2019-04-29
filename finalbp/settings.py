@@ -11,7 +11,7 @@ SECRET_KEY = 'yn16*n1ri^(ay31_*xivhts1=m=*&jl(o33eoj1&*y5%9@o4d1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','localhost','116.203.79.255', 'finalbp.herokuapp.com','www.budapestautoszalon.hu']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','116.203.79.255', 'finalbp.herokuapp.com','www.budapestautoszalon.hu']
 
 # Application definition
 #136.243.150.82

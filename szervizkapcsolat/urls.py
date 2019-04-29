@@ -7,4 +7,5 @@ app_name ='szervizkap'
 
 urlpatterns = [
     url(r'^$',views.szervizkapcsi, name="szervizkapcsi"),
+
 ]

@@ -18,6 +18,8 @@ urlpatterns = [
     url(r'^cars/(?P<car_id>\d+)', views.car_detail),
     url(r'^hahu-kapcsolat/', include('hahu_kapcsolat.urls')),
     url(r'^szervizkapcsolat/', include('szervizkapcsolat.urls')),
+    url(r'^hasznaltkapcsolat/', include('szervizkapcsolat.urls')),
+
 
 
 

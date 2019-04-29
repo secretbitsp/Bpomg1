@@ -6,7 +6,7 @@ from django.conf import settings
 app_name ='HahuKapcsolat'
 
 urlpatterns = [
-    url(r'^$',views.contact_us, name="HahuKapcsolat"),
+    url(r'^$',views.hasznaltkapcsi, name="hahukapcsi"),
 ]
 
 
