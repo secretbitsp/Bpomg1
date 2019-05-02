@@ -10,6 +10,9 @@
   <!-- Bootstrap core CSS -->
   <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
   <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
+  <link href="{% static 'css/servicepara.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 
   <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
   <!-- Custom styles for this template -->
@@ -54,82 +57,49 @@
       </div>
     </div>
   </nav>
-    <!-- Page Content -->
-    <div class="container">
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Budapest Autószalon Szerviz
-        <small></small>
-      </h1>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="{%  url 'fooldal' %}">Főoldal</a>
-        </li>
-        <li class="breadcrumb-item active">Szerviz</li>
-      </ol>
+<div id="slide1" class="slide">
+  <div class="title">
+    <h1 class="animated  lightSpeedIn delay-1s">Teljes körű autószerviz</h1>
+    <p class="animated  lightSpeedIn delay-1s">Komplex szolgáltatást nyújtunk. Autójával kapcsolatos minden javítást, karbantartást helyben végzünk.
+      Az Budapest Autószalon független személygépkocsi szervize a legjobb szolgáltatásokat kínálják az Ön gépjárművének.
+      Szakértő tanácsadóink és magasan kvalifikált szerviz munkatársaink gondoskodnak gépjárműve optimális karbantartásáról és javításáról.
+      Ideális megoldásokat kínálunk továbbá gépkocsi átépítések és csomagtér-kialakítások tekintetében is.</p>
+    <p class="lead"><a href="{% url 'szervizkap:szervizkapcsi' %}" class="btn btn-success">Szerviz bejelentkezés</a></p>
+  </div>
+</div>
 
-      <!-- Image Header -->
-      <img class="img-fluid rounded mb-4" src="/static/car-service-2.jpg" alt="">
+<div  id="slide2" class="slide">
+  <div class="title">
+    <h1 class="animated  lightSpeedIn delay-2s">Autóklima</h1>
+    <p class="animated  lightSpeedIn delay-2s">Autóklíma javítás és karbantartás minden személyautóhoz.
+      Vírustalanítás,
+      Allergiamentesítés,
+      Penész gombátlanítás,
+      Antibakteriális kezelés,
+      Poratka megsemmisítés,
+      Beltéri szagtalanítás (kisállat, dohányfüst)</p>
+    <p><a href="{% url 'szervizkap:szervizkapcsi' %}" class="btn btn-success">Szerviz bejelentkezés</a></p>
+  </div>
+</div>
 
-      <!-- Marketing Icons Section -->
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Olajcsere akció </h4>
-            <div class="card-body">
-              <p class="card-text">A korszerű autókban 20-30 ezer kilométerenként kell motorolajat cserélni.
-                 A járművek egy része már automatikusan jelzi az alacsony olajszintet a műszerfalon található visszajelzőn.
-                 Ha a műszerfalon lévő olajnyomáslámpa világít, az autót azonnal le kell állítani!
-                 Ez a lámpa nem az olajszintet mutatja, hanem azt, hogy a kenési rendszer jól működik-e vagy sem!
-                 FOGLALJ MOST IDŐPONTOT!</p>
-            </div>
-            <div class="card-footer">
-              <a href="{% url 'szervizkap:szervizkapcsi' %}" class="btn btn-primary">Bövebben</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Ingyenes átvizsgálás</h4>
-            <div class="card-body">
-              <p class="card-text">
-Ingyenes átvizsgálás
-A gépjármű veszélyes üzem. Csukd le a motorháztetőt és hozd el bármelyik szervizünkbe az autód. Szakembereink szakszerűen átvizsgálják a gumikkal együtt.
+<div id="slide3" class="slide">
+  <div class="title">
+    <h1 class="animated  lightSpeedIn delay-3s">Karosszéria javítás</h1>
+    <p class="animated  lightSpeedIn delay-3s">Karosszéria javítás és fényezés. Teljes körű kárügyintézést is vállalunk.</p>
+    <p class="lead"><a href="{% url 'szervizkap:szervizkapcsi' %}" class="btn btn-success">Szerviz bejelentkezés</a></p>
+  </div>
+</div>
 
-Fontosnak tartjuk, hogy pontos képet kapj autód állapotáról, ezért az átvizsgálás eredményeit pontosan dokumentáljuk és elmagyarázzuk.
-
-FOGLALJ MOST IDŐPONTOT!.</p>
-            </div>
-            <div class="card-footer">
-              <a href="{% url 'szervizkap:szervizkapcsi' %}" class="btn btn-primary">Érdekel</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Időszakos szerviz</h4>
-            <div class="card-body">
-              <p class="card-text">Az anyag és alkatrészköltséget tételesen számlázzuk ki.
-
-A Nagyszerviz tartalmazza mindazt, amit a Kisszerviz, kiegészítve azt néhány egyéb alkatrészcserével (meghajtószíj, pollenszűrő, üzemanyagszűrő, gyújtógyertya).
-
-A szervizelés időtartama kb. 60-90 perc.
-
-Foglalj most időpontot!</p>
-            </div>
-            <div class="card-footer">
-              <a href="{% url 'szervizkap:szervizkapcsi' %}" class="btn btn-primary">Érdekel</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-    <!-- Footer -->
+<div id="slide4" class="slide header">
+    <h2 class="animated  zoomInDown delay-4s" class="text-justify">
+Műszereinket az autók fejlődésével együtt fejlesztjük, és ehhez mérten képezzük szakértő munkatársainkat.<br />
+ <br />Műszaki hibás járművek esetében magasan kvalifikált kollégáink a gyári adatbázisok és a típusfüggő diagnosztikai rendszerek felhasználásával
+  állapítják meg gépkocsijának meghibásodási tényezőit.<br /> A probléma feltárását követően hibalistával és árajánlatban
+   tájékoztatják Önt a várható költségekről és a munkafolyamatok időtartamáról.<br />
+  <br />  Budapest 1044 Külső Váci út 76-80 szám alatt várjuk kedves ügyfeleinket sérült, hibás, vagy egyszerűen szervizelésre váró gépkocsijaikkal.</h2>
+</div>
     <!-- Footer -->
     <footer id="myFooter">
         <div class="container">
@@ -167,6 +137,9 @@ Foglalj most időpontot!</p>
                 </div>
             </div>
         </div>
+
+
+
     </footer>
 
     <!-- Bootstrap core JavaScript -->

@@ -13,12 +13,8 @@ urlpatterns = [
     url(r'^ujautok/', include('bpcore.urls')),
     url(r'^hasznaltauto/$',views.hello2, name="hasznalt"),
     url(r'^kapcsolat/', include('sendemail.urls')),
-    #url(r'^feeds/models-by-make-id/(\d+)/$', 'autos.views.feed_models'),
-    url(r'^szerviz-kapcsolat/', include('polls.urls')),
     url(r'^cars/(?P<car_id>\d+)', views.car_detail),
-    url(r'^hahu-kapcsolat/', include('hahu_kapcsolat.urls')),
     url(r'^szervizkapcsolat/', include('szervizkapcsolat.urls')),
-    url(r'^hasznaltkapcsolat/', include('szervizkapcsolat.urls')),
 
 
 
