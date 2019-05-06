@@ -3,7 +3,7 @@ from django.conf.urls import url
 from . import views
 from django.conf import settings
 
-app_name ='HahuKapcsolat'
+app_name ='hahukap'
 
 urlpatterns = [
     url(r'^$',views.hasznaltkapcsi, name="hahukapcsi"),

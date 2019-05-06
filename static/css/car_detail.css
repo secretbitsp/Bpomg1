@@ -62,3 +62,8 @@ img {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+
+          .button-large {
+              font-size: 110%;
+          }

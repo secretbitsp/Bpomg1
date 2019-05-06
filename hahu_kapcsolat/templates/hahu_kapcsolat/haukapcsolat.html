@@ -1,6 +1,139 @@
-<h2>Contact Us</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit" />
-</form>
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> Hasznaltautó érdeklödés Budapest Autószalon</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
+    <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
+    <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" class="img-fluid" href="{% url 'fooldal' %}">Budapest Autószalon</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ajánlataink
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/opellogo.png"></a>
+
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Mitsubishi-logo.png"></a>
+
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Subaru-logo.png"></a>
+
+                <a class="dropdown-item" class="img-fluid" href=" {% url 'autolista:ujautok' %}"><img src="/static/Ssangyong-logo.png"></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'hasznalt' %}">Használt autó</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <body>
+
+        <div class="container-fluid">
+          <br />
+          <div class="szerviz-text" class="page-header">
+            <h2></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+                <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Kérdezzen rá az autóra!
+                </div>
+                <div class="card-body">
+                  <div class="col-xs-7 col-xs-6" >
+                  <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}</div>
+                    <input class="btn btn-primary " type="submit" value="Küldés" />
+                  </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-5 col-sm-6 col-lg-4" >
+          <div class="card bg-light mb-3">
+              <div class="card-header bg-dark text-white text-uppercase"><i class="fa fa-home"></i> Cimünk </div>
+                <div class="card-body">
+                    <p>Váci út 76-80</p>
+                    <p>1044 Budapest</p>
+                    <p>H-P 8:00 - 17:00</p>
+                    <p>Email : info@budapestautoszalon.hu</p>
+                    <p>Tel: +36 1 803 6056</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="myFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h5>Kezdőlap</h5>
+                        <ul>
+                            <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                            <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                            <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Rólunk</h5>
+                        <ul>
+                            <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                            <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                            <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Külső linkek</h5>
+                        <ul>
+                            <li><a href="http://www.ssangyongbudapest.hu/">Sangyong Budapest</a></li>
+                            <li><a href="http://www.mitsubishibudapest.hu/">Mitsubishi Budapest</a></li>
+                            <li><a href="http://www.subarubudapest.hu/">Subaru Budapest</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 info">
+                        <h5>Budapest Autószalon</h5>
+                        <p>   Opel-Mitsubishi-Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+
+                            h-1044 Budapest Váci út 76-80</br>Tel: 061-803-6050  </br>Fax: 061-803-6051</br>  </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+      </footer>
+      <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+      <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  </body>
+
+
+
+</html>

@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'^kapcsolat/', include('sendemail.urls')),
     url(r'^cars/(?P<car_id>\d+)', views.car_detail),
     url(r'^szervizkapcsolat/', include('szervizkapcsolat.urls')),
-
+    url(r'^hahukapcsolat', include('hahu_kapcsolat.urls')),
 
 
 
