@@ -123,7 +123,7 @@
 
 @media screen and (max-width: 768px) {
   .movie_card{
-    width: 80%;
+    width: 100%;
     margin: 50px auto;
     min-height: 220px;
     height: auto;
@@ -148,6 +148,18 @@
     width: 100%;
     display: inline-grid;
   }
+
+    .locandina{
+      position: relative;
+          /* float: left; */
+          /* margin-right: 18px; */
+          height: 199px;
+          top: 0px;
+          border-radius: 5px;
+          box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
+    }
+
+
 }
 
 

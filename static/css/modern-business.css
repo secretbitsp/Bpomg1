@@ -17,7 +17,7 @@ html, body{
 
 @media (min-width: 992px) {
   body {
-    padding-top: 52px;
+    padding-top: 20px;
   }
 }
 
@@ -44,8 +44,13 @@ html, body{
   padding-bottom: 2.25rem;
 }
 
+
 .filter_container{
-  padding-top: 5.25rem;
+  padding-top: 3.25rem;
+  padding-left: 0.25rem;
+  padding-bottom: 3.25rem;
+  margin: 0 auto;
+
 }
 
 .max-width{
@@ -76,3 +81,7 @@ html, body{
         display: none;
     }
 }
+
+
+
+/* SLECTION BOX FOR HAHU*/

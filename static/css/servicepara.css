@@ -59,7 +59,7 @@ img:last-of-type {
 .title {
   width: 50%;
   padding: 5%;
-  border-radius: 5px;
+  border-radius: 10px;
   background: #dee2e6;
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
@@ -99,6 +99,7 @@ img:last-of-type {
 #slide1:before {
   background-image: url("/static/banner_services.jpg");
   transform: translateZ(-1px) scale(2);
+    margin-top: 120px;
 }
 
 #slide2 {
@@ -122,4 +123,8 @@ img:last-of-type {
   .title {
     width: 100%;
   }
+}
+
+.lead{
+  position: relative;
 }
