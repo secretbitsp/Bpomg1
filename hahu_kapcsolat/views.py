@@ -14,11 +14,12 @@ def hasznaltkapcsi(request):
             sender_name = form.cleaned_data['név']
             sender_email = form.cleaned_data['email']
             sender_phone = form.cleaned_data['telefonszám']
-            message = "{0}  ügyfelünk üzenetet küldött neked:\n\n{1}".format(sender_name, sender_email, sender_phone, form.cleaned_data['üzenet'])
+            sender_mail = form.cleaned_data['üzenet']
+            message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
             send_mail('Új ügyfélkapcsolat a weboldalról', message, 'varga.laszlo@budapestautoszalon.hu', ['yepense@gmail.com'],)
             print(send_mail)
-            print(sender_name)
-            print(message)  
+            print(sender_mail)
+            print(message)
             return render(request, 'hahu_kapcsolat/haukapcsolat.html', {'form': form})
     else:
         form = hasznaltkapcsolat()
