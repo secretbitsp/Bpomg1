@@ -6,8 +6,10 @@ html {
 body {
   margin:0;
   padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
+	-webkit-perspective: 1px;
+	        perspective: 1px;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -24,9 +26,12 @@ h1 {
   padding: 25vh 10%;
   min-height: 100vh;
   width: 100vw;
-  box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-	transform-style: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+          box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	-webkit-transform-style: inherit;
+	        transform-style: inherit;
 }
 
 img {
@@ -35,15 +40,18 @@ img {
   left: 35%;
   width: 320px;
   height: 100px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  -webkit-transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+          transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
   padding: 10px;
   border-radius: 5px;
   background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+          box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
 img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+  -webkit-transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+          transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
 
 .slide:before {
@@ -53,7 +61,8 @@ img:last-of-type {
   bottom: 0;
   left: 0;
   right: 0;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+          box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
 }
 
 .title {
@@ -61,7 +70,8 @@ img:last-of-type {
   padding: 5%;
   border-radius: 10px;
   background: #dee2e6;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+          box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
 .slide:nth-child(2n) .title {
@@ -91,14 +101,18 @@ img:last-of-type {
 }
 
 #title h1 {
- transform: translateZ(.25px) scale(.75);
- transform-origin: 50% 100%;
+ -webkit-transform: translateZ(.25px) scale(.75);
+         transform: translateZ(.25px) scale(.75);
+ -webkit-transform-origin: 50% 100%;
+     -ms-transform-origin: 50% 100%;
+         transform-origin: 50% 100%;
 
 }
 
 #slide1:before {
   background-image: url("/static/banner_services.jpg");
-  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
     margin-top: 120px;
 }
 
@@ -109,7 +123,8 @@ img:last-of-type {
 
 #slide3:before {
   background-image: url("/static/klimatistt.jpg");
-  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
 }
 
 #slide4 {
