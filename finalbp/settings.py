@@ -26,7 +26,6 @@ INSTALLED_APPS = [
     'bpcore',
     'sendemail',
     'finalbp',
-    'polls',
     'phone_field',
     'hahu_kapcsolat',
     'szervizkapcsolat',
