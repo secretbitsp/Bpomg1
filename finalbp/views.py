@@ -9,6 +9,10 @@ from xml.dom import minidom
 #from xml.etree.ElementTree import ElementTree
 from urllib.request import Request, urlopen, URLError, urlretrieve
 import urllib.request
+from django.shortcuts import render
+from django.views.generic import View
+from django.core.mail import send_mail
+from .forms import ajanlatkapcsolat
 # new imports that go at the top of the file
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
@@ -164,6 +168,24 @@ def car_detail(request, car_id):
     return render(request, 'car_detail.html', {'car': car})
 
 
+def ajantlatkapcsi(request):
+    if request.method == 'POST':
+        form = ajanlatkapcsolat(request.POST)
+        if form.is_valid():
+            sender_name = form.cleaned_data['név']
+            sender_email = form.cleaned_data['email']
+            sender_phone = form.cleaned_data['telefonszám']
+            sender_mail = form.cleaned_data['üzenet']
+            message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
+            send_mail('Új érdeklődés a weboldalról', message, 'varga.laszlo@budapestautoszalon.hu', ['yepense@gmail.com'],)
+            print(send_mail)
+            print(sender_mail)
+            print(message)
+            return render(request, 'ajanlatkapcsolat.html', {'form': form})
+    else:
+        form = ajanlatkapcsolat()
+
+    return render(request, 'ajanlatkapcsolat.html', {'form': form})
 
 
 

@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^cars/(?P<car_id>\d+)', views.car_detail),
     url(r'^szervizkapcsolat/', include('szervizkapcsolat.urls')),
     url(r'^hahukapcsolat', include('hahu_kapcsolat.urls')),
+    url(r'^ajanlatkapcsolat/$',views.ajantlatkapcsi, name="ajanlatkapcsolat"),
 
 
 

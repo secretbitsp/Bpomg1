@@ -12,12 +12,10 @@
     <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ajanlat.css' %}" rel="stylesheet">
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
-
-
   </head>
-
   <body>
     <!-- Navigation -->
     <nav class="menu-top" >
@@ -51,71 +49,48 @@
     </div>
   </div>
 <br />
-
-    <div class="max-width">
-    <header>
-<div class="container">
+<header>
   <div class="container">
-    <div class="w_text">
-      <h1 class="mt-4 mb-3">{{ ujauto.title}}</h1>
+    <div class="eight columns"> <span class="typcn typcn-thumbs-ok icon"></span>
+      <h2 class="preheader">Aktuális ajánlatunk</h2>
+      <h1 class="header">{{ujauto.title}}</h1>
+      <p class="paragraph">{{ujauto.text}}</p>
+      <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn">Kapcsolat felvétel </button></a>
+      <!--<button class="btn">További ajánlatok</button>-->
     </div>
-
-  <!-- Portfolio Item Row -->
-  <div class="row">
-
-    <div class="col-md-8">
-      <img class="img-fluid" src="{{ ujauto.thumb.url }}" alt="">
+    <div class="four columns">
+    <img id="device" src="{{ ujauto.thumb.url }}" width="378" height="676" alt="Device"/>
     </div>
-
-    <div class="col-md-4">
-      <h3 class="my-3">{{ ujauto.title }}</h3>
-      <p>{{ ujauto.text}}</p>
-      <div class="w_button">
-          <a class="btn btn-primary" href="">{{ auto.title  }} Érdekel az ajánlat</a>
-      </div>
-      <!--<ul>
-        <li>{{ autp.date}}</li>
-        <li>Dolor Sit Amet</li>
-        <li>Consectetur</li>
-        <li>Adipiscing Elit</li>
-      </ul>-->
-    </div>
-
   </div>
-  <!-- /.row -->
+</header>
+<div id="blueBand">
+<h3> Az akció eddig tart: </h3>
+<br />
+  <div class="container">
 
-  <!-- Related Projects Row
-  <h3 class="my-4">További ajánlataink</h3>
-
-  <div class="row">
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-        <img class="img-fluid" src="" alt="">
-      </a>
+    <div class="three columns">
+      <h3>Nap</h3>
+      <div class="days"></div>
     </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-        <img class="img-fluid" src="" alt="">
-      </a>
+    <div class="three columns">
+      <h3>Óra</h3>
+      <div class="hours"></div>
     </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-        <img class="img-fluid" src="" alt="">
-      </a>
+    <div class="three columns">
+      <h3>Perc</h3>
+      <div class="minutes"></div>
     </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-        <img class="img-fluid" src="" alt="">
-      </a>
+    <div class="three columns">
+      <h3>Másodperc</h3>
+      <div class="seconds"></div>
     </div>
+  </div>
+</div>
 
-  </div>-->
-  <!-- /.row -->
-
+<div id="map">
+  <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.699700237101!2d19.07857421559379!3d47.573630979182525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd5e619943f5%3A0x10cc18acc136afcc!2zQnVkYXBlc3QgQXV0w7NzemFsb24gw7pqIMOpcyBoYXN6bsOhbHRhdXTDsyBrZXJlc2tlZMOpcyDDqXMgc3plcnZpeg!5e0!3m2!1sen!2shu!4v1549012906222"
+   width="800" height="450" frameborder="0"style="border:0" ></iframe>
 </div>
 <!-- /.container -->
 <!-- Footer -->
@@ -189,8 +164,8 @@
 
 
 <!-- Bootstrap core JavaScript -->
+<script src="{% static 'js/ajanlataink.js' %}"></script>
 <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-
 <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>

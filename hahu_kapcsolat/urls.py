@@ -7,6 +7,8 @@ app_name ='hahukap'
 
 urlpatterns = [
     url(r'^$',views.hasznaltkapcsi, name="hahukapcsi"),
+
+
 ]
 
 
