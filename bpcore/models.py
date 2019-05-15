@@ -8,6 +8,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField()
     text = models.TextField()
+    texttwo = models.TextField(blank=True)
     thumb = models.ImageField(default='default.png', blank=True)
     created_date = models.DateTimeField(
             default=timezone.now)
