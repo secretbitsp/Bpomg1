@@ -157,7 +157,7 @@ def hello2(request):
     else:
         models = list(set(Hahudeta.objects.values_list('modell', flat=True)))
         fuels = list(set(Hahudeta.objects.filter(marka=make).values_list('uzemanyag', flat=True)))
-        
+
     return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models,'fuels':fuels,
                                                  'selected_make': make, 'selected_model': model, 'selected_fuel': fuel})
 
@@ -180,7 +180,7 @@ def ajantlatkapcsi(request):
             sender_phone = form.cleaned_data['telefonszám']
             sender_mail = form.cleaned_data['üzenet']
             message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
-            send_mail('Új érdeklődés a weboldalról', message, 'varga.laszlo@budapestautoszalon.hu', ['yepense@gmail.com'],)
+            send_mail('Új érdeklődés a weboldalról', message, 'varga.laszlo@budapestautoszalon.hu', ['kardos.tamas@mitsubishibudapest.hu'],)
             print(send_mail)
             print(sender_mail)
             print(message)

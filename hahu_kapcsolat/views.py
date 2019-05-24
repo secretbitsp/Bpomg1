@@ -16,7 +16,7 @@ def hasznaltkapcsi(request):
             sender_phone = form.cleaned_data['telefonszám']
             sender_mail = form.cleaned_data['üzenet']
             message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
-            send_mail('Új ügyfélkapcsolat a weboldalról', message, 'varga.laszlo@budapestautoszalon.hu', ['yepense@gmail.com'],)
+            send_mail('Új ügyfélkapcsolat a weboldalról', message, 'varga.laszlo@budapestautoszalon.hu', ['kardos.tamas@mitsubishibudapest.hu'],)
             print(send_mail)
             print(sender_mail)
             print(message)
