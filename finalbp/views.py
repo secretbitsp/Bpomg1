@@ -131,6 +131,7 @@ def hello2(request):
                 continue
             # image = urlretrieve(url)
             cached_image = CachedImage.objects.create(url=url, car=car)'''
+
     make = request.GET.get('make')
     model = request.GET.get('model')
     fuel = request.GET.get('fuel')
@@ -141,22 +142,24 @@ def hello2(request):
         contact_list = contact_list.filter(modell=model)
     if fuel:
         contact_list = contact_list.filter(uzemanyag=fuel)
-        #contact_list = contact_list.filter(price__gt=1000)
 
-    paginator = Paginator(contact_list, 25) # Show 25 contacts per page
+
+    paginator = Paginator(contact_list, 25) # Show 25 car per page
     page = request.GET.get('page')
     data = paginator.get_page(page)
-    print("Data updated")
+
+
     makes = list(set(Hahudeta.objects.values_list('marka',  flat=True)))
     fuels = list(set(Hahudeta.objects.values_list('uzemanyag',  flat=True)))
+
     if make:
         models = list(set(Hahudeta.objects.filter(marka=make).values_list('modell', flat=True)))
-        fuels = list(set(Hahudeta.objects.filter(marka=make).values_list('uzemanyag', flat=True)))
     else:
         models = list(set(Hahudeta.objects.values_list('modell', flat=True)))
-    '''else:
-        models = list(set(Hahudeta.objects.values_list('modell', flat=True)))'''
-    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models, 'fuels':fuels, 'selected_make': make, 'selected_model': model, 'selected_model': fuel})
+        fuels = list(set(Hahudeta.objects.filter(marka=make).values_list('uzemanyag', flat=True)))
+        
+    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models,'fuels':fuels,
+                                                 'selected_make': make, 'selected_model': model, 'selected_fuel': fuel})
 
 
 def car_detail(request, car_id):

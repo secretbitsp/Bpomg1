@@ -17,6 +17,7 @@ urlpatterns = [
     url(r'^szervizkapcsolat/', include('szervizkapcsolat.urls')),
     url(r'^hahukapcsolat', include('hahu_kapcsolat.urls')),
     url(r'^ajanlatkapcsolat/$',views.ajantlatkapcsi, name="ajanlatkapcsolat"),
+    url(r'^tinymce/', include('tinymce.urls')),
 
 
 

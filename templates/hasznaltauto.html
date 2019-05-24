@@ -80,15 +80,21 @@
             <div class="col-sm-7  "
               <div class="form-group">
                 <select name="makes" id="makes" class="form-control">
-                    <option>Márka</option>
+                    <option>Válasszon márkát</option>
                     {% for make in makes %}
                       <option value="{{make}}" {% if make == selected_make %}selected{% endif %}>{{make}}</option>
                     {% endfor %}
                 </select>
                 <select name="models" id="models" class="form-control">
-                    <option>Modell</option>
+                    <option value="">Válasszon Modell-t</option>
                     {% for model in models%}
                       <option value='{{model}}' {% if model == selected_model %}selected{% endif %}>{{model}}</option>
+                    {% endfor %}
+                </select>
+                <select name="fuels" id="fuels" class="form-control">
+                    <option>Válasszon Üzemanyagot</option>
+                    {% for fuel in fuels%}
+                      <option value='{{fuel}}' {% if model == selected_fuel %}selected{% endif %}>{{fuel}}</option>
                     {% endfor %}
                 </select>
         </div>
@@ -219,55 +225,26 @@
     <!-- Bootstrap core JavaScript -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
-    <!-- Function for filter objects properly -->
-    <script>
-
-      $('#makes').change(function() {
-        var makeValue = $('#makes').val();
-        var path = window.location.pathname;
-        path += '?make=' + makeValue;
-        window.location.href = path;
-      });
-      $('#models').change(function(){
-        var makeValue = $('#makes').val();
-        var modelValue = $('#models').val();
-        var path = window.location.pathname;
-        path += '?make=' + makeValue + '&model=' + modelValue;
-        window.location.href = path;
-      });
-      $('#fuels').change(function(){
-        var makeValue = $('#makes').val();
-        var modelValue = $('#models').val();
-        var modelValue = $('#fuels').val();
-        var path = window.location.pathname;
-        path += '?make=' + makeValue + '&model=' + modelValue + '&fuel=' +fuelValue;
-        window.location.href = path;
-      });
-
-    </script>
-
+    <script src="{% static 'js/filters.js' %}"></script>
     <!-- Start of LiveChat code -->
-  <script type="text/javascript">
-        window.__lc = window.__lc || {};
-        window.__lc.license = 8624479;
-        window.__lc.chat_between_groups = false;
-        (function() {
-          var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-          lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-        })();
+    <script type="text/javascript">
+          window.__lc = window.__lc || {};
+          window.__lc.license = 8624479;
+          window.__lc.chat_between_groups = false;
+          (function() {
+            var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+          })();
 
-      function myFunction() {
-      var x = document.getElementsByClassName("menu")[0]  ;
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
+        function myFunction() {
+        var x = document.getElementsByClassName("menu")[0]  ;
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
       }
-    }
-  </script>
-
+    </script>
   </body>
-
 </html>

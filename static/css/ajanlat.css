@@ -233,6 +233,15 @@ header {
 	overflow: auto;
 }
 
+#blueBand2 {
+	background: #fff;
+	min-height: 230px;
+	padding: 50px 0 50px 0;
+	color: #27B6C7;
+	z-index: 999;
+	overflow: auto;
+}
+
 .icon {
 	font-size: 6.5em;
 }
