@@ -1,6 +1,5 @@
 from django.db import models
 from django.utils import timezone
-from tinymce import HTMLField
 from django.conf import settings
 
 class Post(models.Model):
@@ -22,11 +21,3 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-'''
-class Post1(models.Model):
-    title = models.CharField(max_length=120)
-    slug = models.SlugField(unique=True)
-    description = models.TextField(max_length=250,null=True)
-    content = HTMLField('Content')
-    draft = models.BooleanField(default=False)
-'''
