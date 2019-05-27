@@ -135,6 +135,8 @@ def hello2(request):
     make = request.GET.get('make')
     model = request.GET.get('model')
     fuel = request.GET.get('fuel')
+    date = request.GET.get('date')
+
     contact_list = Hahudeta.objects.order_by("marka")
     if make:
         contact_list = contact_list.filter(marka=make)
@@ -142,13 +144,13 @@ def hello2(request):
         contact_list = contact_list.filter(modell=model)
     if fuel:
         contact_list = contact_list.filter(uzemanyag=fuel)
-
-
+    if date:
+        contact_list = contact_list.filter(evjarat=date)
     paginator = Paginator(contact_list, 25) # Show 25 car per page
     page = request.GET.get('page')
     data = paginator.get_page(page)
 
-
+    dates = list(set(Hahudeta.objects.values_list('evjarat',  flat=True)))
     makes = list(set(Hahudeta.objects.values_list('marka',  flat=True)))
     fuels = list(set(Hahudeta.objects.values_list('uzemanyag',  flat=True)))
 

@@ -97,6 +97,12 @@
                       <option value='{{fuel}}' {% if model == selected_fuel %}selected{% endif %}>{{fuel}}</option>
                     {% endfor %}
                 </select>
+                <select name="dates" id="dates" class="form-control">
+                    <option>Válasszon Üzemanyagot</option>
+                    {% for date in dates%}
+                      <option value='{{date}}' {% if model == selected_date %}selected{% endif %}>{{date}}</option>
+                    {% endfor %}
+                </select>
         </div>
 </div>
 </div>
@@ -246,5 +252,21 @@
         }
       }
     </script>
+    <!-- Default Statcounter code for Budapest Autószalon
+www.budapestautoszalon.hu -->
+<script type="text/javascript">
+var sc_project=9812866;
+var sc_invisible=1;
+var sc_security="1a0d68be";
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="ingyen
+webstatisztika" href="https://www.statcounter.hu/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/9812866/0/1a0d68be/1/"
+alt="ingyen webstatisztika"></a></div></noscript>
+<!-- End of Statcounter Code -->
   </body>
 </html>
