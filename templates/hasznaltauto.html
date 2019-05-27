@@ -80,7 +80,7 @@
             <div class="col-sm-7  "
               <div class="form-group">
                 <select name="makes" id="makes" class="form-control">
-                    <option>Válasszon márkát</option>
+                    <option value="">Válasszon márkát</option>
                     {% for make in makes %}
                       <option value="{{make}}" {% if make == selected_make %}selected{% endif %}>{{make}}</option>
                     {% endfor %}
