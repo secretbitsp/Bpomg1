@@ -135,7 +135,7 @@ def hello2(request):
     make = request.GET.get('make')
     model = request.GET.get('model')
     fuel = request.GET.get('fuel')
-    contact_list = Hahudeta.objects.all()
+    contact_list = Hahudeta.objects.order_by("marka")
     if make:
         contact_list = contact_list.filter(marka=make)
     if model:
