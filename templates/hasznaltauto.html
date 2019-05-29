@@ -77,11 +77,10 @@
       <div class="filter_container">
         <form action="" method="get" accept-charset="utf-8">
           <div class="row">
-            <div class="col-sm-7  "
               <div class="form-group">
                 <select name="makes" id="makes" class="form-control">
                     <option value="">Válasszon márkát</option>
-                    {% for make in makes %}
+                    {% for make in makes%}
                       <option value="{{make}}" {% if make == selected_make %}selected{% endif %}>{{make}}</option>
                     {% endfor %}
                 </select>
@@ -99,45 +98,14 @@
                 </select>
                 <!--
                 <select name="dates" id="dates" class="form-control">
-                    <option>Válasszon Üzemanyagot</option>
+                    <option value="">Évjárat</option>
                     {% for date in dates%}
-                      <option value='{{date}}' {% if model == selected_date %}selected{% endif %}>{{date}}</option>
+                      <option value='{{date}}' {% if date == selected_date %}selected{% endif %}>{{date}}</option>
                     {% endfor %}
                 </select>-->
         </div>
 </div>
 </div>
-
-<!--
-    <div class="container">
-
-      <h1 class="my-4">
-        <small>Használt autók </small>
-      </h1>
-
-
-      {% for e in  data %}
-
-      <div class="row">
-
-
-        <div class="col-md-7">
-          <a href="#">
-            {% for image in e.images.all %}
-              <img class="img-fluid rounded mb-3 mb-md-0" src="{{ image.url }}" alt="700#300">
-            {% endfor %}
-          </a>
-        </div>
-        <div class="col-md-5">
-          <p> {{ e.tipus }}</p>
-          <p> {{ e.modell }}</p>
-          <p> {{ e.kategoria }}</p>
-        </div>
-      </div>
-
-      <hr>
-      {% endfor %}
-    </div>-->
     {% for e in  data %}
       <div class="container-fluid">
         <div class="movie_card" id="tomb">
@@ -155,16 +123,6 @@
 
             </div>
 
-            <!--
-            <div class="movie_social">
-              <ul>
-                <li><i class="material-icons">share</i></li>
-                <li><i class="material-icons"></i></li>
-                <li><i class="material-icons">chat_bubble</i></li>
-
-
-              </ul>
-            </div>-->
           </div>
         </div>
       </div>
@@ -184,7 +142,7 @@
                 </span>
                 {% if data.has_next %}
                     <a href="?page={{ data.next_page_number }}">Tovább</a>
-                    <a href="?page={{ data.paginator.num_pages }}">Elöző &raquo;</a>
+                    <a href="?page={{ data.paginator.num_pages }}">Utolsó &raquo;</a>
                 {% endif %}
             </span>
       </ul>

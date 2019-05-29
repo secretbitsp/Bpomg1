@@ -159,9 +159,11 @@ def hello2(request):
     else:
         models = list(set(Hahudeta.objects.values_list('modell', flat=True)))
         fuels = list(set(Hahudeta.objects.filter(marka=make).values_list('uzemanyag', flat=True)))
+        dates = list(set(Hahudeta.objects.values_list('evjarat',  flat=True)))
 
-    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models,'fuels':fuels,
-                                                 'selected_make': make, 'selected_model': model, 'selected_fuel': fuel})
+
+    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models,'fuels':fuels, 'dates':dates,
+                                                 'selected_make': make, 'selected_model': model, 'selected_fuel': fuel, 'selected_date' : date})
 
 
 def car_detail(request, car_id):
