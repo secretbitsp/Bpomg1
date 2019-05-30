@@ -9,11 +9,11 @@ import urllib.request
 
 
 def fetch_cars():
-
+    '''
     file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
     tree = ET.ElementTree()
-    tree.parse(file)
-    # tree = ET.parse('alphamobil_hex.xml')
+    tree.parse(file)'''
+    tree = ET.parse('alphamobil_hex.xml')
     root = tree.getroot()
     #ET.dump(tree)
     #for elem in tree.iter():
