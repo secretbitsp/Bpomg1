@@ -14,10 +14,11 @@
     window.location.href = path;
   });
 
-  $('#fuels').change(function() {
+  function filterCars(){
     var makeValue = $('#makes').val();
     var modelValue = $('#models').val();
     var fuelValue = $('#fuels').val();
+    var dateValue = $('#dates').val();
     var path = window.location.pathname;
     path += '?'
     if(makeValue) {
@@ -32,6 +33,21 @@
       path += path.endsWith('?') ? 'model=' :  '&model=';
       path += modelValue
     }
+    if (dateValue) {
+
+      path += path.endsWith('?') ? 'date=' : '&date=';
+      path += dateValue;
+    }
   //  path += '?make=' + makeValue + '&fuel=' + fuelValue + '&model=' + modelValue ;
     window.location.href = path;
+
+  }
+
+  $('#fuels').change(function() {
+    filterCars();
   });
+
+  $('#dates').change(function() {
+
+    filterCars();
+  })

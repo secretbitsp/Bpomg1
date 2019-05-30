@@ -5,11 +5,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import Context, loader
 from django.http import HttpRequest, HttpResponseRedirect
-from xml.dom import minidom
 #from xml.etree.ElementTree import ElementTree
 from urllib.request import Request, urlopen, URLError, urlretrieve
 import urllib.request
-from django.shortcuts import render
 from django.views.generic import View
 from django.core.mail import send_mail
 from .forms import ajanlatkapcsolat
@@ -17,7 +15,6 @@ from .forms import ajanlatkapcsolat
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
-from django.shortcuts import render
 from .models import Hahudeta, CachedImage
 try:
     import xml.etree.cElementTree as ET
@@ -34,14 +31,14 @@ def homepage(request):
 def szerviz(request):
     return render(request,'szerviz.html')
 
-
-
-def hello2(request):
     '''file = urllib.request.urlopen('http://hex.hasznaltauto.hu/1.0/xml/alphamobil_hex')
     tree = ET.ElementTree()
     tree.parse(file)'''
     '''tree = ET.parse('alphamobil_hex.xml')
-    root = tree.getroot()
+    root = tree.getroot()'''
+
+def hello2(request):
+
     #ET.dump(tree)
     #for elem in tree.iter():
         #print (elem.tag, elem.attrib)
@@ -54,7 +51,7 @@ def hello2(request):
         #        print(elem.text)
         # print(arak.findall('uzemanyag'))
         #print(araks)
-    x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
+    '''x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
     cars = {}
     for autok in x:
             #print([elem.tag for elem in autok.iter()])
@@ -119,7 +116,6 @@ def hello2(request):
             cars[rank] = a
     x = root.iter('{http://hex.hasznaltauto.hu/ns}kepek')
     for k in x:
-        print("ookok")
         #print(k.findall('{http://hex.hasznaltauto.hu/ns}kep'))
         for kep in k.findall('{http://hex.hasznaltauto.hu/ns}kep'):
             url = kep.text
@@ -145,13 +141,37 @@ def hello2(request):
     if fuel:
         contact_list = contact_list.filter(uzemanyag=fuel)
     if date:
-        contact_list = contact_list.filter(evjarat=date)
+        if date == '1999_less_than':
+            contact_list = contact_list.filter(evjarat__year__lt=1999)
+        if date == '2000_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2000)
+        if date == '2001_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2001)
+        if date == '2002_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2002)
+        if date == '2003_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2003)
+        if date == '2004_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2004)
+        if date == '2005_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2005)
+        if date == '2006_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2006)
+        if date == '2007_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2007)
+        if date == '2008_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2008)
+        if date == '2009_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2009)
+        if date == '2010_to_today':
+            contact_list = contact_list.filter(evjarat__year__gte=2010)
+
     paginator = Paginator(contact_list, 25) # Show 25 car per page
     page = request.GET.get('page')
     data = paginator.get_page(page)
 
     dates = list(set(Hahudeta.objects.values_list('evjarat',  flat=True)))
-    makes = list(set(Hahudeta.objects.values_list('marka',  flat=True)))
+    makes = sorted(list(set(Hahudeta.objects.order_by('marka').values_list('marka',  flat=True))))
     fuels = list(set(Hahudeta.objects.values_list('uzemanyag',  flat=True)))
 
     if make:
@@ -162,7 +182,7 @@ def hello2(request):
         dates = list(set(Hahudeta.objects.values_list('evjarat',  flat=True)))
 
 
-    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': models,'fuels':fuels, 'dates':dates,
+    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': sorted(models),'fuels':fuels, 'dates':dates,
                                                  'selected_make': make, 'selected_model': model, 'selected_fuel': fuel, 'selected_date' : date})
 
 

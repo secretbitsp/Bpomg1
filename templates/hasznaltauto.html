@@ -91,18 +91,34 @@
                     {% endfor %}
                 </select>
                 <select name="fuels" id="fuels" class="form-control">
-                    <option>Válasszon Üzemanyagot</option>
+                    <option value="">Válasszon Üzemanyagot</option>
                     {% for fuel in fuels%}
-                      <option value='{{fuel}}' {% if model == selected_fuel %}selected{% endif %}>{{fuel}}</option>
+                      <option value='{{fuel}}' {% if fuel == selected_fuel %}selected{% endif %}>{{fuel}}</option>
                     {% endfor %}
                 </select>
-                <!--
+
                 <select name="dates" id="dates" class="form-control">
                     <option value="">Évjárat</option>
-                    {% for date in dates%}
+                    <option value="1999_less_than">1999 > </option>
+                    <option value="2000_to_today">2000 -tól</option>
+                    <option value="2001_to_today">2001 -tól</option>
+                    <option value="2002_to_today">2002 -tól</option>
+                    <option value="2003_to_today">2003 -tól</option>
+                    <option value="2004_to_today">2004 -tól</option>
+                    <option value="2005_to_today">2005 -tól</option>
+                    <option value="2006_to_today">2006 -tól</option>
+                    <option value="2007_to_today">2007 -tól</option>
+                    <option value="2008_to_today">2008 -tól</option>
+                    <option value="2009_to_today">2009 -tól</option>
+                    <option value="2010_to_today">2010 < </option>
+
+
+
+
+                  <!--  {% for date in dates%}
                       <option value='{{date}}' {% if date == selected_date %}selected{% endif %}>{{date}}</option>
-                    {% endfor %}
-                </select>-->
+                    {% endfor %}-->
+                </select>
         </div>
 </div>
 </div>

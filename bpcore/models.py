@@ -6,6 +6,7 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     slug = models.SlugField()
+    #characterfield add to
     text = models.TextField()
     texttwo = models.TextField(blank=True)
     thumb = models.ImageField(default='default.png', blank=True)

@@ -16,7 +16,7 @@ class Hahudeta(models.Model):
         tipus = models.CharField(max_length=255)
         uzemanyag = models.CharField(max_length=255, null=True)
         futottkm = models.CharField(max_length=255)
-        evjarat = models.CharField(max_length=255)
+        evjarat = models.DateField()
         telefonszam = models.CharField(max_length=255, null=True)
         ar = models.CharField(max_length=255, null=True)
         sebessegvalto = models.CharField(max_length=255, null=True)
