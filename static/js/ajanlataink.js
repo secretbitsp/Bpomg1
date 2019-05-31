@@ -1,5 +1,5 @@
 
-var goalDay = '2019/05/31 00:00:00'
+var goalDay = '2019/06/31 00:00:00'
 
    var timerId = 0;
    timerId = setInterval(function() {
