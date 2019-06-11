@@ -27,6 +27,10 @@
             width: 500px;
           }
         }
+
+
+
+
     </style>
 
 
@@ -75,6 +79,10 @@
       </div>
     </form>
       <div class="filter_container">
+
+<p>Tekintse meg, bevizsgált használt autó kínálatunkat!
+Értékesítő kollégáink örömmel segítenek az Ön számára legideálisabb modell kiválasztásában. <br />Gyors és teljes körű ügyintézéssel várjuk!</p>
+          <br />
         <form action="" method="get" accept-charset="utf-8">
           <div class="row">
               <div class="form-group">
@@ -84,12 +92,14 @@
                       <option value="{{make}}" {% if make == selected_make %}selected{% endif %}>{{make}}</option>
                     {% endfor %}
                 </select>
+
                 <select name="models" id="models" class="form-control">
                     <option value="">Válasszon Modell-t</option>
                     {% for model in models%}
                       <option value='{{model}}' {% if model == selected_model %}selected{% endif %}>{{model}}</option>
                     {% endfor %}
                 </select>
+
                 <select name="fuels" id="fuels" class="form-control">
                     <option value="">Válasszon Üzemanyagot</option>
                     {% for fuel in fuels%}
@@ -111,10 +121,6 @@
                     <option value="2008_to_today">2008 -tól</option>
                     <option value="2009_to_today">2009 -tól</option>
                     <option value="2010_to_today">2010 < </option>
-
-
-
-
                   <!--  {% for date in dates%}
                       <option value='{{date}}' {% if date == selected_date %}selected{% endif %}>{{date}}</option>
                     {% endfor %}-->
