@@ -8,7 +8,8 @@ app_name ='autolista'
 
 urlpatterns = [
     url(r'^$',views.ujautok, name="ujautok"),
-    url(r'^(?P<slug>[\w-]+)/$', views.ujautok_detail, name="detail"),
+    #url(r'^(?P<slug>[\w-]+)/$', views.ujautok_detail, name="detail"),
+
 
 ]
 

@@ -17,6 +17,9 @@ urlpatterns = [
     url(r'^szervizkapcsolat/', include('szervizkapcsolat.urls')),
     url(r'^hahukapcsolat', include('hahu_kapcsolat.urls')),
     url(r'^ajanlatkapcsolat/$',views.ajantlatkapcsi, name="ajanlatkapcsolat"),
+    url(r'^forester/$',views.forester, name="forester"),
+    url(r'^tivoli-akcio/$',views.tivoli, name="tivoli-akcio"),
+    url(r'^eclipse-cross/$',views.eclipse, name="eclipse-cross"),
 
 
 

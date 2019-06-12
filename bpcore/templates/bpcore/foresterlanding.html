@@ -1,0 +1,153 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="{% static 'css/landingmainforester.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
+    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="menu-top" >
+      <ul class="menu__list-top">
+        <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
+        <li class="menu__group-top"><i class="fas fa-phone"></i> +36 1 803 6056</li>
+        <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
+        <li class="menu__group-top"><i class="far fa-envelope"></i>info@budapestautoszalon.hu</li>
+      </ul>
+    </nav>
+    <!-- Navigation -->
+    <div id="menuToggle" >
+      <input type="checkbox" onclick="myFunction()" />
+        <p></p>
+        <span></span>
+        <span></span>
+        <span></span>
+    <div class="page">
+      <div class="page__demo">
+        <nav class="menu" >
+          <ul class="menu__list">
+            <a class="navbar-brand" href="{% url 'fooldal' %}"><img style="width: 250px; padding-left: 20px;" src="/static/bpat2.png" alt="Image text"></a>
+
+            <li class="menu__group"><a href="{% url 'autolista:ujautok' %}" class="menu__link">Ajánlataink</a></li>
+            <li class="menu__group"><a href="{% url 'szerviz' %}" class="menu__link">Szerviz</a></li>
+            <li class="menu__group"><a href="{% url 'hasznalt' %}" class="menu__link">Használt autó</a></li>
+            <li class="menu__group"><a href="{% url 'kapcsolat:kapcsolat' %}" class="menu__link">Kapcsolat</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+<header>
+      <header class="showcase">
+       <div class="content">
+         <img src="/static/Subaru-logo.png" class="logo" alt="Traversy Media">
+         <div class="title">
+           Subaru Forester
+         </div>
+         <div class="text">
+           Forester modellek<br /> 1.000.000,- Ft kedvezménnyel
+         </div>
+       </div>
+     </header>
+
+     <!-- Services -->
+     <section class="services">
+       <div class="container grid-3 center">
+         <div>
+           <i class="fab fa-youtube fa-3x"></i>
+           <h3>Stílus és karakter</h3>
+           <p>Az új Forester tökéletes összhangot teremt a letisztult, modern formaterv, a hatékonyság és a kényeztető komfort között. </p>
+         </div>
+         <div>
+           <i class="fas fa-chalkboard-teacher fa-3x"></i>
+           <h3>Teljesítmény</h3>
+           <p>Egy Subaruban ülve az ember magabiztosabbá válik, s ez elsősorban a kiegyensúlyozott SUBARU BOXER motorral összekapcsolt szimmetrikus összkerékhajtásnak köszönhető.</p>
+         </div>
+         <div>
+           <i class="fas fa-briefcase fa-3x"></i>
+           <h3>Kaland</h3>
+           <p>Használja ki az autóban rejlő lehetőségeket, hogy minden eddiginél élvezetesebb kalandokat élhessen át.</p>
+         </div>
+       </div>
+     </section>
+
+     <!-- About -->
+     <section class="about bg-light">
+       <div class="container">
+         <div class="grid-2">
+           <div class="center">
+             <img src="/static/forester-oldal.png" class="logo" alt="Traversy Media">
+           </div>
+           <div>
+             <h3>Most 1.000.000Ft kedvezménnyel</h3>
+             <p> <br />
+                 Modellek készletről a Suabru Budapest kínálatában.<br />
+
+                 <br />Az alapfelszereltség része a SUBARU szimmetrikus összkerékhajtása.
+
+                  <br /> Most ráadásul a 150 lóerős, 2.0i benzinmotorral szerelt összes Forester modell 1.000.000,- Ft kedvezménnyel lehet az Öné!
+                <br /> Lépjen velünk kapcsolatba!
+                 </p>
+                 <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn btn-primary">Kapcsolat felvétel </button></a>
+
+           </div>
+         </div>
+       </div>
+     </section>
+     <div id="map">
+       <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.699700237101!2d19.07857421559379!3d47.573630979182525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd5e619943f5%3A0x10cc18acc136afcc!2zQnVkYXBlc3QgQXV0w7NzemFsb24gw7pqIMOpcyBoYXN6bsOhbHRhdXTDsyBrZXJlc2tlZMOpcyDDqXMgc3plcnZpeg!5e0!3m2!1sen!2shu!4v1549012906222"
+        width="800" height="450" frameborder="0"style="border:0" ></iframe>
+     </div>
+     <!-- Footer -->
+     <footer id="myFooter">
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-3">
+                     <h5>Kezdőlap</h5>
+                     <ul>
+                         <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                         <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                         <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                     </ul>
+                 </div>
+                 <div class="col-sm-3">
+                     <h5>Rólunk</h5>
+                     <ul>
+                         <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                         <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                         <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
+                     </ul>
+                 </div>
+
+                 <div class="col-sm-3 info">
+                     <h5>Nyitva tartás</h5>
+                     <p>
+                       Új- és használt autó<br />
+                       H-P: 9-18 / Sz: 9-13<br />
+                       <p> </p>
+                       Szerviz, Alkatrész<br />
+                       H-P: 8-17 / Sz: Zárva</p>
+                 </div>
+                 <div class="col-sm-3 info">
+                     <h5>Budapest Autószalon</h5>
+                     <p>   Opel-Mitsubishi-<br />Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+
+                         h-1044 Budapest Váci út 76-80</br>Tel: 06 1-803-6050  </br>Fax: 06 1-803-6051</br>  </p>
+                 </div>
+                 <hr>
+             </div>
+
+         </div>
+     </footer>
+
+   </body>
+
+
+</html>

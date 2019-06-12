@@ -26,7 +26,13 @@ from .models import Hahuautok
 def homepage(request):
    return render(request,'homepage.html')
 
+def forester(request):
+        return render(request,'bpcore/foresterlanding.html')
 
+def tivoli(request):
+        return render(request,'bpcore/landing.html')
+def eclipse(request):
+        return render(request,'bpcore/eclipse.html')
 
 def szerviz(request):
     return render(request,'szerviz.html')
