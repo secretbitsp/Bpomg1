@@ -13,9 +13,9 @@
 
     <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
     <link href="{% static 'css/landingmaincross.css' %}" rel="stylesheet">
-    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
 
   </head>
   <body>
@@ -50,68 +50,135 @@
       </div>
     </div>
   </div>
-<header>
   <br />
-      <header class="showcase">
-       <div class="content">
-         <img src="/static/Mitsubishi-logo.png" class="logo" alt="Traversy Media">
-         <div class="title">
-           Mitusbishi <br />Eclipse Cross
-         </div>
-         <div class="text">
-         Eclipse Cross modellek készletről<br /> akár 1.000.000,- Ft árelőnnyel,<br /> korlátozott darabszámban!
-         </div>
-       </div>
-     </header>
+<header>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h2 class="display-2">Új Mitsubishi Eclipse Cross</h2>
+      <p class="lead">Megkérkezett az Új Eclipse Cross SUV</p>
+      <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn btn-primary">Érdekel az ajánlat </button></a>
 
-     <!-- Services -->
-     <section class="services">
-       <div class="container grid-3 center">
-         <div>
-           <i class="fab fa-youtube fa-3x"></i>
-           <h3>Sportos egyedi megjelenés</h3>
-           <p>Merész vonalak. Kiszélesedő sárvédők. Mélyen formázott ék alak. Akár egy atléta, aki éppen elrugaszkodik a rajtvonalról. </p>
-         </div>
-         <div>
-           <i class="fas fa-chalkboard-teacher fa-3x"></i>
-           <h3>Kényelem</h3>
-           <p>Az Eclipse Cross a belterében tökéletesen megtestesíti a SUV-okra jellemző erényeket - a magas ülési pozícióval biztosított jó kilátást, a sok helyet és a variálhatóságot.</p>
-         </div>
-         <div>
-           <i class="fas fa-briefcase fa-3x"></i>
-           <h3>Technológia</h3>
-           <p>A finomhangolt felfüggesztésnek, a pontosan reagáló kormányzásnak, köszönhetően csalhatatlanul, precíz. </p>
-         </div>
-       </div>
-     </section>
+    </div>
+  </div>
+</header>
+  	<!--section first-section-->
+	<section id="Cats">
+  <div class="section first-section">
+    <div class="container">
+      <div class="row">
+  		<div class="row align-items-center justify-content-around">
+        <!-- column 1 -->
+          <div class="col-12 col-lg-5">
 
-     <!-- About -->
-     <section class="about bg-light">
-       <div class="container">
-         <div class="grid-2">
-           <div class="center">
-             <img src="/static/ecross2.png" class="logo" alt="Traversy Media">
-           </div>
-           <div>
-             <h3>Készletről azonnal az Öné!</h3>
-             <p>
-<br />
+  			<img class="img-fluid" src="/static/ecross/ecross1.png" alt="Cat with Attitude">
 
-                  <br /> 1.000.000,- Ft kedvezménnyel lehet az Öné! <br />  További kedvezményekért
-                <br /> Lépjen velünk kapcsolatba!
-              </p><br />
-              <br />
-                 <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn btn-primary">Kapcsolat felvétel </button></a>
+        </div>
 
-           </div>
-         </div>
-       </div>
-     </section>
-     <div id="map">
-       <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.699700237101!2d19.07857421559379!3d47.573630979182525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd5e619943f5%3A0x10cc18acc136afcc!2zQnVkYXBlc3QgQXV0w7NzemFsb24gw7pqIMOpcyBoYXN6bsOhbHRhdXTDsyBrZXJlc2tlZMOpcyDDqXMgc3plcnZpeg!5e0!3m2!1sen!2shu!4v1549012906222"
-        width="800" height="450" frameborder="0"style="border:0" ></iframe>
-     </div>
+        <!-- column 2 -->
+         <div class="col-12 col-lg-5">
+          <h2>Fedezze fel! </h2>
+          <p>
+            Merész vonalak. Kiszélesedő sárvédők. Mélyen formázott ék alak. Akár egy atléta, aki éppen elrugaszkodik a rajtvonalról.
+             Az ECLIPSE CROSS elsuhan a járókelők előtt, akik ámultan figyelik a meredeken ívelő hátsó ablakát és egyedi stílusát.
+             Megérkezett a Mitsubishi Coupé-SUV modellje, az Eclipse Cross.</p>
+            <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn btn-warning" style="width:100%"> Érdekel </button></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+   </section>
+    	<!--section second-section-->
+  	<section id="Diet">
+   <div class="section second-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+          <h2>Áttekintés</h2>
+          <p>A sportos, aprólékosan kidolgozott vezetőfülkétől szaporábban ver a szív és fokozódik a vezetés öröme.
+             Minden részlet úgy lett kialakítva,
+              hogy nagyobb tudatosságot és befolyást tegyen lehetővé. <br />
+              Így a vezetés intuitív élményt nyújt, minden parancsra közvetlen, egyenes válasszal.  </p>
+
+  			</div>
+  		  </div>
+      </div>
+  	 </div>
+  	 <div class="section second-section">
+    <div class="container">
+      <div class="row">
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <h3>Dinamikus, gazdaságos turbómotor</h3>
+      <p>A jármű feletti uralom önbizalmat ad, a stabilitás pedig agilitást eredményez.</p>
+  			 </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <h3>Technológia<br /></h3>
+      <p>A finomhangolt felfüggesztésnek, a pontosan reagáló kormányzásnak, illetve a ponthegesztéssel,
+        szerkezeti ragasztókkal és a motor felett toronymerevítővel megerősített karosszéria páratlan szilárdságának köszönhetően </p>
+
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <h3> Biztonság</h3>
+      <p>Az új ECLIPSE CROSS fejlett vezetést támogató rendszereivel még biztonságosabban és még magabiztosabban autózhat,
+        akár autópályán közlekedik, akár egy kanyargós hegyi úton halad, vagy éppen egy parkolóból szeretne kiállni.</p>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <h3>Kényelem</h3>
+      <p>Az Eclipse Cross a belterében tökéletesen megtestesíti a SUV-okra jellemző erényeket -
+        a magas ülési pozícióval biztosított jó kilátást, a sok helyet és a variálhatóságot. </p>
+    </div>
+  </div>
+  	  </div>
+  		 </div>
+  		</section>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f9z4zZ387iQ" allowfullscreen></iframe>
+      </div>
+
+
+  		<!--section third-section-->
+  	<div class="section third-section">
+    <div class="container">
+      <div class="row align-items-center justify-content-around">
+        <div class="col-12 col-md-5">
+          <h2>Aktuális ajánlatunk</h2>
+          <p>Mitsubishi Budapest  készleten lévő, Eclipse Cross modellekre vonatkozik.
+            Most akár 1.000.000Ft kedvezménnyel
+              További részletekről kérjük vegye fel velünk a kapcsolatot!</p>
+          <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn btn-primary" style="width:100%">Kapcsolat felvétel </button></a>
+
+        </div>
+
+        <div class="col-12 col-md-5">
+          <img class="rounded img-fluid" src="/static/ecross/ecrossoldal.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  		<!--section fourth-section
+  	<div class="section fourth-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Adopt a cat meow and love it forever.</h2>
+          <p>You only live once.</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  <div id="map">
+    <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.699700237101!2d19.07857421559379!3d47.573630979182525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd5e619943f5%3A0x10cc18acc136afcc!2zQnVkYXBlc3QgQXV0w7NzemFsb24gw7pqIMOpcyBoYXN6bsOhbHRhdXTDsyBrZXJlc2tlZMOpcyDDqXMgc3plcnZpeg!5e0!3m2!1sen!2shu!4v1549012906222"
+     width="800" height="450" frameborder="0"style="border:0" ></iframe>
+  </div>
+
+
+   </body>
+
+
      <!-- Footer -->
      <footer id="myFooter">
          <div class="container">
@@ -194,6 +261,7 @@
  src="https://c.statcounter.com/9812866/0/1a0d68be/1/"
  alt="ingyen webstatisztika"></a></div></noscript>
  <!-- End of Statcounter Code -->
+
 
    </body>
 
