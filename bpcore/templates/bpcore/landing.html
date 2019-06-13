@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <title></title>
     <link href="{% static 'css/landingmain.css' %}" rel="stylesheet">
-    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
 
   </head>
   <body>
@@ -43,65 +43,124 @@
       </div>
     </div>
   </div>
-<header>
-      <header class="showcase">
-       <div class="content">
-         <img src="/static/SsangYong-logo.png" class="logo" alt="Traversy Media">
-         <div class="title">
-           SsangYong Tivoli
-         </div>
-         <div class="text">
-           Azok számára, akik mindent egyszerre akarnak!<br />
-           Az új generáció kompakt SUV modellje
-         </div>
-       </div>
-     </header>
 
-     <!-- Services -->
-     <section class="services">
-       <div class="container grid-3 center">
-         <div>
-           <i class="fab fa-youtube fa-3x"></i>
-           <h3>Stílus és karakter</h3>
-           <p>Engedje át magát a dinamikus, városi életérzésnek!</p>
-         </div>
-         <div>
-           <i class="fas fa-chalkboard-teacher fa-3x"></i>
-           <h3>Teljesítmény és takarékosság</h3>
-           <p>A nagy teljesítményű, megbízható motorok a vezetőt minden út során igazi sportos érzelmekkel kerítik hatalmukba.</p>
-         </div>
-         <div>
-           <i class="fas fa-briefcase fa-3x"></i>
-           <h3>Rend és funkció</h3>
-           <p>Az új Tivoliban a belső tér rugalmasan konfigurálható. A számtalan praktikus tárolórekesszel és tárolóhellyel könnyen rend teremthető az utastérben.</p>
-         </div>
-       </div>
-     </section>
 
-     <!-- About -->
-     <section class="about bg-light">
-       <div class="container">
-         <div class="grid-2">
-           <div class="center">
-             <img src="/static/tivolikicsi.png" class="logo" alt="Traversy Media">
-           </div>
-           <div>
-             <h3>Ár: 4 290 000 Ft-tól</h3>
-             <p>Az új Ssangyong Tivoli kiemelt kedvezményekkel készletről akár azonnal az Öné! <br />
-                 A Ssangyong Budapest  budapesti márkakereskedésben már  ki próbálható.<br />
-                 Lépjen velünk kapcsolatba!
-                 .</p>
-                 <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn btn-primary">Kapcsolat felvétel </button></a>
+  	<!-- header -->
+  <header>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-2">SsangYong Tivoli.</h1>
+        <p class="lead">Modellek készletről </p>
+        <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn btn-primary">Érdekel az autó </button></a>
 
-           </div>
-         </div>
-       </div>
-     </section>
-     <div id="map">
-       <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.699700237101!2d19.07857421559379!3d47.573630979182525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd5e619943f5%3A0x10cc18acc136afcc!2zQnVkYXBlc3QgQXV0w7NzemFsb24gw7pqIMOpcyBoYXN6bsOhbHRhdXTDsyBrZXJlc2tlZMOpcyDDqXMgc3plcnZpeg!5e0!3m2!1sen!2shu!4v1549012906222"
-        width="800" height="450" frameborder="0"style="border:0" ></iframe>
-     </div>
+      </div>
+    </div>
+  </header>
+  	<!--section first-section-->
+	<section id="Cats">
+  <div class="section first-section">
+    <div class="container">
+      <div class="row">
+  		<div class="row align-items-center justify-content-around">
+        <!-- column 1 -->
+          <div class="col-12 col-lg-5">
+
+  			<img class="img-fluid" src="/static/tivoli-ssangyongbudapest.jpg" alt="Cat with Attitude">
+
+        </div>
+
+        <!-- column 2 -->
+         <div class="col-12 col-lg-5">
+          <h2>A stílus már az autó körvonalairól felismerhető</h2>
+          <p>A Tivoli sziluettje modern, dinamikus, városi személyiséget tükröz.
+            A Tivoli dizájnját a modern városi építészet és a természet hullámzó vonalai ihlették.
+            Ennek köszönhetően a Tivoli magára vonzza a figyelmet, mivel határozott érzelmeket kelt a szemlélőben.</p>
+            <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn btn-warning"> Érdekel </button></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+   </section>
+    	<!--section second-section-->
+  	<section id="Diet">
+   <div class="section second-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+          <h2>Harmónia és dinamika</h2>
+          <p>Az autó fiatalos dinamikáját elegáns, tökéletesen kidolgozott részletek teszik teljessé, amelyek a Tivolinak a jellegzetes városi eleganciát kölcsönzik, és minőséget sugároznak.
+</p>
+  			</div>
+  		  </div>
+      </div>
+  	 </div>
+  	 <div class="section second-section">
+    <div class="container">
+      <div class="row">
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <h3>Széles körű felszereltség</h3>
+      <p>A C-oszlop csillogó felületkezelése</p>
+  			 </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <h3>Modern <br /></h3>
+      <p>Visszapillantó tükrök LED-es irányjelzőkkel</p>
+
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <h3>Praktikus megoldások</h3>
+      <p>A mobil eszközök is egészen egyszerűen csatlakoztathatók a 7”-os képernyőhöz..</p>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <h3>Kényelem</h3>
+      <p>Fűthető első ülések, a vezetőülés kétfokozatú ülésszellőzéssel, a hátsó ülések különösen kellemes, 27,5-os szögben döntve, kétzónás automata klíma.</p>
+    </div>
+  </div>
+  	  </div>
+  		 </div>
+  		</section>
+
+  		<!--section third-section-->
+  	<div class="section third-section">
+    <div class="container">
+      <div class="row align-items-center justify-content-around">
+        <div class="col-12 col-md-5">
+          <h2>Tivoli készlet</h2>
+          <p>Válasszon készletről és legyen Öné azonnal</p>
+          <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn btn-primary">Kapcsolat felvétel </button></a>
+
+        </div>
+
+        <div class="col-12 col-md-5">
+          <img class="rounded img-fluid" src="/static/ssangyong.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  		<!--section fourth-section
+  	<div class="section fourth-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Adopt a cat meow and love it forever.</h2>
+          <p>You only live once.</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  <div id="map">
+    <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.699700237101!2d19.07857421559379!3d47.573630979182525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd5e619943f5%3A0x10cc18acc136afcc!2zQnVkYXBlc3QgQXV0w7NzemFsb24gw7pqIMOpcyBoYXN6bsOhbHRhdXTDsyBrZXJlc2tlZMOpcyDDqXMgc3plcnZpeg!5e0!3m2!1sen!2shu!4v1549012906222"
+     width="800" height="450" frameborder="0"style="border:0" ></iframe>
+  </div>
+
+
+   </body>
+
+
      <!-- Footer -->
      <footer id="myFooter">
          <div class="container">
