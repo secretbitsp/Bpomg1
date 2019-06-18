@@ -14,6 +14,7 @@
   .wrapper{
     display: block;
   }
+
 }
 
   .wrapper > div{
@@ -99,6 +100,8 @@ outline: 2px solid #fff;
   display: flex;
 }
 
+
+
 .menu__group{
   flex-grow: 1;
 }
@@ -131,6 +134,7 @@ outline: 2px solid #fff;
   transform: translateX(50%);
 }
 
+
 .menu__link:hover:before, .menu__link:hover:after{
   width: 100%;
   transition-duration: .15s;
@@ -162,7 +166,10 @@ color: #27B6C7;
   .page__demo{
     padding-right: 42px;
   }
-
+  
+  .navbar-brand{
+    display: none;
+  }
 
   #menuToggle span
   {
