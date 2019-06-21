@@ -31,8 +31,12 @@ def forester(request):
 
 def tivoli(request):
         return render(request,'bpcore/landing.html')
+
 def eclipse(request):
         return render(request,'bpcore/eclipse.html')
+
+def nagycsalados(request):
+        return render(request,'bpcore/7szemely.html')
 
 def szerviz(request):
     return render(request,'szerviz.html')

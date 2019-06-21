@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^forester/$',views.forester, name="forester"),
     url(r'^tivoli-akcio/$',views.tivoli, name="tivoli-akcio"),
     url(r'^eclipse-cross/$',views.eclipse, name="eclipse-cross"),
+    url(r'^nagycsalados-7-szemelyes-auto/$',views.nagycsalados, name="nagycsalados"),
 
 
 
