@@ -142,6 +142,8 @@ def hello2(request):
     model = request.GET.get('model')
     fuel = request.GET.get('fuel')
     date = request.GET.get('date')
+    price = request.GET.get('price')
+
 
     contact_list = Hahudeta.objects.order_by("marka")
     if make:
@@ -175,6 +177,8 @@ def hello2(request):
             contact_list = contact_list.filter(evjarat__year__gte=2009)
         if date == '2010_to_today':
             contact_list = contact_list.filter(evjarat__year__gte=2010)
+    if price:
+        contact_list = contact_list.filter(ar=price)
 
     paginator = Paginator(contact_list, 25) # Show 25 car per page
     page = request.GET.get('page')

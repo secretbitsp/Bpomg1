@@ -13,11 +13,14 @@
   <link href="{% static 'css/servicepara.css' %}" rel="stylesheet">
   <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
   <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <!-- Custom styles for this template -->
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
   <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
 </head>
 <body>
+  <a id="button"></a>
+
   <!-- Navigation -->
   <nav class="menu-top" >
     <ul class="menu__list-top">
@@ -225,6 +228,8 @@
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/js/scroll.js' %}"></script>
+
     <!-- Start of LiveChat code
     <script type="text/javascript">
     window.__lc = window.__lc || {};
