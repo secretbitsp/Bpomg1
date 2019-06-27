@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 275px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+h3 { color: #111; font-family: 'Helvetica Neue', sans-serif;  font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
 
 
 
@@ -463,4 +464,21 @@ padding: 1em;
   /*background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);*/
   text-align: left;
+}
+
+
+
+.wrapper2{
+  display:grid;
+  /* grid-template-columns:1fr 1fr 1fr;*/
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap:0.5em;
+  /* grid-auto-rows:100px; */
+  grid-auto-rows: minmax(10px, auto);
+}
+
+
+.wrapper2 > div{
+  padding: 0.2em;
+
 }
