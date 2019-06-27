@@ -231,4 +231,5 @@ def ajantlatkapcsi(request):
 
 
 
+
 #carouselExampleControls-{{e.id}}
