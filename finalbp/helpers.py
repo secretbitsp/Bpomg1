@@ -27,6 +27,8 @@ def fetch_cars():
         #        print(elem.text)
         # print(arak.findall('uzemanyag'))
         #print(araks)
+    Hahudeta.objects.all().delete()
+    CachedImage.objects.all().delete()
     x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
     cars = {}
     for autok in x:
