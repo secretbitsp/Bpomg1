@@ -29,6 +29,12 @@ def fetch_cars():
         #print(araks)
     Hahudeta.objects.all().delete()
     CachedImage.objects.all().delete()
+    print("Deleted database ")
+    print("Loading the new cars")
+    print("3")
+    print("2")
+    print("1")
+    print("Adatbázis frissitése")
     x = root.iter('{http://hex.hasznaltauto.hu/ns}hirdetes')
     cars = {}
     for autok in x:

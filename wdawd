@@ -1,0 +1,635 @@
+[33mcommit b89fce8932103e010179fa6482ee292e965f5236[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon Jul 1 15:57:05 2019 +0200
+
+     new helpers
+
+[33mcommit 807fba7311946b9e66f4cb7f8f58a1a32ecf7045[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon Jul 1 08:45:16 2019 +0200
+
+     refresh
+
+[33mcommit 94d28c006294b152b8bda58f0a800ab9bc28a5c4[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Jun 27 14:24:49 2019 +0200
+
+     segs
+
+[33mcommit 7d9f41d8ff5dc709d5133a6410177eef48c31f4b[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Jun 27 10:58:36 2019 +0200
+
+     pitx
+
+[33mcommit c67d7cc49434c084103c66a18257fd9289de090a[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue Jun 25 10:53:55 2019 +0200
+
+     7szemely
+
+[33mcommit 6643dd899b5f5daa05a1f2293c41c259338fd8d5[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon Jun 24 09:14:26 2019 +0200
+
+     refresh
+
+[33mcommit d43b35a4bd59a0d7242d76f049ba6a32af7af235[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri Jun 21 15:11:25 2019 +0200
+
+     sejf
+
+[33mcommit f41ad45a6452215f8173ae38b1ddecf2a27c5af5[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue Jun 18 14:33:48 2019 +0200
+
+     fixed bar
+
+[33mcommit 5f55767bfa81f35fd38da7d30b8126e6fa2098f1[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon Jun 17 13:48:50 2019 +0200
+
+     refresh hex
+
+[33mcommit 7e06f5e3503a443490f81175707d53009674060b[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Jun 13 10:41:40 2019 +0200
+
+    fixed the landig page issues
+
+[33mcommit 0e5737d35c56500b99b16ad212197322641b2029[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Jun 13 09:28:18 2019 +0200
+
+     better tivoli
+
+[33mcommit 077ff1e8c6d1048569395bf6ea545d23bc3ca7de[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Jun 13 09:10:09 2019 +0200
+
+     hex refresh
+
+[33mcommit ad7d77327ec9b45b6ecce6172539b7a36d0e3e7e[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Jun 13 03:03:16 2019 +0200
+
+     some
+
+[33mcommit 881baf678cd0040911a8f869aeb4d28f20dc0049[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Jun 13 02:46:40 2019 +0200
+
+     fixed the navbar
+
+[33mcommit a68b38c80e5c712d19898afddcee39d0f41a83db[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Jun 13 02:30:40 2019 +0200
+
+     fixxing the mobile issues
+
+[33mcommit 61a4e227e2370e083d458dcf5463e9e67fb84bc2[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Jun 13 02:25:08 2019 +0200
+
+     sd fix
+
+[33mcommit 6be9c1a424d21a2e2340deb0e9c3b21cebbd012e[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Jun 13 00:37:46 2019 +0200
+
+     new ajanlatok
+
+[33mcommit 58c8d4464a02919b055dc128fe52e4a18c198cdb[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed Jun 12 15:47:50 2019 +0200
+
+     bug fix the xml
+
+[33mcommit 5410bc966e8f833e55f73453060b59197de81dce[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed Jun 12 15:35:34 2019 +0200
+
+     hex refresh
+
+[33mcommit 46233fc6b3b64a17deafb116ce3cc9000758f15a[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue Jun 11 12:01:12 2019 +0200
+
+     sr
+
+[33mcommit 3e04c9a931aebf33b9b39a43b0c3bcf410c636e1[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed Jun 5 15:39:21 2019 +0200
+
+     new hex
+
+[33mcommit a9306bab44aacc0478bc3788ee8e39f5887e80a9[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri May 31 16:06:00 2019 +0200
+
+     ss22
+
+[33mcommit 3920febdcd8364b2abdf65556604bd358a428def[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 30 18:08:02 2019 +0200
+
+    das
+
+[33mcommit 96319ebb5c6676ccb742265d30b6681097d5ba73[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 30 17:58:03 2019 +0200
+
+     ds
+
+[33mcommit 9e9b6e49de4e9db9eab0f17224bd27e17028dc3b[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 30 17:54:25 2019 +0200
+
+     With a new fuction what is make the database fresh !jjj
+
+[33mcommit 520af260ad541b998b52bdf32e82b3be3166799e[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 30 17:49:03 2019 +0200
+
+     swr
+
+[33mcommit 68e43d612a83c7c6764170c3d0aad88c084f61b6[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 30 17:47:27 2019 +0200
+
+    fix myivd
+
+[33mcommit 662e5c07066f8d3d7f9ddb67d4b2aa73e80a095d[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 30 17:44:15 2019 +0200
+
+     With a new fuction what is make the database fresh !
+
+[33mcommit 6b31406606a92687aeaffb0167b2b97720cd3177[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed May 29 13:25:27 2019 +0200
+
+     just a display property fixxing in css
+
+[33mcommit c438ac8e7579eb4f537c628073f7be7d8e89e587[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed May 29 13:22:40 2019 +0200
+
+    with css grid in front page
+
+[33mcommit ce76ce8dd52e1a9dbc01f8933d31b37c5a1d9ebf[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 28 12:08:39 2019 +0200
+
+     twxttwo
+
+[33mcommit b69f04b2a32df1b4518622103d30b7a96f8bd5ec[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 28 11:07:43 2019 +0200
+
+     Html bug fixxed wiht a comment on options
+
+[33mcommit 25ccb364d2ca0601c063f5585a6ba1c57ddf150c[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon May 27 16:28:59 2019 +0200
+
+     I added the statcounter code to every page
+
+[33mcommit 2b297e9e2c984074961cfd84a4bf995958176408[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon May 27 15:00:03 2019 +0200
+
+    Fixed the not showing things
+
+[33mcommit 554f659c17d80ae7c0a9520f7e7a28c858936fd8[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon May 27 14:51:50 2019 +0200
+
+    pahpabetically queryset
+
+[33mcommit b1afb06a96a9cb1745d0aa51024b623f7bd5d884[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri May 24 13:45:22 2019 +0200
+
+     New email targets
+
+[33mcommit 37f326c5586b4cd428f6092e4f334180fcabf06e[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri May 24 13:42:20 2019 +0200
+
+     Bug fixed the tinymice issue 2
+
+[33mcommit 3d3e721fe6dfd4e8a64326cbf7947b5ba911affb[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri May 24 13:37:29 2019 +0200
+
+     Added the new filter the fuels fitler
+
+[33mcommit ce5835779a9891112e959a66551b98d56ba0c83e[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed May 15 12:16:16 2019 +0200
+
+     ss22
+
+[33mcommit eac98c2d95e591ebec8616d6a8ef30bac22e2e5f[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed May 15 12:14:22 2019 +0200
+
+     after bugficxing still not owrking
+
+[33mcommit d8528767f31b1485ac139b61b16817e503e08c61[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed May 15 11:51:50 2019 +0200
+
+     try
+
+[33mcommit d1fd3de31cc510e104191225f5fd54ec52a91204[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed May 15 11:42:54 2019 +0200
+
+    server error bug fix in setting.py2
+
+[33mcommit f991fe2c175d25b4721207e70ce04e96bedcd129[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed May 15 11:39:49 2019 +0200
+
+    server error bug fix in setting.py
+
+[33mcommit 1e19c0f75c87beea9bbc1a901576ee9b6c924e91[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed May 15 11:27:42 2019 +0200
+
+    ss
+
+[33mcommit 5533e92b9a8c5ccb49c457ccbb74d68d3bec0a84[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 14 16:44:21 2019 +0200
+
+     with blue color
+
+[33mcommit 8b3e557521a85d4b7133c4f6e4a2e7e53a5a0175[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 14 09:43:03 2019 +0200
+
+     ss
+
+[33mcommit 2a90fb0b40cab12afc81267fe0cc9f27e4dc8170[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon May 13 13:29:43 2019 +0200
+
+     wih new detail page
+
+[33mcommit 17fac53bd8dfbb2444bf5f845da874bb57737c9b[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri May 10 11:22:10 2019 +0200
+
+    service header
+
+[33mcommit 30d41f557af6922ea5cf62cd7c10299b809aca45[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri May 10 11:13:18 2019 +0200
+
+     bug fix polls
+
+[33mcommit dca6aec8f14180166fa45dea6bb09af03dbb236b[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri May 10 11:07:25 2019 +0200
+
+    less files in tempates
+
+[33mcommit bd34ee049ccd18f79335324928c590a0ab63e83b[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 9 13:56:59 2019 +0200
+
+     new service page
+
+[33mcommit 75882422e6a9fb8e9b5d1f7fe0a6ee655f9f7efd[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed May 8 15:06:04 2019 +0200
+
+     added statcounter
+
+[33mcommit 81ed2656607497803f6e053a401ddb7e6cb72cb6[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed May 8 14:57:56 2019 +0200
+
+     with logo
+
+[33mcommit d9ff3b6d8d706a382b523802e923a940194518b5[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 7 13:10:23 2019 +0200
+
+     fiexed email
+
+[33mcommit 19e7c69ecf0d31696fba17dd86c9fe681b79a2ae[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 7 12:22:38 2019 +0200
+
+     ss2
+
+[33mcommit 0fde605b9bf45da0d80e5724c06eea3093b10ef1[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 7 12:16:27 2019 +0200
+
+     css fix for service2
+
+[33mcommit f6763e148221cb23433ceedbf0b885aac71fcb83[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 7 12:14:11 2019 +0200
+
+     ss
+
+[33mcommit f60e414e9f13f2782228c53fbd6625d6c97b1c30[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 7 12:06:06 2019 +0200
+
+     css fix for service
+
+[33mcommit ec468cfab65699a88add0026afbdcd073cdf2f4b[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 7 11:55:17 2019 +0200
+
+    fixed hahuform bar
+
+[33mcommit 9513dad3f661c3d9492c2649c98f01b05a5c3017[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue May 7 11:52:22 2019 +0200
+
+    fresh new navbar
+
+[33mcommit 999ee60a7f1ec3b3909f4cf280f8b5891de3ded8[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon May 6 10:04:26 2019 +0200
+
+     form on hahuk
+
+[33mcommit 3ee624121060576a6b998c0ec14b2d9a64eb1233[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 2 16:36:33 2019 +0200
+
+     fixed the chat
+
+[33mcommit a49ec815654a39bb095bb0f9d22908a702174910[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 2 16:32:21 2019 +0200
+
+     fixed navbar
+
+[33mcommit 83dd7c77767b7528ce0726a9887e87d9b2c53358[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 2 16:29:16 2019 +0200
+
+     with more servie
+
+[33mcommit ec570d6748948fb1f912f7552e7fb054d3d55511[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu May 2 13:03:09 2019 +0200
+
+    new header
+
+[33mcommit 357f3ed44c3c7222bdc94d706fa9c8eedd6a2fd0[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon Apr 29 12:04:52 2019 +0200
+
+     sdw
+
+[33mcommit 80076a9d1b7bee9556db70b90d4a65de399f27dd[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon Apr 29 12:02:43 2019 +0200
+
+    debug
+
+[33mcommit c4c7235558e4861d8e8e652c5a6be7bb419b3bd2[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon Apr 29 12:00:06 2019 +0200
+
+     correct
+
+[33mcommit 7448a5d814cb502cd34cb66cf9bfe41ecea49db6[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon Apr 29 11:58:41 2019 +0200
+
+    with leiras
+
+[33mcommit 8390ba8edb60ef829dcaec057074bb27898b4971[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon Apr 29 00:09:08 2019 +0200
+
+     false debug2
+
+[33mcommit feec58c15b06393a29124dda20cd1fc84aa8ccbb[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Mon Apr 29 00:07:40 2019 +0200
+
+     false debug
+
+[33mcommit 22935c9858d21fbe3060759c4528acdec5e6f08d[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Sun Apr 28 23:17:28 2019 +0200
+
+     ss22
+
+[33mcommit 816b109344d5aaf630d19b071c53ec303fc68924[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Sun Apr 28 23:13:25 2019 +0200
+
+     more information about the car
+
+[33mcommit 97b97b38e73a1b5842324897e97c60ac9a3cdc57[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri Apr 26 15:41:54 2019 +0200
+
+     with more icons
+
+[33mcommit 114e7478372fb93b7b00afa836163ba6f9b90f09[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri Apr 26 13:07:45 2019 +0200
+
+    with icons
+
+[33mcommit dc25e23a56a490fc38bb68463df6cabbcc826f0e[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri Apr 26 11:35:49 2019 +0200
+
+     prices at list view
+
+[33mcommit 87d68d2423cb7e3f21dba0d04106a0e5adde85c7[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue Apr 23 22:53:14 2019 +0200
+
+     ss
+
+[33mcommit 0f4bde513f230a658b2d2888c74e235b72125f1d[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue Apr 23 22:50:23 2019 +0200
+
+     with ar
+
+[33mcommit 0a546ecf5aba711afa32572497a654bc38c8523f[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed Apr 17 15:57:33 2019 +0200
+
+     gyed
+
+[33mcommit b5605daa0b8943c513e8458d08dde5cdcea3a83f[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue Apr 16 12:09:36 2019 +0200
+
+     wiht links
+
+[33mcommit 7ae728e8b78779804806bafcb8638d42bede7ecb[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue Apr 16 11:49:46 2019 +0200
+
+     admin fixing2
+
+[33mcommit c5a26ce82340ec9c97e2722ac2bf902852ffd8d0[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Tue Apr 16 11:44:43 2019 +0200
+
+    admin site fixed
+
+[33mcommit c24c422196ba927f790118eda44b462a9bfe72d1[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri Apr 12 12:09:27 2019 +0200
+
+     without gtk css
+
+[33mcommit f442f671de8a2e816bb20c3e7050d7f2b31e2958[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri Apr 12 12:07:57 2019 +0200
+
+     fix
+
+[33mcommit eebe69d36ae366ec889919bb41f714556791258e[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri Apr 12 12:05:01 2019 +0200
+
+     better car detail page css
+
+[33mcommit 9abe00942e338fd999cd27fb4e8c853f465fe2ac[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri Apr 12 01:36:50 2019 +0200
+
+     working
+
+[33mcommit ee4255c82003f981e68228f7de72c3319b665e90[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Fri Apr 12 01:19:45 2019 +0200
+
+    migrate or not
+
+[33mcommit 182d7c1688b1d6075e87a59dd1a813ee930efb85[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 19:42:09 2019 +0200
+
+     sshasznalt
+
+[33mcommit de2e166c9e08338fb49df863eb5a8663cbf8ac24[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 19:37:59 2019 +0200
+
+    serach
+
+[33mcommit cfc4e67282b7532125096871ec520ec55c8835a0[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 19:36:05 2019 +0200
+
+     with texfiled for felszereltseg
+
+[33mcommit b6a7f93be3b1242e56d43050bf0d86b08bd7fab9[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 17:05:22 2019 +0200
+
+     with 255 valid logn
+
+[33mcommit 681cf49498cb164316a46230f07347f82a6488c4[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 16:48:04 2019 +0200
+
+    try to fix heroku db
+
+[33mcommit a598949f5ff0bbf190212eb486ffe87eb8c51ef1[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 15:43:38 2019 +0200
+
+    ss22
+
+[33mcommit ca4f34366a705eca29e75eb6eb2271ae9e07ed06[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 15:37:06 2019 +0200
+
+     wthidb
+
+[33mcommit 15eabe32b8aee55bdbe3f5b502edaa9da9a88aed[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 15:27:04 2019 +0200
+
+     heroku db ?
+
+[33mcommit 2b5def226ea8808845cb04b33e96fb67ac5f692a[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 12:44:34 2019 +0200
+
+     ss2
+
+[33mcommit cac4aae61b0d657d687b5577df6372461560a851[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 12:40:19 2019 +0200
+
+     corrected css at carousel and cars
+
+[33mcommit 6dd2dfdcb6e394c167ee917c7edb59a91133cf92[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 04:27:50 2019 +0200
+
+    with form
+
+[33mcommit 5391f3ca14d18ab9914a82f3fac8566702b8cc91[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 04:18:11 2019 +0200
+
+    uncommented
+
+[33mcommit d1540ad91db44a2955d54cc66bcee9273213d889[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 04:11:34 2019 +0200
+
+     alter migrate
+
+[33mcommit 2a7ac254b7fde173a4cc3aff41dbc746ba4802b3[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 04:02:26 2019 +0200
+
+    varchar4
+
+[33mcommit 6565eab3f6b6f587e798132558de91fd2f948af9[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 03:58:24 2019 +0200
+
+    without felszereltseg
+
+[33mcommit bce91fc8b70ee981fd30359390722c96e930f601[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 03:54:10 2019 +0200
+
+     try to make db on heroku
+
+[33mcommit 3fd2e11aff083b94f6dc17fbf4261387398b9d35[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Thu Apr 11 03:25:23 2019 +0200
+
+     setup domain
+
+[33mcommit 8fcc5c7e11398f5669ed5fd4a117094c0b685e8f[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed Apr 10 17:44:51 2019 +0200
+
+    ss2
+
+[33mcommit 1609cb23b2469d94acbe88b6804ad2296f15b344[m
+Author: fkovacs12 <yepense@gmail.com>
+Date:   Wed Apr 10 17:40:33 2019 +0200
+
+     ss
