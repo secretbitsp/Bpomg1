@@ -108,6 +108,12 @@ def fetch_cars():
         for kep in k.findall('{http://hex.hasznaltauto.hu/ns}kep'):
             url = kep.text
             print(url)
+            print("Deleted database ")
+            print("Loading the new cars")
+            print("3")
+            print("2")
+            print("1")
+            print("Adatbázis frissitése")
             filename = os.path.basename(url)
             car_code = filename.split('_')[0]
             car = cars.get(car_code)
