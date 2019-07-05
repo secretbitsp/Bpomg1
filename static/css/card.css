@@ -166,9 +166,9 @@
 .locandina{
   position: relative;
   float: left;
-  margin-right: 20px;
-  height: 110px;
-  top: 10px;
+  margin-right: 10px;
+  height: 191px;
+  margin-bottom: 10px;
   border-radius: 5px;
   box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
 }
@@ -203,6 +203,3 @@ h1{
   a:active {
     text-decoration: underline;
   }
-
-
-/* dasdddddddddddddddddddddddddddddddddd!!!!!!!!!!!!!!!!!!  */

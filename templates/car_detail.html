@@ -36,7 +36,7 @@
       <div class="page__demo">
         <nav class="menu" >
           <ul class="menu__list">
-            <a class="navbar-brand" href="{% url 'fooldal' %}"><img style="width: 350px; padding-top: 20px; padding-left: 20px; " src="/static/bpat3.png" alt="Image text"></a>
+            <a class="navbar-brand" href="{% url 'fooldal' %}"><img style="width: 220px;  " src="/static/logo/budapestautoszalon-uj-hasznaltauto-markakaereskedes.png" alt="Image text"></a>
 
             <li class="menu__group"><a href="{% url 'autolista:ujautok' %}" class="menu__link">Ajánlataink</a></li>
             <li class="menu__group"><a href="{% url 'szerviz' %}" class="menu__link">Szerviz</a></li>
@@ -51,6 +51,11 @@
 <!--Main layout-->
 <main class="mt-5 pt-4">
   <div class="container dark-grey-text mt-5">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'hasznalt' %}">Autók</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Adatlap</li>
+    </ol>
+  </nav>
     <hr>
     <!--Grid row-->
     <div class="row wow fadeIn">
