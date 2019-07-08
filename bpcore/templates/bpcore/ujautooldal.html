@@ -8,6 +8,7 @@
     <title>Budapest Autószalon</title>
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
     <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -37,10 +38,11 @@
       <div class="page__demo">
         <nav class="menu" >
           <ul class="menu__list">
-            <a class="navbar-brand" href="{% url 'fooldal' %}"><img style="width: 220px;" src="/static/logo2.png" alt="Budapestautoszalon logo"></a>
 
             <li class="menu__group"><a href="{% url 'autolista:ujautok' %}" class="menu__link">Ajánlataink</a></li>
             <li class="menu__group"><a href="{% url 'szerviz' %}" class="menu__link">Szerviz</a></li>
+            <a class="navbar-brand" href="{% url 'fooldal' %}"><img style="width: 220px;" src="/static/logo2.png" alt="Budapestautoszalon logo"></a>
+
             <li class="menu__group"><a href="{% url 'hasznalt' %}" class="menu__link">Használt autó</a></li>
             <li class="menu__group"><a href="{% url 'kapcsolat:kapcsolat' %}" class="menu__link">Kapcsolat</a></li>
           </ul>

@@ -7,7 +7,7 @@
     grid-gap:1em;
     justify-items:stretch;
     align-items:stretch;
-    padding: 20px;
+    padding: 1px;
   }
 
 @media screen and (max-width: 500px) {
@@ -22,8 +22,10 @@
     padding:1em;
   }
   .wrapper > div:hover{
-    box-shadow: 0px 0px 80px -25px rgba(0,0,0, 0.5);
-    transition: all 0.4s;
+    box-shadow: 0px 0px 80px -30px rgba(0,0,0, 0.5);
+    transition: all 0.8s;
+    border: 1px solid #000;
+
   }
 
   .wrapper> div:nth-child(odd){
@@ -173,7 +175,7 @@ color: #27B6C7;
   }
 
   .navbar-brand{
-    display: ;
+    display: none;
   }
 
   #menuToggle span
@@ -198,7 +200,7 @@ color: #27B6C7;
     flex-direction: column;
     position: relative;
     top: 25px;
-    left: 25px;
+    left: 0px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -207,7 +209,7 @@ color: #27B6C7;
   #menuToggle input
   {
     display: flex;
-    width: 40px;
+    width: 45px;
     height: 32px;
     position: absolute;
     cursor: pointer;
@@ -281,13 +283,6 @@ list-style: none;
 }
 
 
-.box h3{
-  font-family: 'Didact Gothic', sans-serif;
-  font-weight:normal;
-  text-align:center;
-  padding-top:60px;
-  color:#fff;
-}
 
 .shadow1, .shadow2, .shadow3,.shadow4,.shadow5,.shadow6,.shadow7,.shadow8{
   position:relative;
@@ -408,4 +403,33 @@ list-style: none;
 .content h3 {
   font-style: italic;
   color: #96a2a7;
+}
+
+
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-auto-rows: minmax(40px, auto);
+  column-gap: 0px;
+
+}
+
+
+.contact-info{
+  padding: 10px;
+}
+
+
+@media screen and (min-width: 601px) {
+  .contac-info > p{
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .contact-info >p  {
+    font-size: 12px;
+  }
 }
