@@ -178,7 +178,8 @@ def hello2(request):
         if date == '2010_to_today':
             contact_list = contact_list.filter(evjarat__year__gte=2010)
     if price:
-        contact_list = contact_list.filter(ar=price)
+        if price == '50K_less':
+            contact_list = contact_list.filter(price__ar__lt=500000)
 
     paginator = Paginator(contact_list, 25) # Show 25 car per page
     page = request.GET.get('page')
@@ -187,6 +188,8 @@ def hello2(request):
     dates = list(set(Hahudeta.objects.values_list('evjarat',  flat=True)))
     makes = sorted(list(set(Hahudeta.objects.order_by('marka').values_list('marka',  flat=True))))
     fuels = list(set(Hahudeta.objects.values_list('uzemanyag',  flat=True)))
+    prices = list(set(Hahudeta.objects.values_list('ar',  flat=True)))
+
 
     if make:
         models = list(set(Hahudeta.objects.filter(marka=make).values_list('modell', flat=True)))
@@ -194,10 +197,12 @@ def hello2(request):
         models = list(set(Hahudeta.objects.values_list('modell', flat=True)))
         fuels = list(set(Hahudeta.objects.filter(marka=make).values_list('uzemanyag', flat=True)))
         dates = list(set(Hahudeta.objects.values_list('evjarat',  flat=True)))
+        price = list(set(Hahudeta.objects.values_list('ar',  flat=True)))
+
+    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': sorted(models),'fuels':fuels, 'dates':dates, 'prices':prices,
+                                                 'selected_make': make, 'selected_model': model, 'selected_fuel': fuel, 'selected_date' : date, 'selected_price': price})
 
 
-    return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': sorted(models),'fuels':fuels, 'dates':dates,
-                                                 'selected_make': make, 'selected_model': model, 'selected_fuel': fuel, 'selected_date' : date})
 
 
 def car_detail(request, car_id):
@@ -207,6 +212,8 @@ def car_detail(request, car_id):
     except Hahudeta.DoesNotExist:
         return HttpResponseRedirect('/hahudeta')
     return render(request, 'car_detail.html', {'car': car})
+
+
 
 
 def ajantlatkapcsi(request):
@@ -227,9 +234,3 @@ def ajantlatkapcsi(request):
         form = ajanlatkapcsolat()
 
     return render(request, 'ajanlatkapcsolat.html', {'form': form})
-
-
-
-
-
-#carouselExampleControls-{{e.id}}

@@ -19,6 +19,8 @@
     var modelValue = $('#models').val();
     var fuelValue = $('#fuels').val();
     var dateValue = $('#dates').val();
+    var priceValue = $('#prices').val();
+
     var path = window.location.pathname;
     path += '?'
     if(makeValue) {
@@ -38,6 +40,11 @@
       path += path.endsWith('?') ? 'date=' : '&date=';
       path += dateValue;
     }
+    if (priceValue) {
+
+      path += path.endsWith('?') ? 'price=' : '&price=';
+      path += priceValue;
+    }
   //  path += '?make=' + makeValue + '&fuel=' + fuelValue + '&model=' + modelValue ;
     window.location.href = path;
 
@@ -50,4 +57,9 @@
   $('#dates').change(function() {
 
     filterCars();
-  })
+  });
+
+  $('#prices').change(function() {
+
+    filterCars();
+  });
