@@ -38,6 +38,10 @@ def eclipse(request):
 def nagycsalados(request):
         return render(request,'bpcore/7szemely.html')
 
+def rextong4(request):
+        return render(request,'bpcore/rextongg4.html')
+
+
 def szerviz(request):
     return render(request,'szerviz.html')
 
@@ -178,8 +182,7 @@ def hello2(request):
         if date == '2010_to_today':
             contact_list = contact_list.filter(evjarat__year__gte=2010)
     if price:
-        if price == '50K_less':
-            contact_list = contact_list.filter(price__ar__lt=500000)
+            contact_list = contact_list.filter(ar=price)
 
     paginator = Paginator(contact_list, 25) # Show 25 car per page
     page = request.GET.get('page')
