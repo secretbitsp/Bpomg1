@@ -88,8 +88,10 @@ def fetch_cars():
             futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
             ar = autok.findall('{http://hex.hasznaltauto.hu/ns}ar')[0].text
             allapot = autok.findall('{http://hex.hasznaltauto.hu/ns}allapot')[0].text
-            email = autok.findall('{http://hex.hasznaltauto.hu/ns}emailcim')[0].text
-
+            try:
+                email = autok.findall('{http://hex.hasznaltauto.hu/ns}emailcim')[0].text
+            except IndexError:
+                email = None
             print(ar)
             Hahudeta.objects.filter(rank=rank).delete()
             a = Hahudeta.objects.create(rank=rank, marka=marka, kategoria=kategoria,
