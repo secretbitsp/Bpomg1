@@ -7,7 +7,7 @@
     grid-gap:1em;
     justify-items:stretch;
     align-items:stretch;
-    padding: 40px;
+    padding: 1px;
   }
 
 @media screen and (max-width: 500px) {
