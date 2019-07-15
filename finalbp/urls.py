@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^tivoli-akcio/$',views.tivoli, name="tivoli-akcio"),
     url(r'^eclipse-cross/$',views.eclipse, name="eclipse-cross"),
     url(r'^rexton-g4/$',views.rextong4, name="rextong4"),
+    url(r'^mitsubishi-asx/$',views.asx, name="mitsu-asx"),
     url(r'^nagycsalados-7-szemelyes-auto/$',views.nagycsalados, name="nagycsalados"),
 
 

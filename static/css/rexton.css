@@ -1,16 +1,4 @@
 
-.jumbotron{
-
-  border-radius:20px;
-    background:
-
-url("/static/rextong4/rexton.jpg");
-background-repeat: repeat;
-background-attachment: fixed;
-color:#fff !important;
-height:450px;
-}
-
 
 .btn-outline-danger{
   color:white;

@@ -41,6 +41,9 @@ def nagycsalados(request):
 def rextong4(request):
         return render(request,'bpcore/rextongg4.html')
 
+def asx(request):
+        return render(request,'bpcore/mitsubishi-asx.html')
+
 
 def szerviz(request):
     return render(request,'szerviz.html')
