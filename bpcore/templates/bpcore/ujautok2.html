@@ -26,7 +26,7 @@
       <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
       <li class="menu__group-top"><i class="fas fa-phone"></i> +36 1 803 6056</li>
       <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
-      <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon..hu">info@budapestautoszalon.hu</li></a>
+      <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
     </ul>
   </nav>
   <!-- Navigation -->
@@ -53,7 +53,6 @@
   </div>
 </div>
 
-    <!-- Page Content
       <!-- Page Heading -->
       <div class="container">
         <div class="w_text">
@@ -61,32 +60,30 @@
         </div>
         <div class="wrapper">
         <div class="box box5 shadow1" >
-            <a href="https://www.budapestautoszalon.hu/eclipse-cross">
+            <a href="{% url 'eclipse-cross' %}">
                 <img class="img-fluid" src="/static/eclispebox3.png" alt=""></a>
           </div>
           <div class="box box4 shadow4">
-                  <a href="https://www.budapestautoszalon.hu/rexton-g4">
+                  <a href="{% url 'rextong4' %}">
             <img class="img-fluid" src="/static/rextong4/rextonfour.png" alt="SsangYong Rexton G4"></a>
           </div>
           <div class="box box3 shadow3">
 
-            <a href="https://www.budapestautoszalon.hu/forester">
+            <a href="{% url 'forester' %}">
                   <img class="img-fluid" src="/static/forest2.png" alt=""></a>
           </div>
 
           <div class="box box2 shadow2">
-            <p class="lead"><a href="https://www.budapestautoszalon.hu/tivoli-akcio" >
+            <a href="{% url 'tivoli-akcio' %}">
             <img class="img-fluid" src="/static/sanbox1.png" alt=""></a></p>
           </div>
           <div class="box box1 shadow1">
-                  <a href="https://www.budapestautoszalon.hu/nagycsalados-7-szemelyes-auto">
+                  <a href="{% url 'nagycsalados' %}">
             <img class="img-fluid" src="/static/7ules/7szemeleyautok.jpg" alt=""></a>
 
           </div>
         </div>
       </div>
-    </div>
-    <br />
         <!-- Footer -->
         <footer id="myFooter">
             <div class="container">

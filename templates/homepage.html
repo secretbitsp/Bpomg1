@@ -68,6 +68,7 @@
         </div>
           <!-- End Main Navigation -->
         <br />
+        <div class="container">
 
       <!--START **** Carousel Item **** -->
       <header class="hedy">
@@ -113,32 +114,34 @@
       <!--END **** Carousel Item **** -->
 
       <!-- Main Page Content-->
-      <section class="py-3">
-        <div class="container" >
-          <br />
-          <h1 class="font-weight-light">Üdvözöljük a Budapest Autószalonnál</h1>
-          <p class="lead"> Új és használt autók készletről akár azonnal</p>
+        <div class="w_text">
+          <h1 class="mt-4 mb-3">Üdvözöljük a Budapest Autószalonnál <br /> Új és használt autók garanciával</h1>
         </div>
-      </section>
-      <div class="wrapper">
-        <div class="box box1 shadow1" >
-          <a href="https://www.budapestautoszalon.hu/eclipse-cross">
-              <img class="img-fluid" src="/static/eclispebox3.png" alt=""></a>
-        </div>
-        <div class="box box2 shadow2">
-          <a href="https://www.budapestautoszalon.hu/forester">
-          <img class="img-fluid" src="/static/forest2.png" alt=""></a>
-        </div>
-        <div class="box box3 shadow3">
-          <p class="lead"><a href="https://www.budapestautoszalon.hu/tivoli-akcio" >
-          <img class="img-fluid" src="/static/sanbox1.png" alt=""></a></p>
-        </div>
-        <div class="box box4 shadow4">
-          <a href="https://www.budapestautoszalon.hu/nagycsalados-7-szemelyes-auto">
-          <img class="img-fluid" src="/static/7ules/7szemeleyautok.jpg" alt=""></a>
-        </div>
-      </div>
+        <div class="wrapper">
+        <div class="box box5 shadow1" >
+            <a href="{% url 'eclipse-cross' %}">
+                <img class="img-fluid" src="/static/eclispebox3.png" alt=""></a>
+          </div>
+          <div class="box box4 shadow4">
+                  <a href="{% url 'rextong4' %}">
+            <img class="img-fluid" src="/static/rextong4/rextonfour.png" alt="SsangYong Rexton G4"></a>
+          </div>
+          <div class="box box3 shadow3">
 
+            <a href="{% url 'forester' %}">
+                  <img class="img-fluid" src="/static/forest2.png" alt=""></a>
+          </div>
+
+          <div class="box box2 shadow2">
+            <a href="{% url 'tivoli-akcio' %}">
+            <img class="img-fluid" src="/static/sanbox1.png" alt=""></a></p>
+          </div>
+          <div class="box box1 shadow1">
+                  <a href="{% url 'nagycsalados' %}">
+            <img class="img-fluid" src="/static/7ules/7szemeleyautok.jpg" alt=""></a>
+
+          </div>
+        </div>
       <div class="row">
         <div class="col-lg-6" class="producttion">
         </br>
@@ -157,6 +160,8 @@
           <img class="img-fluid rounded" src="/static/bpszlo.JPG" alt="">
         </div>
       </div>
+    </div>
+
       <!-- Footer -->
       <footer id="myFooter">
           <div class="container">

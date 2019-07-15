@@ -14,6 +14,7 @@
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
     <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ajanlatform.css' %}" rel="stylesheet">
 
 
   </head>
@@ -23,7 +24,7 @@
         <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
         <li class="menu__group-top"><i class="fas fa-phone"></i> +36 1 803 6056</li>
         <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
-        <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon..hu">info@budapestautoszalon.hu</li></a>
+        <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
       </ul>
     </nav>
     <!-- Navigation -->
@@ -52,43 +53,47 @@
 <br />
     <body>
 
-        <div class="container-fluid">
-          <br />
-          <div class="szerviz-text" class="page-header">
-            <h2></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="card">
-                <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Érdeklödjön az ajánlat részleteiről!
-                </div>
-                <div class="card-body">
-                  <div class="col-xs-7 col-xs-6" >
-                  <form method="post">
-                    {% csrf_token %}
-                    {{ form.as_p }}</div>
-                    <input class="btn btn-primary " style="width:100%" type="submit" value="Küldés" />
-                  </form>
+        	<div class="container">
+        		<div class="innerwrap">
 
-                </div>
-            </div>
-        </div>
+        			<section class="section1 clearfix">
+        				<div class="textcenter">
+        					<span class="shtext">Lépjen velünk kapcsolatban</span>
+        					<span class="seperator"></span>
+        					<h1>Küldjön üzenetet</h1>
+        				</div>
+        			</section>
 
-        <div class="col-xs-5 col-sm-6 col-lg-4" >
-          <div class="card bg-light mb-3">
-              <div class="card-header bg-dark text-white text-uppercase"><i class="fa fa-home"></i> Cimünk </div>
-                <div class="card-body">
-                    <p>Váci út 76-80</p>
-                    <p>1044 Budapest</p>
-                    <p>H-P 8:00 - 17:00</p>
-                    <p>Email : info@budapestautoszalon.hu</p>
-                    <p>Tel: +36 1 803 6056</p>
-                </div>
-            </div>
-          </div>
-        </div>
+        			<section class="section2 clearfix">
+        				<div class="col2 column1 first">
 
+            <iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.699700237101!2d19.07857421559379!3d47.573630979182525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd5e619943f5%3A0x10cc18acc136afcc!2zQnVkYXBlc3QgQXV0w7NzemFsb24gw7pqIMOpcyBoYXN6bsOhbHRhdXTDsyBrZXJlc2tlZMOpcyDDqXMgc3plcnZpeg!5e0!3m2!1sen!2shu!4v1549012906222"
+             width="800" height="450" frameborder="0"style="border:0" ></iframe>
+                </div>
+        				<div class="col2 column2 last">
+        					<div class="sec2innercont">
+        						<div class="sec2addr">
+                      <p><span class="collig">Cím :</span>1044 Budapest Váci út 76-80</p>
+        							<p><span class="collig">Telefon :</span> <a href = "tel: +36 1 803 6056"></li>+36 1 803 6056</a></p>
+        							<p><span class="collig">Email :</span> <a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a></p>
+        						</div>
+        					</div>
+        					<div class="sec2contactform">
+        						<h3 class="sec2frmtitle">Érdeklik a részletek ? <br /> Küldjön közvetlen üzenetet</h3>
+                    <form method="post">
+                      {% csrf_token %}
+                      {{ form.as_p }}</div>
+                      <input class="btn btn-primary " style="width:100%" type="submit" value="Küldés" />
+                    </form>
+        					</div>
+
+        				</div>
+        			</section>
+
+        		</div>
+        	</div>
+        </body>
         <!-- Footer -->
         <footer id="myFooter">
             <div class="container">
