@@ -43,8 +43,35 @@
         </ul>
       </nav>
       <!-- End Top Menu -->
+      <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a class="navbar-brand" href="{% url 'fooldal' %}">
+          <img src="/static/logo2.png" width="20%" height="20%" alt="Budapest Autoszalon Logo">
 
-      <!-- Start Main Navigation -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-list-2">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'hasznalt' %}">Használt autók</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Start Main Navigation
       <div id="menuToggle" >
           <input type="checkbox" onclick="myFunction()" />
             <p></p>
@@ -65,10 +92,9 @@
               </nav>
             </div>
           </div>
-        </div>
+        </div>-->
           <!-- End Main Navigation -->
-        <br />
-        <div class="container">
+    <div class="container">
 
       <!--START **** Carousel Item **** -->
       <header class="hedy">
@@ -83,20 +109,20 @@
                 <div class="carousel-item active" style="background-image: url('/static/subaru-main.png')">
                   <div class="carousel-caption d-none d-md-block">
                     <h3 class="display-4"></h3>
-                    <p class="lead"><a href="https://www.budapestautoszalon.hu/forester/" class="btn btn-success">Bövebben</a></p>
+                    <p class="lead"><a href="https://www.budapestautoszalon.hu/forester/" class="btn btn-secondary">Bövebben</a></p>
                   </div>
                 </div>
                 <!-- Slide  Two - Set the background image for this slide in the line below -->
                 <div class="carousel-item" style="background-image: url('static/ssangyongtivoli.png')">
                   <div class="carousel-caption d-none d-md-block">
                     <h3 class="display-4"></h3>
-                    <p class="lead"><a href="https://www.budapestautoszalon.hu/tivoli-akcio" class="btn btn-success">Bövebben</a></p>
+                    <p class="lead"><a href="https://www.budapestautoszalon.hu/tivoli-akcio" class="btn btn-secondary">Bövebben</a></p>
                   </div>
                 </div>
                   <div class="carousel-item" style="background-image: url('static/asxmitsu.png')">
                     <div class="carousel-caption d-none d-md-block">
                       <h3 class="display-4"></h3>
-                      <p class="lead"><a href="{% url 'mitsu-asx' %}"  class="btn btn-success">Bövebben</a></p>
+                      <p class="lead"><a href="{% url 'mitsu-asx' %}"  class="btn btn-secondary">Bövebben</a></p>
                   </div>
                 </div>
               </div>
