@@ -25,6 +25,7 @@
         <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
       </ul>
     </nav>
+    <br />
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
       <a class="navbar-brand" href="{% url 'fooldal' %}">
@@ -75,7 +76,7 @@
             <div class="ctk" role="listbox">
               {% for image in car.images.all %}
               <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                <img class="img-fluid"  src="{{image.url}}"  alt="First slide">
+                <img class="img-fluid" data-toggle="lightbox" data-gallery="gallery"  src="{{image.url}}"  alt="First slide">
               </div>
               {%endfor%}
 
@@ -93,7 +94,7 @@
             <!--/.Controls-->
             <ol class="carousel-indicators">
               {% for image in car.images.all %}
-                        <li data-target="#carousel-thumb" data-slide-to="{{forloop.counter0}}" class="active"> <img class="d-block w-100" src="{{image.url}}"class="img-fluid"></li>
+                  <li data-target="#carousel-thumb" data-slide-to="{{forloop.counter0}}" class="active" > <img class="d-block w-100" src="{{image.url}}"  class="img-fluid"></li>
               {% endfor %}
             </ol>
           </div>
@@ -221,33 +222,27 @@
         lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
       })();
+  </script>
+  <!-- End of LiveChat code -->
+  <!-- Default Statcounter code for Budapest Autószalon
+  www.budapestautoszalon.hu -->
+  <script type="text/javascript">
+  var sc_project=9812866;
+  var sc_invisible=1;
+  var sc_security="1a0d68be";
+  </script>
 
-    function myFunction() {
-    var x = document.getElementsByClassName("menu")[0]  ;
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-</script>
-<!-- End of LiveChat code -->
-<!-- Default Statcounter code for Budapest Autószalon
-www.budapestautoszalon.hu -->
-<script type="text/javascript">
-var sc_project=9812866;
-var sc_invisible=1;
-var sc_security="1a0d68be";
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="ingyen
-webstatisztika" href="https://www.statcounter.hu/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/9812866/0/1a0d68be/1/"
-alt="ingyen webstatisztika"></a></div></noscript>
-<!-- End of Statcounter Code -->
+
+  <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="ingyen
+    webstatisztika" href="https://www.statcounter.hu/"
+    target="_blank"><img class="statcounter"
+    src="https://c.statcounter.com/9812866/0/1a0d68be/1/"
+    alt="ingyen webstatisztika"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+  </script>
 </body>
 
 
