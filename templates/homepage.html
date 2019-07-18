@@ -3,19 +3,31 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title>Budapest Autószalon új és használtautók</title>
-    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A Magyar használt autó kereskedés és Új autó szalon Budapest Autoszalon(használt autó, használt autók, használtautó,) Közép-Európában. Legkeresettebb márkák: Škoda, Ford, Peugeot, Renault, Citroen, Daewoo, Audi, Fiat, Opel, Seat, VW, Volvo, Honda, Kia, Mazda, Subaru, SsangYong, Mitsubishi, Opel Astra">
     <meta name="keywords" content="">
-    <meta name="author" content="">
-    <script defer src="{% static 'js/analytics.js' %}"></script>
+    <meta name="author" content="Follow the white rabbit">
+
+    <!-- Favicons -->
     <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
+    <!--<link href="img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <!-- Main Analytics JavaScript -->
+    <script defer src="{% static 'js/analytics.js' %}"></script>
 
     <style>
       .carousel-item {
@@ -28,23 +40,25 @@
         background-size: cover;
       }
     </style>
-
   </head>
   <body>
 
-      <!-- Start Top Menu -->
-      <a id="button"></a>
+    <!--==========================
+    Top menu
+    ============================-->
       <nav class="menu-top" >
         <ul class="menu__list-top">
           <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
-          <li class="menu__group-top"><i class="fas fa-phone"></i> +36 1 803 6056</li>
+          <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
           <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
           <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
         </ul>
       </nav>
       <!-- End Top Menu -->
       <br />
-      <!-- Navigation -->
+      <!--==========================
+      Navigation
+      ============================-->
       <nav class="navbar navbar-light bg-light navbar-expand-sm">
         <a class="navbar-brand" href="{% url 'fooldal' %}">
           <img src="/static/logo2.png" width="20%" height="20%" alt="Budapest Autoszalon Logo">
@@ -73,16 +87,10 @@
         </div>
       </nav>
     <!-- End Main Navigation -->
-    <div class="container">
-      <!--
-      <br />
-      <div class="wrapper2 ">
-         <div><img src="/static/SsangYong-logo.png" width="60%";></div>
-         <div><img src="/static/Subaru-logo.png" width="60%";></div>
-         <div><img src="/static/Mitsubishi-logo.png" width="40%";></div>
-         <div><img src="/static/opellogo.png" width="60%";></div>
-      </div>-->
-      <!--START **** Carousel Item **** -->
+
+    <!--==========================
+    Carousel
+    ============================-->
       <header class="hedy">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -124,9 +132,134 @@
       </header>
       <!--END **** Carousel Item **** -->
 
-      <!-- Main Page Content-->
+      <!--==========================
+        Szolgaltatasok Section
+      ============================-->
+      <section id="services" class="section-bg">
+        <div class="container">
+
+          <header class="section-header">
+            <h3>Szolgáltatások</h3>
+            <p>A Budapest Autószalon, az autóértékesítés és szerviz, mellett további szolgáltatásokat is kínál Önnek.</p>
+          </header>
+
+          <div class="row">
+
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+              <!--  <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>-->
+                <h4 class="title"><a href="">Teljeskörű ügyintézés</a></h4>
+                <p class="description">Nemcsak hogy segítünk, de el is tudjuk intézni Ön helyett (műszaki, átiratás stb). Bővebb információt a legközelebbi telephelyen kaphat.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+                <!--<div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>-->
+                <h4 class="title"><a href="">Biztosításkötés</a></h4>
+                <p class="description">Kötelező és casco biztosítás együttkötés, ügyintézés.
+                                        Számos biztosítóval vagyunk kapcsolatban,
+                                      így velünk tudja a legegyszerűbben megtalálni a legkedvezőbb ajánlatot.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box">
+                <!--<div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>-->
+                <h4 class="title"><a href="">Műszaki vizsga</a></h4>
+                <p class="description">A hatósági műszaki vizsgáztatást helyben végezzük, melyet előzetes műszaki átvizsgálással egészítünk ki.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box">
+              <!--  <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>-->
+                <h4 class="title"><a href="">Garancia</a></h4>
+                <p class="description">Használt autók és új autók esetében is van mód, hogy a felmerülő szervizköltségek kapcsán ne kelljen aggódnod.
+                                      A részletek kapcsán kérdezd munkatársainkat!</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+              <!--  <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>-->
+                <h4 class="title"><a href="">Hitel / Finanszírozás</a></h4>
+                <p class="description">Több pénzintézet ajánlata alapján dönthet a Önnek tetsző konstrukció mellett,
+                                      Akár magánszemélyként akár vállalkozásként, legyen szó kis- vagy nagy értékű autóról,
+                                      sokféle ajánlat közül válogathat, forint alapon. </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+                <!--<div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>-->
+                <h4 class="title"><a href="">Szerviz</a></h4>
+                <p class="description"> Telephelyünkön minden technológiai feltétel  adott ahhoz, hogy a hozzánk érkező gépjárműveket szakszerűen és pontosan megjavíthassuk</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- #services -->
+      <!--==========================
+        Call To Action Section
+      ============================-->
+      <section id="call-to-action" class="wow fadeInUp">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-left">
+              <h3 class="cta-title">Garanciális használt autók</h3>
+              <p class="cta-text"> Továbbra is azon munkálkodunk, hogy a járműveink még elérhetőbbek legyenek az Önök számára.<br />
+                 Sőt, kedvező törlesztő részlettel és további lehetőségekkel várjuk Önt!</p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="{% url 'hasznalt' %}">Autóink</a>
+            </div>
+          </div>
+
+        </div>
+      </section><!-- #call-to-action -->
+      <section id="features">
+      <div class="container">
+
+        <div class="row feature-item">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="/static/bpszlo.JPG" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+            <h4>Budapest Autószalon</h4>
+            <p>
+              Több mint 20 éves értékesítési tapasztalattal a hátunk mögött, 2009-ben hoztuk létre cégünket azzal a szándékkal, hogy átlagon felüli környezetben, minőségi, magas színvonalú személyre szabott kiszolgálásban részesítsük Ügyfeleinket.
+              Az ország egyik legnagyobb raktárkészletével rendelkezünk, így a megvásárolt autókat, akár rövid határidővel tudjuk átadni kedves Vásárlóink részére.
+            </p>
+            <p>
+              Használt autó kereskedésünkben, több mint száz, a cégünk által átvizsgált autó közül válogathat Eladásra kínált gépjárművet típustól, évjárattól, állapottól függetlenül reális áron beszámítjuk vagy megvásároljuk.
+            </p>
+          </div>
+        </div>
+
+        <div class="row feature-item mt-5 pt-5">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <img src="/static/logo2.png"" class="img-fluid" alt="szalinkep">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+            <h4></h4>
+            <p>
+              Autószalonunkban a forgalmazott márkák teljes típusválasztéka megtalálható. Kollégáink, naprakész információkkal, teljeskörű típus ismereti tapasztalatokkal, gyakorlati segítséggel állnak az Ügyfelek rendelkezésére.
+            </p>
+            <p>
+              Márkaszervizünkben az évente megforduló több ezer modell átvizsgálási és javítási munkáit, okleveles, jól képzett autószerelőink végzik el. Ezen feladatra egy 700 m2 területű műhelycsarnok áll a szakembereink rendelkezésére, teljes szerviz infrastruktúrával. A forgalmazott márkáink mellett - márka függetlenül - bármely típus szervizelését vállaljuk.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- #about -->
+      <!--==========================
+      Main page content
+      ============================-->
+      <!--
+      <div class="container" >
         <div class="w_text">
-          <h1 class="mt-4 mb-3">Üdvözöljük a Budapest Autószalonnál <br /> Új és használt autók garanciával</h1>
+          <h1 class="mt-4 mb-3">Ajánlataink</h1>
         </div>
         <div class="wrapper">
         <div class="box box5 shadow1" >
@@ -157,26 +290,8 @@
             <img class="img-fluid" src="/static/asx-4.png" alt=""></a></p>
           </div>
         </div>
-      <div class="row">
-        <div class="col-lg-6" class="producttion">
-        </br>
-          <h2>Budapest Autószalon</h2>
-              <p style="text-align: justify;"><strong>Több mint 20 éves értékesítési tapasztalattal</strong> a hátunk mögött, <strong>2009-ben hoztuk létre cégünket</strong> azzal a szándékkal, hogy átlagon felüli környezetben, minőségi, magas színvonalú személyre szabott kiszolgálásban részesítsük Ügyfeleinket.</p>
-              <p style="text-align: justify;"><strong>Autószalonunkban a forgalmazott márkák teljes típusválasztéka megtalálható</strong>. Kollégáink, naprakész információkkal, teljeskörű típus ismereti tapasztalatokkal, gyakorlati segítséggel állnak az Ügyfelek rendelkezésére.</p>
-              <p style="text-align: justify;"><strong>Márkaszervizünkben az évente megforduló több ezer modell átvizsgálási és javítási munkáit, okleveles, jól képzett autószerelőink végzik el.</strong> Ezen feladatra egy 700 m2 területű műhelycsarnok áll a szakembereink rendelkezésére, teljes szerviz infrastruktúrával. A forgalmazott márkáink mellett - márka függetlenül - bármely típus szervizelését vállaljuk.</p>
-              <p style="text-align: justify;"><strong>Az ország egyik legnagyobb raktárkészletével rendelkezünk</strong>, így a megvásárolt autókat, akár rövid határidővel tudjuk átadni kedves Vásárlóink részére.</p>
-              <p style="text-align: justify;"><strong>Használt autó kereskedésünkben, több mint száz, a cégünk által átvizsgált autó közül válogathat</strong>. Eladásra kínált gépjárművet típustól, évjárattól, állapottól függetlenül reális áron beszámítjuk vagy megvásároljuk.</p>
-              <h3 style="text-align: justify;"><strong>Önt is várjuk a 2019 -es évben!</strong></h3></p>
-        </div>
-        <div class="col-lg-6">
-        </br>
-        </br>
-        </br>
-          <img class="img-fluid rounded" src="/static/bpszlo.JPG" alt="">
-        </div>
       </div>
-    </div>
-
+      <br />-->
       <!-- Footer -->
       <footer id="myFooter">
           <div class="container">

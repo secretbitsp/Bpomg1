@@ -2,7 +2,7 @@
 <hirdetesek xmlns="http://hex.hasznaltauto.hu/ns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://hex.hasznaltauto.hu/1.0/hex.xsd" min_client_version="1.0" max_client_version="2.0">
 	<hirdetes hirdeteskod="14182968" partnerkod="7972" kategoria="Személyautó" gyartmany="MERCEDES-BENZ" tipus="ML 320 (Automata) Csere-Beszámítás!" modell="ML 320" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="899000"><![CDATA[899 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2759"><![CDATA[2 759 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2752"><![CDATA[2 752 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">1998/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2021/01</muszaki>
@@ -45,7 +45,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14208280" partnerkod="7972" kategoria="Személyautó" gyartmany="JEEP" tipus="CHEROKEE 2.0 MJD Limited (Automata) Magyarországi! Garanciális!" modell="CHEROKEE" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="7499000"><![CDATA[7 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="23018"><![CDATA[23 018 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="22958"><![CDATA[22 958 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">30%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -90,7 +90,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14336512" partnerkod="7972" kategoria="Személyautó" gyartmany="HYUNDAI" tipus="SANTA FE 2.2 CRDi VGT Premium (Automata) MAGYAR!VEZETETT SZ. KÖNYV!" modell="SANTA FE" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="2299000"><![CDATA[2 299 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="7057"><![CDATA[7 057 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="7038"><![CDATA[7 038 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -134,7 +134,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14336513" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="3-AS SOROZAT 320d EfficientDynamics (Automata) Csere-Hitel-Beszámítás!" modell="3-AS SOROZAT" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="5899000"><![CDATA[5 899 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="18107"><![CDATA[18 107 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="18060"><![CDATA[18 060 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/09</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -177,7 +177,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14351478" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="318d Touring Vezetett szervizkönyv! Megkímélt!" modell="318" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="1949000"><![CDATA[1 949 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="5982"><![CDATA[5 982 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="5967"><![CDATA[5 967 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2010/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -221,7 +221,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14360530" partnerkod="7972" kategoria="Személyautó" gyartmany="MAZDA" tipus="6 Sport 2.2 CD AWD Attraction Magyarországi 1 tulaj!!! Törésmentes!!!" modell="6" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="4999000"><![CDATA[4 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="15344"><![CDATA[15 344 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="15304"><![CDATA[15 304 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/05</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -264,7 +264,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14363553" partnerkod="7972" kategoria="Személyautó" gyartmany="CHEVROLET" tipus="SPARK 0.8 6V Direct Magyarországi!51EKM!!!!" modell="SPARK" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="699000"><![CDATA[699 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2146"><![CDATA[2 146 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2140"><![CDATA[2 140 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2006/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -306,7 +306,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14364140" partnerkod="7972" kategoria="Személyautó" gyartmany="SUZUKI" tipus="SWIFT 1.0 GLX Csere-Beszámítás!" modell="SWIFT" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="199000"><![CDATA[199 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="611"><![CDATA[611 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="609"><![CDATA[609 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">2001/06</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2019/07</muszaki>
@@ -347,7 +347,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14365167" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="MOKKA 1.4 T Enjoy AWD Start-Stop Magyarországi!Leinformálható!" modell="MOKKA" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="3199000"><![CDATA[3 199 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9819"><![CDATA[9 819 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9794"><![CDATA[9 794 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -390,7 +390,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14383228" partnerkod="7972" kategoria="Személyautó" gyartmany="CITROEN" tipus="C5 2.0 HDi Prestige Plus (Automata) Magyarországi 1. tulajdonostól!" modell="C5" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="3499000"><![CDATA[3 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="10740"><![CDATA[10 740 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="10712"><![CDATA[10 712 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/11</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -435,7 +435,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14388717" partnerkod="7972" kategoria="Személyautó" gyartmany="DACIA" tipus="LOGAN MCV 1.2 Arctic LPG Magyarországi!95ekm!" modell="LOGAN" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2399000"><![CDATA[2 399 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="7364"><![CDATA[7 364 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="7344"><![CDATA[7 344 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -479,7 +479,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14388848" partnerkod="7972" kategoria="Személyautó" gyartmany="MERCEDES-BENZ" tipus="C 230 T Avantgarde V6 MAGYARORSZÁGI! 1 ÉV GARANCIA!" modell="C 230" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="2299000"><![CDATA[2 299 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="7057"><![CDATA[7 057 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="7038"><![CDATA[7 038 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/08</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -518,52 +518,9 @@
 			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14388848_9t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14388848_9t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14388848_9.jpg</kep>
 		</kepek>
 	</hirdetes>
-	<hirdetes hirdeteskod="14413155" partnerkod="7972" kategoria="Személyautó" gyartmany="MAZDA" tipus="6 2.0 CD TE Magyarországi!!! Leinformálható!!!" modell="6" belsoazonosito="Laci">
-		<ar megnevezes="Vételár" nyersadat="649000"><![CDATA[649 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1992"><![CDATA[1 992 EUR]]></ar_eur>
-		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
-		<evjarat megnevezes="Évjárat">2004/07</evjarat>
-		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
-		<muszaki megnevezes="Műszaki vizsga érvényes">2020/06</muszaki>
-		<futottkm megnevezes="Kilométeróra állása" mertekegyseg="km" nyersadat="307000">307 000 km</futottkm>
-		<kivitel megnevezes="Kivitel">Sedan</kivitel>
-		<hengerelrendezes megnevezes="Henger-elrendezés" nyersadat="1">Soros</hengerelrendezes>
-		<hajtas megnevezes="Hajtás" nyersadat="1">Első kerék</hajtas>
-		<allapot megnevezes="Állapot">Normál</allapot>
-		<uzemanyag megnevezes="Üzemanyag">Dízel</uzemanyag>
-		<sebessegvalto megnevezes="Sebességváltó fajtája" nyersadat="M5">Manuális (5 fokozatú) sebességváltó</sebessegvalto>
-		<hengerurtartalom megnevezes="Hengerűrtartalom" nyersadat="1998" mertekegyseg="cm³">1998 cm³</hengerurtartalom>
-		<teljesitmeny megnevezes="Teljesítmény" nyersadat="89" mertekegyseg="kW">89 kW, 121 LE</teljesitmeny>
-		<szallithato_szemelyek megnevezes="Szállítható szem. száma" mertekegyseg="fő">5 fő</szallithato_szemelyek>
-		<ajtok megnevezes="Ajtók száma">4</ajtok>
-		<klima megnevezes="Klíma fajtája">Digitális klíma</klima>
-		<szin megnevezes="Szín" metal="true">Világosszürke (metál)</szin>
-		<karpitszin_1 megnevezes="Kárpit színe (1)">Világosszürke</karpitszin_1>
-		<sajat_tomeg megnevezes="Saját tömeg" mertekegyseg="kg" nyersadat="1410">1 410 kg</sajat_tomeg>
-		<ossztomeg megnevezes="Össztömeg" mertekegyseg="kg" nyersadat="1930">1 930 kg</ossztomeg>
-		<csomagtarto megnevezes="Csomagtartó" nyersadat="500" mertekegyseg="liter">500 liter</csomagtarto>
-		<leiras megnevezes="Leírás">Márka kereskedésünk által beszámolt illetve bevizsgált Mazda 6 keresi tulajdonosát, erős motorral, jó váltóval, szép beltérrel, működő extrákkal, gyári kulcsokkal, Téli gumi szettel lemez felnin. Kereskedésünk az eladástól az autó átvételéig, teljeskörű finanszírozási, illetve átírási ügyintézéssel segíti vásárlóinkat. Hozza el hozzánk beszámítani kívánt autóját, ha öreg akkor is! Az autó megtekintésével és további információkkal kapcsolatban keressen az alábbi mobiltelefonszámon: Horváth László 0670-770-9032</leiras>
-		<felszereltseg megnevezes="Felszereltség">6 hangszóró, ABS (blokkolásgátló), ASR (kipörgésgátló), AUX csatlakozó, állítható kormány, bluetooth-os kihangosító, CD-s autórádió, centrálzár, deréktámasz, digitális klíma, dönthető utasülések, elektromos ablak elöl, elektromos ablak hátul, elektromos tükör, fedélzeti komputer, fényszóró magasságállítás, függönylégzsák, fűthető tükör, fűthető ülés, hátsó fejtámlák, indításgátló (immobiliser), ISOFIX rendszer, könnyűfém felni, középső kartámasz, manuális (5 fokozatú) sebességváltó, MP3 lejátszás, multifunkciós kormánykerék, oldallégzsák, plüss kárpit, pótkerék, riasztó, sebességváltó zár, szervokormány, színezett üveg, tempomat, tolatóradar, utasoldali légzsák, ülésmagasság állítás, vezetőoldali légzsák, autóbeszámítás lehetséges, azonnal elvihető, Magyarországon újonnan üzembe helyezett, motorbeszámítás lehetséges, nem dohányzó, rendszeresen karbantartott, szervizkönyv, törzskönyv, 20%-tól elvihető.</felszereltseg>
-		<telefonszam megnevezes="Telefonszám" orszagkod_1="36" telefonszam_1="70/7709032" orszagkod_2="36" telefonszam_2="1/8036050">(+36) 70/7709032, (+36) 1/8036050</telefonszam>
-		<megtekintheto megnevezes="Cím">1044(4.ker) BUDAPEST,VÁCI ÚT 76-80</megtekintheto>
-		<emailcim megnevezes="E-mail">erdeklodes@budapestautoszalon.hu</emailcim>
-		<kepek>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_1t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_1t.jpg" kepalairas="Budapest Autószalon">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_1.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_2t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_2t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_2.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_3t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_3t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_3.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_4t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_4t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_4.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_5t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_5t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_5.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_6t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_6t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_6.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_7t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_7t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_7.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_8t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_8t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_8.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_9t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_9t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_9.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_10t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_10t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_10.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14413155_11t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14413155_11t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14413155_11.jpg</kep>
-		</kepek>
-	</hirdetes>
 	<hirdetes hirdeteskod="14413269" partnerkod="7972" kategoria="Személyautó" gyartmany="DAEWOO" tipus="TACUMA 1.6 SX MAGYARORSZÁGI! HITELRE IS!!!" modell="TACUMA" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="549000"><![CDATA[549 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1685"><![CDATA[1 685 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="1681"><![CDATA[1 681 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2003/10</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -607,7 +564,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14416538" partnerkod="7972" kategoria="Személyautó" gyartmany="AUDI" tipus="A8 3.0 V6 TDI DPF quattro Tiptronic ic Megkímélt! 134.000Km! Pajzs!" modell="A8" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="6599000"><![CDATA[6 599 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="20255"><![CDATA[20 255 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="20203"><![CDATA[20 203 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">25%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2011/09</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -630,7 +587,7 @@
 		<sajat_tomeg megnevezes="Saját tömeg" mertekegyseg="kg" nyersadat="1840">1 840 kg</sajat_tomeg>
 		<ossztomeg megnevezes="Össztömeg" mertekegyseg="kg" nyersadat="2530">2 530 kg</ossztomeg>
 		<csomagtarto megnevezes="Csomagtartó" nyersadat="510" mertekegyseg="liter">510 liter</csomagtarto>
-		<leiras megnevezes="Leírás">Márka kereskedésünk által beszámolt illetve bevizsgált, megkímélt állapotban levő Audi A8 keresi tulajdonosát, 1ÉV GARANCIÁVAL, PAJZS védelmi rendszerrel, gyári kulcsokkal, leinformálható Km futással, hibátlanul működő extrákkal, BOSE zenével, nagyon jó szerkezeti állapotban. Kereskedésünk az eladástól az autó átvételéig, teljeskörű finanszírozási, illetve átírási ügyintézéssel segíti vásárlóinkat. Hozza el hozzánk beszámítani kívánt autóját, ha öreg akkor is!</leiras>
+		<leiras megnevezes="Leírás">Márka kereskedésünk által beszámolt illetve bevizsgált, megkímélt állapotban levő Audi A8 keresi tulajdonosát, PAJZS védelmi rendszerrel, gyári kulcsokkal, leinformálható Km futással, hibátlanul működő extrákkal, BOSE zenével, nagyon jó szerkezeti állapotban. Kereskedésünk az eladástól az autó átvételéig, teljeskörű finanszírozási, illetve átírási ügyintézéssel segíti vásárlóinkat. Hozza el hozzánk beszámítani kívánt autóját, ha öreg akkor is!</leiras>
 		<felszereltseg megnevezes="Felszereltség">10 hangszóró, ABS (blokkolásgátló), APS (parkolóradar), ARD (automatikus távolságtartó), ASR (kipörgésgátló), automata (8 fokozatú tiptronic) sebességváltó, automatikus csomagtér-ajtó, automatikusan sötétedő belső tükör, automatikusan sötétedő külső tükör, AUX csatlakozó, állítható kormány, állófűtés, bi-xenon fényszóró, bluetooth-os kihangosító, bőr belső, CD-s autórádió, CD tár, centrálzár, deréktámasz, digitális többzónás klíma, DVD, EBD/EBV (elektronikus fékerő-elosztó), EDS (elektronikus differenciálzár), elektromos ablak elöl, elektromos ablak hátul, elektromos tolótető, elektromos tükör, elektromos ülésállítás utasoldal, elektromos ülésállítás vezetőoldal, elektromosan állítható fejtámlák, elektromosan behajtható külső tükrök, elektronikus futómű hangolás, esőszenzor, ESP (menetstabilizátor), faberakás, fedélzeti komputer, fékasszisztens, fényszórómosó, full extra, függönylégzsák, fűthető kormány, fűthető szélvédő, fűthető tükör, fűthető ülés, hátsó fejtámlák, hátsó oldal légzsák, hűthető kesztyűtartó, indításgátló (immobiliser), iPhone/iPod csatlakozó, ISOFIX rendszer, kikapcsolható légzsák, kormányváltó, ködlámpa, könnyűfém felni, középső kartámasz, kulcsnélküli indítás, LED fényszóró, memóriás vezetőülés, mélynyomó, MP3 lejátszás, MP4 lejátszás, multifunkciós kormánykerék, oldallégzsák, pótkerék, rablásgátló, riasztó, sávtartó rendszer, sebességfüggő szervókormány, színezett üveg, tábla-felismerő funkció, tempomat, tolatóradar, tolótető (napfénytető), USB csatlakozó, utasoldali légzsák, ülésmagasság állítás, vezetőoldali légzsák, visszagurulás-gátló, WMA lejátszás, autóbeszámítás lehetséges, azonnal elvihető, motorbeszámítás lehetséges, nem dohányzó, rendszeresen karbantartott, szervizkönyv, törzskönyv, 25%-tól elvihető.</felszereltseg>
 		<telefonszam megnevezes="Telefonszám" orszagkod_1="36" telefonszam_1="70/7709032" orszagkod_2="36" telefonszam_2="1/8036050">(+36) 70/7709032, (+36) 1/8036050</telefonszam>
 		<megtekintheto megnevezes="Cím">1044(4.ker) BUDAPEST,VÁCI ÚT 76-80</megtekintheto>
@@ -652,7 +609,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14421822" partnerkod="7972" kategoria="Személyautó" gyartmany="SUZUKI" tipus="SWIFT 1.0 GL MAGYARORSZÁGI!" modell="SWIFT" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="249000"><![CDATA[249 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="764"><![CDATA[764 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="762"><![CDATA[762 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">2000/08</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2020/08</muszaki>
@@ -693,7 +650,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14427397" partnerkod="7972" kategoria="Személyautó" gyartmany="LAND ROVER" tipus="RANGE ROVER EVOQUE 21.000Km HSE Dynamic 4WD CABRIO Újszerű" modell="RANGE ROVER EVOQUE" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="14299000"><![CDATA[14 299 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="43890"><![CDATA[43 890 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="43776"><![CDATA[43 776 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">30%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2017/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -736,7 +693,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14435951" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="530xd (Automata) Megkímélt! Hitel-Csere-Beszámítás!" modell="530" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="2399000"><![CDATA[2 399 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="7364"><![CDATA[7 364 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="7344"><![CDATA[7 344 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -781,7 +738,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14443877" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="FRONTERA 2.3 TD SE Gyári vázszám! Kifogástalan 4x4+Felező!" modell="FRONTERA" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="549000"><![CDATA[549 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1685"><![CDATA[1 685 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="1681"><![CDATA[1 681 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">1993/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2019/07</muszaki>
@@ -824,7 +781,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14452373" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="3-AS SOROZAT 320d Luxury (Automata) Magyarországi!Leinformálható!" modell="3-AS SOROZAT" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="4799000"><![CDATA[4 799 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="14730"><![CDATA[14 730 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="14692"><![CDATA[14 692 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/10</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -868,7 +825,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14464362" partnerkod="7972" kategoria="Személyautó" gyartmany="KIA" tipus="CEE&#039;D SW 1.6 CRDi EX EURO5 MAGYARORSZÁGI!" modell="CEE&#039;D" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="1749000"><![CDATA[1 749 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="5368"><![CDATA[5 368 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="5355"><![CDATA[5 355 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2012/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -911,7 +868,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14465232" partnerkod="7972" kategoria="Személyautó" gyartmany="SSANGYONG" tipus="REXTON 2.2 e-XDI DLX Plus 4WD (Automata) Megkímélt! 59.000Km! Vezetett szervizkönyv!" modell="REXTON" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="6699000"><![CDATA[6 699 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="20562"><![CDATA[20 562 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="20509"><![CDATA[20 509 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2016/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -955,7 +912,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14468977" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="ASTRA G 1.4 16V Classic II Optima Magyarországi!Leinformálható!" modell="ASTRA G" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="799000"><![CDATA[799 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2453"><![CDATA[2 453 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2446"><![CDATA[2 446 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -998,7 +955,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14469610" partnerkod="7972" kategoria="Személyautó" gyartmany="KIA" tipus="CEE&#039;D 1.6 CRDI EX Limited MAGYARORSZÁGI! 1 ÉV GARANCIÁVAL!" modell="CEE&#039;D" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="2799000"><![CDATA[2 799 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="8591"><![CDATA[8 591 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="8569"><![CDATA[8 569 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2016</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1041,7 +998,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14470104" partnerkod="7972" kategoria="Személyautó" gyartmany="KIA" tipus="OPTIMA 1.7 CRDI EX Prémium Aut. 99.000Km! Gyári Garancia 2022-ig!" modell="OPTIMA" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="4699000"><![CDATA[4 699 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="14423"><![CDATA[14 423 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="14386"><![CDATA[14 386 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/01</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1084,7 +1041,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14470241" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="X1 xDrive18d Aut. Törésmentes! Hitel-csere!" modell="X1" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="5499000"><![CDATA[5 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="16879"><![CDATA[16 879 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="16835"><![CDATA[16 835 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/01</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1129,7 +1086,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14473922" partnerkod="7972" kategoria="Személyautó" gyartmany="AUDI" tipus="A8 quattro 4.2 V8 TDI Tiptronic DPF Csere-Hitel-Beszámítás!" modell="A8" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2799000"><![CDATA[2 799 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="8591"><![CDATA[8 591 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="8569"><![CDATA[8 569 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2007/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1173,7 +1130,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14478337" partnerkod="7972" kategoria="Személyautó" gyartmany="FIAT" tipus="SCUDO 1.6 Mjet L1H1 Combinato 9 SZEMÉLYES!20%-TÓL!" modell="SCUDO" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="2799000"><![CDATA[2 799 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="8591"><![CDATA[8 591 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="8569"><![CDATA[8 569 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2011/01</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1214,7 +1171,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14478538" partnerkod="7972" kategoria="Személyautó" gyartmany="RENAULT" tipus="MEGANE 1.4 RN MAGYARORSZÁGI!" modell="MEGANE" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="349000"><![CDATA[349 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1071"><![CDATA[1 071 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="1068"><![CDATA[1 068 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">1999/10</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2019/09</muszaki>
@@ -1255,7 +1212,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14479150" partnerkod="7972" kategoria="Személyautó" gyartmany="SUZUKI" tipus="SX4 Sedan 1.6 GS Magyarországi!Vezetett Szerv.K!" modell="SX4" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="1499000"><![CDATA[1 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="4601"><![CDATA[4 601 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="4589"><![CDATA[4 589 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/10</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1298,7 +1255,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14479297" partnerkod="7972" kategoria="Személyautó" gyartmany="RENAULT" tipus="MEGANE Grandtour 1.5 dCi Authentique Plus Hitel-Csere-Beszámítás!!!" modell="MEGANE" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="749000"><![CDATA[749 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2299"><![CDATA[2 299 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2293"><![CDATA[2 293 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2004/10</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1341,7 +1298,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14479595" partnerkod="7972" kategoria="Személyautó" gyartmany="MAZDA" tipus="323 1.4 Magyarországi!" modell="323" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="599000"><![CDATA[599 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1839"><![CDATA[1 839 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="1834"><![CDATA[1 834 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">2003/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2019/10</muszaki>
@@ -1383,7 +1340,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14479640" partnerkod="7972" kategoria="Személyautó" gyartmany="MITSUBISHI" tipus="OUTLANDER 2.2 DI-D Instyle Navi 4WD (Automata) Leinformálható! Hitel-Csere-Beszámítás!" modell="OUTLANDER" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="4899000"><![CDATA[4 899 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="15037"><![CDATA[15 037 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="14998"><![CDATA[14 998 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2013/09</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1428,7 +1385,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14480776" partnerkod="7972" kategoria="Személyautó" gyartmany="AUDI" tipus="A6 Avant 2.7 TDI quattro Tiptronic V6 CSERE-HITEL-BESZÁMÍTÁS!" modell="A6" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="1849000"><![CDATA[1 849 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="5675"><![CDATA[5 675 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="5661"><![CDATA[5 661 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2005/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1471,7 +1428,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14480802" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="520d Touring" modell="520" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="2999000"><![CDATA[2 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9205"><![CDATA[9 205 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9181"><![CDATA[9 181 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2011/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1514,7 +1471,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14480842" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="ASTRA H 1.3 CDTI GTC Sport MAGYARORSZÁGI!" modell="ASTRA H" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="999000"><![CDATA[999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="3066"><![CDATA[3 066 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="3058"><![CDATA[3 058 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2006/05</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1558,7 +1515,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14480881" partnerkod="7972" kategoria="Személyautó" gyartmany="FORD" tipus="FOCUS 1.5 TDCI &#039;88g&#039; Titanium Econetic Magyarországi!ÁFÁS!!!!" modell="FOCUS" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="2999000"><![CDATA[2 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9205"><![CDATA[9 205 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9181"><![CDATA[9 181 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2016/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1601,7 +1558,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14480889" partnerkod="7972" kategoria="Személyautó" gyartmany="RENAULT" tipus="MEGANE Grandtour 1.5 dCi Authentique Magyarországi!Csere-beszámítás" modell="MEGANE" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="249000"><![CDATA[249 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="764"><![CDATA[764 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="762"><![CDATA[762 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">2004/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2019/06</muszaki>
@@ -1637,7 +1594,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14482683" partnerkod="7972" kategoria="Személyautó" gyartmany="SSANGYONG" tipus="TIVOLI 1.6 e-XDI DLX Plus Magyar 1. tulaj! 32000Km! Fényezésmentes!" modell="TIVOLI" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="4799000"><![CDATA[4 799 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="14730"><![CDATA[14 730 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="14692"><![CDATA[14 692 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2017/10</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1680,7 +1637,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14484182" partnerkod="7972" kategoria="Személyautó" gyartmany="VOLKSWAGEN" tipus="GOLF VII Variant 1.6 TDI BMT Trendline Magyarországi!1 Tulajdonos!" modell="GOLF VII" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="3099000"><![CDATA[3 099 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9512"><![CDATA[9 512 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9488"><![CDATA[9 488 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/01</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1724,7 +1681,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14495460" partnerkod="7972" kategoria="Személyautó" gyartmany="FORD" tipus="TOURNEO Courier 1.6 TDCi Titanium 1 ÉV GARANCIÁVAL!" modell="TOURNEO" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2499000"><![CDATA[2 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="7671"><![CDATA[7 671 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="7651"><![CDATA[7 651 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/11</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1768,7 +1725,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14500594" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="640d (Automata) GRAN COUPE MAGYAR!1TULAJ!" modell="640" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="10999000"><![CDATA[10 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="33761"><![CDATA[33 761 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="33673"><![CDATA[33 673 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">30%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2013/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1790,7 +1747,7 @@
 		<sajat_tomeg megnevezes="Saját tömeg" mertekegyseg="kg" nyersadat="1820">1 820 kg</sajat_tomeg>
 		<ossztomeg megnevezes="Össztömeg" mertekegyseg="kg" nyersadat="2390">2 390 kg</ossztomeg>
 		<csomagtarto megnevezes="Csomagtartó" nyersadat="460" mertekegyseg="liter">460 liter</csomagtarto>
-		<leiras megnevezes="Leírás">1 Év garanciával! Magyarországi! Első tulajdonostól! Leinformálható! Törésmentes Bmw 640d GRAN COUPE keresi második tulajdonosát. Törésmentes karosszériával. Újszerű beltérrel. 2 db gyári kulccsal. Rablásgátlóval. Adaptív kanyarvilágítással. Soft Close. Hazakísérő világítás. Menetdinamikai szabályzással. Komfort nyitás. Ráfutás figyelmeztető. 360-kamera rendszer. Head-Up. Kereskedésünk az eladástól az autó átvételéig, teljeskörű finanszírozási, illetve átírási ügyintézéssel segíti vásárlóinkat. Hozza el hozzánk beszámítani kívánt autóját, ha öreg akkor is! Az autó megtekintésével és további információkkal kapcsolatban keressen az alábbi mobiltelefonszámon: Mezőfi Balázs 0620-395-50-02</leiras>
+		<leiras megnevezes="Leírás">1 Év garanciával! Magyarországi! Első tulajdonostól! Leinformálható! Törésmentes Bmw 640d GRAN COUPE keresi második tulajdonosát. Törésmentes karosszériával. Újszerű beltérrel. 2 db gyári kulccsal. Rablásgátlóval. Adaptív kanyarvilágítással. Soft Close. Hazakísérő világítás. Menetdinamikai szabályzással. Komfort nyitás. Ráfutás figyelmeztető. 360-kamera rendszer. Head-Up. Kereskedésünk az eladástól az autó átvételéig, teljeskörű finanszírozási, illetve átírási ügyintézéssel segíti vásárlóinkat. Hozza el hozzánk beszámítani kívánt autóját, ha öreg akkor is! Az autó megtekintésével és további információkkal kapcsolatban keressen az alábbi mobiltelefonszámon: Horváth László 0670-770-9032</leiras>
 		<felszereltseg megnevezes="Felszereltség">8 hangszóró, ABS (blokkolásgátló), ADS (adaptív lengéscsillapító), ajtószervó, APS (parkolóradar), ARD (automatikus távolságtartó), ASR (kipörgésgátló), automata (8 fokozatú tiptronic) sebességváltó, automatikusan sötétedő belső tükör, automatikusan sötétedő külső tükör, AUX csatlakozó, állítható combtámasz, állítható kormány, bluetooth-os kihangosító, bőr belső, CD-s autórádió, centrálzár, csomag rögzítő, defektjavító készlet, defekttűrő abroncsok, deréktámasz, digitális kétzónás klíma, dönthető utasülések, DVD, EBD/EBV (elektronikus fékerő-elosztó), elektromos ablak elöl, elektromos ablak hátul, elektromos tükör, elektromos ülésállítás utasoldal, elektromos ülésállítás vezetőoldal, elektromosan állítható fejtámlák, elektromosan behajtható külső tükrök, elektronikus futómű hangolás, esőszenzor, ESP (menetstabilizátor), faberakás, fedélzeti komputer, fékasszisztens, fényszórómosó, fűthető ablakmosó fúvókák, fűthető tükör, fűthető ülés, GPS (navigáció), GPS nyomkövető, guminyomás-ellenőrző rendszer, gyalogos légzsák, hátsó fejtámlák, hátsó oldal légzsák, holttér-figyelő rendszer, indításgátló (immobiliser), iPhone/iPod csatlakozó, ISOFIX rendszer, kanyarkövető fényszóró, kihangosító, kikapcsolható légzsák, kormányváltó, ködlámpa, könnyűfém felni, középső kartámasz, kulcsnélküli indítás, LED fényszóró, lejtmenet asszisztens, memóriás vezetőülés, MP3 lejátszás, MP4 lejátszás, MSR (motorféknyomaték szabályzás), multifunkciós kormánykerék, oldallégzsák, rablásgátló, riasztó, sávtartó rendszer, sávváltó asszisztens, sebességfüggő szervókormány, sportfutómű, sportülések, szervokormány, színezett üveg, tábla-felismerő funkció, távolsági fényszóró asszisztens, távolságtartó tempomat, tempomat, tolatókamera, tolatóradar, USB csatlakozó, utasoldali légzsák, üléshűtés/szellőztetés, ülésmagasság állítás, vezetőoldali légzsák, visszagurulás-gátló, autóbeszámítás lehetséges, azonnal elvihető, első tulajdonostól, garanciális, keveset futott, Magyarországon újonnan üzembe helyezett, motorbeszámítás lehetséges, nem dohányzó, rendszeresen karbantartott, szervizkönyv, törzskönyv, 30%-tól elvihető.</felszereltseg>
 		<telefonszam megnevezes="Telefonszám" orszagkod_1="36" telefonszam_1="70/7709032" orszagkod_2="36" telefonszam_2="1/8036050">(+36) 70/7709032, (+36) 1/8036050</telefonszam>
 		<megtekintheto megnevezes="Cím">1044(4.ker) BUDAPEST,VÁCI ÚT 76-80</megtekintheto>
@@ -1811,7 +1768,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14503543" partnerkod="7972" kategoria="Személyautó" gyartmany="DAEWOO" tipus="KALOS 1.4 S Magyarországi!Leinformálható!" modell="KALOS" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="499000"><![CDATA[499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1532"><![CDATA[1 532 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="1528"><![CDATA[1 528 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2003/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1854,7 +1811,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14505648" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="INSIGNIA Sports Tourer 2.0 CDTI (Automata) Csere-Hitel-Beszámítás!" modell="INSIGNIA" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="1999000"><![CDATA[1 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="6136"><![CDATA[6 136 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="6120"><![CDATA[6 120 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2010/01</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1898,7 +1855,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14508437" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="CORSA D 1.3 CDTI Enjoy EcoFlex Magyarországi!Leinformálható!" modell="CORSA D" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="999000"><![CDATA[999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="3066"><![CDATA[3 066 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="3058"><![CDATA[3 058 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1940,7 +1897,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14509338" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="ASTRA K Sports Tourer 1.6 CDTI Dynamic Magyar 1. Tulaj! Fényezésmentes!" modell="ASTRA K" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="3399000"><![CDATA[3 399 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="10433"><![CDATA[10 433 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="10406"><![CDATA[10 406 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2016/06</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -1983,7 +1940,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14509858" partnerkod="7972" kategoria="Személyautó" gyartmany="MAZDA" tipus="323 F 1.5 GLX Magyarországi! Csere-Beszámítás!" modell="323 F" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="399000"><![CDATA[399 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1225"><![CDATA[1 225 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="1222"><![CDATA[1 222 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">1999/10</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2019/10</muszaki>
@@ -2026,7 +1983,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14517298" partnerkod="7972" kategoria="Személyautó" gyartmany="SSANGYONG" tipus="KYRON 2.0 Xdi Plus Hitel-Csere-Beszámítás!!!" modell="KYRON" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="1199000"><![CDATA[1 199 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="3680"><![CDATA[3 680 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="3671"><![CDATA[3 671 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2005/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2069,7 +2026,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14521505" partnerkod="7972" kategoria="Személyautó" gyartmany="VOLVO" tipus="S40 1.8 Momentum Magyarországi!Leinformálható!" modell="S40" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="1199900"><![CDATA[1 199 900 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="3683"><![CDATA[3 683 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="3673"><![CDATA[3 673 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">30%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2005/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2111,7 +2068,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14525867" partnerkod="7972" kategoria="Személyautó" gyartmany="VOLKSWAGEN" tipus="PASSAT Variant 2.0 CR TDI Trendline DSG 20%-Tól elvihető!Vezetett Szerv.K!" modell="PASSAT" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2299000"><![CDATA[2 299 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="7057"><![CDATA[7 057 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="7038"><![CDATA[7 038 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2010/06</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2154,7 +2111,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14528101" partnerkod="7972" kategoria="Személyautó" gyartmany="VOLKSWAGEN" tipus="PASSAT 1.6 CR TDI Trendline BMT Magyarországi!Leinformálható!" modell="PASSAT" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="3299000"><![CDATA[3 299 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="10126"><![CDATA[10 126 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="10100"><![CDATA[10 100 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2013/10</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2195,7 +2152,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14531796" partnerkod="7972" kategoria="Személyautó" gyartmany="FORD" tipus="FOCUS 1.5 TDCI &#039;88g&#039; Technology Econetic Magyarországi!Leinformálható!" modell="FOCUS" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2599000"><![CDATA[2 599 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="7978"><![CDATA[7 978 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="7957"><![CDATA[7 957 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2239,7 +2196,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14545038" partnerkod="7972" kategoria="Személyautó" gyartmany="AUDI" tipus="Q7 3.0 TDI quattro DPF Tiptronic Csere-Hitel-Beszámítás!" modell="Q7" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="3499000"><![CDATA[3 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="10740"><![CDATA[10 740 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="10712"><![CDATA[10 712 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2006/11</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2282,7 +2239,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14545331" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="3-AS SOROZAT 318d (Automata) LUXURY! Magyarországi 1.tulaj! Hitel-csere-beszámítás!" modell="3-AS SOROZAT" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="4599000"><![CDATA[4 599 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="14116"><![CDATA[14 116 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="14080"><![CDATA[14 080 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2326,7 +2283,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14545382" partnerkod="7972" kategoria="Személyautó" gyartmany="NISSAN" tipus="TIIDA 1.6 Visia MAGYARORSZÁGI! 1.TULAJ!" modell="TIIDA" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="1499000"><![CDATA[1 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="4601"><![CDATA[4 601 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="4589"><![CDATA[4 589 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2007/08</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2369,7 +2326,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14545637" partnerkod="7972" kategoria="Személyautó" gyartmany="AUDI" tipus="Q5 2.0 TDI quattro DPF S-tronic EU5 Magyarországi!Leinformálható!" modell="Q5" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="5349000"><![CDATA[5 349 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="16419"><![CDATA[16 419 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="16376"><![CDATA[16 376 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2012/08</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2413,7 +2370,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14546057" partnerkod="7972" kategoria="Személyautó" gyartmany="MERCEDES-BENZ" tipus="C 200 Kompressor Avantgarde (Automata) AMG Pack!!! Hitel-Csere-beszámítás!!!" modell="C 200" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="2699000"><![CDATA[2 699 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="8284"><![CDATA[8 284 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="8263"><![CDATA[8 263 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2007/09</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2458,7 +2415,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14555081" partnerkod="7972" kategoria="Személyautó" gyartmany="AUDI" tipus="A6 3.0 V6 TDI quattro Tiptronic MAGYARORSZÁGI!" modell="A6" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="1799000"><![CDATA[1 799 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="5522"><![CDATA[5 522 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="5508"><![CDATA[5 508 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2004/09</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2502,7 +2459,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14555096" partnerkod="7972" kategoria="Személyautó" gyartmany="ALFA ROMEO" tipus="159 2.4 JTD 20V TI Csere-Hitel-Beszámítás!" modell="159" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="1899000"><![CDATA[1 899 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="5829"><![CDATA[5 829 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="5814"><![CDATA[5 814 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2009/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2544,7 +2501,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14562295" partnerkod="7972" kategoria="Személyautó" gyartmany="RENAULT" tipus="CLIO 2.0 16VSport MAGYARORSZÁGI!" modell="CLIO" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="1999000"><![CDATA[1 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="6136"><![CDATA[6 136 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="6120"><![CDATA[6 120 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2003/08</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2586,7 +2543,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14571350" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="ANTARA 2.2 CDTI Enjoy FWD MAGYARORSZÁGI!" modell="ANTARA" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="3399000"><![CDATA[3 399 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="10433"><![CDATA[10 433 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="10406"><![CDATA[10 406 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2628,7 +2585,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14571357" partnerkod="7972" kategoria="Személyautó" gyartmany="CHEVROLET" tipus="KALOS 1.2 8V Plus AC Csere-Hitel-Beszámítás!" modell="KALOS" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="899000"><![CDATA[899 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2759"><![CDATA[2 759 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2752"><![CDATA[2 752 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2006/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2669,52 +2626,9 @@
 			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14571357_11t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14571357_11t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14571357_11.jpg</kep>
 		</kepek>
 	</hirdetes>
-	<hirdetes hirdeteskod="14576327" partnerkod="7972" kategoria="Személyautó" gyartmany="FORD" tipus="RANGER 2.2 TDCi 4x4 XLT ÁFÁ-s! Magyarországi!Leinformálható!" modell="RANGER" belsoazonosito="B.Lackó">
-		<ar megnevezes="Vételár" nyersadat="5499000"><![CDATA[5 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="16879"><![CDATA[16 879 EUR]]></ar_eur>
-		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
-		<evjarat megnevezes="Évjárat">2014/11</evjarat>
-		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
-		<muszaki megnevezes="Műszaki vizsga érvényes">2020/11</muszaki>
-		<futottkm megnevezes="Kilométeróra állása" mertekegyseg="km" nyersadat="117000">117 000 km</futottkm>
-		<kivitel megnevezes="Kivitel">Pickup</kivitel>
-		<hengerelrendezes megnevezes="Henger-elrendezés" nyersadat="1">Soros</hengerelrendezes>
-		<hajtas megnevezes="Hajtás" nyersadat="4">Kapcsolható összkerék</hajtas>
-		<allapot megnevezes="Állapot">Kitűnő</allapot>
-		<uzemanyag megnevezes="Üzemanyag">Dízel</uzemanyag>
-		<sebessegvalto megnevezes="Sebességváltó fajtája" nyersadat="M6">Manuális (6 fokozatú) sebességváltó</sebessegvalto>
-		<hengerurtartalom megnevezes="Hengerűrtartalom" nyersadat="2198" mertekegyseg="cm³">2198 cm³</hengerurtartalom>
-		<teljesitmeny megnevezes="Teljesítmény" nyersadat="110" mertekegyseg="kW">110 kW, 150 LE</teljesitmeny>
-		<szallithato_szemelyek megnevezes="Szállítható szem. száma" mertekegyseg="fő">5 fő</szallithato_szemelyek>
-		<ajtok megnevezes="Ajtók száma">4</ajtok>
-		<klima megnevezes="Klíma fajtája">Digitális kétzónás klíma</klima>
-		<szin megnevezes="Szín" metal="true">Sötétszürke (metál)</szin>
-		<sajat_tomeg megnevezes="Saját tömeg" mertekegyseg="kg" nyersadat="2129">2 129 kg</sajat_tomeg>
-		<ossztomeg megnevezes="Össztömeg" mertekegyseg="kg" nyersadat="3200">3 200 kg</ossztomeg>
-		<teto megnevezes="Tető">Lemeztető</teto>
-		<leiras megnevezes="Leírás">1 Év garanciával! Cégeknek nyílt végű lízingre is! ÁFÁ-s! Magyarországi! Leinformálható, elektronikus szerviztörténettel! Gyári fényezésű Ford Ranger 2.2 keresi tulajdonosát. Kitűnő motorikus és szerkezeti állapotban. Megkímélt beltérrel. Gyári kulcsokkal. Kapcsolható összkerék hajtással. 3500 kg-os vonóhoroggal. Autó-motor beszámítás, hitel lehetséges.</leiras>
-		<felszereltseg megnevezes="Felszereltség">6 hangszóró, ABS (blokkolásgátló), ASR (kipörgésgátló), automatikusan sötétedő belső tükör, AUX csatlakozó, állítható kormány, állófűtés, bluetooth-os kihangosító, bőr belső, CD-s autórádió, centrálzár, csomag rögzítő, deréktámasz, digitális kétzónás klíma, dönthető utasülések, elektromos ablak elöl, elektromos ablak hátul, elektromos tükör, elektromos ülésállítás utasoldal, elektromos ülésállítás vezetőoldal, elektromosan behajtható külső tükrök, esőszenzor, ESP (menetstabilizátor), fedélzeti komputer, fényszóró magasságállítás, függönylégzsák, fűthető szélvédő, fűthető tükör, fűthető ülés, hátsó fejtámlák, hűthető kartámasz, indításgátló (immobiliser), ISOFIX rendszer, kihangosító, kikapcsolható légzsák, ködlámpa, könnyűfém felni, középső kartámasz, lejtmenet asszisztens, lemeztető, manuális (6 fokozatú) sebességváltó, MP3 lejátszás, multifunkciós kormánykerék, oldallégzsák, sebességfüggő szervókormány, szervokormány, színezett üveg, tempomat, tolatóradar, USB csatlakozó, utasoldali légzsák, ülésmagasság állítás, vezetőoldali légzsák, vonóhorog, autóbeszámítás lehetséges, azonnal elvihető, első tulajdonostól, garanciális, Magyarországon újonnan üzembe helyezett, motorbeszámítás lehetséges, nem dohányzó, rendszeresen karbantartott, törzskönyv, 20%-tól elvihető.</felszereltseg>
-		<telefonszam megnevezes="Telefonszám" orszagkod_1="36" telefonszam_1="70/7709032" orszagkod_2="36" telefonszam_2="1/8036050">(+36) 70/7709032, (+36) 1/8036050</telefonszam>
-		<megtekintheto megnevezes="Cím">1044(4.ker) BUDAPEST,VÁCI ÚT 76-80</megtekintheto>
-		<emailcim megnevezes="E-mail">erdeklodes@budapestautoszalon.hu</emailcim>
-		<kepek>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_1t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_1t.jpg" kepalairas="Budapest Autószalon">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_1.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_2t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_2t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_2.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_3t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_3t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_3.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_4t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_4t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_4.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_5t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_5t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_5.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_6t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_6t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_6.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_7t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_7t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_7.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_8t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_8t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_8.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_9t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_9t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_9.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_10t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_10t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_10.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_11t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_11t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_11.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14576327_12t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14576327_12t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14576327_12.jpg</kep>
-		</kepek>
-	</hirdetes>
 	<hirdetes hirdeteskod="14576528" partnerkod="7972" kategoria="Személyautó" gyartmany="FORD" tipus="B-MAX 1.0 GTDi EcoBoost Technology MAGYARORSZÁGI! GYÁRI FÉNYEZÉS!" modell="B-MAX" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="3299000"><![CDATA[3 299 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="10126"><![CDATA[10 126 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="10100"><![CDATA[10 100 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/11</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2757,7 +2671,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14578102" partnerkod="7972" kategoria="Személyautó" gyartmany="MINI" tipus="MINI ONE 1.6 HITEL-CSERE-BESZÁMÍTÁS!" modell="MINI ONE" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="1099000"><![CDATA[1 099 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="3373"><![CDATA[3 373 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="3365"><![CDATA[3 365 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">2002/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2020/10</muszaki>
@@ -2799,7 +2713,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580489" partnerkod="7972" kategoria="Személyautó" gyartmany="MITSUBISHI" tipus="PAJERO 3.2 DI-D Instyle Navi Aut. TÖRÉSMENTES! GYÁRI FÉNYEZÉSŰ!" modell="PAJERO" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="5599000"><![CDATA[5 599 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="17186"><![CDATA[17 186 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="17141"><![CDATA[17 141 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2012/05</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2842,7 +2756,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580519" partnerkod="7972" kategoria="Személyautó" gyartmany="LAND ROVER" tipus="RANGE ROVER SPORT RangeSport 3.0 SDV6 Autobiography (Automata) Magyarországi! Fényezés mentes" modell="RANGE ROVER SPORT" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="12499000"><![CDATA[12 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="38365"><![CDATA[38 365 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="38265"><![CDATA[38 265 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">30%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2887,7 +2801,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580661" partnerkod="7972" kategoria="Személyautó" gyartmany="PORSCHE" tipus="911 Carrera 996 CARRERA 2 MANUÁLIS VÁLTÓ!!" modell="911" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="7999000"><![CDATA[7 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="24553"><![CDATA[24 553 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="24489"><![CDATA[24 489 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">2001/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2020/04</muszaki>
@@ -2929,7 +2843,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580670" partnerkod="7972" kategoria="Személyautó" gyartmany="NISSAN" tipus="JUKE 1.5 dCi Acenta Magyarországi!Leinformálható!" modell="JUKE" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2999000"><![CDATA[2 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9205"><![CDATA[9 205 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9181"><![CDATA[9 181 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2013/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -2972,7 +2886,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580689" partnerkod="7972" kategoria="Személyautó" gyartmany="VOLKSWAGEN" tipus="PASSAT 2.0 CR TDI Highline 4Motion BMT DSG Magyarországi! 1 Tulajdonos!" modell="PASSAT" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="3999000"><![CDATA[3 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="12275"><![CDATA[12 275 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="12243"><![CDATA[12 243 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/05</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3015,7 +2929,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580694" partnerkod="7972" kategoria="Személyautó" gyartmany="CITROEN" tipus="C5 1.6 HDi FAP Tendance Magyarországi!" modell="C5" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="1399900"><![CDATA[1 399 900 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="4297"><![CDATA[4 297 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="4286"><![CDATA[4 286 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3058,7 +2972,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580729" partnerkod="7972" kategoria="Személyautó" gyartmany="HYUNDAI" tipus="SANTA FE 2.2 CRDi VGT Premium (Automata) Magyarországi!" modell="SANTA FE" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="2199000"><![CDATA[2 199 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="6750"><![CDATA[6 750 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="6732"><![CDATA[6 732 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3101,7 +3015,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580757" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="MERIVA 1.4 Selection Magyarországi!25 E KM!!!" modell="MERIVA" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="3249000"><![CDATA[3 249 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9973"><![CDATA[9 973 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9947"><![CDATA[9 947 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3144,7 +3058,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580760" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="735i GYÁRI ÁLLAPOT! OT MINŐSÍTÉS! VETERÁN VIZSGA!" modell="735" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="3999000"><![CDATA[3 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="12275"><![CDATA[12 275 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="12243"><![CDATA[12 243 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">1986/05</evjarat>
 		<veteran megnevezes="Veterán">30 évnél öregebb</veteran>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3187,7 +3101,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580794" partnerkod="7972" kategoria="Személyautó" gyartmany="PEUGEOT" tipus="308 CC 1.6 THP Feline Leinformálható! Hitel-Csere-Beszámítás!" modell="308" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2699000"><![CDATA[2 699 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="8284"><![CDATA[8 284 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="8263"><![CDATA[8 263 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2010/06</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3232,7 +3146,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14580957" partnerkod="7972" kategoria="Személyautó" gyartmany="MERCEDES-BENZ" tipus="E 220 CDI Elegance (Automata) GYÁRI FÉNYEZÉSŰ!" modell="E 220" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="1649000"><![CDATA[1 649 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="5062"><![CDATA[5 062 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="5048"><![CDATA[5 048 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2003/09</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3275,7 +3189,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14581040" partnerkod="7972" kategoria="Személyautó" gyartmany="MINI" tipus="MINI ONE 1.6 1 ÉV GARANCIA!" modell="MINI ONE" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="2099000"><![CDATA[2 099 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="6443"><![CDATA[6 443 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="6426"><![CDATA[6 426 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2011/05</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3319,7 +3233,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14581063" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="520d Magyarországi!77 EKM!!!!!" modell="520" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="5999000"><![CDATA[5 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="18414"><![CDATA[18 414 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="18366"><![CDATA[18 366 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/08</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3362,7 +3276,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14581207" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="123d M-PACKET! 1 ÉV GARANCIÁVAL!" modell="123" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="2999000"><![CDATA[2 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9205"><![CDATA[9 205 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9181"><![CDATA[9 181 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/06</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3405,7 +3319,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14584864" partnerkod="7972" kategoria="Személyautó" gyartmany="RENAULT" tipus="SCENIC Scénic 1.5 dCi Dynamique Magyarországi!Leinformálható!" modell="SCENIC" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="749000"><![CDATA[749 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2299"><![CDATA[2 299 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2293"><![CDATA[2 293 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">30%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2005/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3447,7 +3361,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14585153" partnerkod="7972" kategoria="Személyautó" gyartmany="KIA" tipus="CEE&#039;D 1.4 CVVT LX Magyarországi!Leinformálható!" modell="CEE&#039;D" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="3499000"><![CDATA[3 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="10740"><![CDATA[10 740 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="10712"><![CDATA[10 712 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3489,7 +3403,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14587259" partnerkod="7972" kategoria="Személyautó" gyartmany="ALFA ROMEO" tipus="GIULIETTA 2.0 JTDM-2 Distinctive 1 ÉV GARANCIÁVAL!" modell="GIULIETTA" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="3299000"><![CDATA[3 299 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="10126"><![CDATA[10 126 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="10100"><![CDATA[10 100 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3533,7 +3447,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14587276" partnerkod="7972" kategoria="Személyautó" gyartmany="SKODA" tipus="OCTAVIA Combi 1.6 CR Tdi Ambition MAGYARORSZÁGI!GYÁRI FÉNYEZÉS!" modell="OCTAVIA" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2499000"><![CDATA[2 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="7671"><![CDATA[7 671 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="7651"><![CDATA[7 651 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2013/10</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3577,7 +3491,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14588899" partnerkod="7972" kategoria="Személyautó" gyartmany="FORD" tipus="FOCUS 1.6 TDCi Ghia 25%-Tól Elvihető!" modell="FOCUS" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="999000"><![CDATA[999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="3066"><![CDATA[3 066 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="3058"><![CDATA[3 058 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2005/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3620,7 +3534,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14589837" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="INSIGNIA Sports Tourer 1.4 T Start Stop MAGYARORSZÁGI! 1 ÉV GARANCIA!" modell="INSIGNIA" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="3899000"><![CDATA[3 899 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="11968"><![CDATA[11 968 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="11937"><![CDATA[11 937 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/05</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3663,7 +3577,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14598193" partnerkod="7972" kategoria="Személyautó" gyartmany="MERCEDES-BENZ" tipus="E-OSZTÁLY E 250 BlueTEC Classic (Automata) Magyarországi!Leinformálható!" modell="E-OSZTÁLY" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="6499000"><![CDATA[6 499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="19948"><![CDATA[19 948 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="19897"><![CDATA[19 897 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2015/05</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3707,7 +3621,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14599992" partnerkod="7972" kategoria="Személyautó" gyartmany="MITSUBISHI" tipus="PAJERO 3.2 DI-D Intense Leinformálható! Hitel-csere-Beszámítás!" modell="PAJERO" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="4999000"><![CDATA[4 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="15344"><![CDATA[15 344 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="15304"><![CDATA[15 304 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2012/10</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3752,7 +3666,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14600030" partnerkod="7972" kategoria="Személyautó" gyartmany="VOLKSWAGEN" tipus="GOLF Cabrio 1.8 Makulátlan!!!!" modell="GOLF" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="699000"><![CDATA[699 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2146"><![CDATA[2 146 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2140"><![CDATA[2 140 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">1994/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2021/06</muszaki>
@@ -3793,7 +3707,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14600055" partnerkod="7972" kategoria="Személyautó" gyartmany="KIA" tipus="CEE&#039;D SW 1.6 CRDi EX 1 ÉV GARANCIA!" modell="CEE&#039;D" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="1399000"><![CDATA[1 399 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="4294"><![CDATA[4 294 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="4283"><![CDATA[4 283 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3836,8 +3750,8 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14602709" partnerkod="7972" kategoria="Személyautó" gyartmany="DAEWOO" tipus="KALOS 1.2 S MAGYARORSZÁGI!" modell="KALOS" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="349000"><![CDATA[349 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1071"><![CDATA[1 071 EUR]]></ar_eur>
-		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="1068"><![CDATA[1 068 EUR]]></ar_eur>
+		<finanszirozas megnevezes="Finanszírozás">0%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2004/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2021/07</muszaki>
@@ -3858,7 +3772,7 @@
 		<ossztomeg megnevezes="Össztömeg" mertekegyseg="kg" nyersadat="1445">1 445 kg</ossztomeg>
 		<csomagtarto megnevezes="Csomagtartó" nyersadat="220" mertekegyseg="liter">220 liter</csomagtarto>
 		<leiras megnevezes="Leírás">MAGYARORSZÁGI Daewoo Kalos keresi következő tulajdonosát! Motorikusan, szerkezetileg jó állapotban. Jó motorral, váltóval. Magánszemélytől napi használatból beszámolt autó. Két gyári kulccsal. Kereskedésünk az eladástól az autó átvételéig, teljeskörű finanszírozási, illetve átírási ügyintézéssel segíti vásárlóinkat. Hozza el hozzánk beszámítani kívánt autóját, ha öreg akkor is! Az autó megtekintésével és további információkkal kapcsolatban keressen az alábbi mobiltelefonszámon: Horváth László 0670-770-9032</leiras>
-		<felszereltseg megnevezes="Felszereltség">4 hangszóró, CD-s autórádió, centrálzár, csomag rögzítő, dönthető utasülések, elektromos ablak elöl, fényszóró magasságállítás, hátsó fejtámlák, indításgátló (immobiliser), ISOFIX rendszer, manuális (5 fokozatú) sebességváltó, plüss kárpit, pótkerék, rádió, szervokormány, színezett üveg, autóbeszámítás lehetséges, azonnal elvihető, Magyarországon újonnan üzembe helyezett, motorbeszámítás lehetséges, törzskönyv, 20%-tól elvihető.</felszereltseg>
+		<felszereltseg megnevezes="Felszereltség">4 hangszóró, CD-s autórádió, centrálzár, csomag rögzítő, dönthető utasülések, elektromos ablak elöl, fényszóró magasságállítás, hátsó fejtámlák, indításgátló (immobiliser), ISOFIX rendszer, manuális (5 fokozatú) sebességváltó, plüss kárpit, pótkerék, rádió, szervokormány, színezett üveg, autóbeszámítás lehetséges, azonnal elvihető, Magyarországon újonnan üzembe helyezett, motorbeszámítás lehetséges, törzskönyv, 0%-tól elvihető.</felszereltseg>
 		<telefonszam megnevezes="Telefonszám" orszagkod_1="36" telefonszam_1="70/7709032" orszagkod_2="36" telefonszam_2="1/8036050">(+36) 70/7709032, (+36) 1/8036050</telefonszam>
 		<megtekintheto megnevezes="Cím">1044(4.ker) BUDAPEST,VÁCI ÚT 76-80</megtekintheto>
 		<emailcim megnevezes="E-mail">erdeklodes@budapestautoszalon.hu</emailcim>
@@ -3878,7 +3792,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14608495" partnerkod="7972" kategoria="Személyautó" gyartmany="PEUGEOT" tipus="307 Break 1.6 Riviera MAGYARORSZÁGI!" modell="307" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="649000"><![CDATA[649 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1992"><![CDATA[1 992 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="1987"><![CDATA[1 987 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">25%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2004/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3922,7 +3836,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14608647" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="750i (Automata) Csere-Hitel-Beszámítás" modell="750" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="4999000"><![CDATA[4 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="15344"><![CDATA[15 344 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="15304"><![CDATA[15 304 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2010/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -3966,7 +3880,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14608677" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="X3 2.0d Aut. XDRIVE!VEZETET SZERV.K" modell="X3" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="2799000"><![CDATA[2 799 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="8591"><![CDATA[8 591 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="8569"><![CDATA[8 569 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4009,7 +3923,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14608712" partnerkod="7972" kategoria="Személyautó" gyartmany="CHRYSLER" tipus="GRAND VOYAGER 2.5 CRD LX (7 sz.) MAGYARORSZÁGI!" modell="GRAND VOYAGER" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="849000"><![CDATA[849 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2606"><![CDATA[2 606 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2599"><![CDATA[2 599 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2004/09</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4053,7 +3967,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14608790" partnerkod="7972" kategoria="Személyautó" gyartmany="SAAB" tipus="900 2.0 Turbo S MAGYARORSZÁGI!" modell="900" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="699000"><![CDATA[699 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2146"><![CDATA[2 146 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2140"><![CDATA[2 140 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">1997/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2019/12</muszaki>
@@ -4094,7 +4008,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14608820" partnerkod="7972" kategoria="Személyautó" gyartmany="TOYOTA" tipus="AVENSIS 2.0 Executive MAGYAR! 1 ÉV GARANCIA!" modell="AVENSIS" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="5199000"><![CDATA[5 199 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="15958"><![CDATA[15 958 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="15917"><![CDATA[15 917 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/08</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4137,7 +4051,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14608863" partnerkod="7972" kategoria="Személyautó" gyartmany="SEAT" tipus="IBIZA 1.4 16V Stella Klima MAGYARORSZÁGI!" modell="IBIZA" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="749000"><![CDATA[749 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2299"><![CDATA[2 299 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2293"><![CDATA[2 293 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2003/09</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4179,7 +4093,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14608906" partnerkod="7972" kategoria="Személyautó" gyartmany="INFINITI" tipus="M30 M30d 3.0 V6 S Premium (Automata) Csere-Hitel-Beszámítás!" modell="M30" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="5399000"><![CDATA[5 399 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="16572"><![CDATA[16 572 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="16529"><![CDATA[16 529 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2013/06</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4223,7 +4137,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14609362" partnerkod="7972" kategoria="Személyautó" gyartmany="MERCEDES-BENZ" tipus="VITO 114 BlueTec Tourer Pro L 4x4 (Automata) Magyarországi!9 SZEMÉLYES!" modell="VITO" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="7999000"><![CDATA[7 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="24553"><![CDATA[24 553 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="24489"><![CDATA[24 489 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2016/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4265,7 +4179,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14611426" partnerkod="7972" kategoria="Személyautó" gyartmany="BMW" tipus="1-ES SOROZAT 123d M-Packet!" modell="1-ES SOROZAT" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="2999000"><![CDATA[2 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9205"><![CDATA[9 205 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9181"><![CDATA[9 181 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2008/06</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4309,7 +4223,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14611850" partnerkod="7972" kategoria="Személyautó" gyartmany="RENAULT" tipus="MEGANE Grandtour 1.5 dCi Limited MAGYAR! 1 ÉV GARANCIA!" modell="MEGANE" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="2999000"><![CDATA[2 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9205"><![CDATA[9 205 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9181"><![CDATA[9 181 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2016/06</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4353,7 +4267,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14612368" partnerkod="7972" kategoria="Személyautó" gyartmany="MERCEDES-BENZ" tipus="E 280 CDI Avantgarde (Automata) MAGYARORSZÁGI!" modell="E 280" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="1899000"><![CDATA[1 899 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="5829"><![CDATA[5 829 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="5814"><![CDATA[5 814 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2005/09</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4396,7 +4310,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14612390" partnerkod="7972" kategoria="Személyautó" gyartmany="RENAULT" tipus="MEGANE Grandtour 1.6 dCi Privi. Stop&amp;Start Magyarországi!Leinformálható!" modell="MEGANE" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2199000"><![CDATA[2 199 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="6750"><![CDATA[6 750 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="6732"><![CDATA[6 732 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2012/09</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4440,7 +4354,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14613168" partnerkod="7972" kategoria="Személyautó" gyartmany="SEAT" tipus="TOLEDO 1.2 TSI Reference Magyarországi!63 Ekm!" modell="TOLEDO" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2699000"><![CDATA[2 699 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="8284"><![CDATA[8 284 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="8263"><![CDATA[8 263 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2013/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4483,7 +4397,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14616233" partnerkod="7972" kategoria="Személyautó" gyartmany="HYUNDAI" tipus="I30 1.6 CRDi LP Business (Automata) Magyar 1. tulaj! Fényezésmentes!" modell="I30" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="3199000"><![CDATA[3 199 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9819"><![CDATA[9 819 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9794"><![CDATA[9 794 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2016/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4527,7 +4441,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14616572" partnerkod="7972" kategoria="Személyautó" gyartmany="SMART" tipus="FORTWO 1.0 Passion twinamic COUPE! 6HÓ PAPPAS GARANCIA!" modell="FORTWO" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="3699000"><![CDATA[3 699 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="11354"><![CDATA[11 354 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="11324"><![CDATA[11 324 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2017/06</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4571,7 +4485,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14617797" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="ASTRA J Sports Tourer 1.6 CDTI Start-Stop Enjoy MAGYAR!VEZETETT SZ.KÖNYV!" modell="ASTRA J" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="2999000"><![CDATA[2 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="9205"><![CDATA[9 205 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="9181"><![CDATA[9 181 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2016/02</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4614,7 +4528,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14627467" partnerkod="7972" kategoria="Személyautó" gyartmany="VOLKSWAGEN" tipus="PASSAT 1.6 TDI BMT Trendline Magyarországi 1. tulaj! Fényezésmentes!" modell="PASSAT" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="3999000"><![CDATA[3 999 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="12275"><![CDATA[12 275 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="12243"><![CDATA[12 243 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2016/05</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4658,7 +4572,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14627705" partnerkod="7972" kategoria="Személyautó" gyartmany="RENAULT" tipus="FLUENCE 1.5 dCi Dynamique MAGYARORSZÁGI! 1 ÉV GARANCIA!" modell="FLUENCE" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="2299000"><![CDATA[2 299 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="7057"><![CDATA[7 057 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="7038"><![CDATA[7 038 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/04</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4701,7 +4615,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14628184" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="CORSA C 1.2 16V Comfort MAGYARORSZÁGI!" modell="CORSA C" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="499000"><![CDATA[499 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1532"><![CDATA[1 532 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="1528"><![CDATA[1 528 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">2002/08</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2020/06</muszaki>
@@ -4741,7 +4655,8 @@
 		</kepek>
 	</hirdetes>
 	<hirdetes hirdeteskod="14630503" partnerkod="7972" kategoria="Személyautó" gyartmany="FORD" tipus="MONDEO Turnier 2.0 TDCi Business Powershift 57.000. Km! Magyar 1. tulaj! Fényezésmentes!" modell="MONDEO" belsoazonosito="Balu">
-		<ar megnevezes="Vételár">Ár nélkül</ar>
+		<ar megnevezes="Vételár" nyersadat="5199000"><![CDATA[5 199 000 Ft]]></ar>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="15917"><![CDATA[15 917 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2016/07</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4752,7 +4667,7 @@
 		<hajtas megnevezes="Hajtás" nyersadat="1">Első kerék</hajtas>
 		<allapot megnevezes="Állapot">Normál</allapot>
 		<uzemanyag megnevezes="Üzemanyag">Dízel</uzemanyag>
-		<sebessegvalto megnevezes="Sebességváltó fajtája" nyersadat="M6">Manuális (6 fokozatú) sebességváltó</sebessegvalto>
+		<sebessegvalto megnevezes="Sebességváltó fajtája" nyersadat="A7">Automata (7 fokozatú) sebességváltó</sebessegvalto>
 		<hengerurtartalom megnevezes="Hengerűrtartalom" nyersadat="1997" mertekegyseg="cm³">1997 cm³</hengerurtartalom>
 		<teljesitmeny megnevezes="Teljesítmény" nyersadat="110" mertekegyseg="kW">110 kW, 150 LE</teljesitmeny>
 		<szallithato_szemelyek megnevezes="Szállítható szem. száma" mertekegyseg="fő">5 fő</szallithato_szemelyek>
@@ -4763,8 +4678,8 @@
 		<sajat_tomeg megnevezes="Saját tömeg" mertekegyseg="kg" nyersadat="1601">1 601 kg</sajat_tomeg>
 		<ossztomeg megnevezes="Össztömeg" mertekegyseg="kg" nyersadat="2330">2 330 kg</ossztomeg>
 		<csomagtarto megnevezes="Csomagtartó" nyersadat="500" mertekegyseg="liter">500 liter</csomagtarto>
-		<leiras megnevezes="Leírás">Márka kereskedésünk által beszámolt illetve bevizsgált, magyarországi Ford Mondeo keresi 2. tulajdonosát, leinformálható Km valamint szerviz előélettel, gyári kulcsokkal, fényezésmentes karosszériával, megkímélt külső illetve belső térrel, kifogástalanul működő extrákkal, gyári garanciával, cégeknek akár nyílt végű lízingre is. Hitel-Csere-Beszámítás lehetséges! Keressen bizalommal: Mezőfi Balázs 0620-395-50-02</leiras>
-		<felszereltseg megnevezes="Felszereltség">6 hangszóró, ABS (blokkolásgátló), APS (parkolóradar), ASR (kipörgésgátló), állítható kormány, bluetooth-os kihangosító, CD-s autórádió, centrálzár, digitális kétzónás klíma, dönthető utasülések, elektromos ablak elöl, elektromos ablak hátul, elektromos tükör, ESP (menetstabilizátor), fedélzeti komputer, fényszóró magasságállítás, függönylégzsák, fűthető tükör, guminyomás-ellenőrző rendszer, hátsó fejtámlák, indításgátló (immobiliser), ISOFIX rendszer, kikapcsolható légzsák, kormányváltó, ködlámpa, középső kartámasz, manuális (6 fokozatú) sebességváltó, MP3 lejátszás, multifunkciós kormánykerék, oldallégzsák, plüss kárpit, pótkerék, riasztó, sebességfüggő szervókormány, színezett üveg, tempomat, térdlégzsák, tolatóradar, USB csatlakozó, utasoldali légzsák, ülésmagasság állítás, vezetőoldali légzsák, autóbeszámítás lehetséges, azonnal elvihető, első tulajdonostól, garanciális, keveset futott, Magyarországon újonnan üzembe helyezett, motorbeszámítás lehetséges, nem dohányzó, rendszeresen karbantartott, szervizkönyv, törzskönyv, 20%-tól elvihető.</felszereltseg>
+		<leiras megnevezes="Leírás">Márka kereskedésünk által beszámolt illetve bevizsgált, magyarországi Ford Mondeo keresi 2. tulajdonosát, leinformálható Km valamint szerviz előélettel, gyári kulcsokkal, fényezésmentes karosszériával, megkímélt külső illetve belső térrel, kifogástalanul működő extrákkal, gyári garanciával, cégeknek akár nyílt végű lízingre is, akár tartós bérlet konstrukcióval! Hitel-Csere-Beszámítás lehetséges! Keressen bizalommal: Mezőfi Balázs 0620-395-50-02</leiras>
+		<felszereltseg megnevezes="Felszereltség">6 hangszóró, ABS (blokkolásgátló), APS (parkolóradar), ASR (kipörgésgátló), automata (7 fokozatú) sebességváltó, állítható kormány, bluetooth-os kihangosító, CD-s autórádió, centrálzár, digitális kétzónás klíma, dönthető utasülések, elektromos ablak elöl, elektromos ablak hátul, elektromos tükör, ESP (menetstabilizátor), fedélzeti komputer, fényszóró magasságállítás, függönylégzsák, fűthető tükör, guminyomás-ellenőrző rendszer, hátsó fejtámlák, indításgátló (immobiliser), ISOFIX rendszer, kikapcsolható légzsák, kormányváltó, ködlámpa, középső kartámasz, MP3 lejátszás, multifunkciós kormánykerék, oldallégzsák, plüss kárpit, pótkerék, riasztó, sebességfüggő szervókormány, színezett üveg, tempomat, térdlégzsák, tolatóradar, USB csatlakozó, utasoldali légzsák, ülésmagasság állítás, vezetőoldali légzsák, autóbeszámítás lehetséges, azonnal elvihető, első tulajdonostól, garanciális, keveset futott, Magyarországon újonnan üzembe helyezett, motorbeszámítás lehetséges, nem dohányzó, rendszeresen karbantartott, szervizkönyv, törzskönyv, 20%-tól elvihető.</felszereltseg>
 		<telefonszam megnevezes="Telefonszám" orszagkod_1="36" telefonszam_1="20/3955002" orszagkod_2="36" telefonszam_2="1/8036050">(+36) 20/3955002, (+36) 1/8036050</telefonszam>
 		<megtekintheto megnevezes="Cím">1044(4.ker) BUDAPEST,VÁCI ÚT 76-80</megtekintheto>
 		<emailcim megnevezes="E-mail">erdeklodes@budapestautoszalon.hu</emailcim>
@@ -4783,9 +4698,141 @@
 			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14630503_12t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14630503_12t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14630503_12.jpg</kep>
 		</kepek>
 	</hirdetes>
+	<hirdetes hirdeteskod="14631461" partnerkod="7972" kategoria="Személyautó" gyartmany="VOLKSWAGEN" tipus="GOLF Variant 2.0 TDI BMT Highline DSG Euro 6 Magyar 1. tulajdonos! Hitel-Csere-Beszámítás!" modell="GOLF" belsoazonosito="B. Lackó">
+		<ar megnevezes="Vételár" nyersadat="4299000"><![CDATA[4 299 000 Ft]]></ar>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="13161"><![CDATA[13 161 EUR]]></ar_eur>
+		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
+		<evjarat megnevezes="Évjárat">2016/03</evjarat>
+		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
+		<muszaki megnevezes="Műszaki vizsga érvényes">2020/03</muszaki>
+		<futottkm megnevezes="Kilométeróra állása" mertekegyseg="km" nyersadat="159000">159 000 km</futottkm>
+		<kivitel megnevezes="Kivitel">Kombi</kivitel>
+		<hengerelrendezes megnevezes="Henger-elrendezés" nyersadat="1">Soros</hengerelrendezes>
+		<hajtas megnevezes="Hajtás" nyersadat="1">Első kerék</hajtas>
+		<allapot megnevezes="Állapot">Normál</allapot>
+		<uzemanyag megnevezes="Üzemanyag">Dízel</uzemanyag>
+		<hengerurtartalom megnevezes="Hengerűrtartalom" nyersadat="1968" mertekegyseg="cm³">1968 cm³</hengerurtartalom>
+		<teljesitmeny megnevezes="Teljesítmény" nyersadat="110" mertekegyseg="kW">110 kW, 150 LE</teljesitmeny>
+		<szallithato_szemelyek megnevezes="Szállítható szem. száma" mertekegyseg="fő">5 fő</szallithato_szemelyek>
+		<ajtok megnevezes="Ajtók száma">5</ajtok>
+		<klima megnevezes="Klíma fajtája">Digitális kétzónás klíma</klima>
+		<szin megnevezes="Szín" metal="true">Fekete (metál)</szin>
+		<karpitszin_1 megnevezes="Kárpit színe (1)">Fekete</karpitszin_1>
+		<sajat_tomeg megnevezes="Saját tömeg" mertekegyseg="kg" nyersadat="1379">1 379 kg</sajat_tomeg>
+		<ossztomeg megnevezes="Össztömeg" mertekegyseg="kg" nyersadat="1990">1 990 kg</ossztomeg>
+		<csomagtarto megnevezes="Csomagtartó" nyersadat="605" mertekegyseg="liter">605 liter</csomagtarto>
+		<leiras megnevezes="Leírás">Márka kereskedésünk által beszámolt illetve bevizsgált, magyarországi Vw Golf Variant keresi 2. tulajdonosát, leinformálható Km valamint szerviz történettel, gyári kulcsokkal, rengeteg extrával, szép külső belső állapotban, akár 1 ÉV GARANCIÁVAL. Gyártási év: 2015 Hitel-Csere-Beszámítás lehetséges! Keressen Bizalommal: Mezőfi Balázs 0620-395-50-02</leiras>
+		<felszereltseg megnevezes="Felszereltség">8 hangszóró, ABS (blokkolásgátló), APS (parkolóradar), ASR (kipörgésgátló), automatikusan sötétedő belső tükör, automatikusan sötétedő külső tükör, AUX csatlakozó, állítható kormány, bi-xenon fényszóró, bluetooth-os kihangosító, bőr-szövet huzat, CD-s autórádió, centrálzár, deréktámasz, digitális kétzónás klíma, dönthető utasülések, elektromos ablak elöl, elektromos ablak hátul, elektromos tükör, elektromosan behajtható külső tükrök, ESP (menetstabilizátor), érintőkijelző, fedélzeti komputer, fékasszisztens, függönylégzsák, fűthető szélvédő, fűthető tükör, GPS (navigáció), guminyomás-ellenőrző rendszer, hátsó fejtámlák, hűthető kesztyűtartó, indításgátló (immobiliser), ISOFIX rendszer, kikapcsolható légzsák, ködlámpa, könnyűfém felni, középső kartámasz, masszírozós ülés, MP3 lejátszás, multifunkciós kormánykerék, oldallégzsák, pótkerék, rablásgátló, riasztó, sebességfüggő szervókormány, színezett üveg, tempomat, térdlégzsák, tolatóradar, USB csatlakozó, utasoldali légzsák, ülésmagasság állítás, vezetőoldali légzsák, autóbeszámítás lehetséges, első tulajdonostól, Magyarországon újonnan üzembe helyezett, motorbeszámítás lehetséges, nem dohányzó, rendszeresen karbantartott, szervizkönyv, törzskönyv, 20%-tól elvihető.</felszereltseg>
+		<telefonszam megnevezes="Telefonszám" orszagkod_1="36" telefonszam_1="20/3955002" orszagkod_2="36" telefonszam_2="1/8036050">(+36) 20/3955002, (+36) 1/8036050</telefonszam>
+		<megtekintheto megnevezes="Cím">1044(4.ker) BUDAPEST,VÁCI ÚT 76-80</megtekintheto>
+		<emailcim megnevezes="E-mail">erdeklodes@budapestautoszalon.hu</emailcim>
+		<kepek>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_1t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_1t.jpg" kepalairas="Budapest Autószalon">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_1.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_2t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_2t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_2.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_3t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_3t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_3.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_4t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_4t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_4.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_5t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_5t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_5.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_6t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_6t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_6.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_7t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_7t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_7.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_8t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_8t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_8.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_9t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_9t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_9.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_10t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_10t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_10.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_11t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_11t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_11.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14631461_12t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14631461_12t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14631461_12.jpg</kep>
+		</kepek>
+	</hirdetes>
+	<hirdetes hirdeteskod="14636769" partnerkod="7972" kategoria="Személyautó" gyartmany="MAZDA" tipus="6 Sport 2.2 CD Challenge MAGYAR!1.TULAJ!VEZETETT SZ.KÖNYV!" modell="6" belsoazonosito="Laci">
+		<ar megnevezes="Vételár" nyersadat="3999000"><![CDATA[3 999 000 Ft]]></ar>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="12243"><![CDATA[12 243 EUR]]></ar_eur>
+		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
+		<evjarat megnevezes="Évjárat">2015/04</evjarat>
+		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
+		<muszaki megnevezes="Műszaki vizsga érvényes">2021/05</muszaki>
+		<futottkm megnevezes="Kilométeróra állása" mertekegyseg="km" nyersadat="167000">167 000 km</futottkm>
+		<kivitel megnevezes="Kivitel">Kombi</kivitel>
+		<hengerelrendezes megnevezes="Henger-elrendezés" nyersadat="1">Soros</hengerelrendezes>
+		<hajtas megnevezes="Hajtás" nyersadat="1">Első kerék</hajtas>
+		<allapot megnevezes="Állapot">Kitűnő</allapot>
+		<uzemanyag megnevezes="Üzemanyag">Dízel</uzemanyag>
+		<sebessegvalto megnevezes="Sebességváltó fajtája" nyersadat="M6">Manuális (6 fokozatú) sebességváltó</sebessegvalto>
+		<hengerurtartalom megnevezes="Hengerűrtartalom" nyersadat="2191" mertekegyseg="cm³">2191 cm³</hengerurtartalom>
+		<teljesitmeny megnevezes="Teljesítmény" nyersadat="110" mertekegyseg="kW">110 kW, 150 LE</teljesitmeny>
+		<szallithato_szemelyek megnevezes="Szállítható szem. száma" mertekegyseg="fő">5 fő</szallithato_szemelyek>
+		<ajtok megnevezes="Ajtók száma">5</ajtok>
+		<klima megnevezes="Klíma fajtája">Digitális kétzónás klíma</klima>
+		<szin megnevezes="Szín" metal="true">Bordó (metál)</szin>
+		<karpitszin_1 megnevezes="Kárpit színe (1)">Fekete</karpitszin_1>
+		<sajat_tomeg megnevezes="Saját tömeg" mertekegyseg="kg" nyersadat="1501">1 501 kg</sajat_tomeg>
+		<ossztomeg megnevezes="Össztömeg" mertekegyseg="kg" nyersadat="2090">2 090 kg</ossztomeg>
+		<csomagtarto megnevezes="Csomagtartó" nyersadat="522" mertekegyseg="liter">522 liter</csomagtarto>
+		<leiras megnevezes="Leírás">1.TULAJDONOSTÓL, 1 ÉV GARANCIÁVAL, MAGYARORSZÁGI, VEZETETT SZERVIZKÖNYVES Mazda 6 keresi következő tulajdonosát! Két gyári kulccsal. Leigazolt szervizmúlt. Műszakilag, szerkezetileg kifogástalan. Dohányfüst és szakadás mentes beltér. Integrált GPS navigációval, bluetooth, USB, AUX, SD kártya olvasó, érintő kijelző, START-STOP rendszer. Kereskedésünk az eladástól az autó átvételéig, teljeskörű finanszírozási, illetve átírási ügyintézéssel segíti vásárlóinkat. Hozza el hozzánk beszámítani kívánt autóját, ha öreg akkor is! Az autó megtekintésével és további információkkal kapcsolatban keressen az alábbi mobiltelefonszámon: Horváth László 0670-770-9032</leiras>
+		<felszereltseg megnevezes="Felszereltség">6 hangszóró, ABS (blokkolásgátló), APS (parkolóradar), automatikusan sötétedő belső tükör, AUX csatlakozó, állítható kormány, bluetooth-os kihangosító, CD-s autórádió, centrálzár, csomag rögzítő, deréktámasz, digitális kétzónás klíma, dönthető utasülések, elektromos ablak elöl, elektromos ablak hátul, elektromos tükör, elektromosan behajtható külső tükrök, esőszenzor, ESP (menetstabilizátor), érintőkijelző, fedélzeti komputer, fényszóró magasságállítás, függönylégzsák, fűthető tükör, GPS (navigáció), guminyomás-ellenőrző rendszer, hátsó fejtámlák, indításgátló (immobiliser), iPhone/iPod csatlakozó, ISOFIX rendszer, kihangosító, kikapcsolható légzsák, ködlámpa, könnyűfém felni, középső kartámasz, kulcsnélküli indítás, manuális (6 fokozatú) sebességváltó, memóriakártya-olvasó, MP3 lejátszás, multifunkciós kormánykerék, oldallégzsák, pótkerék, rádió, sebességfüggő szervókormány, szervokormány, színezett üveg, tempomat, tolatóradar, USB csatlakozó, utasoldali légzsák, ülésmagasság állítás, vezetőoldali légzsák, WMA lejátszás, autóbeszámítás lehetséges, azonnal elvihető, első tulajdonostól, garázsban tartott, Magyarországon újonnan üzembe helyezett, motorbeszámítás lehetséges, nem dohányzó, rendszeresen karbantartott, szervizkönyv, törzskönyv, 20%-tól elvihető.</felszereltseg>
+		<telefonszam megnevezes="Telefonszám" orszagkod_1="36" telefonszam_1="70/7709032" orszagkod_2="36" telefonszam_2="1/8036050">(+36) 70/7709032, (+36) 1/8036050</telefonszam>
+		<megtekintheto megnevezes="Cím">1044(4.ker) BUDAPEST,VÁCI ÚT 76-80</megtekintheto>
+		<emailcim megnevezes="E-mail">erdeklodes@budapestautoszalon.hu</emailcim>
+		<kepek>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_1t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_1t.jpg" kepalairas="Budapest Autószalon">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_1.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_2t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_2t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_2.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_3t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_3t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_3.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_4t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_4t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_4.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_5t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_5t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_5.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_6t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_6t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_6.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_7t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_7t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_7.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_8t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_8t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_8.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_9t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_9t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_9.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_10t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_10t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_10.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_11t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_11t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_11.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14636769_12t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14636769_12t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14636769_12.jpg</kep>
+		</kepek>
+	</hirdetes>
+	<hirdetes hirdeteskod="14640139" partnerkod="7972" kategoria="Személyautó" gyartmany="FORD" tipus="FUSION 1.6 Fresh Plus MAGYARORSZÁGI! 1 ÉV GARANCIA!" modell="FUSION" belsoazonosito="B.Lackó">
+		<ar megnevezes="Vételár" nyersadat="1499000"><![CDATA[1 499 000 Ft]]></ar>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="4589"><![CDATA[4 589 EUR]]></ar_eur>
+		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
+		<evjarat megnevezes="Évjárat">2010/05</evjarat>
+		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
+		<muszaki megnevezes="Műszaki vizsga érvényes">2020/05</muszaki>
+		<futottkm megnevezes="Kilométeróra állása" mertekegyseg="km" nyersadat="178000">178 000 km</futottkm>
+		<kivitel megnevezes="Kivitel">Ferdehátú</kivitel>
+		<hengerelrendezes megnevezes="Henger-elrendezés" nyersadat="1">Soros</hengerelrendezes>
+		<hajtas megnevezes="Hajtás" nyersadat="1">Első kerék</hajtas>
+		<allapot megnevezes="Állapot">Normál</allapot>
+		<uzemanyag megnevezes="Üzemanyag">Benzin</uzemanyag>
+		<sebessegvalto megnevezes="Sebességváltó fajtája" nyersadat="M5">Manuális (5 fokozatú) sebességváltó</sebessegvalto>
+		<hengerurtartalom megnevezes="Hengerűrtartalom" nyersadat="1596" mertekegyseg="cm³">1596 cm³</hengerurtartalom>
+		<teljesitmeny megnevezes="Teljesítmény" nyersadat="74" mertekegyseg="kW">74 kW, 101 LE</teljesitmeny>
+		<szallithato_szemelyek megnevezes="Szállítható szem. száma" mertekegyseg="fő">5 fő</szallithato_szemelyek>
+		<ajtok megnevezes="Ajtók száma">5</ajtok>
+		<klima megnevezes="Klíma fajtája">Manuális klíma</klima>
+		<szin megnevezes="Szín" metal="true">Ezüst (metál)</szin>
+		<karpitszin_1 megnevezes="Kárpit színe (1)">Fekete</karpitszin_1>
+		<karpitszin_2 megnevezes="Kárpit színe (2)">Szürke</karpitszin_2>
+		<sajat_tomeg megnevezes="Saját tömeg" mertekegyseg="kg" nyersadat="1084">1 084 kg</sajat_tomeg>
+		<ossztomeg megnevezes="Össztömeg" mertekegyseg="kg" nyersadat="1605">1 605 kg</ossztomeg>
+		<csomagtarto megnevezes="Csomagtartó" nyersadat="337" mertekegyseg="liter">337 liter</csomagtarto>
+		<leiras megnevezes="Leírás">1 ÉV GARANCIÁVAL, MAGYARORSZÁGI Ford Fusion keresi következő tulajdonosát! Magánszemélytől, napi használatból beszámolt autó. Két gyári kulccsal. Rendkívül megkímélt, dohányfüst és szakadásmentes belsőtérrel. Műszakilag, szerkezetileg jó állapotban. Kereskedésünk az eladástól az autó átvételéig, teljeskörű finanszírozási, illetve átírási ügyintézéssel segíti vásárlóinkat. Hozza el hozzánk beszámítani kívánt autóját, ha öreg akkor is! Az autó megtekintésével és további információkkal kapcsolatban keressen az alábbi mobiltelefonszámon: Horváth László 0670-770-9032</leiras>
+		<felszereltseg megnevezes="Felszereltség">4 hangszóró, ABS (blokkolásgátló), AUX csatlakozó, állítható kormány, CD-s autórádió, centrálzár, csomag rögzítő, dönthető utasülések, elektromos ablak elöl, elektromos tükör, fűthető tükör, hátsó fejtámlák, indításgátló (immobiliser), ködlámpa, manuális (5 fokozatú) sebességváltó, manuális klíma, rádió, szervokormány, színezett üveg, távolsági fényszóró asszisztens, utasoldali légzsák, ülésmagasság állítás, vezetőoldali légzsák, autóbeszámítás lehetséges, azonnal elvihető, Magyarországon újonnan üzembe helyezett, motorbeszámítás lehetséges, nem dohányzó, rendszeresen karbantartott, szervizkönyv, törzskönyv, 20%-tól elvihető.</felszereltseg>
+		<telefonszam megnevezes="Telefonszám" orszagkod_1="36" telefonszam_1="70/7709032" orszagkod_2="36" telefonszam_2="1/8036050">(+36) 70/7709032, (+36) 1/8036050</telefonszam>
+		<megtekintheto megnevezes="Cím">1044(4.ker) BUDAPEST,VÁCI ÚT 76-80</megtekintheto>
+		<emailcim megnevezes="E-mail">erdeklodes@budapestautoszalon.hu</emailcim>
+		<kepek>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_1t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_1t.jpg" kepalairas="Budapest Autószalon">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_1.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_2t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_2t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_2.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_3t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_3t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_3.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_4t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_4t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_4.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_5t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_5t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_5.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_6t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_6t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_6.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_7t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_7t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_7.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_8t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_8t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_8.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_9t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_9t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_9.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_10t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_10t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_10.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_11t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_11t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_11.jpg</kep>
+			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14640139_12t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14640139_12t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14640139_12.jpg</kep>
+		</kepek>
+	</hirdetes>
 	<hirdetes hirdeteskod="14218072" partnerkod="7972" kategoria="Kishaszonjármű" gyartmany="OPEL" tipus="CORSA E 1.4 Van Start-Stop Easytronic Magyarországi!12E km!" modell="CORSA E" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="2699000" afa="27" brutto="3427730"><![CDATA[2 699 000 Ft<br />+ 27% ÁFA<br />(bruttó: 3 427 730 Ft)]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="8284" afa="27" brutto="10521"><![CDATA[8 284 EUR<br />+ 27% ÁFA<br />(bruttó: 10 521 EUR)]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="8263" afa="27" brutto="10494"><![CDATA[8 263 EUR<br />+ 27% ÁFA<br />(bruttó: 10 494 EUR)]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2018/01</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4826,7 +4873,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14426495" partnerkod="7972" kategoria="Kishaszonjármű" gyartmany="FORD" tipus="CONNECT Transit1.8 TDCi 230 LWB Magyarországi!Leinformálható!" modell="CONNECT" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="899000" afa="27" brutto="1141730"><![CDATA[899 000 Ft<br />+ 27% ÁFA<br />(bruttó: 1 141 730 Ft)]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="2759" afa="27" brutto="3504"><![CDATA[2 759 EUR<br />+ 27% ÁFA<br />(bruttó: 3 504 EUR)]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="2752" afa="27" brutto="3495"><![CDATA[2 752 EUR<br />+ 27% ÁFA<br />(bruttó: 3 495 EUR)]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2007/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4864,50 +4911,9 @@
 			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14426495_11t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14426495_11t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14426495_11.jpg</kep>
 		</kepek>
 	</hirdetes>
-	<hirdetes hirdeteskod="14625992" partnerkod="7972" kategoria="Kishaszonjármű" gyartmany="FORD" tipus="RANGER 2.2 TDCi 4x4 XLT Magyarországi! Leinformálható!" modell="RANGER" belsoazonosito="Balu">
-		<ar megnevezes="Vételár" nyersadat="4349000" afa="27" brutto="5523230"><![CDATA[4 349 000 Ft<br />+ 27% ÁFA<br />(bruttó: 5 523 230 Ft)]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="13349" afa="27" brutto="16953"><![CDATA[13 349 EUR<br />+ 27% ÁFA<br />(bruttó: 16 953 EUR)]]></ar_eur>
-		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
-		<evjarat megnevezes="Évjárat">2014/11</evjarat>
-		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
-		<muszaki megnevezes="Műszaki vizsga érvényes">2020/11</muszaki>
-		<futottkm megnevezes="Kilométeróra állása" mertekegyseg="km" nyersadat="117000">117 000 km</futottkm>
-		<kivitel megnevezes="Kivitel">Duplakabinos pickup</kivitel>
-		<hajtas megnevezes="Hajtás" nyersadat="3">Összkerék</hajtas>
-		<allapot megnevezes="Állapot">Megkímélt</allapot>
-		<uzemanyag megnevezes="Üzemanyag">Dízel</uzemanyag>
-		<sebessegvalto megnevezes="Sebességváltó fajtája" nyersadat="M6">Manuális (6 fokozatú) sebességváltó</sebessegvalto>
-		<hengerurtartalom megnevezes="Hengerűrtartalom" nyersadat="2198" mertekegyseg="cm³">2198 cm³</hengerurtartalom>
-		<teljesitmeny megnevezes="Teljesítmény" nyersadat="110" mertekegyseg="kW">110 kW, 150 LE</teljesitmeny>
-		<szallithato_szemelyek megnevezes="Szállítható szem. száma" mertekegyseg="fő">5 fő</szallithato_szemelyek>
-		<ajtok megnevezes="Ajtók száma">4</ajtok>
-		<klima megnevezes="Klíma fajtája">Digitális kétzónás klíma</klima>
-		<szin megnevezes="Szín" metal="true">Sötétszürke (metál)</szin>
-		<sajat_tomeg megnevezes="Saját tömeg" mertekegyseg="kg" nyersadat="2156">2 156 kg</sajat_tomeg>
-		<ossztomeg megnevezes="Össztömeg" mertekegyseg="kg" nyersadat="3200">3 200 kg</ossztomeg>
-		<leiras megnevezes="Leírás">1 Év garanciával! Cégeknek nyílt végű lízingre is! ÁFÁ-s! Magyarországi! Leinformálható, elektronikus szerviztörténettel! Gyári fényezésű Ford Ranger 2.2 keresi tulajdonosát. Kitűnő motorikus és szerkezeti állapotban. Megkímélt beltérrel. Gyári kulcsokkal. Kapcsolható összkerék hajtással. 3500 kg-os vonóhoroggal. Autó-motor beszámítás, hitel lehetséges.</leiras>
-		<felszereltseg megnevezes="Felszereltség">ABS (blokkolásgátló), ASR (kipörgésgátló), állítható kormány, bőr belső, CD-s autórádió, centrálzár, digitális kétzónás klíma, elektromos ablak, elektromos tükör, fedélzeti komputer, függöny légzsák, fűthető tükör, fűthető ülés, HIFI, immobiliser, ködlámpa, könnyűfém felni, oldal légzsák, riasztó, szervokormány, színezett üveg, tempomat, utasoldali légzsák, ülésmagasság állítás, vezetőoldali légzsák, vonóhorog, autóbeszámítás lehetséges, azonnal elvihető, első tulajdonostól, garanciális, keveset futott, motorbeszámítás lehetséges, nem dohányzó, szervizkönyv, törzskönyv, 20%-tól elvihető.</felszereltseg>
-		<telefonszam megnevezes="Telefonszám" orszagkod_1="36" telefonszam_1="20/3955002" orszagkod_2="36" telefonszam_2="1/8036050">(+36) 20/3955002, (+36) 1/8036050</telefonszam>
-		<megtekintheto megnevezes="Cím">1044(4.ker) BUDAPEST,VÁCI ÚT 76-80</megtekintheto>
-		<emailcim megnevezes="E-mail">erdeklodes@budapestautoszalon.hu</emailcim>
-		<kepek>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_1t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_1t.jpg" kepalairas="Budapest Autószalon">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_1.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_2t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_2t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_2.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_3t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_3t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_3.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_4t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_4t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_4.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_5t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_5t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_5.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_6t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_6t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_6.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_7t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_7t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_7.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_8t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_8t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_8.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_9t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_9t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_9.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_10t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_10t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_10.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_11t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_11t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_11.jpg</kep>
-			<kep kicsi="http://egerut.hasznaltauto.hu/7972/14625992_12t.jpg" kozepes="http://egerut.hasznaltauto.hu/7972/14625992_12t.jpg">http://egerut.hasznaltauto.hu/4228c92b7ce38748089dfc6091468e0b65879cf5/7972/14625992_12.jpg</kep>
-		</kepek>
-	</hirdetes>
 	<hirdetes hirdeteskod="14356121" partnerkod="7972" kategoria="Motorkerékpár/quad" gyartmany="TRIUMPH" tipus="TIGER 1200 Tiger 1200 XCX 2019-es!!! A Túrák királya!!!" modell="TIGER 1200" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="6199000"><![CDATA[6 199 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="19028"><![CDATA[19 028 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="18978"><![CDATA[18 978 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2019</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4940,7 +4946,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14413203" partnerkod="7972" kategoria="Motorkerékpár/quad" gyartmany="TRIUMPH" tipus="BONEVILLE BOBBER 1200 A lenyűgöző és egyben csodálatos: IKON!!!" modell="BONEVILLE BOBBER 1200" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="4199000"><![CDATA[4 199 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="12889"><![CDATA[12 889 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="12855"><![CDATA[12 855 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2019</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -4975,7 +4981,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14413242" partnerkod="7972" kategoria="Motorkerékpár/quad" gyartmany="YAMAHA" tipus="XT 1200 Z Magyar 1. Tulaj! Hitel-Csere-Beszámítás!" modell="XT 1200 Z" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="2849000"><![CDATA[2 849 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="8745"><![CDATA[8 745 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="8722"><![CDATA[8 722 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2011/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -5013,7 +5019,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14469469" partnerkod="7972" kategoria="Motorkerékpár/quad" gyartmany="TRIUMPH" tipus="SPEED TRIPLE 1050 R! Magyarországi! Szervizkönyv! 14.000Km!" modell="SPEED TRIPLE 1050" belsoazonosito="Laci">
 		<ar megnevezes="Vételár" nyersadat="3599000"><![CDATA[3 599 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="11047"><![CDATA[11 047 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="11018"><![CDATA[11 018 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2017/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -5052,7 +5058,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14473901" partnerkod="7972" kategoria="Motorkerékpár/quad" gyartmany="DUCATI" tipus="PANIGALE 959!!! 160Km!!!" modell="PANIGALE" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="3390000"><![CDATA[3 390 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="10405"><![CDATA[10 405 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="10378"><![CDATA[10 378 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">2016</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2021/05</muszaki>
@@ -5091,7 +5097,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14474410" partnerkod="7972" kategoria="Motorkerékpár/quad" gyartmany="TRIUMPH" tipus="EGYÉB Az új Speed Twin 2019!!!" modell="EGYÉB" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="4490000"><![CDATA[4 490 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="13782"><![CDATA[13 782 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="13746"><![CDATA[13 746 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2019/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -5129,7 +5135,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14475019" partnerkod="7972" kategoria="Motorkerékpár/quad" gyartmany="TRIUMPH" tipus="BONNEVILLE Az új Speed Twin 2019!!!" modell="BONNEVILLE" belsoazonosito="Balu">
 		<ar megnevezes="Vételár" nyersadat="4490000"><![CDATA[4 490 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="13782"><![CDATA[13 782 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="13746"><![CDATA[13 746 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2019/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
@@ -5167,7 +5173,7 @@
 	</hirdetes>
 	<hirdetes hirdeteskod="14576425" partnerkod="7972" kategoria="Motorkerékpár/quad" gyartmany="KAWASAKI" tipus="ZX-6R (NINJA)" modell="ZX-6R (NINJA)" belsoazonosito="B.Lackó">
 		<ar megnevezes="Vételár" nyersadat="599000"><![CDATA[599 000 Ft]]></ar>
-		<ar_eur megnevezes="Ár (EUR)" nyersadat="1839"><![CDATA[1 839 EUR]]></ar_eur>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="1834"><![CDATA[1 834 EUR]]></ar_eur>
 		<evjarat megnevezes="Évjárat">2003/03</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2020/04</muszaki>

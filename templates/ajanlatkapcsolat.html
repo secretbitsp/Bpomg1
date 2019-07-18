@@ -9,12 +9,14 @@
     <title> Hasznaltautó érdeklödés Budapest Autószalon</title>
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
-    <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
     <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
-    <link href="{% static 'css/ajanlatform.css' %}" rel="stylesheet">
+    <link href="{% static 'css/test.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 
   </head>
@@ -57,50 +59,72 @@
         </ul>
       </div>
     </nav>
-<br />
     <body>
+        <section class="paralax-mf footer-paralax bg-image sect-mt4 route">
+          <div class="overlay-mf"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="contact-mf">
+                    <div id="contact" class="box-shadow-full">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="title-box-2">
+                            <h5 class="title-left">
+                              Küldjön nekünk üzenetet
+                            </h5>
+                          </div>
+                          <div>
+                              <div class="row">
+                                <form method="post">
+                                  <div class="col-md-12 mb-3">
+                                      {% csrf_token %}
+                                      {{ form.as_p }}
+                                  </div>
+                                  <div class="col-md-12">
+                                    <button type="submit" class="button button-a button-big button-rouded">Üzenet Küldés</button>
+                                  </div>
+                                </form>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="title-box-2 pt-4 pt-md-0">
+                            <h5 class="title-left">
+                              Kapcsolat
+                            </h5>
+                          </div>
+                          <div class="more-info">
+                            <p class="lead">
+                              Felkeltettük az érdeklődését?
+                              Kérjük, vegye fel velünk a kapcsolatot, hogy Önökkel együtt találjuk meg a lehető legjobb megoldást
+                               igényeihez. <br />Érdeklödjön értékesítőink által kínált speciális ajánlatainkról is.
 
-        	<div class="container">
-        		<div class="innerwrap">
 
-        			<section class="section1 clearfix">
-        				<div class="textcenter">
-        					<span class="shtext">Lépjen velünk kapcsolatban</span>
-        					<span class="seperator"></span>
-        					<h1>Küldjön üzenetet</h1>
-        				</div>
-        			</section>
-
-        			<section class="section2 clearfix">
-        				<div class="col2 column1 first">
-
-            <iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.699700237101!2d19.07857421559379!3d47.573630979182525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd5e619943f5%3A0x10cc18acc136afcc!2zQnVkYXBlc3QgQXV0w7NzemFsb24gw7pqIMOpcyBoYXN6bsOhbHRhdXTDsyBrZXJlc2tlZMOpcyDDqXMgc3plcnZpeg!5e0!3m2!1sen!2shu!4v1549012906222"
-             width="800" height="450" frameborder="0"style="border:0" ></iframe>
+                            </p>
+                            <ul class="list-ico">
+                              <li>1044 Budapest Váci út 76-80</li>
+                              <li> <a href = "tel: +36 1 803 6056">+36 1 803 6056</a></li>
+                              <li><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</a></li>
+                            </ul>
+                          </div>
+                          <!--
+                          <div class="socials">
+                            <ul>
+                              <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                              <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                              <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                              <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                            </ul>
+                          </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-        				<div class="col2 column2 last">
-        					<div class="sec2innercont">
-        						<div class="sec2addr">
-                      <p><span class="collig">Cím :</span>1044 Budapest Váci út 76-80</p>
-        							<p><span class="collig">Telefon :</span> <a href = "tel: +36 1 803 6056"></li>+36 1 803 6056</a></p>
-        							<p><span class="collig">Email :</span> <a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a></p>
-        						</div>
-        					</div>
-        					<div class="sec2contactform">
-        						<h3 class="sec2frmtitle">Érdeklik a részletek ? <br /> Küldjön közvetlen üzenetet</h3>
-                    <form method="post">
-                      {% csrf_token %}
-                      {{ form.as_p }}</div>
-                      <input class="btn btn-primary " style="width:100%" type="submit" value="Küldés" />
-                    </form>
-        					</div>
+              </div>
+            </div>
 
-        				</div>
-        			</section>
-
-        		</div>
-        	</div>
-        </body>
         <!-- Footer -->
         <footer id="myFooter">
             <div class="container">
@@ -139,7 +163,6 @@
                 </div>
             </div>
         </footer>
-      </footer>
       <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 
       <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
