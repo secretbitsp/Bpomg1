@@ -19,6 +19,10 @@ html, body{
   body {
     padding-top: 20px;
   }
+  .title-name{
+    display: none;
+
+  }
 }
 
 
@@ -78,10 +82,21 @@ html, body{
 
 @media only screen and (max-width: 599px) {
     .hedy {
-        display: none;
+      display: none;
     }
 }
 
+@media (min-width: 992px) {
+
+  .title-name{
+    display: none;
+
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 
 
-/* SLECTION BOX FOR HAHU*/
+  .navbar-brand{
+    display: none !important;
+  }

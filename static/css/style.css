@@ -1551,9 +1551,3 @@ h6 {
     margin-left: 0;
   }
 }
-
-@media (max-width: 574px) {
-  #footer .footer-top .social-links a {
-    margin-bottom: 25px;
-  }
-}

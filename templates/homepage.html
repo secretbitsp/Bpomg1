@@ -22,6 +22,7 @@
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <!-- Main Stylesheet File -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
@@ -37,7 +38,7 @@
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: contain;
       }
     </style>
   </head>
@@ -61,14 +62,21 @@
       ============================-->
       <nav class="navbar navbar-light bg-light navbar-expand-sm">
         <a class="navbar-brand" href="{% url 'fooldal' %}">
-          <img src="/static/logo2.png" width="20%" height="20%" alt="Budapest Autoszalon Logo">
+          <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
         </a>
+        <div class="title-name">
+          Budapest Autószalon
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbar-list-2">
           <ul class="navbar-nav">
             <li class="nav-item active">
+
               <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -96,27 +104,27 @@
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <!--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
               <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
                 <div class="carousel-item active" style="background-image: url('/static/subaru-main.png')">
                   <div class="carousel-caption d-none d-md-block">
                     <h3 class="display-4"></h3>
-                    <p class="lead"><a href="https://www.budapestautoszalon.hu/forester/" class="btn btn-secondary">Bövebben</a></p>
+                    <p><a href="{% url 'forester' %}" class="btn btn-secondary">Bövebben</a></p>
                   </div>
                 </div>
                 <!-- Slide  Two - Set the background image for this slide in the line below -->
                 <div class="carousel-item" style="background-image: url('static/ssangyongtivoli.png')">
                   <div class="carousel-caption d-none d-md-block">
                     <h3 class="display-4"></h3>
-                    <p class="lead"><a href="https://www.budapestautoszalon.hu/tivoli-akcio" class="btn btn-secondary">Bövebben</a></p>
+                    <p><a href="{% url 'tivoli-akcio' %}"class="btn btn-secondary">Bövebben</a></p>
                   </div>
                 </div>
                   <div class="carousel-item" style="background-image: url('static/asxmitsu.png')">
                     <div class="carousel-caption d-none d-md-block">
                       <h3 class="display-4"></h3>
-                      <p class="lead"><a href="{% url 'mitsu-asx' %}"  class="btn btn-secondary">Bövebben</a></p>
+                      <p><a href="{% url 'mitsu-asx' %}"  class="btn btn-secondary">Bövebben</a></p>
                   </div>
                 </div>
               </div>
@@ -131,7 +139,117 @@
         </div>
       </header>
       <!--END **** Carousel Item **** -->
+      <!--==========================
+        Markak Section
+      ============================-->
+      <section id="pricing" class="wow fadeInUp section-bg">
 
+        <div class="container">
+
+          <header class="section-header">
+            <h3>Általunk forgalmazott márkák</h3>
+            <p></p>
+          </header>
+
+          <div class="row flex-items-xs-middle flex-items-xs-center">
+
+            <!-- Basic Plan  -->
+            <div class="col-xs-12 col-lg-3">
+              <div class="card">
+                <div class="card-header">
+                  <img src="/static/Subaru-logo.png" style="width:40%;" class="img-fluid" alt="">
+                </div>
+                <div class="card-block">
+                  <h4 class="card-title">
+                    Subaru Budapest
+                  </h4>
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="http://www.subarubudapest.hu/" target="_blank">Márka weboldal</li></a>
+                    <li class="list-group-item"><a href=""{% url 'ajanlatkapcsolat' %}"">Aktuális ajánlat</li></a>
+                  </ul>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn">Kapcsolat felvétel</a>
+                </div>
+              </div>
+            </div>
+            <!-- Basic Plan  -->
+            <div class="col-xs-12 col-lg-3">
+              <div class="card">
+                <div class="card-header">
+                  <img src="/static/opellogo.png" style="width:40%;" class="img-fluid" alt="">
+                </div>
+                <div class="card-block">
+                  <h4 class="card-title">
+                    Opel Sziget
+                  </h4>
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="https://www.opelsziget.hu/ajanlataink/" target="_blank">Márka weboldal</li></a>
+                    <li class="list-group-item"><a href=""{% url 'ajanlatkapcsolat' %}"">Aktuális ajánlat</li></a>
+                  </ul>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn">Kapcsolat felvétel</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Regular Plan  -->
+            <div class="col-xs-12 col-lg-3">
+              <div class="card">
+                <div class="card-header">
+                  <img src="/static/Mitsubishi-logo.png" style="width:40%;" class="img-fluid" alt="">
+                </div>
+                <div class="card-block">
+                  <h4 class="card-title">
+                    Mitsubishi Budapest
+                  </h4>
+                  <ul class="list-group">
+                    <li class="list-group-item"><a  href="http://www.mitsubishibudapest.hu/" target="_blank">Márka weboldal</li></a>
+                    <li class="list-group-item"><a href=""{% url 'ajanlatkapcsolat' %}"">Aktuális ajánlat</li></a>
+                  </ul>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn">Kapcsolat felvétel</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Premium Plan  -->
+            <div class="col-xs-12 col-lg-3">
+              <div class="card">
+                <div class="card-header">
+                  <img src="/static/SsangYong-logo.png" style="width:40%;" class="img-fluid" alt="">
+                </div>
+                <div class="card-block">
+                  <h4 class="card-title">
+                    SsangYong Budapest
+                  </h4>
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="http://www.ssangyongbudapest.hu/" target="_blank">Márka weboldal</li></a>
+                    <li class="list-group-item"><a href=""{% url 'ajanlatkapcsolat' %}"">Aktuális ajánlat</li></a>
+                  </ul>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn">Kapcsolat felvétel</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section><!-- #pricing -->
+      <!--==========================
+        Call To Action Section
+      ============================-->
+      <section id="call-to-action" class="wow fadeInUp">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-left">
+              <h3 class="cta-title">Garanciális használt autók</h3>
+              <p class="cta-text"> Továbbra is azon munkálkodunk, hogy a járműveink még elérhetőbbek legyenek az Önök számára.<br />
+                 Sőt, kedvező törlesztő részlettel és további lehetőségekkel várjuk Önt!</p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="{% url 'hasznalt' %}">Autóink</a>
+            </div>
+          </div>
+
+        </div>
+      </section><!-- #call-to-action -->
       <!--==========================
         Szolgaltatasok Section
       ============================-->
@@ -199,24 +317,9 @@
 
         </div>
       </section><!-- #services -->
-      <!--==========================
-        Call To Action Section
-      ============================-->
-      <section id="call-to-action" class="wow fadeInUp">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 text-center text-lg-left">
-              <h3 class="cta-title">Garanciális használt autók</h3>
-              <p class="cta-text"> Továbbra is azon munkálkodunk, hogy a járműveink még elérhetőbbek legyenek az Önök számára.<br />
-                 Sőt, kedvező törlesztő részlettel és további lehetőségekkel várjuk Önt!</p>
-            </div>
-            <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="{% url 'hasznalt' %}">Autóink</a>
-            </div>
-          </div>
 
-        </div>
-      </section><!-- #call-to-action -->
+
+
       <section id="features">
       <div class="container">
 
@@ -244,54 +347,21 @@
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
             <h4></h4>
             <p>
-              Autószalonunkban a forgalmazott márkák teljes típusválasztéka megtalálható. Kollégáink, naprakész információkkal, teljeskörű típus ismereti tapasztalatokkal, gyakorlati segítséggel állnak az Ügyfelek rendelkezésére.
+              Autószalonunkban a forgalmazott márkák teljes típusválasztéka megtalálható.
+               Kollégáink, naprakész információkkal, teljeskörű típus ismereti tapasztalatokkal,
+               gyakorlati segítséggel állnak az Ügyfelek rendelkezésére.
             </p>
             <p>
-              Márkaszervizünkben az évente megforduló több ezer modell átvizsgálási és javítási munkáit, okleveles, jól képzett autószerelőink végzik el. Ezen feladatra egy 700 m2 területű műhelycsarnok áll a szakembereink rendelkezésére, teljes szerviz infrastruktúrával. A forgalmazott márkáink mellett - márka függetlenül - bármely típus szervizelését vállaljuk.
+              Márkaszervizünkben az évente megforduló több ezer modell átvizsgálási és javítási munkáit, okleveles,
+              jól képzett autószerelőink végzik el. Ezen feladatra egy 700 m2 területű műhelycsarnok áll a
+              szakembereink rendelkezésére, teljes szerviz infrastruktúrával.
+              A forgalmazott márkáink mellett - márka függetlenül - bármely típus szervizelését vállaljuk.
             </p>
           </div>
         </div>
       </div>
-    </section><!-- #about -->
-      <!--==========================
-      Main page content
-      ============================-->
-      <!--
-      <div class="container" >
-        <div class="w_text">
-          <h1 class="mt-4 mb-3">Ajánlataink</h1>
-        </div>
-        <div class="wrapper">
-        <div class="box box5 shadow1" >
-            <a href="{% url 'eclipse-cross' %}">
-                <img class="img-fluid" src="/static/eclispebox3.png" alt=""></a>
-          </div>
-          <div class="box box4 shadow4">
-                  <a href="{% url 'rextong4' %}">
-            <img class="img-fluid" src="/static/rextong4/rextonfour.png" alt="SsangYong Rexton G4"></a>
-          </div>
-          <div class="box box3 shadow3">
+    </section>
 
-            <a href="{% url 'forester' %}">
-                  <img class="img-fluid" src="/static/forest2.png" alt=""></a>
-          </div>
-
-          <div class="box box2 shadow2">
-            <a href="{% url 'tivoli-akcio' %}">
-            <img class="img-fluid" src="/static/sanbox1.png" alt=""></a></p>
-          </div>
-          <div class="box box1 shadow1">
-                  <a href="{% url 'nagycsalados' %}">
-            <img class="img-fluid" src="/static/7ules/7szemeleyautok.jpg" alt=""></a>
-
-          </div>
-          <div class="box box5 shadow5">
-            <a href="{% url 'mitsu-asx' %}">
-            <img class="img-fluid" src="/static/asx-4.png" alt=""></a></p>
-          </div>
-        </div>
-      </div>
-      <br />-->
       <!-- Footer -->
       <footer id="myFooter">
           <div class="container">
