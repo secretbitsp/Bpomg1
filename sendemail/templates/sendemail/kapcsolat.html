@@ -73,10 +73,12 @@
         </ul>
       </div>
     </nav>
+    <hr >
 
       <!-- Content Row -->
 
       <div class="row">
+        <!-- The text field -->
 
         <!-- Map Column -->
         <div class="col-lg-12 mb-5">
@@ -95,16 +97,20 @@
           <h1 class="mt-4 mb-3">Címünk:</h1>
           <p>
             1044 Budapest
-            <br>Külső Váci út , 76-80.
-            <br>
+            <br>Külső Váci út , 76-80.<br />
+            <a href="https://www.google.com/maps/dir/Budapest,+Budapest+Autószalon+új+és+használtautó+kereskedés+és+szerviz,+Váci+út" target="_blank" class="btn btn-white btn-animation-1">Útvonal</a>
+
           </p>
+
           <p>
             <abbr title="Központi telefonszám, kérdését nyugodtan felteheti nekünk">Telefonszámunk</abbr><a href="tel:+36 1 803 6056"> +36 1 803 6056</a>
            </p>
           <p>
             <abbr title="Küldjön üzenetet azonnal válaszolunk">Email:</abbr>:
             <a href="mailto:recepcio@budapestautoszalon.hu">recepcio@budapestautoszalon.hu
-            </a>
+            </a> 
+
+
           </p>
         </div>
         <br/>
@@ -210,10 +216,10 @@
                  <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 70 770 7273"> +36 20 377 3100</p></a>
                  <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: erdos.csaba@budapestautoszalon.hu"> erdos.csaba@budapestautoszalon.hu</p></a>
                <div class="wrapper2">
-                  <div><img src="/static/SsangYong-logo.png" width="90%";></div>
-                  <div><img src="/static/Subaru-logo.png" width="80%";></div>
-                  <div><img src="/static/Mitsubishi-logo.png" width="60%";></div>
-                  <div><img src="/static/opellogo.png" width="80%";></div>
+                  <div><img src="/static/Logo/SsangYong-logo.png" width="90%";></div>
+                  <div><img src="/static/Logo/Subaru-logo.png" width="90%";></div>
+                  <div><img src="/static/Logo/Mitsubishi-logo.png" width="90%";></div>
+                  <div><img src="/static/Logo/opellogo.png" width="80%";></div>
                 </div>
               </div>
 
@@ -224,10 +230,10 @@
                     <p class="lead" ><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: kardos.tamas@mitsubishibudapest.hu"> kardos.tamas@mitsubishibudapest.hu</p></a>
 
                 <div class="wrapper2">
-                   <div><img src="/static/SsangYong-logo.png" width="90%";></div>
-                   <div><img src="/static/Subaru-logo.png" width="80%";></div>
-                   <div><img src="/static/Mitsubishi-logo.png" width="60%";></div>
-                   <div><img src="/static/opellogo.png" width="80%";></div>
+                   <div><img src="/static/Logo/SsangYong-logo.png" width="90%";></div>
+                   <div><img src="/static/Logo/Subaru-logo.png" width="90%";></div>
+                   <div><img src="/static/Logo/Mitsubishi-logo.png" width="90%";></div>
+                   <div><img src="/static/Logo/opellogo.png" width="80%";></div>
                  </div>
                 </div>
             </div>
@@ -309,14 +315,19 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
           })();
 
-        function myFunction() {
-        var x = document.getElementsByClassName("menu")[0]  ;
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
+          function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
       $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
       });
