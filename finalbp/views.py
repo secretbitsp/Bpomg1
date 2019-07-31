@@ -45,6 +45,9 @@ def asx(request):
         return render(request,'bpcore/mitsubishi-asx.html')
 
 
+def flottakezeles(request):
+        return render(request,'bpcore/flottakezeles.html')
+
 def szerviz(request):
     return render(request,'szerviz.html')
 

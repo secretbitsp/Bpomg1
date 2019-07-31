@@ -1,0 +1,430 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Budapest Autószalon</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
+    <link href="{% static 'css/flotta.css' %}" rel="stylesheet">
+    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static 'css/menu2.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <!--==========================
+    Top menu
+    ============================-->
+      <nav class="menu-top" >
+        <ul class="menu__list-top">
+          <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
+          <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
+          <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
+          <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
+        </ul>
+      </nav>
+      <!-- End Top Menu -->
+      <br />
+      <!--==========================
+      Navigation
+      ============================-->
+      <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a class="navbar-brand" href="{% url 'fooldal' %}">
+          <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
+        </a>
+        <div class="title-name" >
+          Budapest Autószalon
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-list-2">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+
+              <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="flottakezeles"> Flottakezelés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- End Main Navigation -->
+    <hr >
+    <body>
+      <header class="masthead">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 text-left">
+              <h1 style="font-size:2.8rem;" class="font-weight-bold">Flottakezelés a <br />Budapest Autószalon <br /> kínálatában</h1>
+              <p class="lead">Költséghatékony és gondtalan <br />autózást bitosítunk cégének.</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--==========================
+        About Section
+      ============================-->
+      <section id="about" class="wow fadeInUp">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 about-img">
+              <canvas id="particle-canvas">
+
+
+              </canvas>
+            </div>
+
+            <div class="col-lg-6 content">
+              <h2>Flottakezelés szolgáltatás </h2>
+              <h3>A cége számára hatékony és testreszabott megoldást kínálunk.<br /> Teljes körű szolgáltatásokkal.  </h3>
+
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Fix ár és jó szolgáltatás</li>
+                <li><i class="fas fa-check-circle"></i> Tervezhető kiadások </li>
+                <li><i class="fas fa-check-circle"></i> Rugalmas ügyintézés és hatékonyság</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>  <!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Szolgáltatásaink</h2>
+          <p>Átvállaljuk a tennivalókat, például gondoskodunk a biztosításról <br />a karbantartásról és az üzemanyagról, így Önnek a saját dolgán kívül semmi másra sem kell figyelnie. </p>
+          <br />
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <h4 class="title"><a href="">Üzemanyagkártya</a></h4>
+              <p class="description">Egyszerűvé, átláthatóvá tesszük az üzemanyaggal kapcsolatos elszámolásokat</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <h4 class="title"><a href="">Csereautó szolgáltatás</a></h4>
+              <p class="description">Gondoskodunk róla, hogy szervizelés alatt sem kelljen aggódnia.</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+              <h4 class="title"><a href="">Ideális futamidő </a></h4>
+              <p class="description">Segítünk úgy meghatározni a futamidőket, hogy optimális legyen.</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay="0.2s">
+              <h4 class="title"><a href="">Olcsóbb szervizköltség</a></h4>
+              <p class="description">általunk kínált fix bérleti díjak mellett nem kell egyéb felmerülő költségekkel számolnia.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!--==========================
+      Our Cars Section
+    ============================-->
+    <section id="team" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Aktuális ajánlataink</h2>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="/static/flotta/astraj.png" width="87%"  alt=""></div>
+              <div class="details">
+                <h4>Opel Astra J</h4>
+                <span>Havi 99.000Ft -tól</span>
+                <!--  <div class="social">
+                    <a href="" target="_blank" class="btn btn btn-animation-1"></a>
+                  </div>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="/static/flotta/tivoli.png" width="78%" alt=""></div>
+              <div class="details">
+                <h4>SsangYong Tivoli</h4>
+                <span>Havi 92.999Ft -tól</span>
+                <!--  <div class="social">
+                    <a href="" target="_blank" class="btn btn btn-animation-1"></a>
+                  </div>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="/static/flotta/xlv.jpg" width="100%" alt=""></div>
+              <div class="details">
+                <h4>SsangYong XLV</h4>
+                <span>Havi 95.999Ft -tól</span>
+
+
+                <!--  <div class="social">
+                    <a href="" target="_blank" class="btn btn btn-animation-1"></a>
+                  </div>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="/static/flotta/rexton.png" width="85%" alt=""></div>
+              <div class="details">
+                <h4>SsangYong Rexton</h4>
+                <span>Havi 189.999Ft -tól</span>
+                <span>2.2 4WD Automata</span>
+
+              <!--  <div class="social">
+                  <a href="" target="_blank" class="btn btn btn-animation-1"></a>
+                </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+    <!--==========================
+      Cím Section
+    ============================-->
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 content">
+            <h2>Elérhetőségeink </h2>
+            <h3>
+              <ul>
+                <li>Munkanapokon 9:00-tól 17 óráig várjuk hívását.</li>
+                <li><a href ="tel: +36 20 377 621">Telefonszámunk: +36 20 377 6212</a> </li>
+                <li><a href = "mailto: flottakezeles@flottasziget.hu">Email: flottakezeles@flottasziget.hu</a> </li>
+              </ul>
+            </h3>
+          </div>
+          <div class="col-lg-6 content">
+            <h2>Címünk </h2>
+            <h3>Budapest Autószalon
+              <br />
+              <ul>
+                <li>1044 Budapest <br />Külső Váci út 76-80</li>
+                <li><a href="https://www.google.com/maps/dir/Budapest,+Budapest+Autószalon+új+és+használtautó+kereskedés+és+szerviz,+Váci+út" target="_blank" class="btn btn btn-animation-1">Útvonal</a></li>
+
+              </ul>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>  <!-- #cím -->
+  </body>
+       <!-- Footer -->
+       <footer id="myFooter">
+           <div class="container">
+               <div class="row">
+                   <div class="col-sm-3">
+                       <h5>Kezdőlap</h5>
+                       <ul>
+                           <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                           <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                           <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                       </ul>
+                   </div>
+                   <div class="col-sm-3">
+                       <h5>Rólunk</h5>
+                       <ul>
+                           <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                           <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                           <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
+                       </ul>
+                   </div>
+
+                   <div class="col-sm-3 info">
+                       <h5>Nyitva tartás</h5>
+                       <p>
+                         Új- és használt autó<br />
+                         H-P: 9-18 / Sz: 9-13<br />
+                         <p> </p>
+                         Szerviz, Alkatrész<br />
+                         H-P: 8-17 / Sz: Zárva</p>
+                   </div>
+                   <div class="col-sm-3 info">
+                       <h5>Budapest Autószalon</h5>
+                       <p>   Opel-Mitsubishi-<br />Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+
+                           h-1044 Budapest Váci út 76-80</br>Tel: 06 1-803-6050  </br>Fax: 06 1-803-6051</br>  </p>
+                   </div>
+                   <hr>
+               </div>
+
+           </div>
+       </footer>
+       <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+       <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+       <!-- Start of LiveChat code -->
+     <script type="text/javascript">
+       // modified version of random-normal
+       function normalPool(o){var r=0;do{var a=Math.round(normal({mean:o.mean,dev:o.dev}));if(a<o.pool.length&&a>=0)return o.pool[a];r++}while(r<100)}function randomNormal(o){if(o=Object.assign({mean:0,dev:1,pool:[]},o),Array.isArray(o.pool)&&o.pool.length>0)return normalPool(o);var r,a,n,e,l=o.mean,t=o.dev;do{r=(a=2*Math.random()-1)*a+(n=2*Math.random()-1)*n}while(r>=1);return e=a*Math.sqrt(-2*Math.log(r)/r),t*e+l}
+
+       const NUM_PARTICLES = 800;
+       const PARTICLE_SIZE = 0.8; // View heights
+       const SPEED = 20000; // Milliseconds
+
+       let particles = [];
+
+       function rand(low, high) {
+         return Math.random() * (high - low) + low;
+       }
+
+       function createParticle(canvas) {
+         const colour = {
+           r: 200,
+           g: randomNormal({ mean: 125, dev: 20 }),
+           b: 120,
+           a: rand(0, 1),
+         };
+         return {
+           x: -5,
+           y: -2,
+           diameter: Math.max(0, randomNormal({ mean: PARTICLE_SIZE, dev: PARTICLE_SIZE / 2 })),
+           duration: randomNormal({ mean: SPEED, dev: SPEED * 0.1 }),
+           amplitude: randomNormal({ mean: 16, dev: 2 }),
+           offsetY: randomNormal({ mean: 0, dev: 10 }),
+           arc: Math.PI * 2,
+           startTime: performance.now() - rand(0, SPEED),
+           colour: `rgba(${colour.r}, ${colour.g}, ${colour.b}, ${colour.a})`,
+         }
+       }
+
+       function moveParticle(particle, canvas, time) {
+         const progress = ((time - particle.startTime) % particle.duration) / particle.duration;
+         return {
+           ...particle,
+           x: progress,
+           y: ((Math.sin(progress * particle.arc) * particle.amplitude) + particle.offsetY),
+         };
+       }
+
+       function drawParticle(particle, canvas, ctx) {
+         canvas = document.getElementById('particle-canvas');
+         const vh = canvas.height / 100;
+
+         ctx.fillStyle = particle.colour;
+         ctx.beginPath();
+         ctx.ellipse(
+           particle.x * canvas.width,
+           particle.y * vh + (canvas.height / 2),
+           particle.diameter * vh,
+           particle.diameter * vh,
+           0,
+           0,
+           2 * Math.PI
+         );
+         ctx.fill();
+       }
+
+       function draw(time, canvas, ctx) {
+         // Move particles
+         particles.forEach((particle, index) => {
+           particles[index] = moveParticle(particle, canvas, time);
+         })
+
+         // Clear the canvas
+         ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+         // Draw the particles
+         particles.forEach((particle) => {
+           drawParticle(particle, canvas, ctx);
+         })
+
+         // Schedule next frame
+         requestAnimationFrame((time) => draw(time, canvas, ctx));
+       }
+
+       function initializeCanvas() {
+         let canvas = document.getElementById('particle-canvas');
+         canvas.width = canvas.offsetWidth * window.devicePixelRatio;
+         canvas.height = canvas.offsetHeight * window.devicePixelRatio;
+         let ctx = canvas.getContext("2d");
+
+         window.addEventListener('resize', () => {
+           canvas.width = canvas.offsetWidth * window.devicePixelRatio;
+           canvas.height = canvas.offsetHeight * window.devicePixelRatio;
+           ctx = canvas.getContext("2d");
+         })
+
+         return [canvas, ctx];
+       }
+
+       function startAnimation() {
+         const [canvas, ctx] = initializeCanvas();
+
+         // Create a bunch of particles
+         for (let i = 0; i < NUM_PARTICLES; i++) {
+           particles.push(createParticle(canvas));
+         }
+
+         requestAnimationFrame((time) => draw(time, canvas, ctx));
+       };
+
+       // Start animation when document is loaded
+       (function () {
+         if (document.readystate !== 'loading') {
+           startAnimation();
+         } else {
+           document.addEventListener('DOMContentLoaded', () => {
+             startAnimation();
+           })
+         }
+       }());
+
+     </script>
+    </body>
+  </html>
