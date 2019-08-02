@@ -46,7 +46,7 @@ def asx(request):
 
 
 def flottakezeles(request):
-        return render(request,'bpcore/flottakezeles.html')
+    return render(request,'bpcore/flottakezeles.html')
 
 def szerviz(request):
     return render(request,'szerviz.html')
