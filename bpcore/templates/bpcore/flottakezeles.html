@@ -17,6 +17,8 @@
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static 'css/menu2.css' %}" rel="stylesheet">
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
+    <link href="{% static 'css/test.css' %}" rel="stylesheet">
+
   </head>
   <body>
     <!--==========================
@@ -121,18 +123,19 @@
     ============================-->
     <section id="services">
       <div class="container">
-        <div class="section-header">
+        <!--
+        <div class="col-lg-6 content">
           <h2>Szolgáltatásaink</h2>
           <p>Átvállaljuk a tennivalókat, például gondoskodunk a biztosításról <br />
             a karbantartásról és az üzemanyagról, így Önnek a saját dolgán kívül semmi másra sem kell figyelnie. </p>
           <br />
-        </div>
+        </div>-->
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="box wow fadeInLeft">
-              <h4 class="title"><a href="">Egyszerű ügyintézés</h4>
+              <h4 class="title"><a href="">Egyszerű ügyintézés</h4></a>
               <p class="description">Önnek csak egy emberrel, a flotta kapcsolattartójával kell egyeztetnie,
                                     aki minden kérdésben a lehető leghamarabb intézkedik.</p>
             </div>
@@ -150,6 +153,7 @@
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <h4 class="title"><a href="">Ideális futamidő </a></h4>
               <p class="description">Segítünk úgy meghatározni a futamidőket, hogy optimális legyen.</p>
+              <br />
             </div>
           </div>
 
@@ -163,9 +167,10 @@
 
           <div class="col-lg-6">
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">Optimális cégesautó flotta </a></h4>
+              <h4 class="title"><a href="">Cégesautó flotta </a></h4>
               <p class="description">Önnek a cégesautó flottájának adminisztrációjában,
                 riportálásában és cégesautó politikájának kialakításában.</p>
+              <br />
             </div>
           </div>
 
@@ -262,38 +267,57 @@
 
       </div>
     </section><!-- #team -->
-    <!--==========================
-      Cím Section
-    ============================-->
-    <section id="about" class="wow fadeInUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 content">
-            <h2>Elérhetőségeink </h2>
-            <h3>
-              <ul>
-                <li>Munkanapokon 9:00-tól 17 óráig várjuk hívását.</li>
-                <li><a href ="tel: +36 20 377 621">Telefonszámunk: +36 20 377 6212</a> </li>
-                <li><a href = "mailto: flottakezeles@flottasziget.hu">Email: flottakezeles@flottasziget.hu</a> </li>
-              </ul>
-            </h3>
-          </div>
-          <div class="col-lg-6 content">
-            <h2>Címünk </h2>
-            <h3>Budapest Autószalon
-              <br />
-              <ul>
-                <li>1044 Budapest <br />Külső Váci út 76-80</li>
-                <li><a href="https://www.google.com/maps/dir/Budapest,+Budapest+Autószalon+új+és+használtautó+kereskedés+és+szerviz,+Váci+út" target="_blank" class="btn btn btn-animation-1">Útvonal</a></li>
 
-              </ul>
-            </h3>
+
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route">
+      <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          Küldjön nekünk üzenetet
+                        </h5>
+                      </div>
+                      <div>
+                          <div class="row">
+                            <form method="post">
+                              <div class="col-md-12 mb-3">
+                                  {% csrf_token %}
+                                  {{ form.as_p }}
+                              </div>
+                              <div class="col-md-12">
+                                <button type="submit" class="button button-a button-big button-rouded">Üzenet Küldés</button>
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">
+                          Kapcsolat
+                        </h5>
+                      </div>
+                      <div class="more-info">
+                        <p class="lead">
+                          Felkeltettük az érdeklődését?
+                          Kérjük, vegye fel velünk a kapcsolatot, hogy Önökkel együtt találjuk meg a lehető legjobb megoldást
+                           igényeihez. <br />Érdeklödjön értékesítőink által kínált speciális ajánlatainkról is.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>  <!-- #cím -->
-
-  </body>
+      </body>
        <!-- Footer -->
        <footer id="myFooter">
            <div class="container">
@@ -455,6 +479,29 @@
          }
        }());
 
+
+
      </script>
+     <!-- Start of LiveChat code -->
+     <script type="text/javascript">
+           window.__lc = window.__lc || {};
+           window.__lc.license = 8624479;
+           window.__lc.chat_between_groups = false;
+           (function() {
+             var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+             lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+           })();
+
+         function myFunction() {
+         var x = document.getElementsByClassName("menu")[0]  ;
+         if (x.style.display === "block") {
+           x.style.display = "none";
+         } else {
+           x.style.display = "block";
+         }
+       }
+     </script>
+     <!-- End of LiveChat code -->
     </body>
   </html>

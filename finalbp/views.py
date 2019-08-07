@@ -11,6 +11,7 @@ import urllib.request
 from django.views.generic import View
 from django.core.mail import send_mail
 from .forms import ajanlatkapcsolat
+from .forms import flottakapcsolat
 # new imports that go at the top of the file
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
@@ -46,7 +47,33 @@ def asx(request):
 
 
 def flottakezeles(request):
-    return render(request,'bpcore/flottakezeles.html')
+    if request.method == 'POST':
+        form = flottakapcsolat(request.POST)
+        if form.is_valid():
+            sender_name = form.cleaned_data['név']
+            sender_email = form.cleaned_data['email']
+            sender_phone = form.cleaned_data['telefonszám']
+            sender_mail = form.cleaned_data['megjegyzés']
+            message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
+            send_mail('Új érdeklődés a weboldalról', message, 'info@budapestautoszalon.hu', ['yepense@gmail.com'],)
+            print(send_mail)
+            print(sender_mail)
+            print(message)
+            return HttpResponseRedirect('/flottakezeles')
+    else:
+        form = flottakapcsolat()
+
+    return render(request,'bpcore/flottakezeles.html', {'form': form})
+
+
+
+
+
+
+
+
+
+
 
 def szerviz(request):
     return render(request,'szerviz.html')
@@ -234,7 +261,7 @@ def ajantlatkapcsi(request):
             sender_phone = form.cleaned_data['telefonszám']
             sender_mail = form.cleaned_data['üzenet']
             message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
-            send_mail('Új érdeklődés a weboldalról', message, 'varga.laszlo@budapestautoszalon.hu', ['kardos.tamas@mitsubishibudapest.hu'],)
+            send_mail('Új érdeklődés a weboldalról', message, 'info@budapestautoszalon.hu', ['kardos.tamas@mitsubishibudapest.hu'],)
             print(send_mail)
             print(sender_mail)
             print(message)

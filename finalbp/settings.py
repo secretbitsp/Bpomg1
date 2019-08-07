@@ -38,8 +38,8 @@ INSTALLED_APPS = [
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 EMAIL_HOST = 'mail.budapestautoszalon.hu'
-EMAIL_HOST_USER = 'varga.laszlo@budapestautoszalon.hu'
-EMAIL_HOST_PASSWORD = 'sajtoskenyer12'
+EMAIL_HOST_USER = 'info@budapestautoszalon.hu'
+EMAIL_HOST_PASSWORD = '1qay2wsx+'
 EMAIL_PORT = 465
 
 

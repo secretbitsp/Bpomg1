@@ -52,12 +52,7 @@
     line-height: 1.1;
   }
 
-  .avatar {
-    width: 32px;
-    height: 32px;
-    margin-right: 4px;
-    overflow: hidden;
-  }
+
 
   .bg-image {
     background-repeat: no-repeat;
@@ -367,6 +362,7 @@
 
   .footer-paralax {
     padding: 4rem 0 0 0;
+    background-color: #f5f8fa;
   }
 
 
