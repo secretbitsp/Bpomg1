@@ -32,51 +32,60 @@
     </style>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="menu-top" >
-      <ul class="menu__list-top">
-        <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
-        <li class="menu__group-top"><i class="fas fa-phone"></i> +36 1 803 6056</li>
-        <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
-        <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
-      </ul>
-    </nav>
-    <br />
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-      <a class="navbar-brand" href="{% url 'fooldal' %}">
-        <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
-      </a>
-      <div class="title-name">
-        <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-list-2">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'fooldal' %}">Főoldal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'hasznalt' %}">Használt autók</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
-          </li>
+    <!--==========================
+    Top menu
+    ============================-->
+      <nav class="menu-top" >
+        <ul class="menu__list-top">
+          <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
+          <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
+          <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
+          <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
         </ul>
-      </div>
-    </nav>
-<header>
+      </nav>
+      <!-- End Top Menu -->
+      <br />
+      <!--==========================
+      Navigation
+      ============================-->
+      <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a class="navbar-brand" href="{% url 'fooldal' %}">
+          <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
+        </a>
+        <div class="title-name" >
+          <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
 
-</header>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-list-2">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+
+              <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- End Main Navigation -->
 
    <!--section third-section-->
  <div class="section third-section">
