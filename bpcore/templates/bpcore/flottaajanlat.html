@@ -1,0 +1,293 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Budapest Autószalon</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
+    <link href="{% static 'css/flotta.css' %}" rel="stylesheet">
+    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static 'css/menu2.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
+    <link href="{% static 'css/test.css' %}" rel="stylesheet">
+
+  </head>
+  <body>
+    <!--==========================
+    Top menu
+    ============================-->
+      <nav class="menu-top" >
+        <ul class="menu__list-top">
+          <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
+          <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
+          <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
+          <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
+        </ul>
+      </nav>
+      <!-- End Top Menu -->
+      <br />
+      <!--==========================
+      Navigation
+      ============================-->
+      <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a class="navbar-brand" href="{% url 'fooldal' %}">
+          <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
+        </a>
+        <div class="title-name" >
+          <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-list-2">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+
+              <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- End Main Navigation -->
+    <hr >
+    <body>
+
+    <!--==========================
+      Our Cars Section
+    ============================-->
+    <section id="team" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Aktuális ajánlataink</h2>
+        </div>
+        <br />
+        <div class="row">
+
+
+          <div class="col-sm-4">
+            <div class="member box">
+              <div class="pic"><img src="/static/flotta/tivoli.png" width="78%" alt=""></div>
+              <div class="details">
+                <h4>SsangYong Tivoli</h4>
+                <span>4év, 80.000km</span>
+                <span>Havi 92.999Ft</span>
+                <!--  <div class="social">
+                    <a href="" target="_blank" class="btn btn btn-animation-1"></a>
+                  </div>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="member box">
+              <div class="pic"><img src="/static/flotta/xlv.jpg" width="100%" alt=""></div>
+              <div class="details">
+                <h4>SsangYong XLV</h4>
+                <span>4év, 80.000km</span>
+                <span>Havi 95.999Ft</span>
+
+
+                <!--  <div class="social">
+                    <a href="" target="_blank" class="btn btn btn-animation-1"></a>
+                  </div>-->
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-lg-4 col-sm-4">
+            <div class="member box">
+              <div class="pic"><img src="/static/flotta/rexton.png" width="85%" alt=""></div>
+              <div class="details">
+                <h4>SsangYong Rexton</h4>
+                <span>4év, 80.000km</span>
+                <span>Havi 189.999Ft</span>
+                <span>2.2 4WD Automata</span>
+
+              <!--  <div class="social">
+                  <a href="" target="_blank" class="btn btn btn-animation-1"></a>
+                </div>-->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="member box">
+              <div class="pic"><img src="/static/flotta/opel-astra.png" width="87%" style="padding-bottom:29px; padding-top:30px;"  alt=""></div>
+              <div class="details">
+                <h4>Opel Astra K</h4>
+                <span>4év, 80.000km</span>
+                <span>Havi 95.600Ft</span>
+                <span>Készletről vihető</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="member box">
+              <div class="pic"><img src="/static/flotta/astraj.png" width="90%"  alt=""></div>
+              <div class="details">
+                <h4>Opel Astra J</h4>
+                <span>4év, 80.000km</span>
+                <span>Havi 91.700Ft</span>
+                <span>Készletről vihető</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="member box">
+              <div class="pic"><img src="/static/flotta/zafira.png" width="90%"  alt=""></div>
+              <div class="details">
+                <h4>Opel Zafira Plus 1.6</h4>
+                <span>4év, 80.000km</span>
+                <span>Havi 128.617Ft</span>
+                <span> Készletről vihető</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="member box">
+              <div class="pic"><img src="/static/flotta/grandland-x.png" width="90%"  alt=""></div>
+              <div class="details">
+                <h4>Opel Grandland X 1.2 Enjoy</h4>
+                <span>4év, 80.000km</span>
+                <span>Havi 114.891Ft</span>
+                <span>Készletről vihető</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="member box">
+              <div class="pic"><img src="/static/flotta/isnignia.png" width="92%"  alt=""></div>
+              <div class="details">
+                <h4>Opel Insignia 1.5 Business</h4>
+                <span>4év, 80.000km</span>
+                <span>Havi 137.961Ft</span>
+                <span>Készletről vihető</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4">
+            <div class="member box">
+              <div class="pic"><img src="/static/flotta/corsa.png" width="82%" style="padding-bottom:6px; alt=""></div>
+              <div class="details">
+                <h4>Opel Corsa E</h4>
+                <span>4év, 80.000km</span>
+                <span>Havi 78.500Ft</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+            <!--==========================
+              Call To Action Section
+            ============================-->
+            <section id="call-to-action" class="wow fadeInUp">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-9 text-center text-lg-left">
+                    <h3 class="cta-title">Vegye fel velünk a kapcsolatot!</h3>
+                    <p class="cta-text">Kérjen egyedi ajánlatot! </p>
+                  </div>
+                  <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" href="{% url 'flottakezeles' %}">Kapcsolat felvétel</a>
+                  </div>
+                </div>
+
+              </div>
+            </section><!-- #call-to-action -->
+            <br />
+      </body>
+       <!-- Footer -->
+       <footer id="myFooter">
+           <div class="container">
+               <div class="row">
+                   <div class="col-sm-3">
+                       <h5>Kezdőlap</h5>
+                       <ul>
+                           <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                           <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                           <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                       </ul>
+                   </div>
+                   <div class="col-sm-3">
+                       <h5>Rólunk</h5>
+                       <ul>
+                           <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                           <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                           <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
+                       </ul>
+                   </div>
+
+                   <div class="col-sm-3 info">
+                       <h5>Nyitva tartás</h5>
+                       <p>
+                         Új- és használt autó<br />
+                         H-P: 9-18 / Sz: 9-13<br />
+                         <p> </p>
+                         Szerviz, Alkatrész<br />
+                         H-P: 8-17 / Sz: Zárva</p>
+                   </div>
+                   <div class="col-sm-3 info">
+                       <h5>Budapest Autószalon</h5>
+                       <p>   Opel-Mitsubishi-<br />Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+
+                           h-1044 Budapest Váci út 76-80</br>Tel: 06 1-803-6050  </br>Fax: 06 1-803-6051</br>  </p>
+                   </div>
+                   <hr>
+               </div>
+
+           </div>
+       </footer>
+       <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+       <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+     <!-- Start of LiveChat code -->
+     <script type="text/javascript">
+           window.__lc = window.__lc || {};
+           window.__lc.license = 8624479;
+           window.__lc.chat_between_groups = false;
+           (function() {
+             var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+             lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+           })();
+
+         function myFunction() {
+         var x = document.getElementsByClassName("menu")[0]  ;
+         if (x.style.display === "block") {
+           x.style.display = "none";
+         } else {
+           x.style.display = "block";
+         }
+       }
+     </script>
+     <!-- End of LiveChat code -->
+    </body>
+  </html>

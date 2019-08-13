@@ -12,7 +12,6 @@ from django.views.generic import View
 from django.core.mail import send_mail
 from .forms import ajanlatkapcsolat
 from .forms import flottakapcsolat
-# new imports that go at the top of the file
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
@@ -23,6 +22,9 @@ except ImportError:
     import xml.etree.ElementTree as ET
 from django.core.paginator import Paginator
 from .models import Hahuautok
+
+
+
 
 def homepage(request):
    return render(request,'homepage.html')
@@ -42,6 +44,9 @@ def nagycsalados(request):
 def rextong4(request):
         return render(request,'bpcore/rextongg4.html')
 
+def flottaajanlat(request):
+        return render(request,'bpcore/flottaajanlat.html')
+
 def asx(request):
         return render(request,'bpcore/mitsubishi-asx.html')
 
@@ -55,7 +60,7 @@ def flottakezeles(request):
             sender_phone = form.cleaned_data['telefonszám']
             sender_mail = form.cleaned_data['megjegyzés']
             message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
-            send_mail('Új érdeklődés a weboldalról', message, 'info@budapestautoszalon.hu', ['flottakezeles@flottasziget.hu'],)
+            send_mail('Új érdeklődés a weboldalról', message, 'info@budapestautoszalon.hu', ['yepense@gmail.com'],)
             print(send_mail)
             print(sender_mail)
             print(message)

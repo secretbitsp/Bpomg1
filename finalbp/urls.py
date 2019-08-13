@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^rexton-g4/$',views.rextong4, name="rextong4"),
     url(r'^mitsubishi-asx/$',views.asx, name="mitsu-asx"),
     url(r'^nagycsalados-7-szemelyes-auto/$',views.nagycsalados, name="nagycsalados"),
+    url(r'^flotta-ajanlatok/$',views.flottaajanlat, name="flottaajanlat"),
 
 
 
