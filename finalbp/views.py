@@ -60,7 +60,7 @@ def flottakezeles(request):
             sender_phone = form.cleaned_data['telefonszám']
             sender_mail = form.cleaned_data['megjegyzés']
             message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
-            send_mail('Új érdeklődés a weboldalról', message, 'info@budapestautoszalon.hu', ['yepense@gmail.com'],)
+            send_mail('Új érdeklődés a weboldalról', message, 'info@budapestautoszalon.hu', ['flottakezeles@flottasziget.hu'],)
             print(send_mail)
             print(sender_mail)
             print(message)
@@ -69,14 +69,6 @@ def flottakezeles(request):
         form = flottakapcsolat()
 
     return render(request,'bpcore/flottakezeles.html', {'form': form})
-
-
-
-
-
-
-
-
 
 
 
