@@ -52,19 +52,35 @@
 
 
     <style>
-      .carousel-item {
-        height: 60vh;
-        min-height: 350px;
-        background: no-repeat center center scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: contain;
-      }
+
+    /* Carousel 100% Fullscreen */
+    html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+    }
+    .carousel, .item, .active {
+    height:100%;
+    }
+    .carousel-inner {
+    height:100%;
+    }
+
+    .carousel-caption {
+    z-index: 10;
+    }
+    .carousel .item {
+    background-color: #777;
+    }
+    .carousel .carousel-inner .bg {
+    background-repeat:no-repeat;
+    background-size:cover;
+    }
+
+
     </style>
   </head>
   <body>
-
     <!--==========================
     Top menu
     ============================-->
@@ -116,7 +132,6 @@
         </div>
       </nav>
     <!-- End Main Navigation -->
-    <hr >
     <!--==========================
     Carousel
     ============================-->
@@ -129,24 +144,28 @@
             </ol>
               <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('/static/mainbanner/subaru-main.png')">
+                <div  class="carousel-item active" style="background-image: url('static/mainbanner/rexton.jpg')">
+                  <a href="{% url 'rextong4' %}">
+                          <span class="link-spanner"></span>
+                  </a>
                   <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4"></h3>
-                    <p><a href="{% url 'forester' %}" class="btn btn-secondary">Bövebben</a></p>
+                    <h3 class="display-4" style="margin-right:400px"><mark>Új Rexton G4</mark></h3>
                   </div>
-                </div>
-                <!-- Slide  Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('static/mainbanner/ssangyongtivoli.png')">
+                  </div>
+                <div  class="carousel-item" style="background-image: url('static/mainbanner/asxmitsu.jpg')">
+                  <a href="{% url 'mitsu-asx' %}">
+                          <span class="link-spanner"></span>
+                  </a>
                   <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4"></h3>
-                    <p><a href="{% url 'tivoli-akcio' %}"class="btn btn-secondary">Bövebben</a></p>
+                    <h3 class="display-4" style="margin-right:400px"><mark>Mitsubishi Asx Ajánlatok</mark></h3>
                   </div>
-                </div>
-                  <div class="carousel-item" style="background-image: url('static/mainbanner/asxmitsu.png')">
+                  </div>
+                  <div  class="carousel-item" style="background-image: url('static/mainbanner/ssangyongtivoli.png')">
+                    <a href="{% url 'tivoli-akcio' %}">
+                            <span class="link-spanner"></span>
+                    </a>
                     <div class="carousel-caption d-none d-md-block">
-                      <h3 class="display-4"></h3>
-                      <p><a href="{% url 'mitsu-asx' %}"  class="btn btn-secondary">Bövebben</a></p>
-                  </div>
+                      <h3 class="display-4" style="margin-right:400px"><mark>Mitsubishi Tivoli Készletről</mark></h3>
                 </div>
               </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -474,5 +493,5 @@
         alt="ingyen webstatisztika"></a></div></noscript>
       <!-- End of Statcounter Code -->
 
+      </html>
   </body>
-</html>
