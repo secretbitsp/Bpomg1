@@ -211,8 +211,10 @@ def hello2(request):
             contact_list = contact_list.filter(evjarat__year__gte=2009)
         if date == '2010_to_today':
             contact_list = contact_list.filter(evjarat__year__gte=2010)
-    if price:
-            contact_list = contact_list.filter(ar=price)
+    #if price:
+            #contact_list = contact_list.filter(ar=price)
+        #    if price == '500_less':
+        #        contact_list = contact_list.filter(ar__lt=500)
 
     paginator = Paginator(contact_list, 25) # Show 25 car per page
     page = request.GET.get('page')
