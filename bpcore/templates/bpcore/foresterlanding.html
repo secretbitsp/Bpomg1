@@ -1,104 +1,88 @@
-{% load staticfiles %}
-
-
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
   <head>
-    <title>Selling &mdash; Website by Colorlib</title>
     <meta charset="utf-8">
+    <title>Budapest Autószalon új és használtautók</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A Magyar használt autó kereskedés és Új autó szalon Budapest Autoszalon(használt autó, használt autók, használtautó,) Közép-Európában. Legkeresettebb márkák: Škoda, Ford, Peugeot, Renault, Citroen, Daewoo, Audi, Fiat, Opel, Seat, VW, Volvo, Honda, Kia, Mazda, Subaru, SsangYong, Mitsubishi, Opel Astra">
+    <meta name="keywords" content="">
+    <meta name="author" content="Follow the white rabbit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
+    <!--<link href="img/apple-touch-icon.png" rel="apple-touch-icon">-->
 
 
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="{% static 'css/Footer-with-logo.css' %}">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="{% static 'css/menubar.css' %}">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-    <link rel="stylesheet" href="css/aos.css">
+    <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
 
     <link href="{% static 'css/forester.css' %}" rel="stylesheet">
 
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
+  <!--==========================
+  Top menu
+  ============================-->
+    <nav class="menu-top" >
+      <ul class="menu__list-top">
+        <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
+        <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
+        <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
+        <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
+      </ul>
+    </nav>
+    <!-- End Top Menu -->
+    <!--==========================
+    Navigation
+    ============================-->
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+      <a class="navbar-brand" href="{% url 'fooldal' %}">
+        <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
+      </a>
+      <div class="title-name" >
+        <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
       </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-    <div class="top-bar py-3 bg-light" id="home-section">
-      <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-6 text-left">
-            <ul class="social-media">
-              <li><a href="#" class=""><span class="icon-facebook"></span></a></li>
-              <li><a href="#" class=""><span class="icon-twitter"></span></a></li>
-              <li><a href="#" class=""><span class="icon-instagram"></span></a></li>
-              <li><a href="#" class=""><span class="icon-linkedin"></span></a></li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <p class="mb-0 float-right">
-              <span class="mr-3"><a href="tel://#"> <span class="icon-phone mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">(+1) 234 5678 9101</span></a></span>
-              <span><a href="#"><span class="icon-envelope mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">shop@yourdomain.com</span></a></span>
-            </p>
-
-          </div>
-        </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-list-2">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+          </li>
+        </ul>
       </div>
-    </div>
-
-    <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black mb-0">Selling<span class="text-primary">.</span> </a></h1>
-          </div>
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#products-section" class="nav-link">Products</a></li>
-                <li><a href="#about-section" class="nav-link">About Us</a></li>
-                <li><a href="#special-section" class="nav-link">Special</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-                <li><a href="#blog-section" class="nav-link">Blog</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
-
-        </div>
-      </div>
-
-    </header>
+    </nav>
+  <!-- End Main Navigation -->
 
 
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay" style="background-image: url(/static/ecross/mitsubishibudapest-outlander.webp);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center">
 
@@ -109,8 +93,8 @@
                 <h1>Mitsubishi Modellek</h1>
                 <p class="mb-5 lead">Kedvező áron most a Budapest Autószalon kínálatában.</p>
                 <div>
-                  <a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Kapcsolat felvétel</a>
-                  <a href="#" class="btn btn-white py-3 px-5 rounded-0 d-block d-sm-inline-block">Tesztvezetés</a>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Kapcsolat felvétel</a>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-white py-3 px-5 rounded-0 d-block d-sm-inline-block">Tesztvezetés</a>
                 </div>
               </div>
             </div>
@@ -138,15 +122,15 @@
 
               </figure>
               <div class="px-4">
-                <h3><a href="#">Új Mitsubishi Eclipse Cross </a></h3>
+                <h3><a href="#eclipse">Új Mitsubishi Eclipse Cross </a></h3>
                 <div class="mb-3">
                   <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><strong>Már 6 990 000 Ft-tól</strong></span>
                   <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br />Kézenfekvő ajánlat <br />most<strong> 1.000.000Ft kedvezmény</strong></span>
                 </div>
                 <p class="mb-4"></p>
                 <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Érdekel</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#eclipse" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
                 </div>
               </div>
             </div>
@@ -158,15 +142,15 @@
                 <img src="/static/asx/asx-tit.png" alt="Image" class="img-fluid">
               </figure>
               <div class="px-4">
-                <h3><a href="#">Mitsubishi Asx</a></h3>
+                <h3><a href="#asx">Mitsubishi Asx</a></h3>
                 <div class="mb-3">
                   <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><strong>Már 5 290 000 Ft-tól</strong></span>
                   <span class="meta-icons wishlist active"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br />Kézenfekvő ajánlat <br />most<strong> 1.000.000Ft kedvezmény</strong></span>
                 </div>
                 <p class="mb-4"></p>
                 <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Érdekel</a>
-                  <a href="{% url 'mitsu-asx' %}" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#asx" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
                 </div>
               </div>
             </div>
@@ -175,18 +159,18 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="product-item">
               <figure>
-                <img src="images/model_3_bg.jpg" alt="Image" class="img-fluid">
+                <img src="/static/outlander/outlander-mitsubishi-budapest.png" alt="Image" class="img-fluid">
               </figure>
               <div class="px-4">
-                <h3><a href="#">Wild West Hoodie</a></h3>
+                <h3><a href="#outlander">Mitsubishi Outlander </a></h3>
                 <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
-                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><strong>Már 7 850 000 Ft-tól</strong></span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br /> Hétszemélyes és  <br /><strong>Hibrid változatban is kapható!</strong></span>
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <p class="mb-4"></p>
                 <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#outlander" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
                 </div>
               </div>
             </div>
@@ -195,137 +179,168 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="product-item">
               <figure>
-                <img src="images/model_4_bg.jpg" alt="Image" class="img-fluid">
+                <img src="/static/triton/mitsubishi-budapest-l200.png" alt="Image" class="img-fluid">
               </figure>
               <div class="px-4">
-                <h3><a href="#">Wild West Hoodie</a></h3>
+                <h3><a href="#l200">Mitsubishi L200/Triton</a></h3>
                 <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
-                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><strong>Már 6 390 000 Ft-tól</strong></span>
+                  <p class="mb-4">Készletről <strong>most 800.000Ft kedvezménnyel.</strong></p>
+
+
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#l200" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="product-item">
-              <figure>
-                <img src="images/model_5_bg.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-4">
-                <h3><a href="#">Wild West Hoodie</a></h3>
-                <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
-                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
-                </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="product-item">
-              <figure>
-                <img src="images/product_1_bg.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-4">
-                <h3><a href="#">Wild West Hoodie</a></h3>
-                <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
-                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
-                </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
         </div>
       </div>
     </div>
 
-    <div class="site-blocks-cover inner-page-cover overlay get-notification"  style="background-image: url(images/hero_2.jpg); background-attachment: fixed;" data-aos="fade">
+    <div class="site-blocks-cover inner-page-cover overlay get-notification"  style="background-image: url(/static/asx/asx-csomagtarto.jpeg); background-attachment: fixed;" data-aos="fade">
       <div class="container">
 
         <div class="row align-items-center justify-content-center">
           <form class="col-md-7" method="post">
-            <h2>Get notified on each updates.</h2>
-            <div class="d-flex mb-4">
-              <input type="text" class="form-control rounded-0" placeholder="Enter your email address">
-              <input type="submit" class="btn btn-white btn-outline-white rounded-0" value="Subscribe">
+            <h2>Jelentkezzen tesztvezetésre vagy vegye fel a kapcsolat értékesítőkkel.</h2>
+              <p>Kattintson a gombra és kérjen személyre szabott árajánlatot</p>
+              <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-white btn-outline-black ml-1 rounded-0">Kapcsolat felvétel</a>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat commodi veniam doloremque ducimus tempora.</p>
           </form>
         </div>
-
       </div>
-    </div>
 
     <div class="site-section bg-light">
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-6 text-center">
-            <h3 class="section-sub-title">Awesome Products</h3>
-            <h2 class="section-title mb-3">Featured Products</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
+            <h3 class="section-sub-title"></h3>
+            <h2 class="section-title mb-3"></h2>
+            <p>.</p>
           </div>
         </div>
-        <div class="bg-white py-4 mb-4">
+        <div id="asx" class="bg-white py-4 mb-4">
           <div class="row mx-4 my-4 product-item-2 align-items-start">
             <div class="col-md-6 mb-5 mb-md-0">
-              <img src="images/model_1_bg.jpg" alt="Image" class="img-fluid">
+              <img src="/static/asx/asx-main-2.jpg" alt="Image" class="img-fluid">
             </div>
 
             <div class="col-md-5 ml-auto product-title-wrap">
-              <span class="number">01.</span>
-              <h3 class="text-black mb-4 font-weight-bold">About This Product</h3>
-              <p class="mb-4">Et tempora id nostrum saepe amet doloribus deserunt totam officiis cupiditate asperiores quasi accusantium voluptatum dolorem quae sapiente voluptatem ratione odio iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta assumenda sed optio, error at?</p>
+              <span id="asx" class="number">01.</span>
+              <h3 class="text-black mb-4 font-weight-bold">Mitsubishi Asx</h3>
+              <p class="mb-4">Szálljon be, az élet hívja! Az ASX készen áll arra, hogy az Ön életét mozgásba hozza. Engedje, hogy az autó dinamikus fellépése, modern vonalai elvarázsolják.
+                                Az ASX az aktív vezetési élmény és a meglepő kényelem esszenciáját testesíti meg. A mérete pont jó, és meglepően könnyen vezethető mind városban, mind országutakon, az utasok kényelmének korlátozása nélkül.</p>
 
               <div class="mb-4">
-                <h3 class="text-black font-weight-bold h5">Price:</h3>
-                <div class="price"><del class="mr-2">$269.00</del> $69.00</div>
+                <h3 class="text-black font-weight-bold h5">Kedvezményes ajánlat:</h3>
+                <div class="price">Kedvező finanszírozással most 2,5% THM -mel</div>
               </div>
               <p>
-                <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">View Details</a>
-                <a href="#" class="btn btn-black rounded-0 d-block d-lg-inline-block">Add To Cart</a>
+                <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
               </p>
             </div>
           </div>
         </div>
 
-        <div class="bg-white py-4">
+        <div  id="eclipse" class="bg-white py-4">
           <div class="row mx-4 my-4 product-item-2 align-items-start">
             <div class="col-md-6 mb-5 mb-md-0 order-1 order-md-2">
-              <img src="images/product_1_bg.jpg" alt="Image" class="img-fluid">
+              <img src="/static/ecross/mitsubishi-eclipse-cross.png" alt="Image" class="img-fluid">
             </div>
 
             <div class="col-md-5 mr-auto product-title-wrap order-2 order-md-1">
               <span class="number">02.</span>
-              <h3 class="text-black mb-4 font-weight-bold">About This Product</h3>
-              <p class="mb-4">Et tempora id nostrum saepe amet doloribus deserunt totam officiis cupiditate asperiores quasi accusantium voluptatum dolorem quae sapiente voluptatem ratione odio iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta assumenda sed optio, error at?</p>
+              <h3 class="text-black mb-4 font-weight-bold">Mitsubishi Eclipse Cross</h3>
+              <p class="mb-4">Az új ECLIPSE CROSS fejlett vezetést támogató rendszereivel még biztonságosabban és még magabiztosabban autózhat,
+                akár autópályán közlekedik, akár egy kanyargós hegyi úton halad, vagy éppen egy parkolóból szeretne kiállni.</p>
+                Az Eclipse Cross a belterében tökéletesen megtestesíti a SUV-okra jellemző erényeket - a magas ülési pozícióval biztosított jó
+                kilátást, a sok helyet és a variálhatóságot.
+                Mindemellett számos kényelmi és hasznos funkcióval, kifogástalan csatlakozási lehetőségekkel és intuitív kezelő rendszerrel is rendelkezik.
+                 A vezetés öröme ráragad mindenkire a tágas, minőségi anyagokkal és művészi kivitelezéssel készített, kápráztató utastérben.
+                 A kényelmes,ergonomikus üléseknek és a méretes lábtérnek köszönhetően mindenki kipihentnek érezheti magát még a leghosszabb utazáson is.
+              <p>
+                <br />
+                <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white py-4 mb-4">
+          <div class="row mx-4 my-4 product-item-2 align-items-start">
+            <div class="col-md-6 mb-5 mb-md-0">
+              <img src="/static/ecross/mitsubishi-eclipse-cross-mitsubishibudapest.png" alt="Image" class="img-fluid">
+            </div>
+
+            <div class="col-md-5 ml-auto product-title-wrap">
+              <h3 class="text-black mb-4 font-weight-bold">Technológia</h3>
+              <p class="mb-4">A finomhangolt felfüggesztésnek, a pontosan reagáló kormányzásnak, illetve a ponthegesztéssel,
+                 szerkezeti ragasztókkal és a motor felett toronymerevítővel megerősített karosszéria páratlan szilárdságának
+                 köszönhetően az ECLIPSE CROSS pontosan oda megy, ahová Ön akarja - csalhatatlanul, precízen.
+                 Ugyanakkor minden utas élvezi a rendkívül kényelmes utazást,
+                bármilyen terepviszonyok között is vezet az út.</p>
 
               <div class="mb-4">
-                <h3 class="text-black font-weight-bold h5">Price:</h3>
-                <div class="price"><del class="mr-2">$269.00</del> $69.00</div>
+                <h3 class="text-black font-weight-bold h5">Kedvezményes ajánlat:</h3>
+                <div class="price">Készletről azonnal az Öné <br /> most 1.000.000Ft Kedvezménnyel. </div>
               </div>
               <p>
-                <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">View Details</a>
-                <a href="#" class="btn btn-black rounded-0 d-block d-lg-inline-block">Add To Cart</a>
+                <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="outlander" class="bg-white py-4">
+          <div class="row mx-4 my-4 product-item-2 align-items-start">
+            <div class="col-md-6 mb-5 mb-md-0 order-1 order-md-2">
+              <img src="/static/outlander/mitsubishi-outlander-mitsubishibudapest.jpg" alt="Mitsubishi Outlander Mitsubishi Budapest" class="img-fluid">
+            </div>
+
+            <div class="col-md-5 mr-auto product-title-wrap order-2 order-md-1">
+              <span class="number">03.</span>
+              <h3  class="text-black mb-4 font-weight-bold">Mitsubishi Outlander</h3>
+              <p class="mb-4">A megújult OUTLANDER egy új kor előhírnöke: egy olyan korszak eljövetelét jelzi,
+                amelyben az autó egyszerre elégíti ki a vezetők minden igényét.
+                Autózzon át a jövőbe az OUTLANDER-rel – egy olyan járművel, amely új lapot nyit a mobilitás történetében.
+                A dizájn és a vezetési élmény eddig ismeretlen dimenziója várja Önt!</p>
+
+                <div class="mb-4">
+                  <h3 class="text-black font-weight-bold h5">Kedvezményes ajánlat:</h3>
+                  <div class="price">Készletről azonnal az Öné <br /> további kedvezményes ajánlattal várjuk Önt!
+                     <br />Elérhető 7 személyes családi és Hibrid változatban is.</div>
+                </div>
+                <p>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="l200" class="bg-white py-4 mb-4">
+          <div class="row mx-4 my-4 product-item-2 align-items-start">
+            <div class="col-md-6 mb-5 mb-md-0">
+              <img src="/static/triton/mitsubishibudapest-mitsubishil200.jpg" alt="Image" class="img-fluid">
+            </div>
+
+            <div class="col-md-5 ml-auto product-title-wrap">
+              <span class="number">04.</span>
+              <h3 class="text-black mb-4 font-weight-bold">Mitsubishi l200/Triton</h3>
+              <p class="mb-4">Erős és robusztus. A Mitsubishi Motors a Pick-up koncepciót korábban elérhetetlen magasságba repítette.
+                Az összetéveszthetetlenül jellegzetes stílus, a minőség és a megbízhatóság egyesül a modellben, így a vadonatúj L200 megfelel minden elvárásnak,
+                amelyben az egyedi megjelenés éppen olyan fontos, mint a mindennapokban tapasztalható egyedülálló hasznosság.</p>
+
+              <div class="mb-4">
+                <h3 class="text-black font-weight-bold h5">Kedvezményes ajánlat:</h3>
+                <div class="price">Kedvező finanszírozással most<strong> 2,5% THM -mel</strong>
+                <strong>  <br/>Egyedi készleten lévő modellek <br />Bruttó 800.000Ft kedvezménnyel!</strong></div>
+              </div>
+              <p>
+                <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
               </p>
             </div>
           </div>
@@ -335,101 +350,23 @@
     </div>
 
 
-    <div class="site-section" id="about-section">
-      <div class="container">
-        <div class="row align-items-lg-center">
-          <div class="col-md-8 mb-5 mb-lg-0 position-relative">
-            <img src="images/about_1.jpg" class="img-fluid" alt="Image">
-            <div class="experience">
-              <span class="year">Trusted Merchant</span>
-              <span class="caption">for 50 years</span>
-            </div>
-          </div>
-          <div class="col-md-3 ml-auto">
-            <h3 class="section-sub-title">Merchant Company</h3>
-            <h2 class="section-title mb-3">About Us</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero vel!</p>
-            <p><a href="#" class="btn btn-black btn-black--hover rounded-0">Learn More</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="site-section border-bottom" id="team-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h3 class="section-sub-title">Team</h3>
-            <h2 class="section-title mb-3">Leadership</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <div class="person text-center">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
-              <h3>John Rooster</h3>
-              <p class="position text-muted">Co-Founder, President</p>
-              <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-            <div class="person text-center">
-              <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
-              <h3>Tom Sharp</h3>
-              <p class="position text-muted">Co-Founder, COO</p>
-              <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
-            <div class="person text-center">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
-              <h3>Winston Hodson</h3>
-              <p class="position text-muted">Marketing</p>
-              <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-blocks-cover overlay get-notification" id="special-section" style="background-image: url(images/hero_2.jpg); background-attachment: fixed; background-position: top;" data-aos="fade">
+    <div class="site-blocks-cover overlay get-notification" id="special-section" style="background-image: url(/static/triton/mount.jpg); background-attachment: fixed; background-position: top;" data-aos="fade">
       <div class="container">
 
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center">
-            <h3 class="section-sub-title">Special Promo</h3>
-            <h3 class="section-title text-white mb-4">Summer Sale</h3>
-            <p class="mb-5 lead">Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
+            <h3 class="section-sub-title">Kattintson és kérjen ajánlatot</h3>
+            <h3 class="section-title text-white mb-4">Akciós Mitsubishi <br />Modellek Készleten!</h3>
+            <p class="mb-5 lead">Kattintson a gombra és vegye fel a kapcsolatot velünk <br/> ne maradjon le a legjobb ajánlatokról!</p>
 
-            <div id="date-countdown" class="mb-5"></div>
 
-            <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Shop Now</a></p>
+            <p><a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Érdekel az ajánlat</a></p>
           </div>
         </div>
 
       </div>
     </div>
-
+    <!--
     <div class="site-section bg-light" id="services-section">
       <div class="container">
         <div class="row mb-5">
@@ -504,128 +441,12 @@
 
         </div>
       </div>
-    </div>
-
-    <div class="site-section testimonial-wrap" id="testimonials-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h3 class="section-sub-title">People Says</h3>
-            <h2 class="section-title mb-3">Testimonials</h2>
-          </div>
-        </div>
-      </div>
-      <div class="slide-one-item home-slider owl-carousel">
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4 d-block align-items-center justify-content-center">
-                <div><img src="images/person_3.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
-              </figure>
-              <blockquote class="mb-3">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-              <p class="text-black"><strong>John Smith</strong></p>
-
-
-            </div>
-          </div>
-          <div>
-            <div class="testimonial">
-
-              <figure class="mb-4 d-block align-items-center justify-content-center">
-                <div><img src="images/person_2.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
-              </figure>
-
-              <blockquote class="mb-3">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-
-              <p class="text-black"><strong>Robert Aguilar</strong></p>
-
-
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4 d-block align-items-center justify-content-center">
-                <div><img src="images/person_4.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
-              </figure>
-              <blockquote class="mb-3">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-              <p class="text-black"><strong>Roger Spears</strong></p>
-
-
-            </div>
-
-          </div>
-
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4 d-block align-items-center justify-content-center">
-                <div><img src="images/person_1.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
-              </figure>
-              <blockquote class="mb-3">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-              <p class="text-black"><strong>Kyle McDonald</strong></p>
-
-
-            </div>
-
-          </div>
-
-        </div>
-    </div>
-
-
-
-    <div class="site-section" id="blog-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h3 class="section-sub-title">Blog</h3>
-            <h2 class="section-title mb-3">Blog Posts</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="images/model_1_bg.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#" class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
-              <div class="meta mb-4">Ham Brook <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-              <p><a href="#">Continue Reading...</a></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="images/product_1_bg.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#" class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
-              <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-              <p><a href="#">Continue Reading...</a></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="images/model_5_bg.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#" class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
-              <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-              <p><a href="#">Continue Reading...</a></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
+    </div>-->
 
 
 
 
+<!--
     <div class="site-section bg-light" id="contact-section">
       <div class="container">
         <div class="row mb-5">
@@ -690,77 +511,53 @@
         </div>
 
       </div>
-    </div>
+    </div>-->
 
-
-    <footer class="site-footer bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
+    <!-- Footer -->
+    <footer id="myFooter">
+        <div class="container">
             <div class="row">
-              <div class="col-md-5">
-                <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
-              </div>
-              <div class="col-md-3 ">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
-                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-              </div>
+                <div class="col-sm-3">
+                    <h5>Kezdőlap</h5>
+                    <ul>
+                        <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                        <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                        <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Rólunk</h5>
+                    <ul>
+                        <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                        <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                        <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 info">
+                    <h5>Nyitva tartás</h5>
+                    <p>
+                      Új- és használt autó<br />
+                      H-P: 9-18 / Sz: 9-13<br />
+                      <p> </p>
+                      Szerviz, Alkatrész<br />
+                      H-P: 8-17 / Sz: Zárva</p>
+                </div>
+                <div class="col-sm-3 info">
+                    <h5>Budapest Autószalon</h5>
+                    <p>   Opel-Mitsubishi-<br />Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+
+                        h-1044 Budapest Váci út 76-80</br>Tel: 06 1-803-6050  </br>Fax: 06 1-803-6051</br>  </p>
+                </div>
+                <hr>
             </div>
-          </div>
-          <div class="col-md-3 ml-auto">
-            <h2 class="footer-heading mb-4">Featured Product</h2>
-            <a href="#"><img src="images/product_1_bg.jpg" alt="Image" class="img-fluid mb-3"></a>
-            <h4 class="h5">Leather Brown Shoe</h4>
-            <strong class="text-black mb-3 d-inline-block">$60.00</strong>
-            <p><a href="#" class="btn btn-black rounded-0">Add to Cart</a></p>
-          </div>
-        </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-            <p>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      </p>
-            </div>
-          </div>
 
         </div>
-      </div>
     </footer>
+
 
   </div> <!-- .site-wrap -->
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-
-
-  <script src="js/main.js"></script>
 
   </body>
 </html>
