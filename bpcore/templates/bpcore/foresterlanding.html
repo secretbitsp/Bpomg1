@@ -91,7 +91,7 @@
             <div class="row mb-4">
               <div class="col-md-7">
                 <h1>Mitsubishi Modellek</h1>
-                <p class="mb-5 lead">Kedvező áron most a Budapest Autószalon kínálatában.</p>
+                <p class="mb-5 lead">.</p>
                 <div>
                   <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Kapcsolat felvétel</a>
                   <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-white py-3 px-5 rounded-0 d-block d-sm-inline-block">Tesztvezetés</a>
@@ -124,7 +124,7 @@
               <div class="px-4">
                 <h3><a href="#eclipse">Új Mitsubishi Eclipse Cross </a></h3>
                 <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><del> Már 7 490 000Ft-tól</del><br /> <strong>Most 6 990 000 Ft-tól</strong></span>
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><del> Már 7 490 000Ft-tól</del><br /> <strong id="price">Most 6 990 000 Ft-tól</strong></span>
                   <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br />Kézenfekvő ajánlat <br />most<strong> 1.000.000Ft kedvezmény</strong></span>
                 </div>
                 <p class="mb-4"></p>
@@ -144,7 +144,28 @@
               <div class="px-4">
                 <h3><a href="#asx">Mitsubishi Asx</a></h3>
                 <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><del> Már 6 250 000Ft-tól</del><br /> <strong>Most 5 750 000 Ft-tól</strong></span>
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><del> Már 6 250 000Ft-tól</del><br /> <strong id="price">Most 5 290 000 Ft-tól</strong></span>
+                  <span class="meta-icons wishlist active"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br />Készletről <br /><strong>Speciális Invite felszereltséggel </strong></span>
+                </div>
+                <p class="mb-4"></p>
+                <div>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#asx" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="product-item">
+              <figure>
+                <img src="/static/asx/asx-2020-mitsubishi-budapest.png" alt="Image" class="img-fluid">
+              </figure>
+              <div class="px-4">
+                <h3><a href="#asx">Mitsubishi Asx 2020</a></h3>
+                <div class="mb-3">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a>Új 2020 -as modell<br />
+                   <strong id="price">Most 5 990 000 Ft-tól</strong>
+                 </span>
                   <span class="meta-icons wishlist active"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br />Készletről <br /><strong>Speciális Invite felszereltséggel </strong></span>
                 </div>
                 <p class="mb-4"></p>
@@ -156,16 +177,17 @@
             </div>
           </div>
 
+
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="product-item">
               <figure>
-                <img src="/static/outlander/outlander-mitsubishi-budapest.png" alt="Image" class="img-fluid">
+                <img src="/static/outlander/mitsubishi-otulander-phev-mitsubishibudapest.png" alt="Image" class="img-fluid">
               </figure>
               <div class="px-4">
-                <h3><a href="#outlander">Mitsubishi Outlander </a></h3>
+                <h3><a href="#outlander">Mitsubishi Outlander PHEV (Elektromos) </a></h3>
                 <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><del> Már 9 990 000Ft-tól</del><br /> <strong>Most 9 400 000 Ft-tól</strong></span>
-                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br /> Japán minőség, hétszemélyes és <br /><strong>Hibrid változatban is kapható!</strong></span>
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><del>Már 14 400 000Ft-tól</del><br /> <strong id="price">Most 13 900 000 Ft-tól</strong></span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br /> Japán minőség, <br /><strong>Hibrid változat!</strong></span>
                 </div>
                 <p class="mb-4"></p>
                 <div>
@@ -175,7 +197,25 @@
               </div>
             </div>
           </div>
-
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="product-item">
+              <figure>
+                <img src="/static/outlander/outlander-mitsubishi-budapest.png" alt="Image" class="img-fluid">
+              </figure>
+              <div class="px-4">
+                <h3><a href="#outlander">Mitsubishi Outlander </a></h3>
+                <div class="mb-3">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><del> Már 9 990 000Ft-tól</del><br /> <strong id="price">Most 7 850 000 Ft-tól</strong></span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br /> Japán minőség, hétszemélyes verzió <br /><strong>Nagycsaládos kedvezménnyel!</strong></span>
+                </div>
+                <p class="mb-4"></p>
+                <div>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#outlander" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="product-item">
               <figure>
@@ -184,7 +224,7 @@
               <div class="px-4">
                 <h3><a href="#l200">Mitsubishi L200/Triton</a></h3>
                 <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><strong>Már 6 390 000 Ft-tól</strong></span>
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><strong id="price">Már 6 390 000 Ft-tól</strong></span>
                   <p class="mb-4">Készletről <strong>most 800.000Ft kedvezménnyel.</strong></p>
 
 
