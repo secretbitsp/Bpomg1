@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5,
       bottom: 0;
       z-index: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.7); }
+        background: rgba(0, 0, 0, 0.7); }
   .bg-image > .container {
     position: relative;
     z-index: 1; }
@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5,
       bottom: 0;
       right: 0;
       top: 0;
-      background: rgba(0, 0, 0, 0.4); }
+      background: rgba(0, 0, 0, 0.1); }
   .site-blocks-cover .player {
     position: absolute;
     bottom: -250px;
