@@ -87,18 +87,19 @@
                         <div class="col-md-6">
                           <div class="title-box-2">
                             <h5 class="title-left">
-                              Egyedi kedvezményekért <br /> kérjen ajánlatot!
+                              Köszönjük az üzeneted, hamarosan felvesszük a kapcsolatot!
                             </h5>
                           </div>
                           <div>
                               <div class="row">
                                 <form method="post">
                                   <div class="col-md-12 mb-3">
-                                      {% csrf_token %}
-                                      {{ form.as_p }}
+                                    Köszönjük az üzeneted, hamarosan felvesszük a kapcsolatot!
+
                                   </div>
                                   <div class="col-md-12">
-                                    <button type="submit" class="button button-a button-big button-rouded">Üzenet Küldés</button>
+                                      <a href="{% url 'fooldal' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Vissza a főoldalra</a>
+
                                   </div>
                                 </form>
                               </div>

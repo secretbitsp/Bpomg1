@@ -50,6 +50,11 @@ def flottaajanlat(request):
 def asx(request):
         return render(request,'bpcore/mitsubishi-asx.html')
 
+def ssangyongsum(request):
+        return render(request,'bpcore/sumssangyong.html')
+
+def thx(request):
+        return render(request,'bpcore/thx.html')
 
 def flottakezeles(request):
     if request.method == 'POST':
@@ -261,10 +266,7 @@ def ajantlatkapcsi(request):
             sender_mail = form.cleaned_data['üzenet']
             message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
             send_mail('Új érdeklődés a weboldalról', message, 'info@budapestautoszalon.hu', ['kardos.tamas@mitsubishibudapest.hu'],)
-            print(send_mail)
-            print(sender_mail)
-            print(message)
-            return render(request, 'ajanlatkapcsolat.html', {'form': form})
+            return HttpResponseRedirect('/thx')
     else:
         form = ajanlatkapcsolat()
 

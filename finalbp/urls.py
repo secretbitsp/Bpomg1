@@ -18,11 +18,14 @@ urlpatterns = [
     url(r'^hahukapcsolat', include('hahu_kapcsolat.urls')),
     url(r'^flottakezeles/$',views.flottakezeles, name="flottakezeles"),
     url(r'^ajanlatkapcsolat/$',views.ajantlatkapcsi, name="ajanlatkapcsolat"),
+    url(r'^thx/$',views.thx, name="thx"),
     url(r'^mitsubishi-akcios-ajanlatok/$',views.forester, name="mitsubishi-akcios-ajanlatok"),
     url(r'^tivoli-akcio/$',views.tivoli, name="tivoli-akcio"),
     url(r'^eclipse-cross/$',views.eclipse, name="eclipse-cross"),
     url(r'^rexton-g4/$',views.rextong4, name="rextong4"),
     url(r'^mitsubishi-asx/$',views.asx, name="mitsu-asx"),
+        url(r'^ssangyong-ajanlat/$',views.ssangyongsum, name="sumssangyong"),
+
     url(r'^nagycsalados-7-szemelyes-auto/$',views.nagycsalados, name="nagycsalados"),
     url(r'^flotta-ajanlatok/$',views.flottaajanlat, name="flottaajanlat"),
 

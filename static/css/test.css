@@ -90,7 +90,7 @@
   }
 
   .sect-mt4 {
-    margin-top: 4rem;
+    margin-top: 0rem;
   }
 
   /*--/ Title s /--*/
@@ -432,7 +432,7 @@
   }
 
   .button-rouded {
-    border-radius: 5rem;
+    border-radius: 1rem;
   }
 
   .btn-lg {

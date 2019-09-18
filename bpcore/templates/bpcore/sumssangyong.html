@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Budapest Autószalon új és használtautók</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A Magyar használt autó kereskedés és Új autó szalon Budapest Autoszalon(használt autó, használt autók, használtautó,) Közép-Európában. Legkeresettebb márkák: Škoda, Ford, Peugeot, Renault, Citroen, Daewoo, Audi, Fiat, Opel, Seat, VW, Volvo, Honda, Kia, Mazda, Subaru, SsangYong, Mitsubishi, Opel Astra">
+    <meta name="keywords" content="">
+    <meta name="author" content="Follow the white rabbit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
+    <!--<link href="img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+
+    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/Footer-with-logo.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/menubar.css' %}">
+
+    <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/forester.css' %}" rel="stylesheet">
+
+  </head>
+  <!--==========================
+  Top menu
+  ============================-->
+    <nav class="menu-top" >
+      <ul class="menu__list-top">
+        <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
+        <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
+        <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
+        <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
+      </ul>
+    </nav>
+    <!-- End Top Menu -->
+    <!--==========================
+    Navigation
+    ============================-->
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+      <a class="navbar-brand" href="{% url 'fooldal' %}">
+        <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
+      </a>
+      <div class="title-name" >
+        <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-list-2">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <!-- End Main Navigation -->
+
+
+
+    <div class="site-blocks-cover overlay" style="background-image: url(/static/xlv/ssangyongbudapest-model.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="row mb-4">
+              <div class="col-md-7">
+                <h1>SsangYong Modellek</h1>
+                <p class="mb-5 lead" style="font-weight:600";>Most akár 1 000 000 Ft kedvezménnyel. <br/>Hitel esetén 3,99% THM -mel </p>
+                <div>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Kapcsolat felvétel</a>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-white py-3 px-5 rounded-0 d-block d-sm-inline-block">Tesztvezetés</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section" id="products-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-6 text-center">
+            <h3 class="section-sub-title">Akutális Ajánlataink</h3>
+            <h2 class="section-title mb-3">Modellek készletről</h2>
+            <p>Válogasson autóink közül és üljön bele 2 héten belül.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="product-item">
+              <figure>
+                <img src="/static/xlv/xlv-kiskep.png" alt="Image" class="img-fluid">
+
+              </figure>
+              <div class="px-4">
+                <h3><a href="#eclipse">SsangYong XLV </a></h3>
+                <div class="mb-3">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><del> Már 5 390 000Ft </del><br /> <strong id="price">Most 4 590 000 Ft-tól</strong></span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br />Rendkívüli ajánlat <br />most<strong> 800 000 Ft kedvezmény</strong></span>
+                </div>
+                <p class="mb-4"></p>
+                <div>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#eclipse" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="product-item">
+              <figure>
+                <img src="/static/tivoli/ssangyong-tivoli-bem1.png" alt="Image" class="img-fluid">
+              </figure>
+              <div class="px-4">
+                <h3><a href="#asx">SsangYong Tivoli</a></h3>
+                <div class="mb-3">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><del> Már 5 090 000Ft-tól</del><br /> <strong id="price">Most 4 290 000 Ft-tól</strong></span>
+                  <span class="meta-icons wishlist active"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br />Készletről <br /><strong>128LE Extrasok extrával </strong></span>
+                </div>
+                <p class="mb-4"></p>
+                <div>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#asx" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="product-item">
+              <figure>
+                <img src="/static/tivoli/ssangyong-tivoli-2019-2020-facelift.png" alt="Image" class="img-fluid">
+              </figure>
+              <div class="px-4">
+                <h3><a href="#asx">Új SsangYong Tivoli (2020)</a></h3>
+                <div class="mb-3">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 2020 -as modell<br />
+                   <strong id="price">Most 4 560 000 Ft-tól</strong>
+                 </span>
+                  <span class="meta-icons wishlist active"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br />Már rendelhető <br /><strong>163LE, 800 000Ft kedvezménnyel </strong></span>
+                </div>
+                <p class="mb-4"></p>
+                <div>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#asx" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="product-item">
+              <figure>
+                <img src="/static/rextong4/ssangyong-rexton-g4-ssangyongbudapest.png" alt="Image" class="img-fluid">
+              </figure>
+              <div class="px-4">
+                <h3><a href="#outlander">SsangYong Rexton G4</a></h3>
+                <div class="mb-3">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><br />180 LE Összkerékhajtás<br /> <strong id="price">Most 11 490 000 Ft-tól</strong></span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br /> Prémium felszereltség<br /> Állami támogatással hétszemélyes verzió <br /><strong>Nagycsaládos kedvezménnyel!</strong></span>
+                </div>
+                <p class="mb-4"></p>
+                <div>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#outlander" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="product-item">
+              <figure>
+                <img src="/static/korando/ssangyong-korando-ssangyonbudapest.png" alt="SsangYong-Korando-ssangyonbudapest-kep" class="img-fluid">
+              </figure>
+              <div class="px-4">
+                <h3><a href="#outlander">SsangYong Korando  </a></h3>
+                <div class="mb-3">
+                  <!--<span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><del> Már 9 990 000Ft-tól</del><br /> <strong id="price">Most 7 850 000 Ft-tól</strong></span>-->
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a><br />   <br /><strong>Hamarosan elérhető !</strong></span>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </div>
+                <p class="mb-4"></p>
+                <div>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#outlander" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="product-item">
+              <figure>
+                <img src="/static/musso/ssangyong-mussso-grando-pickup-ssangyongbudapest.png" alt="Ssangyon-mussso-grand-pickup-kep-ssangyonbudapest" class="img-fluid">
+              </figure>
+              <div class="px-4">
+                <h3><a href="#l200">SsangYong Musso Grand</a></h3>
+                <div class="mb-3">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a><strong id="price">Már 7 490 000 Ft-tól</strong></span>
+                  <p class="mb-4">Készletről <strong></strong></p>
+                  <br />
+                  <br />
+                  <br />
+                </div>
+                <div>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black mr-1 rounded-0">Érdekel</a>
+                  <a href="#musso" class="btn btn-black btn-outline-black ml-1 rounded-0">Bövebben</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-blocks-cover inner-page-cover overlay get-notification"  style="background-image: url(/static/xlv/ssangyong-musso-ban.jpg); background-attachment: fixed;" data-aos="fade">
+      <div class="container">
+
+        <div class="row align-items-center justify-content-center">
+          <form class="col-md-7" method="post">
+          <!--  <h2>Jelentkezzen tesztvezetésre vagy vegye fel a kapcsolat értékesítőkkel.</h2>
+              <p>Kattintson a gombra és kérjen személyre szabott árajánlatot</p>
+              <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-white btn-outline-black ml-1 rounded-0">Kapcsolat felvétel</a>-->
+            </div>
+          </form>
+        </div>
+      </div>
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-6 text-center">
+            <h3 class="section-sub-title"></h3>
+            <h2 class="section-title mb-3"></h2>
+            <p>.</p>
+          </div>
+        </div>
+        <div id="eclipse" class="bg-white py-4 mb-4">
+          <div class="row mx-4 my-4 product-item-2 align-items-start">
+            <div class="col-md-6 mb-5 mb-md-0">
+              <img src="/static/xlv/ssangyongbudapest-xlv.jpg" alt="Image" class="img-fluid">
+            </div>
+
+            <div class="col-md-5 ml-auto product-title-wrap">
+              <span id="asx" class="number">01.</span>
+              <h3 class="text-black mb-4 font-weight-bold">SsangYong XLV</h3>
+              <p class="mb-4">Igazán multifunkcionális. Tegye az életét minden tekintetben egyszerűbbé. Az XLV stílusos és praktikus, mind szabadidő-autóként, mind munkavégzéshez.</p>
+
+              <div class="mb-4">
+                <h3 class="text-black font-weight-bold h5">Kedvezményes ajánlat:</h3>
+                <div class="price">Kedvező finanszírozással most 2,5% THM -mel</div>
+              </div>
+              <p>
+                <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div  id="asx" class="bg-white py-4">
+          <div class="row mx-4 my-4 product-item-2 align-items-start">
+            <div class="col-md-6 mb-5 mb-md-0 order-1 order-md-2">
+              <img src="/static/tivoli/ssangyonbudapest-tivoli.jpg" alt="Image" class="img-fluid">
+            </div>
+
+            <div class="col-md-5 mr-auto product-title-wrap order-2 order-md-1">
+              <span class="number">02.</span>
+              <h3 class="text-black mb-4 font-weight-bold">SsangYong Tivoli</h3>
+              <p class="mb-4">A Tivoli sziluettje modern, dinamikus, városi személyiséget tükröz. A Tivoli dizájnját a modern városi építészet és a
+                természet hullámzó vonalai ihlették. Ennek köszönhetően a Tivoli magára vonzza a figyelmet,
+                mivel határozott érzelmeket kelt a szemlélőben.
+                Szeressen bele Ön is a Tivoli fiatalos önbizalmába és dinamikus, elegáns, határozott stílusába!
+              <p>
+                <br />
+                <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white py-4 mb-4">
+          <div class="row mx-4 my-4 product-item-2 align-items-start">
+            <div class="col-md-6 mb-5 mb-md-0">
+              <img src="/static/tivoli/ssangyong-tivoli-facelift-ssangyongbudapest.jpg" alt="ssangyong-tivoli-ssangyongbudapest" class="img-fluid">
+            </div>
+
+            <div class="col-md-5 ml-auto product-title-wrap">
+              <h3 class="text-black mb-4 font-weight-bold">Tivoli</h3>
+              <p class="mb-4">Teljesítmény és takarékosság
+                A nagy teljesítményű, megbízható motorok a vezetőt minden út során igazi
+                sportos érzelmekkel kerítik hatalmukba.
+                A Tivoli tökéletesen helytáll mind a város dzsungelében, mind az autópályán.
+                 A többféle hajtásváltozat közül garantáltan megtalálja az igényeihez illő Tivolit!</p>
+
+              <div class="mb-4">
+                <h3 class="text-black font-weight-bold h5">Kedvezményes ajánlat:</h3>
+                <div class="price">Készletről azonnal az Öné <br /> most 1.000.000Ft Kedvezménnyel. </div>
+              </div>
+              <p>
+                <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="outlander" class="bg-white py-4">
+          <div class="row mx-4 my-4 product-item-2 align-items-start">
+            <div class="col-md-6 mb-5 mb-md-0 order-1 order-md-2">
+              <img src="/static/rextong4/ssangyong-rexton3.jpg" alt="ssangyongbudapest-rexton-g4" class="img-fluid">
+            </div>
+
+            <div class="col-md-5 mr-auto product-title-wrap order-2 order-md-1">
+              <span class="number">03.</span>
+              <h3  class="text-black mb-4 font-weight-bold">SsangYong Rexton</h3>
+              <p class="mb-4">Az új Rexton G4 nem csak a méltóságteljes dizájnjával és tágas, luxus minőségű belső terével hódít.
+                A jármű erős és sokoldalú kísérőtárs is. Vigye magával kirándulni egész családját, csomagjait, vitorláshajóját vagy egy nehéz pótkocsit az ismeretlenbe – a
+                 Rexton G4 minden utazáskor tökéletesen beválik.
+                  Az új Rexton G4 akár 3000 kg-os* tömeget is el tud vontatni.
+                  A jármű átkapcsolható összkerékhajtással van felszerelve, ami számos lehetőséget kínál.</p>
+
+                <div class="mb-4">
+                  <h3 class="text-black font-weight-bold h5">Kedvezményes ajánlat:</h3>
+                  <div class="price">Készletről azonnal az Öné <br /> további kedvezményes ajánlattal várjuk Önt!
+                     <br />Elérhető 7 személyes családi változatban is.</div>
+                </div>
+                <p>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="l200" class="bg-white py-4 mb-4">
+          <div class="row mx-4 my-4 product-item-2 align-items-start">
+            <div class="col-md-6 mb-5 mb-md-0">
+              <img src="/static/korando/korando-uj.jpg" alt="Image" class="img-fluid">
+            </div>
+
+            <div class="col-md-5 ml-auto product-title-wrap">
+              <span class="number">04.</span>
+              <h3 class="text-black mb-4 font-weight-bold">SsangYong Korando</h3>
+              <p class="mb-4">A Korando városi terepjáró 2019-re teljesen átalakult. Ennek keretében teljesen új, modern külső dizájnt, letisztult,
+                prémium minőségű és tágas utasteret, kibővített vezetéstámogató és biztonsági rendszereket kapott.
+                Az autó teljesen új külsőjét úgy alakították ki, hogy a lehető legjobban kihangsúlyozza a benne rejlő erőt.
+                 Ezt segíti a jellegzetes új hűtőrács és az első fényszórók kialakítása is.
+                  Az gépkocsi hamarosan megjelenik a koreai autószalonokban, Magyarországon pedig 2019 szeptemberében kezdődik az értékesítés.
+                  Az új Korando városi terepjárót olyan, aktív életmódot folytató felhasználóknak ajánljuk, akiknek megbízható autóra van szükségük a mindennapok nyüzsgésében.
+                   </p>
+
+              <div class="mb-4">
+                <h3 class="text-black font-weight-bold h5">Kedvezményes ajánlat:</h3>
+                <div class="price">Kedvező finanszírozással most<strong> 2,5% THM -mel</strong>
+                <strong>  <br/>Egyedi készleten lévő modellek <br />Bruttó 800.000Ft kedvezménnyel!</strong></div>
+              </div>
+              <p>
+                <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="musso" class="bg-white py-4">
+          <div class="row mx-4 my-4 product-item-2 align-items-start">
+            <div class="col-md-6 mb-5 mb-md-0 order-1 order-md-2">
+              <img src="/static/musso/ssangyong-musso-sssangyongbudapest.jpg" alt="musso-sssangyongbudapest" class="img-fluid">
+            </div>
+
+            <div class="col-md-5 mr-auto product-title-wrap order-2 order-md-1">
+              <span class="number">05.</span>
+              <h3  class="text-black mb-4 font-weight-bold">SsangYong Musso Grand </h3>
+              <p class="mb-4">Az elegáns és egyúttal kifejező frontdizájn középpontjában a hűtőrács áll, vízszintes krómozott híddal a közepén.
+                A dinamikus vonalak, amelyek a hűtőrácstól indulva a motorháztetőn át oldalt folytatódnak, a frontrész erőteljességével együtt kiemelik a Musso Grand vonzó megjelenését.
+                A jellegzetes pickup-hátsó, vonalaiban tovább viszi a markáns frontkialakítás jegyeit, ezzel létrehozva a karosszéria harmonikus lezárását.</p>
+
+              <!--  <div class="mb-4">
+                  <h3 class="text-black font-weight-bold h5">Kedvezményes ajánlat:</h3>
+                  <div class="price">Készletről azonnal az Öné </div>
+                </div>-->
+                <p>
+                  <a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Egyedi ajánlatot kérek</a>
+                </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="site-blocks-cover overlay get-notification" id="special-section" style="background-image: url(/static/triton/mount.jpg); background-attachment: fixed; background-position: top;" data-aos="fade">
+      <div class="container">
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5 text-center">
+            <h3 class="section-sub-title">Kattintson és kérjen ajánlatot</h3>
+            <h3 class="section-title text-white mb-4">Akciós SsangYong <br />Modellek Készleten!</h3>
+            <p class="mb-5 lead"><strong>Kattintson a gombra és vegye fel a kapcsolatot velünk <br/> ne maradjon le a legjobb ajánlatokról!</strong></p>
+
+
+            <p><a href="{% url 'ajanlatkapcsolat' %}" class="btn btn-black btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Érdekel az ajánlat</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--
+    <div class="site-section bg-light" id="services-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h3 class="section-sub-title">Our Services</h3>
+            <h2 class="section-title mb-3">We Offer Services</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-pie_chart"></span></div>
+              <div>
+                <h3>Business Consulting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-backspace"></span></div>
+              <div>
+                <h3>Market Analysis</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-av_timer"></span></div>
+              <div>
+                <h3>User Monitoring</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-beenhere"></span></div>
+              <div>
+                <h3>Seller Consulting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-business_center"></span></div>
+              <div>
+                <h3>Financial Investment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-cloud_done"></span></div>
+              <div>
+                <h3>Financial Management</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>-->
+
+
+
+
+<!--
+    <div class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h3 class="section-sub-title">Contact Form</h3>
+            <h2 class="section-title mb-3">Get In Touch</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-7 mb-5">
+
+
+
+            <form action="#" class="p-5 bg-white">
+
+              <h2 class="h4 text-black mb-5">Contact Form</h2>
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">First Name</label>
+                  <input type="text" id="fname" class="form-control rounded-0">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Last Name</label>
+                  <input type="text" id="lname" class="form-control rounded-0">
+                </div>
+              </div>
+
+              <div class="row form-group">
+
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label>
+                  <input type="email" id="email" class="form-control rounded-0">
+                </div>
+              </div>
+
+              <div class="row form-group">
+
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">Subject</label>
+                  <input type="subject" id="subject" class="form-control rounded-0">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Message</label>
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control rounded-0" placeholder="Write your notes or questions here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Send Message" class="btn btn-black rounded-0 py-3 px-4">
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>-->
+
+    <!-- Footer -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Kezdőlap</h5>
+                    <ul>
+                        <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                        <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                        <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Rólunk</h5>
+                    <ul>
+                        <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                        <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                        <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 info">
+                    <h5>Nyitva tartás</h5>
+                    <p>
+                      Új- és használt autó<br />
+                      H-P: 9-18 / Sz: 9-13<br />
+                      <p> </p>
+                      Szerviz, Alkatrész<br />
+                      H-P: 8-17 / Sz: Zárva</p>
+                </div>
+                <div class="col-sm-3 info">
+                    <h5>Budapest Autószalon</h5>
+                    <p>   Opel-Mitsubishi-<br />Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+
+                        h-1044 Budapest Váci út 76-80</br>Tel: 06 1-803-6050  </br>Fax: 06 1-803-6051</br>  </p>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+    </footer>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  </div> <!-- .site-wrap -->
+
+
+  </body>
+</html>
