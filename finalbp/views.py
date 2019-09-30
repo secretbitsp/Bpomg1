@@ -44,8 +44,7 @@ def nagycsalados(request):
 def rextong4(request):
         return render(request,'bpcore/rextongg4.html')
 
-def flottaajanlat(request):
-        return render(request,'bpcore/flottaajanlat.html')
+
 
 def asx(request):
         return render(request,'bpcore/mitsubishi-asx.html')
@@ -75,6 +74,24 @@ def flottakezeles(request):
 
     return render(request,'bpcore/flottakezeles.html', {'form': form})
 
+def flottaajanlat(request):
+    if request.method == 'POST':
+        form = flottakapcsolat(request.POST)
+        if form.is_valid():
+            sender_name = form.cleaned_data['név']
+            sender_email = form.cleaned_data['email']
+            sender_phone = form.cleaned_data['telefonszám']
+            sender_mail = form.cleaned_data['megjegyzés']
+            message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
+            send_mail('Új érdeklődés a weboldalról', message, 'info@budapestautoszalon.hu', ['flottakezeles@flottasziget.hu'],)
+            print(send_mail)
+            print(sender_mail)
+            print(message)
+            return HttpResponseRedirect('/flotta-ajanlatok')
+    else:
+        form = flottakapcsolat()
+
+    return render(request,'bpcore/flottaajanlat.html', {'form': form})
 
 
 def szerviz(request):

@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
   a {
     color: #1e1e1e;
@@ -6,7 +8,7 @@
   }
 
   a:hover {
-    color: #0078ff;
+    color: #1561ad;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
   }
@@ -139,7 +141,7 @@
     content: '';
     position: absolute;
     height: 3px;
-    background-color: #0078ff;
+    background-color: #1561ad;
     width: 100px;
     bottom: -12px;
   }
@@ -151,12 +153,12 @@
   }
 
   .box-shadow-full {
-    padding: 3rem 1.25rem;
+      padding: 3rem 0.25rem;
     position: relative;
     background-color: #fff;
-    margin-bottom: 3rem;
     z-index: 2;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.06), 0 8px 10px 0 rgba(0, 0, 0, 0.2);
   }
 
   /*------/ Socials /------*/
@@ -362,7 +364,7 @@
 
   .footer-paralax {
     padding: 4rem 0 0 0;
-    background-color: #f5f8fa;
+    background-color: #f8f8f8;
   }
 
 
@@ -421,7 +423,7 @@
   }
 
   .button-a {
-    background-color: #0078ff;
+    background-color: #1561ad;
     color: #fff;
     border-color: #cde1f8;
   }
@@ -525,4 +527,131 @@
     .back-to-top {
       bottom: 15px;
     }
+  }
+
+
+
+  /*test*/  /*test*/  /*test*/  /*test*/  /*test*/  /*test*/
+  /*test*/  /*test*/
+
+
+
+  .date {
+      position: relative;
+  }
+
+  .date span {
+     position: absolute;
+     top: 250px;
+     right: 68px;
+     color: #1561ad;
+     font-weight: bold;
+  }
+
+  .conatiner {
+  	width: 100%;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .wrap {
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
+  	-ms-flex-wrap: wrap;
+  	    flex-wrap: wrap;
+  	-webkit-box-pack: center;
+  	    -ms-flex-pack: center;
+  	        justify-content: center;
+  	-webkit-box-align: center;
+  	    -ms-flex-align: center;
+  	        align-items: center;
+  	-webkit-box-orient: horizontal;
+  	-webkit-box-direction: normal;
+  	    -ms-flex-direction: row;
+  	        flex-direction: row;
+  }
+
+  .boxy {
+  	margin: 10px;
+  	width: 300px;
+  	height: 300px;
+  	text-align: center;
+  	border-radius: 3px;
+  	-webkit-transition: 100ms ease-in-out;
+  	-o-transition: 200ms ease-in-out;
+  	transition: 100ms ease-in-out;
+  	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  	        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+  .boxy:hover {
+  	margin-bottom: -3px;
+  	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.7);
+  	        box-shadow: 0 0 5px rgba(0,0,0,0.7);
+  }
+  .boxy h1 {
+  	color: #fff;
+  	padding: 30px;
+  	margin-top: 100px;
+  	text-align: center;
+  	font-weight: 100;
+  	font-size: 25px;
+  	background: rgba(0,0,0,0.8);
+  	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  	        box-shadow: 0 0 30px rgba(0,0,0,0.8);
+  }
+
+  .date h4 {
+  	color: #1561ad;
+  	font-weight: 400;
+  	text-align: center;
+    margin-top: 20px;
+  	text-shadow: 0 0 1px rgba(0,0,0,0.9);
+  }
+  .poster {
+  	width: 130px;
+  	height:130px;
+  	margin: 120px auto;
+  	position: relative;
+  	border-radius: 100px;
+  }
+  .poster h4 {
+  	top: 16px;
+  	color: #fff;
+  	position: relative;
+  	font-size: 80px;
+  	text-align: center;
+  	font-weight: 100;
+  }
+  .one {
+  	background: url('../flotta/rexton.png');
+  	background-repeat: no-repeat;
+  	background-size: contain;
+  	background-position: center;
+  }
+
+  .two {
+  	background: url('../flotta/opel-astra.png');
+  	background-repeat: no-repeat;
+  	background-size: contain;
+  	background-position: center;
+  }
+  .three {
+  	background: url('../flotta/opel-vivaro.png');
+  	background-repeat: no-repeat;
+  	background-size: contain;
+  	background-position: center;
+  }
+
+
+
+
+
+
+  @-webkit-keyframes rotation {
+  		from {
+  				-webkit-transform: rotate(0deg);
+  		}
+  		to {
+  				-webkit-transform: rotate(359deg);
+  		}
   }
