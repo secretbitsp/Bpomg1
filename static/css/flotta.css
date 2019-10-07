@@ -447,7 +447,7 @@ html {
 
 .box1{
 
-    background: linear-gradient(141deg, #fff 0%, #add4d9 51%, #2cb5e8 90%);
+    background: linear-gradient(141deg, #fff 0%, #add4d9 51%, #e1e7ea  90%);
     opacity: 0.95;
     -webkit-background-clip: transparent;
     -webkit-animation: hue 12s infinite  cubic-bezier(.86,0,.07,1);
@@ -463,4 +463,3 @@ to {
   -webkit-filter: hue-rotate(180deg);
 }
 }
-  
