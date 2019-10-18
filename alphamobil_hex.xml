@@ -4880,6 +4880,7 @@
 		<evjarat megnevezes="Évjárat">2017/01</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
 		<muszaki megnevezes="Műszaki vizsga érvényes">2021/01</muszaki>
+		<futottkm megnevezes="Kilométeróra állása" mertekegyseg="km" nyersadat="47000">47 000 km</futottkm>
 		<kivitel megnevezes="Kivitel">Zárt</kivitel>
 		<hajtas megnevezes="Hajtás" nyersadat="1">Első kerék</hajtas>
 		<allapot megnevezes="Állapot">Kitűnő</allapot>
