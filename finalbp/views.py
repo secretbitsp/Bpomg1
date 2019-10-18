@@ -163,7 +163,10 @@ def hello2(request):
                 leiras = None
             felszereltseg = autok.findall('{http://hex.hasznaltauto.hu/ns}felszereltseg')[0].text
             telefonszam  = autok.findall('{http://hex.hasznaltauto.hu/ns}telefonszam')[0].text
-            futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
+            try:
+                futottkm = autok.findall('{http://hex.hasznaltauto.hu/ns}futottkm')[0].text
+            except IndexError:
+                futottkm = None
             ar = autok.findall('{http://hex.hasznaltauto.hu/ns}ar')[0].text
             allapot = autok.findall('{http://hex.hasznaltauto.hu/ns}allapot')[0].text
             email = autok.findall('{http://hex.hasznaltauto.hu/ns}emailcim')[0].text
