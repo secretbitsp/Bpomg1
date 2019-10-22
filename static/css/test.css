@@ -623,14 +623,14 @@ html {
   	font-weight: 100;
   }
   .one {
-  	background: url('../flotta/grandland-x.png');
+  	background: url('../flotta/peugeot-308.png');
   	background-repeat: no-repeat;
   	background-size: contain;
   	background-position: center;
   }
 
   .two {
-  	background: url('../flotta/opel-astra.png');
+  	background: url('../flotta/opel-astra-st.png');
   	background-repeat: no-repeat;
   	background-size: contain;
   	background-position: center;
