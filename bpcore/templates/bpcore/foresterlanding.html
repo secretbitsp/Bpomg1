@@ -596,6 +596,27 @@
 
         </div>
     </footer>
+    <!-- Start of LiveChat code -->
+    <script type="text/javascript">
+          window.__lc = window.__lc || {};
+          window.__lc.license = 8624479;
+          window.__lc.chat_between_groups = false;
+          (function() {
+            var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+          })();
+
+        function myFunction() {
+        var x = document.getElementsByClassName("menu")[0]  ;
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <!-- End of LiveChat code -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
