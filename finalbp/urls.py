@@ -27,6 +27,8 @@ urlpatterns = [
     url(r'^ssangyong-ajanlat/$',views.ssangyongsum, name="sumssangyong"),
     url(r'^nagycsalados-7-szemelyes-auto/$',views.nagycsalados, name="nagycsalados"),
     url(r'^flotta-ajanlatok/$',views.flottaajanlat, name="flottaajanlat"),
+    url(r'^teljeskoru-operativ-lizing/$',views.teljeskoru, name="teljeskoru"),
+
 
 
 
