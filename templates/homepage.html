@@ -16,23 +16,6 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
 
-    <!-- Facebook Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '505180670237885');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=505180670237885&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
 
     <!-- Bootstrap CSS File -->
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
@@ -47,13 +30,19 @@
     <!-- Main Stylesheet File -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
-    <!-- Main Analytics JavaScript -->
-    <script defer src="{% static 'js/analytics.js' %}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-54083455-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-54083455-2');
+    </script>
 
     <style>
-
     /* Carousel 100% Fullscreen */
+
     html, body {
     height:100%;
     margin:0;
@@ -144,19 +133,19 @@
               <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
                 <div  class="carousel-item active" style="background-image: url('static/mainbanner/rexton.jpg')">
-                  <a href="{% url 'rextong4' %}">
+                  <a href="{% url 'sumssangyong' %}">
                           <span class="link-spanner"></span>
                   </a>
                   <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4" style="margin-right:400px"><mark>Új Rexton G4</mark></h3>
+                    <h3 class="display-4" style="margin-right:400px"><mark>SsangYong Modellek</mark></h3>
                   </div>
                   </div>
                 <div  class="carousel-item" style="background-image: url('static/mainbanner/asxmitsu.jpg')">
-                  <a href="{% url 'mitsu-asx' %}">
+                  <a href="{% url 'mitsubishi-akcios-ajanlatok' %}">
                           <span class="link-spanner"></span>
                   </a>
                   <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4" style="margin-right:400px"><mark>Mitsubishi Asx Ajánlatok</mark></h3>
+                    <h3 class="display-4" style="margin-right:400px"><mark>Mitsubishi Ajánlataink</mark></h3>
                   </div>
                   </div>
                   <div  class="carousel-item" style="background-image: url('static/mainbanner/ssangyongtivoli.png')">
