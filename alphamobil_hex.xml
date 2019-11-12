@@ -4298,7 +4298,8 @@
 		</kepek>
 	</hirdetes>
 	<hirdetes hirdeteskod="15087492" partnerkod="7972" kategoria="Személyautó" gyartmany="OPEL" tipus="ANTARA 2.2 CDTI Enjoy Plus (Automata) Magyarországi!Leinformálható!" modell="ANTARA" belsoazonosito="B.Lackó">
-		<ar megnevezes="Vételár">Ár nélkül</ar>
+		<ar megnevezes="Vételár" nyersadat="4249000"><![CDATA[4 249 000 Ft]]></ar>
+		<ar_eur megnevezes="Ár (EUR)" nyersadat="12709"><![CDATA[12 709 EUR]]></ar_eur>
 		<finanszirozas megnevezes="Finanszírozás">20%-tól elvihető</finanszirozas>
 		<evjarat megnevezes="Évjárat">2014/12</evjarat>
 		<okmany megnevezes="Okmányok jellege">Érvényes magyar okmányokkal</okmany>
