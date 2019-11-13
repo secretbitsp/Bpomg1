@@ -38,8 +38,6 @@ def tivoli(request):
 def eclipse(request):
         return render(request,'bpcore/eclipse.html')
 
-def nagycsalados(request):
-        return render(request,'bpcore/7szemely.html')
 
 def rextong4(request):
         return render(request,'bpcore/rextongg4.html')
@@ -111,9 +109,6 @@ def teljeskoru(request):
         form = flottakapcsolat()
 
     return render(request,'bpcore/teljeskoru-operativ-lizing.html', {'form': form})
-'''
-def teljeskoru(request):
-    return render(request,'bpcore/teljeskoru-operativ-lizing.html')'''
 
 
 def szerviz(request):

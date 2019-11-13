@@ -5,6 +5,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic.base import TemplateView
 
+
+
 urlpatterns = [
     url('admin/', admin.site.urls),
     url(r'^$',views.homepage, name="fooldal"),
@@ -16,7 +18,7 @@ urlpatterns = [
     url(r'^cars/(?P<car_id>\d+)', views.car_detail),
     url(r'^szervizkapcsolat/', include('szervizkapcsolat.urls')),
     url(r'^hahukapcsolat', include('hahu_kapcsolat.urls')),
-    url(r'^flottakezeles/$',views.flottakezeles, name="flottakezeles"),
+    url(r'^flottakezeles/$',views.teljeskoru, name="flottakezeles"),
     url(r'^ajanlatkapcsolat/$',views.ajantlatkapcsi, name="ajanlatkapcsolat"),
     url(r'^thx/$',views.thx, name="thx"),
     url(r'^mitsubishi-akcios-ajanlatok/$',views.forester, name="mitsubishi-akcios-ajanlatok"),
@@ -25,9 +27,8 @@ urlpatterns = [
     url(r'^rexton-g4/$',views.rextong4, name="rextong4"),
     url(r'^mitsubishi-asx/$',views.asx, name="mitsu-asx"),
     url(r'^ssangyong-ajanlat/$',views.ssangyongsum, name="sumssangyong"),
-    url(r'^nagycsalados-7-szemelyes-auto/$',views.nagycsalados, name="nagycsalados"),
     url(r'^flotta-ajanlatok/$',views.flottaajanlat, name="flottaajanlat"),
-    url(r'^teljeskoru-operativ-lizing/$',views.teljeskoru, name="teljeskoru"),
+    #url(r'^teljeskoru-operativ-lizing/$',views.teljeskoru, name="teljeskoru"),
 
 
 

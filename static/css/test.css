@@ -135,6 +135,7 @@ html {
   .title-left {
     font-size: 1.8rem;
     position: relative;
+    font-weight: 500;
   }
 
   .title-left:before {
@@ -423,9 +424,12 @@ html {
   }
 
   .button-a {
-    background-color: #1561ad;
-    color: #fff;
-    border-color: #cde1f8;
+    background-color:
+    #f6f6f6;
+    color:
+    #1561ad;
+    border-color:
+    #cde1f8;
   }
 
   .button-big {

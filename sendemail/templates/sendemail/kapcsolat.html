@@ -1,19 +1,23 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
+    <title>Budapest Autószalon új és használtautók</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="A Magyar használt autó kereskedés és Új autó szalon Budapest Autoszalon(használt autó, használt autók, használtautó,) Közép-Európában. Legkeresettebb márkák: Škoda, Ford, Peugeot, Renault, Citroen, Daewoo, Audi, Fiat, Opel, Seat, VW, Volvo, Honda, Kia, Mazda, Subaru, SsangYong, Mitsubishi, Opel Astra">
+    <meta name="keywords" content="">
+    <meta name="author" content="Follow the white rabbit">
 
-    <title>Budapest Autószalon</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" href="{%  static 'icons/favinew.png' %}">
+    <link rel="shortcut icon" sizes="196x196" href="{%  static 'icons/favinew.png' %}">
+    <link rel="apple-touch-icon" href="{%  static 'icons/favinew.png' %}">
 
-    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
@@ -21,14 +25,6 @@
     <link href="{% static 'css/test.css' %}" rel="stylesheet">
 
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-    <style>
-        a:hover{
-            -webkit-stroke-width: 5.3px;
-              -webkit-stroke-color: #FFFFFF;
-              -webkit-fill-color: #FFFFFF;
-              text-shadow: 1px 0px 20px #000080;
-          }
-    </style>
   </head>
   <body>
     <!--==========================
@@ -79,10 +75,10 @@
         <div class="col-lg-12 mb-5">
           <div class="container">
             <div class="w_text">
-              <h1 class="mt-4 mb-3">Kapcsolat felvétel</h1>
+              <h1 class="mt-4 mb-3">Elérhetőségeink</h1>
             </div>
           <!-- Embedded Google Map -->
-          <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.6994946328305!2d19.078489815506934!3d47.573634979182486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDM0JzI1LjEiTiAxOcKwMDQnNTAuNCJF!5e0!3m2!1shu!2shu!4v1565251988080!5m2!1shu!2shu" width="800" height="450" frameborder="0"style="border:0" ></iframe>
         <!-- Contact Details Column -->
         <br />
@@ -102,7 +98,7 @@
            </p>
           <p>
             <abbr title="Küldjön üzenetet azonnal válaszolunk">Email:</abbr>:
-            <a href="mailto:recepcio@budapestautoszalon.hu">recepcio@budapestautoszalon.hu
+            <a href="mailto:info@budapestautoszalon.hu">info@budapestautoszalon.hu
             </a>
 
 
@@ -112,6 +108,8 @@
       <!-- /.row -->
 
       <div class="table-responsive">
+        <h1 class="mt-4 mb-3">Nyitvatartás:</h1><br/>
+
         <!--Table-->
         <table class="table">
           <!--Table head-->
@@ -151,7 +149,7 @@
       </div>
 
         <div class="w_text">
-          <h1 class="mt-4 mb-3">Miben segíthetünk:</h1>
+          <h1 class="mt-4 mb-3">Munkatársaink:</h1>
         </div>
 
           <div class="wrapper">
@@ -167,8 +165,8 @@
 
                 <h4><i class="fas fa-users-cog"></i>  Varga László</h4>
                 <p> Szerviz vezető </p>
-                <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 20 334 2551"> +36 20 334 2551</p></a>
-                <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: varga.laszlo@budapestautoszalon.hu"> varga.laszlo@budapestautoszalon.hu</p></a>
+                <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 20 334 2551"> +36 20 334 2551</p></a>
+                <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: varga.laszlo@budapestautoszalon.hu"> varga.laszlo@budapestautoszalon.hu</p></a>
 
               </div>
               <hr />
@@ -177,8 +175,8 @@
 
                 <h4><i class="fas fa-users-cog"></i>Hips Attila </h4>
                 <p> Szerviz tanácsadó / Garanciás ügyintéző </p>
-                 <p class="lead"><i class="fas fa-phone"></i>Tel: <a href="tel:+36 20 402 5457"> +36 20 402 5457</p></a>
-                 <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: attila.hips@budapestautoszalon.hu"> attila.hips@budapestautoszalon.hu</p></a>
+                 <p class="lead"><i class="fas fa-phone"></i> Tel: <a href="tel:+36 20 402 5457"> +36 20 402 5457</p></a>
+                 <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: attila.hips@budapestautoszalon.hu"> attila.hips@budapestautoszalon.hu</p></a>
                  <hr />
 
               </div>
@@ -192,8 +190,8 @@
 
                 <h4 ><i class="fas fa-user"></i>Buda László </h4>
                 <p> Értékesítési vezető </p>
-                 <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 70 427 0748"> +36 70 427 0748</p></a>
-                 <p class="lead"><i class="fas fa-paper-plane"> </i>Email: <a href = "mailto: buda.laszlo@budapestautoszalon.hu"> buda.laszlo@budapestautoszalon.hu</p></a>
+                 <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 70 427 0748"> +36 70 427 0748</p></a>
+                 <p class="lead"><i class="fas fa-paper-plane"> </i> Email: <a href = "mailto: buda.laszlo@budapestautoszalon.hu"> buda.laszlo@budapestautoszalon.hu</p></a>
                  <hr />
 
               </div>
@@ -202,8 +200,8 @@
                 <h4><i class="fas fa-user"></i></i>  Horváth László</h4>
                 <p> Értékesítő </p>
 
-                <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 70 770 9032"> +36 70 770 9032</p></a>
-                <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: horvath.laszlo@budapestautoszalon.hu"> horvath.laszlo@budapestautoszalon.hu</p></a>
+                <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 70 770 9032"> +36 70 770 9032</p></a>
+                <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: horvath.laszlo@budapestautoszalon.hu"> horvath.laszlo@budapestautoszalon.hu</p></a>
                 <hr />
 
               </div>
@@ -211,8 +209,8 @@
                <h4><i class="fas fa-user"></i></i>  Sparing Béla</h4>
                <p> Gépjármű felvásárlás / beszámítás </p>
 
-               <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 20 322 2811"> +36 20 322 2811 </p></a>
-               <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: sparing.bela@budapestautoszalon.hu"> sparing.bela@budapestautoszalon.hu</p></a>
+               <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 20 322 2811"> +36 20 322 2811 </p></a>
+               <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: sparing.bela@budapestautoszalon.hu"> sparing.bela@budapestautoszalon.hu</p></a>
                <hr />
 
              </div>
@@ -225,8 +223,8 @@
               <div class="contact-info">
                 <h4><i class="fas fa-user"></i>Énekes Tóth Alexandra</h4>
                 <p>Értékesítés referens </p>
-                 <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 20 377 3100"> +36 20 242 4347</p></a>
-                 <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: toth.alexandra@budapestautoszalon.hu"> toth.alexandra@budapestautoszalon.hu</p></a>
+                 <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 20 377 3100"> +36 20 242 4347</p></a>
+                 <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: toth.alexandra@budapestautoszalon.hu"> toth.alexandra@budapestautoszalon.hu</p></a>
                <div class="wrapper2">
                   <div><img src="/static/Logo/SsangYong-logo.png" width="90%";></div>
                   <div><img src="/static/Logo/Subaru-logo.png" width="90%";></div>
@@ -239,8 +237,8 @@
                 <div class="contact-info">
                    <h4 ><i class="fas fa-user"></i>Kardos Tamás</h4>
                    <p> Értékesítési referens </p>
-                    <p class="lead" ><i class="fas fa-phone"></i>Tel:<a href="tel:+36 70 770 02 01"> +36 70 770 02 01</p></a>
-                    <p class="lead" ><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: kardos.tamas@mitsubishibudapest.hu"> kardos.tamas@mitsubishibudapest.hu</p></a>
+                    <p class="lead" ><i class="fas fa-phone"></i> Tel:<a href="tel:+36 70 770 02 01"> +36 70 770 02 01</p></a>
+                    <p class="lead" ><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: kardos.tamas@mitsubishibudapest.hu"> kardos.tamas@mitsubishibudapest.hu</p></a>
 
                 <div class="wrapper2">
                    <div><img src="/static/Logo/SsangYong-logo.png" width="90%";></div>
@@ -260,8 +258,8 @@
 
                 <h4><i class="fas fa-people-carry"></i>Kiss Zoltán</h4>
                 <p> Raktár vezető </p>
-                 <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 70 770 7273"> +36 70 770 7273</p></a>
-                 <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: kiss.zoltan@budapestautoszalon.hu"> raktar@budapestautoszalon.hu</p></a>
+                 <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 70 770 7273"> +36 70 770 7273</p></a>
+                 <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: kiss.zoltan@budapestautoszalon.hu"> raktar@budapestautoszalon.hu</p></a>
               </div>
               <hr />
 

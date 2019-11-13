@@ -3,19 +3,28 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Budapest Autószalon új és használtautók</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Kapcsoalt felvétel Érdeklödés Budapest Autószalon</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
-    <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
+    <meta name="description" content="A Magyar használt autó kereskedés és Új autó szalon Budapest Autoszalon(használt autó, használt autók, használtautó,) Közép-Európában. Legkeresettebb márkák: Škoda, Ford, Peugeot, Renault, Citroen, Daewoo, Audi, Fiat, Opel, Seat, VW, Volvo, Honda, Kia, Mazda, Subaru, SsangYong, Mitsubishi, Opel Astra">
+    <meta name="keywords" content="Budapest Autoszalon használt auto kereskedes budapesten">
+    <meta name="author" content="Follow the white rabbit">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" href="{%  static 'icons/favinew.png' %}">
+    <link rel="shortcut icon" sizes="196x196" href="{%  static 'icons/favinew.png' %}">
+    <link rel="apple-touch-icon" href="{%  static 'icons/favinew.png' %}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/test.css' %}" rel="stylesheet">
 
-
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--==========================
@@ -56,115 +65,122 @@
       </div>
     </nav>
   <!-- End Main Navigation -->
-    <!-- End Main Navigation -->
-<br />
-    <body>
-
-        <div class="container-fluid">
-          <br />
-          <div class="szerviz-text" class="page-header">
-            <h2></h2>
-          </div>
-        </div>
+  <section id="sec1" class="paralax-mf footer-paralax bg-image sect-mt4 route">
+    <div  class="overlay-mf"></div>
+      <div class="container">
         <div class="row">
-          <div class="col">
-            <div class="card">
-                <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Kérdezzen rá az autóra!
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left" id="xd" >
+                        Használtautó érdeklődés
+                      </h5>
+                    </div>
+                    <div>
+                        <div class="row">
+                          <form method="post">
+                            <div class="col-md-12 mb-3">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                            </div>
+                            <div class="col-md-12">
+                              <button type="submit" class="button button-a button-big button-rouded">Elküld</button>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Kérdezzen rá az autóra!
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        <br />
+                        Adja meg adatait, munkatársunk hamarosan felveszi Önnel a kapcsolatot.
+                      </p>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <div class="col-xs-7 col-xs-6" >
-                  <form method="post">
-                    {% csrf_token %}
-                    {{ form.as_p }}</div>
-                    <input class="btn btn-primary " type="submit" value="Küldés" />
-                  </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-5 col-sm-6 col-lg-4" >
-          <div class="card bg-light mb-3">
-              <div class="card-header bg-dark text-white text-uppercase"><i class="fa fa-home"></i> Cimünk </div>
-                <div class="card-body">
-                    <p>Váci út 76-80</p>
-                    <p>1044 Budapest</p>
-                    <p>H-P 8:00 - 17:00</p>
-                    <p>Email : info@budapestautoszalon.hu</p>
-                    <p>Tel: +36 1 803 6056</p>
-                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+  <!-- Footer -->
+  <footer id="myFooter">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-3">
+                  <h5>Kezdőlap</h5>
+                  <ul>
+                      <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                      <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                      <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-3">
+                  <h5>Rólunk</h5>
+                  <ul>
+                      <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                      <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                      <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
+                  </ul>
+              </div>
 
-        <!-- Footer -->
-        <footer id="myFooter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <h5>Kezdőlap</h5>
-                        <ul>
-                            <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
-                            <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
-                            <li><a href="#">Adatvédelmi nyilatkozat</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
-                        <h5>Rólunk</h5>
-                        <ul>
-                            <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
-                            <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
-                            <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
-                        </ul>
-                    </div>
+              <div class="col-sm-3 info">
+                  <h5>Nyitva tartás</h5>
+                  <p>
+                    Új- és használt autó<br />
+                    H-P: 9-18 / Sz: 9-13<br />
+                    <p> </p>
+                    Szerviz, Alkatrész<br />
+                    H-P: 8-17 / Sz: Zárva</p>
+              </div>
+              <div class="col-sm-3 info">
+                  <h5>Budapest Autószalon</h5>
+                  <p>   Opel-Mitsubishi-<br />Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
 
-                    <div class="col-sm-3">
-                        <h5>Külső linkek</h5>
-                        <ul>
-                            <li><a href="http://www.ssangyongbudapest.hu/">Sangyong Budapest</a></li>
-                            <li><a href="http://www.mitsubishibudapest.hu/">Mitsubishi Budapest</a></li>
-                            <li><a href="http://www.subarubudapest.hu/">Subaru Budapest</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3 info">
-                        <h5>Budapest Autószalon</h5>
-                        <p>   Opel-Mitsubishi-Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+                      h-1044 Budapest Váci út 76-80</br>Tel: 06 1-803-6050  </br>Fax: 06 1-803-6051</br>  </p>
+              </div>
+              <hr>
+          </div>
 
-                            h-1044 Budapest Váci út 76-80</br>Tel: 061-803-6050  </br>Fax: 061-803-6051</br>  </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-      </footer>
-      <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+      </div>
+  </footer>
+  <!-- Start of LiveChat code -->
+  <script type="text/javascript">
+        window.__lc = window.__lc || {};
+        window.__lc.license = 8624479;
+        window.__lc.chat_between_groups = false;
+        (function() {
+          var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+          lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+        })();
 
-      <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-      <script type="text/javascript">
-          function myFunction() {
-          var x = document.getElementsByClassName("menu")[0]  ;
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-      </script>
-      <!-- Default Statcounter code for Budapest Autószalon
-www.budapestautoszalon.hu -->
-<script type="text/javascript">
-var sc_project=9812866;
-var sc_invisible=1;
-var sc_security="1a0d68be";
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="ingyen
-webstatisztika" href="https://www.statcounter.hu/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/9812866/0/1a0d68be/1/"
-alt="ingyen webstatisztika"></a></div></noscript>
-<!-- End of Statcounter Code -->
-  </body>
+      function myFunction() {
+      var x = document.getElementsByClassName("menu")[0]  ;
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <!-- End of LiveChat code -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</div> <!-- .site-wrap -->
+
+
+</body>
 
 
 
