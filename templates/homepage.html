@@ -22,7 +22,7 @@
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
-    <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
@@ -71,44 +71,67 @@
     </style>
   </head>
   <body>
-      <!--==========================
-      Navigation
-      ============================-->
-      <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a class="navbar-brand" href="{% url 'fooldal' %}">
-          <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
-        </a>
-        <div class="title-name" >
-          <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
+    <!--==========================
+    Navbar Start
+    ============================-->
+        <nav id="navbar" class="home">
+          <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+              <!-- This is the place for the logo the greatest logo of all time -->
+              <a href="{% url 'fooldal' %}"><img class="logo-image" src={% static "../static/logo2.png" %}></a>
+            </div>
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li class="nav-item active">
+                  <a   href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+                </li>
+                <li  >
+                  <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+                </li>
+                <li  >
+                  <a href="{% url 'szerviz' %}">Szerviz</a>
+                </li>
+                <li  >
+                  <a    href="{% url 'hasznalt' %}">Használt autók</a>
+                </li>
+                <li  >
+                  <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+                </li>
+                <li  >
+                  <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Menu Icon -->
+        <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+        <span class="icon icon-bars overlay"></span>
+
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-list-2">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
-            </li>
+        <div class="overlay-menu">
+        <ul id="menu">
+          <span> </span>
+          <li  >
+            <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+          </li>
+          <li  >
+            <a href="{% url 'szerviz' %}">Szerviz</a>
+          </li>
+          <li  >
+            <a    href="{% url 'hasznalt' %}">Használt autók</a>
+          </li>
+          <li  >
+            <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+          </li>
+          <li  >
+            <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+          </li>
           </ul>
         </div>
-      </nav>
-    <!-- End Main Navigation -->
+        <!-- End Main Navigation -->
     <!--==========================
     Carousel
     ============================-->
@@ -164,6 +187,9 @@
         <div class="container">
 
           <header class="section-header">
+            <br />
+            <br />
+
             <h3>Általunk forgalmazott márkák</h3>
             <p></p>
           </header>
@@ -362,7 +388,6 @@
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-            <h4></h4>
             <p>
               Autószalonunkban a forgalmazott márkák teljes típusválasztéka megtalálható.
                Kollégáink, naprakész információkkal, teljeskörű típus ismereti tapasztalatokkal,
@@ -426,9 +451,8 @@
           </div>
       </footer>
       <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-      <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
       <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-      <script type="text/javascript" src="{% static '/js/scroll.js' %}"></script>
+      <script defer type="text/javascript" src="{% static '/js/scroll.js' %}"></script>
 
       <!-- Start of LiveChat code -->
       <script type="text/javascript">

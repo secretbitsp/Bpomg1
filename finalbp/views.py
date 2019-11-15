@@ -66,7 +66,7 @@ def flottakezeles(request):
             print(send_mail)
             print(sender_mail)
             print(message)
-            return HttpResponseRedirect('/flottakezeles')
+            return HttpResponseRedirect('/thx')
     else:
         form = flottakapcsolat()
 
@@ -104,7 +104,7 @@ def teljeskoru(request):
             print(send_mail)
             print(sender_mail)
             print(message)
-            return HttpResponseRedirect('/teljeskoru-operativ-lizing')
+            return HttpResponseRedirect('/thx')
     else:
         form = flottakapcsolat()
 

@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="{% static 'css/Footer-with-logo.css' %}">
 
-    <link rel="stylesheet" href="{% static 'css/menubar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
 
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
 
@@ -29,43 +29,66 @@
 
   </head>
   <!--==========================
-  Navigation
+  Navbar Start
   ============================-->
-  <nav class="navbar navbar-light bg-light navbar-expand-sm">
-    <a class="navbar-brand" href="{% url 'fooldal' %}">
-      <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
-    </a>
-    <div class="title-name" >
-      <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      Menu
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-list-2">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+      <nav id="navbar" class="home">
+        <div class="nav-wrapper">
+          <!-- Navbar Logo -->
+          <div class="logo">
+            <!-- This is the place for the logo the greatest logo of all time -->
+            <a href="{% url 'fooldal' %}"><img class="logo-image" src={% static "../static/logo2.png" %}></a>
+          </div>
+          <!-- Navbar Links -->
+          <ul id="menu">
+              <li class="nav-item active">
+                <a   href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+              </li>
+              <li  >
+                <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+              </li>
+              <li  >
+                <a href="{% url 'szerviz' %}">Szerviz</a>
+              </li>
+              <li  >
+                <a    href="{% url 'hasznalt' %}">Használt autók</a>
+              </li>
+              <li  >
+                <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+              </li>
+              <li  >
+                <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Menu Icon -->
+      <div class="menuIcon">
+      <span class="icon icon-bars"></span>
+      <span class="icon icon-bars overlay"></span>
+      <span class="icon icon-bars overlay"></span>
+
+      </div>
+      <div class="overlay-menu">
+      <ul id="menu">
+        <span> </span>
+        <li  >
+          <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+        <li  >
+          <a href="{% url 'szerviz' %}">Szerviz</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
+        <li  >
+          <a    href="{% url 'hasznalt' %}">Használt autók</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
+        <li  >
+          <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
+        <li  >
+          <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-<!-- End Main Navigation -->
+        </ul>
+      </div>
+      <!-- End Main Navigation -->
 
 
     <div class="site-blocks-cover overlay" style="background-image: url(/static/xlv/ssangyongbudapest-model.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -625,6 +648,7 @@
     <!-- End of LiveChat code -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script defer type="text/javascript" src="{% static '/js/scroll.js' %}"></script>
 
   </div> <!-- .site-wrap -->
 

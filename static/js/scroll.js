@@ -1,13 +1,26 @@
-// ===== Scroll to Top ====
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
+// Navigation
+  // Responsive Toggle Navigation =============================================
+  let menuIcon = document.querySelector('.menuIcon');
+  let nav = document.querySelector('.overlay-menu');
+
+  menuIcon.addEventListener('click', () => {
+      if (nav.style.transform != 'translateX(0%)') {
+          nav.style.transform = 'translateX(0%)';
+          nav.style.transition = 'transform 0.1s ease-out';
+      } else {
+          nav.style.transform = 'translateX(-100%)';
+          nav.style.transition = 'transform 0.1s ease-out';
+      }
+  });
+
+
+  // Toggle Menu Icon ========================================
+  let toggleIcon = document.querySelector('.menuIcon');
+
+  toggleIcon.addEventListener('click', () => {
+      if (toggleIcon.className != 'menuIcon toggle') {
+          toggleIcon.className += ' toggle';
+      } else {
+          toggleIcon.className = 'menuIcon';
+      }
+  });

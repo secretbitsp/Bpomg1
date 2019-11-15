@@ -21,51 +21,73 @@
     <!-- Custom styles for this template -->
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
-    <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
     <link href="{% static 'css/test.css' %}" rel="stylesheet">
 
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--==========================
-    Navigation
+    Navbar Start
     ============================-->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-      <a class="navbar-brand" href="{% url 'fooldal' %}">
-        <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
-      </a>
-      <div class="title-name" >
-        <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-list-2">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  <!-- End Main Navigation -->
+        <nav id="navbar" class="home">
+          <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+              <!-- This is the place for the logo the greatest logo of all time -->
+              <a href="{% url 'fooldal' %}"><img class="logo-image" src={% static "../static/logo2.png" %}></a>
+            </div>
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li class="nav-item active">
+                  <a   href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+                </li>
+                <li  >
+                  <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+                </li>
+                <li  >
+                  <a href="{% url 'szerviz' %}">Szerviz</a>
+                </li>
+                <li  >
+                  <a    href="{% url 'hasznalt' %}">Használt autók</a>
+                </li>
+                <li  >
+                  <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+                </li>
+                <li  >
+                  <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Menu Icon -->
+        <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+        <span class="icon icon-bars overlay"></span>
 
+        </div>
+        <div class="overlay-menu">
+        <ul id="menu">
+          <span> </span>
+          <li  >
+            <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+          </li>
+          <li  >
+            <a href="{% url 'szerviz' %}">Szerviz</a>
+          </li>
+          <li  >
+            <a    href="{% url 'hasznalt' %}">Használt autók</a>
+          </li>
+          <li  >
+            <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+          </li>
+          <li  >
+            <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+          </li>
+          </ul>
+        </div>
+        <!-- End Main Navigation -->
       <!-- Content Row -->
 
       <div class="row">
@@ -75,7 +97,7 @@
         <div class="col-lg-12 mb-5">
           <div class="container">
             <div class="w_text">
-              <h1 class="mt-4 mb-3">Elérhetőségeink</h1>
+              <h2 class="mt-4 mb-3">Elérhetőségeink</h2>
             </div>
           <!-- Embedded Google Map -->
           <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
@@ -225,12 +247,12 @@
                 <p>Értékesítés referens </p>
                  <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 20 377 3100"> +36 20 242 4347</p></a>
                  <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: toth.alexandra@budapestautoszalon.hu"> toth.alexandra@budapestautoszalon.hu</p></a>
-               <div class="wrapper2">
-                  <div><img src="/static/Logo/SsangYong-logo.png" width="90%";></div>
-                  <div><img src="/static/Logo/Subaru-logo.png" width="90%";></div>
-                  <div><img src="/static/Logo/Mitsubishi-logo.png" width="90%";></div>
-                  <div><img src="/static/Logo/opellogo.png" width="80%";></div>
-                </div>
+                 <!--<div class="wrapper2">
+                    <div><img src="/static/Logo/SsangYong-logo.png" class="img-fluid" width="90%";></div>
+                    <div><img src="/static/Logo/Subaru-logo.png" width="90%";></div>
+                    <div><img src="/static/Logo/Mitsubishi-logo.png" width="90%";></div>
+                    <div><img src="/static/Logo/opellogo.png" width="80%";></div>
+                  </div>-->
               </div>
 
               <hr />
@@ -239,13 +261,13 @@
                    <p> Értékesítési referens </p>
                     <p class="lead" ><i class="fas fa-phone"></i> Tel:<a href="tel:+36 70 770 02 01"> +36 70 770 02 01</p></a>
                     <p class="lead" ><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: kardos.tamas@mitsubishibudapest.hu"> kardos.tamas@mitsubishibudapest.hu</p></a>
-
+                    <!--
                 <div class="wrapper2">
                    <div><img src="/static/Logo/SsangYong-logo.png" width="90%";></div>
                    <div><img src="/static/Logo/Subaru-logo.png" width="90%";></div>
                    <div><img src="/static/Logo/Mitsubishi-logo.png" width="90%";></div>
                    <div><img src="/static/Logo/opellogo.png" width="80%";></div>
-                 </div>
+                 </div>-->
                 </div>
                   <hr />
             </div>
@@ -314,8 +336,9 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script defer type="text/javascript" src="{% static '/js/scroll.js' %}"></script>
+
 
     <!-- Contact form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
