@@ -63,11 +63,8 @@
     #navbar ul {
       display: none;
     }
-  } @media(orientation: landscape) {
-      #navbar ul {
-        display: inline-block;
-      }
-    }
+  }
+
 
 #navbar li {
   display: inline-block;
