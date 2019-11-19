@@ -21,6 +21,7 @@
   line-height: 60px;
   width: 103vw;
   z-index: 10;
+  border: 1px  ;
 }
 
 .nav-wrapper {
