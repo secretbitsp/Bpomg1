@@ -19,20 +19,23 @@
   top: 0;
   height: 100px;
   line-height: 60px;
-  width: 103vw;
-  z-index: 10;
-  border: 1px  ;
+  width: 100%;
+  z-index: 15;
+  padding-right: 30px;
+  box-shadow: 0px 0px 5px 0.2px #000000;
+
 }
+
 
 .nav-wrapper {
   margin: auto;
   text-align: center;
-  width: 70%;
-} @media(max-width: 961px) {
+  width: 100%;
+} @media(max-width: 768px) {
     .nav-wrapper {
       width: 90%;
     }
-  } @media(max-width: 961px) {
+  } @media(max-width: 638px) {
       .nav-wrapper {
         width: 100%;
       }
@@ -56,16 +59,19 @@
   display: inline-block;
   float: right;
   list-style: none;
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: right;
   transition: transform 0.5s ease-out;
   -webkit-transition: transform 0.5s ease-out;
-} @media(max-width: 961px) {
+} @media(max-width: 900px) {
     #navbar ul {
       display: none;
     }
-  }
-
+  } @media(orientation: landscape) {
+      #navbar ul {
+        display: inline-block;
+      }
+    }
 
 #navbar li {
   display: inline-block;
@@ -76,8 +82,8 @@
   display: block;
   font-size: 1em;
   height: 50px;
-  margin: 0 20px;
-  padding: 3px 4px;
+  margin: 0 13px;
+  padding: 3px 1px;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -131,11 +137,7 @@
 /*======================================================
                     Mobile Menu Menu Icon
   ======================================================*/
-
-
-
-
-@media(max-width:961px ) {
+@media(max-width: 900px) {
   .menuIcon {
     cursor: pointer;
     display: block;
@@ -144,7 +146,7 @@
     top: 36px;
     height: 23px;
     width: 27px;
-    z-index: 12;
+    z-index: 20;
   }
 
   /* Icon Bars */
@@ -154,7 +156,7 @@
     left: 1px;
     top: 45%;
     height: 2px;
-    width: 22px;
+    width: 30px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -190,8 +192,8 @@
 
   /* Bars Shadows */
   .icon-bars.overlay {
-    background: rgb(0, 0, 0);
-    background: #fff;
+    background: rgb(97, 114, 129);
+    background: rgb(183, 199, 211);
     width: 20px;
     animation: middleBar 3s infinite 0.5s;
     -webkit-animation: middleBar 3s infinite 0.5s;
@@ -241,7 +243,7 @@
   /* Toggle Menu Icon */
   .menuIcon.toggle .icon-bars {
     top: 5px;
-    transform: translate3d(0, 5px, 0) rotate(90deg);
+    transform: translate3d(0, 5px, 0) rotate(135deg);
     transition-delay: 0.1s;
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -249,7 +251,7 @@
   .menuIcon.toggle .icon-bars::before {
     top: 0;
     transition-delay: 0.1s;
-    opacity: 1;
+    opacity: 0;
   }
 
   .menuIcon.toggle .icon-bars::after {
@@ -272,7 +274,7 @@
                    Responsive Mobile Menu
   ======================================================*/
 .overlay-menu {
-  background:#fff;
+  background:#ffffff;
   color: rgb(13, 26, 38);
   display: flex;
   align-items: center;
@@ -297,7 +299,6 @@
 .overlay-menu li a {
   display: block;
   font-size: 1.8em;
-  font-weight: 500;
   letter-spacing: 4px;
 /*   opacity: 0; */
   padding: 10px 0;
@@ -305,7 +306,7 @@
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  color: #000 !important
+  color: rgb(13, 26, 38) !important
 /*   -webkit-transition: 0.2s opacity 0.2s ease-out;
   transition: 0.2s opacity 0.2s ease-out; */
 }
@@ -315,19 +316,4 @@
   color: rgb(28, 121, 184);
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-}
-
-
-
-@media(max-width:961px){
-  .overlay-menu {
-    height: 50%;
-  }
-}
-
-
-@media(max-width:641px){
-  .overlay-menu {
-    height: 100%;
-  }
 }
