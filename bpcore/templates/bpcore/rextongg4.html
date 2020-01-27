@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
     <link href="{% static 'css/rexton.css' %}" rel="stylesheet">
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
-    <link href="{% static 'css/menu2.css' %}" rel="stylesheet">
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <style>
       .jumbotron{
@@ -32,62 +32,71 @@
   </head>
   <body>
     <!--==========================
-    Top menu
+    Navbar Start
     ============================-->
-      <nav class="menu-top" >
-        <ul class="menu__list-top">
-          <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
-          <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
-          <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
-          <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
-        </ul>
-      </nav>
-      <!-- End Top Menu -->
-      <br />
-      <!--==========================
-      Navigation
-      ============================-->
-      <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a class="navbar-brand" href="{% url 'fooldal' %}">
-          <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
-        </a>
-        <div class="title-name" >
-          <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
+        <nav id="navbar" class="home">
+          <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+              <!-- This is the place for the logo the greatest logo of all time -->
+              <a href="{% url 'fooldal' %}"><img class="logo-image" src={% static "../static/logo2.png" %}></a>
+            </div>
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li class="nav-item active">
+                  <a   href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+                </li>
+                <li  >
+                  <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+                </li>
+                <li  >
+                  <a href="{% url 'szerviz' %}">Szerviz</a>
+                </li>
+                <li  >
+                  <a    href="{% url 'hasznalt' %}">Használt autók</a>
+                </li>
+                <li  >
+                  <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+                </li>
+                <li  >
+                  <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Menu Icon -->
+        <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+        <span class="icon icon-bars overlay"></span>
+
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbar-list-2">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-
-              <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
-            </li>
+        <div class="overlay-menu">
+        <ul id="menu">
+          <span> </span>
+          <li  >
+            <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+          </li>
+          <li  >
+            <a href="{% url 'szerviz' %}">Szerviz</a>
+          </li>
+          <li  >
+            <a    href="{% url 'hasznalt' %}">Használt autók</a>
+          </li>
+          <li  >
+            <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+          </li>
+          <li  >
+            <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+          </li>
           </ul>
         </div>
-      </nav>
-    <!-- End Main Navigation -->
+        <!-- End Main Navigation -->
 <header>
 
 </header>
+<br />
+<br />
    <!--section third-section-->
  <div class="section third-section">
   <div class="container">
@@ -104,7 +113,6 @@
             <li>7 személyes REXTON G4 CSALÁDI SUV 2 500 000 Ft-os állami támogatással a Ssangyong-tól.<br />
                   Nagycsaládos Állami támogatás igénylése mellett a „Clever” és „Premium” felszereltségű Rexton G4 modellekhez a 7 személyes opciót (7) ingyen adjuk!<br />
                   Rexton G4 Stlye (2WD, MT6) felszereltségű 7 személyes modell nagycsaládos állami támogatással már bruttó 6 010 000 Ft-tól elérhető. <br />
-                  <a href="{% url 'nagycsalados' %}"> Részletekért kattintson ide</a></li>
           </ul>
             <br />További részletekről kérjük vegye fel velünk a kapcsolatot!</p>
         <a href="{% url 'ajanlatkapcsolat' %}"<button  class="btn btn-primary" style="width:100%">Kapcsolat felvétel </button></a>
@@ -351,7 +359,6 @@
                          <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
                      </ul>
                  </div>
-
                  <div class="col-sm-3 info">
                      <h5>Nyitva tartás</h5>
                      <p>
@@ -373,49 +380,43 @@
          </div>
      </footer>
      <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-
      <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
      <!-- Start of LiveChat code -->
-   <script type="text/javascript">
-         window.__lc = window.__lc || {};
-         window.__lc.license = 8624479;
-         window.__lc.chat_between_groups = false;
-         (function() {
-           var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-           lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-         })();
+     <script type="text/javascript">
+             window.__lc = window.__lc || {};
+             window.__lc.license = 8624479;
+             window.__lc.chat_between_groups = false;
+             (function() {
+               var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+               lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+             })();
 
-       function myFunction() {
-       var x = document.getElementsByClassName("menu")[0]  ;
-       if (x.style.display === "block") {
-         x.style.display = "none";
-       } else {
-         x.style.display = "block";
-       }
-     }
-   </script>
-   <!-- End of LiveChat code -->
-   <!-- Default Statcounter code for Budapest Autószalon
- www.budapestautoszalon.hu -->
- <script type="text/javascript">
- var sc_project=9812866;
- var sc_invisible=1;
- var sc_security="1a0d68be";
- </script>
- <script type="text/javascript"
- src="https://www.statcounter.com/counter/counter.js"
- async></script>
- <noscript><div class="statcounter"><a title="ingyen
- webstatisztika" href="https://www.statcounter.hu/"
- target="_blank"><img class="statcounter"
- src="https://c.statcounter.com/9812866/0/1a0d68be/1/"
- alt="ingyen webstatisztika"></a></div></noscript>
- <!-- End of Statcounter Code -->
-
-
+           function myFunction() {
+           var x = document.getElementsByClassName("menu")[0]  ;
+           if (x.style.display === "block") {
+             x.style.display = "none";
+           } else {
+             x.style.display = "block";
+           }
+         }
+     </script>
+       <!-- End of LiveChat code -->
+       <!-- Default Statcounter code for Budapest Autószalon
+     www.budapestautoszalon.hu -->
+     <script type="text/javascript">
+     var sc_project=9812866;
+     var sc_invisible=1;
+     var sc_security="1a0d68be";
+     </script>
+     <script type="text/javascript"
+     src="https://www.statcounter.com/counter/counter.js"
+     async></script>
+     <noscript><div class="statcounter"><a title="ingyen
+     webstatisztika" href="https://www.statcounter.hu/"
+     target="_blank"><img class="statcounter"
+     src="https://c.statcounter.com/9812866/0/1a0d68be/1/"
+     alt="ingyen webstatisztika"></a></div></noscript>
+     <!-- End of Statcounter Code -->
    </body>
-
-
 </html>

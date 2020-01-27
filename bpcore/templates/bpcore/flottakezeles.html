@@ -14,149 +14,180 @@
     <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
     <link href="{% static 'css/flotta.css' %}" rel="stylesheet">
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/menu2.css' %}" rel="stylesheet">
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static 'css/test.css' %}" rel="stylesheet">
 
   </head>
   <body>
-    <!--==========================
-    Top menu
-    ============================-->
-      <nav class="menu-top" >
-        <ul class="menu__list-top">
-          <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
-          <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
-          <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
-          <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
-        </ul>
-      </nav>
-      <!-- End Top Menu -->
-      <br />
-      <!--==========================
-      Navigation
-      ============================-->
-      <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a class="navbar-brand" href="{% url 'fooldal' %}">
-          <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
-        </a>
-        <div class="title-name" >
-          <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
 
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbar-list-2">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-
-              <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <hr/>
-
-    <!-- End Main Navigation -->
     <body>
 
-      <!--==========================
-        About Section
-      ============================-->
-      <div class="">
-      <section id="about" class="wow fadeInUp">
-        <div class="container">
-          <div class="row">
+        <!--==========================
+          About Section
+        ============================-->
+        <div class="">
+        <section id="about" class="wow fadeInUp">
+          <div class="container">
+            <div class="row">
 
-            <div class="col-lg-6 about-img">
-              <div class="container">
+              <div class="col-lg-6 about-img">
+                <div class="container">
 
+              </div>
+
+                <h2>Flottakezelés és tartós bérlet </h2>
+                <h3>A cége számára hatékony és testreszabott megoldást kínálunk.<br /> Teljes körű szolgáltatásokkal.  </h3>
+                <ul>
+                  <li><i class="fas fa-check-circle"></i> Magasan képzett munkatársak</li>
+                  <li><i class="fas fa-check-circle"></i> Tervezhető kiadások </li>
+                  <li><i class="fas fa-check-circle"></i> Rugalmas ügyintézés és hatékonyság</li>
+                </ul>
             </div>
 
-              <h2>Flottakezelés és tartós bérlet </h2>
-              <h3>A cége számára hatékony és testreszabott megoldást kínálunk.<br /> Teljes körű szolgáltatásokkal.  </h3>
-              <ul>
-                <li><i class="fas fa-check-circle"></i> Magasan képzett munkatársak</li>
-                <li><i class="fas fa-check-circle"></i> Tervezhető kiadások </li>
-                <li><i class="fas fa-check-circle"></i> Rugalmas ügyintézés és hatékonyság</li>
-              </ul>
           </div>
+          <div class="conatiner">
+          <div class="wrap">
+            <div class="boxy one" >
+              <div class="details">
+                <h4><b>Peugeot 308 SW Active</b></h4>
+                <span>4év, 80.000km</span><br />
+                <span>20% önerő, teljeskörű flottakezeléssel</span>
+
+                <span style="color:#1561ad;"><h4>Havi 86.230Ft</h4></span>
+
+              </div>
+              <div class="card-bottom-btn">
+                <a class="btn" href="{% url 'flottakezeles' %}#xd">Ajánlatot kérek</a>
+                          </div>
+            </div>
+
+            <div class="boxy two" >
+              <div class="details">
+                <h4><b>Opel Astra ST </b></h4>
+                <span>4év, 80.000km</span><br />
+                <span>20% önerő, teljeskörű flottakezeléssel</span>
+
+                <span style="color:#1561ad;"><h4>Havi 88.350Ft</h4></span>
+              </div>
+              <div class="card-bottom-btn">
+                  <a class="btn" href="{% url 'flottakezeles' %}#xd">Ajánlatot kérek</a>
+              </div>
+            </div>
+  <!--
+            <div class="boxy three" >
+              <div class="details">
+                <h4><b>Opel Vivaro</b></h4>
+                <span>4év, 120.000km</span>
+                <span style="color:#1561ad;"><h4>Havi 112.843Ft</h4></span>
+              </div>
+              <div class="card-bottom-btn">
+                <a class="btn" href="{% url 'flottakezeles' %}#xd">Ajánlatot kérek</a>
+                <a class="btn" href="{% url 'flottaajanlat' %}" target="_blank">További autók</a>
+              </div>
+            </div>-->
+
+          </div>
+        </section>
+      </div>
+
+      </div>
+
+
+
 
         </div>
-        <div class="conatiner">
-        <div class="wrap">
-          <div class="boxy one" >
-            <div class="details">
-              <h4><b>Peugeot 308 SW Active</b></h4>
-              <span>4év, 80.000km</span><br />
-              <span>20% önerő, teljeskörű flottakezeléssel</span>
 
-              <span style="color:#1561ad;"><h4>Havi 86.230Ft</h4></span>
-
+        <!--==========================
+          Call To Action Section
+        ============================-->
+        <section id="call-to-action" >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 text-center text-lg-left">
+                <h3 class="cta-title">Ajánlataink</h3>
+                <p class="cta-text"> Tekintse meg ajánlatainkat</p>
+              </div>
+              <div class="col-lg-3 cta-btn-container text-center">
+                <a class="cta-btn align-middle" href="{% url 'flottaajanlat' %}">Ajánlatok</a>
+              </div>
             </div>
-            <div class="card-bottom-btn">
-              <a class="btn" href="{% url 'flottakezeles' %}#xd">Ajánlatot kérek</a>
-                        </div>
+
           </div>
+        </section> <!-- #call-to-action-->
 
-          <div class="boxy two" >
-            <div class="details">
-              <h4><b>Opel Astra ST </b></h4>
-              <span>4év, 80.000km</span><br />
-              <span>20% önerő, teljeskörű flottakezeléssel</span>
+      <!--==========================
+        Services Section
+      ============================-->
+      <section id="services">
 
-              <span style="color:#1561ad;"><h4>Havi 88.350Ft</h4></span>
-            </div>
-            <div class="card-bottom-btn">
-                <a class="btn" href="{% url 'flottakezeles' %}#xd">Ajánlatot kérek</a>
-            </div>
+        <div class="container">
+          <div class="section-header">
+            <h2>Előnyök</h2>
           </div>
-<!--
-          <div class="boxy three" >
-            <div class="details">
-              <h4><b>Opel Vivaro</b></h4>
-              <span>4év, 120.000km</span>
-              <span style="color:#1561ad;"><h4>Havi 112.843Ft</h4></span>
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div class="box wow fadeInLeft">
+                <h4 class="title"><a href="">Egyszerű ügyintézés</h4></a>
+                <p class="description">Önnek csak egy emberrel, a flotta kapcsolattartójával kell egyeztetnie,
+                                      aki minden kérdésben a lehető leghamarabb intézkedik.</p>
+
+              </div>
             </div>
-            <div class="card-bottom-btn">
-              <a class="btn" href="{% url 'flottakezeles' %}#xd">Ajánlatot kérek</a>
-              <a class="btn" href="{% url 'flottaajanlat' %}" target="_blank">További autók</a>
+
+            <div class="col-lg-6">
+              <div class="box">
+                <h4 class="title"><a href="">Csereautó szolgáltatás</a></h4>
+                <p class="description">Bérautó parkunk segítségével gondoskodunk róla,
+                                        hogy a szervizelések alkalmával se maradjon autó nélkül.</p>
+                                        <br />
+              </div>
             </div>
-          </div>-->
+
+            <div class="col-lg-6">
+              <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                <h4 class="title"><a href="">Ideális futamidő </a></h4>
+                <p class="description">Segítünk úgy meghatározni a futamidőket, hogy optimális legyen.</p>
+                <br />
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                <h4 class="title"><a href="">Alacsonyabb gumiabroncs költségek </a></h4>
+                <p class="description">Gumiabroncs szolgáltatásunknak köszönhetően  mindig az évszaknak megfelelő,
+                   kiváló állapotú gumiabronccsal használhatja gépjárművét.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                <h4 class="title"><a href="">Cégesautó flotta </a></h4>
+                <p class="description">Önnek a cégesautó flottájának adminisztrációjában,
+                  riportálásában és cégesautó politikájának kialakításában.</p>
+                <br />
+                <br />
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="box wow fadeInRight" data-wow-delay="0.2s">
+                <h4 class="title"><a href="">Olcsóbb szervizköltség</a></h4>
+                <p class="description">Szervizszolgáltatásunk kiterjed a gyártó által meghatározott kötelező szervizek anyag és munkadíjára,
+                    továbbá minden javítás alkalmával átvizsgáljuk autóját és kívül-belül kitakarítva adjuk vissza Önnek. </p>
+              </div>
+            </div>
+
+          </div>
 
         </div>
       </section>
-    </div>
-
-    </div>
-
-
-
-
-      </div>
 
       <!--==========================
         Call To Action Section
       ============================-->
-      <section id="call-to-action" >
+      <section id="call-to-action" class="wow fadeInUp">
         <div class="container">
           <div class="row">
             <div class="col-lg-9 text-center text-lg-left">
@@ -164,145 +195,60 @@
               <p class="cta-text"> Tekintse meg ajánlatainkat</p>
             </div>
             <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="{% url 'flottaajanlat' %}">Ajánlatok</a>
+                <a class="cta-btn align-middle" href="{% url 'flottaajanlat' %}">Ajánlatok</a>
             </div>
           </div>
 
         </div>
-      </section> <!-- #call-to-action-->
-
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="services">
-
-      <div class="container">
-        <div class="section-header">
-          <h2>Előnyök</h2>
-        </div>
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft">
-              <h4 class="title"><a href="">Egyszerű ügyintézés</h4></a>
-              <p class="description">Önnek csak egy emberrel, a flotta kapcsolattartójával kell egyeztetnie,
-                                    aki minden kérdésben a lehető leghamarabb intézkedik.</p>
-
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box">
-              <h4 class="title"><a href="">Csereautó szolgáltatás</a></h4>
-              <p class="description">Bérautó parkunk segítségével gondoskodunk róla,
-                                      hogy a szervizelések alkalmával se maradjon autó nélkül.</p>
-                                      <br />
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">Ideális futamidő </a></h4>
-              <p class="description">Segítünk úgy meghatározni a futamidőket, hogy optimális legyen.</p>
-              <br />
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">Alacsonyabb gumiabroncs költségek </a></h4>
-              <p class="description">Gumiabroncs szolgáltatásunknak köszönhetően  mindig az évszaknak megfelelő,
-                 kiváló állapotú gumiabronccsal használhatja gépjárművét.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">Cégesautó flotta </a></h4>
-              <p class="description">Önnek a cégesautó flottájának adminisztrációjában,
-                riportálásában és cégesautó politikájának kialakításában.</p>
-              <br />
-              <br />
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInRight" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">Olcsóbb szervizköltség</a></h4>
-              <p class="description">Szervizszolgáltatásunk kiterjed a gyártó által meghatározott kötelező szervizek anyag és munkadíjára,
-                  továbbá minden javítás alkalmával átvizsgáljuk autóját és kívül-belül kitakarítva adjuk vissza Önnek. </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!--==========================
-      Call To Action Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeInUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Ajánlataink</h3>
-            <p class="cta-text"> Tekintse meg ajánlatainkat</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="{% url 'flottaajanlat' %}">Ajánlatok</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- #call-to-action -->
-    <section id="sec1" class="paralax-mf footer-paralax bg-image sect-mt4 route">
-      <div  class="overlay-mf"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="contact-mf">
-                <div id="contact" class="box-shadow-full">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="title-box-2">
-                        <h5 class="title-left" id="xd" >
-                          Küldjön nekünk üzenetet
-                        </h5>
+      </section><!-- #call-to-action -->
+      <section id="sec1" class="paralax-mf footer-paralax bg-image sect-mt4 route">
+        <div  class="overlay-mf"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="contact-mf">
+                  <div id="contact" class="box-shadow-full">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="title-box-2">
+                          <h5 class="title-left" id="xd" >
+                            Küldjön nekünk üzenetet
+                          </h5>
+                        </div>
+                        <div>
+                            <div class="row">
+                              <form method="post">
+                                <div class="col-md-12 mb-3">
+                                    {% csrf_token %}
+                                    {{ form.as_p }}
+                                </div>
+                                <div class="col-md-12">
+                                  <button type="submit" class="button button-a button-big button-rouded">Üzenet Küldés</button>
+                                </div>
+                              </form>
+                            </div>
+                        </div>
                       </div>
-                      <div>
-                          <div class="row">
-                            <form method="post">
-                              <div class="col-md-12 mb-3">
-                                  {% csrf_token %}
-                                  {{ form.as_p }}
-                              </div>
-                              <div class="col-md-12">
-                                <button type="submit" class="button button-a button-big button-rouded">Üzenet Küldés</button>
-                              </div>
-                            </form>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="title-box-2 pt-4 pt-md-0">
-                        <h5 class="title-left">
-                          Kapcsolat
-                        </h5>
-                      </div>
-                      <div class="more-info">
-                        <p class="lead">
-                          Felkeltettük az érdeklődését?
-                          Kérjük, vegye fel velünk a kapcsolatot, hogy Önökkel együtt találjuk meg a lehető legjobb megoldást
-                           igényeihez. <br />Érdeklödjön értékesítőink által kínált speciális ajánlatainkról is.
-                        </p>
-                        <hr />
-                        <p class="lead">
-                          Címünk: Budapest Külső Váci út 76-80 <br />
-                          Telefonszámunk: +3620 377 6212
-                          <br />Email: flottakezeles@flottasziget.hu
+                      <div class="col-md-6">
+                        <div class="title-box-2 pt-4 pt-md-0">
+                          <h5 class="title-left">
+                            Kapcsolat
+                          </h5>
+                        </div>
+                        <div class="more-info">
+                          <p class="lead">
+                            Felkeltettük az érdeklődését?
+                            Kérjük, vegye fel velünk a kapcsolatot, hogy Önökkel együtt találjuk meg a lehető legjobb megoldást
+                             igényeihez. <br />Érdeklödjön értékesítőink által kínált speciális ajánlatainkról is.
+                          </p>
+                          <hr />
+                          <p class="lead">
+                            Címünk: Budapest Külső Váci út 76-80 <br />
+                            Telefonszámunk: +3620 377 6212
+                            <br />Email: flottakezeles@flottasziget.hu
 
-                        </p>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -310,76 +256,75 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <a href="javascript:" id="return-to-top">
-        <div class="return-to-top-text"><i class="fas fa-caret-up fa-3x"></i></div>
-      </a>
-        <!-- Start of LiveChat code -->
-        <script type="text/javascript">
-              window.__lc = window.__lc || {};
-              window.__lc.license = 8624479;
-              window.__lc.chat_between_groups = false;
-              (function() {
-                var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-                lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-              })();
+        </section>
+        <a href="javascript:" id="return-to-top">
+          <div class="return-to-top-text"><i class="fas fa-caret-up fa-3x"></i></div>
+        </a>
+          <!-- Start of LiveChat code -->
+          <script type="text/javascript">
+                window.__lc = window.__lc || {};
+                window.__lc.license = 8624479;
+                window.__lc.chat_between_groups = false;
+                (function() {
+                  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+                  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+                })();
 
-            function myFunction() {
-            var x = document.getElementsByClassName("menu")[0]  ;
-            if (x.style.display === "block") {
-              x.style.display = "none";
-            } else {
-              x.style.display = "block";
+              function myFunction() {
+              var x = document.getElementsByClassName("menu")[0]  ;
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
             }
-          }
-        </script>
-        <!-- End of LiveChat code -->
-        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-        <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/scroll.js' %}"></script>
+          </script>
+          <!-- End of LiveChat code -->
+          <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+          <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+          <script type="text/javascript" src="{% static 'js/scroll.js' %}"></script>
 
-      </body>
-       <!-- Footer -->
-       <footer id="myFooter">
-           <div class="container">
-               <div class="row">
-                   <div class="col-sm-3">
-                       <h5>Kezdőlap</h5>
-                       <ul>
-                           <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
-                           <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
-                           <li><a href="#">Adatvédelmi nyilatkozat</a></li>
-                       </ul>
-                   </div>
-                   <div class="col-sm-3">
-                       <h5>Rólunk</h5>
-                       <ul>
-                           <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
-                           <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
-                           <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
-                       </ul>
-                   </div>
+        </body>
+         <!-- Footer -->
+         <footer id="myFooter">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-sm-3">
+                         <h5>Kezdőlap</h5>
+                         <ul>
+                             <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                             <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                             <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                         </ul>
+                     </div>
+                     <div class="col-sm-3">
+                         <h5>Rólunk</h5>
+                         <ul>
+                             <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                             <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                             <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
+                         </ul>
+                     </div>
 
-                   <div class="col-sm-3 info">
-                       <h5>Nyitva tartás</h5>
-                       <p>
-                         Új- és használt autó<br />
-                         H-P: 9-18 / Sz: 9-13<br />
-                         <p> </p>
-                         Szerviz, Alkatrész<br />
-                         H-P: 8-17 / Sz: Zárva</p>
-                   </div>
-                   <div class="col-sm-3 info">
-                       <h5>Budapest Autószalon</h5>
-                       <p>   Opel-Mitsubishi-<br />Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+                     <div class="col-sm-3 info">
+                         <h5>Nyitva tartás</h5>
+                         <p>
+                           Új- és használt autó<br />
+                           H-P: 9-18 / Sz: 9-13<br />
+                           <p> </p>
+                           Szerviz, Alkatrész<br />
+                           H-P: 8-17 / Sz: Zárva</p>
+                     </div>
+                     <div class="col-sm-3 info">
+                         <h5>Budapest Autószalon</h5>
+                         <p>   Opel-Mitsubishi-<br />Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
 
-                           h-1044 Budapest Váci út 76-80</br>Tel: 06 1-803-6050  </br>Fax: 06 1-803-6051</br>  </p>
-                   </div>
-                   <hr>
-               </div>
-           </div>
-       </footer>
+                             h-1044 Budapest Váci út 76-80</br>Tel: 06 1-803-6050  </br>Fax: 06 1-803-6051</br>  </p>
+                     </div>
+                     <hr>
+                 </div>
+             </div>
+         </footer>
     </body>
   </html>

@@ -16,62 +16,72 @@
   <!-- Custom styles for this template -->
   <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
   <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
-  <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
+  <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
+
 
 </head>
 <body>
-      <!--==========================
-      Top menu
-      ============================-->
-        <nav class="menu-top" >
-          <ul class="menu__list-top">
-            <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
-            <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
-            <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
-            <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
-          </ul>
-        </nav>
-        <!-- End Top Menu -->
-        <br />
-        <!--==========================
-        Navigation
-        ============================-->
-        <nav class="navbar navbar-light bg-light navbar-expand-sm">
-          <a class="navbar-brand" href="{% url 'fooldal' %}">
-            <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
-          </a>
-          <div class="title-name" >
-            <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
+  <!--==========================
+  Navbar Start
+  ============================-->
+      <nav id="navbar" class="home">
+        <div class="nav-wrapper">
+          <!-- Navbar Logo -->
+          <div class="logo">
+            <!-- This is the place for the logo the greatest logo of all time -->
+            <a href="{% url 'fooldal' %}"><img class="logo-image" src={% static "../static/logo2.png" %}></a>
           </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-list-2">
-            <ul class="navbar-nav">
+          <!-- Navbar Links -->
+          <ul id="menu">
               <li class="nav-item active">
-                <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+                <a   href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+              <li  >
+                <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
+              <li  >
+                <a href="{% url 'szerviz' %}">Szerviz</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
+              <li  >
+                <a    href="{% url 'hasznalt' %}">Használt autók</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
+              <li  >
+                <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+              <li  >
+                <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
               </li>
-            </ul>
-          </div>
-        </nav>
+          </ul>
+        </div>
+      </nav>
+      <!-- Menu Icon -->
+      <div class="menuIcon">
+      <span class="icon icon-bars"></span>
+      <span class="icon icon-bars overlay"></span>
+      <span class="icon icon-bars overlay"></span>
+
+      </div>
+      <div class="overlay-menu">
+      <ul id="menu">
+        <span> </span>
+        <li  >
+          <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+        </li>
+        <li  >
+          <a href="{% url 'szerviz' %}">Szerviz</a>
+        </li>
+        <li  >
+          <a    href="{% url 'hasznalt' %}">Használt autók</a>
+        </li>
+        <li  >
+          <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+        </li>
+        <li  >
+          <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+        </li>
+        </ul>
+      </div>
       <!-- End Main Navigation -->
-      <hr >
 
       <!-- Page Heading -->
       <div class="container">
@@ -79,10 +89,7 @@
           <h1 class="mt-4 mb-3">Ajánlataink</h1>
         </div>
         <div class="wrapper">
-        <div class="box box5 shadow1" >
-            <a href="{% url 'eclipse-cross' %}">
-                <img class="img-fluid" src="/static/eclispebox3.png" alt=""></a>
-          </div>
+
           <div class="box box4 shadow4">
             <a href="{% url 'sumssangyong' %}">
             <img class="img-fluid" src="/static/asx-4.png" alt=""></a></p>
@@ -91,6 +98,12 @@
                   <a href="{% url 'rextong4' %}">
             <img class="img-fluid" src="/static/rextong4/rextonfour.png" alt="SsangYong Rexton G4"></a>
           </div>
+          <div class="box box5 shadow1" >
+              <a href="{% url 'eclipse-cross' %}">
+                  <img class="img-fluid" src="/static/eclispebox3.png" alt=""></a>
+            </div>
+
+
 
           <div class="box box3 shadow3">
 
@@ -103,15 +116,7 @@
             <a href="{% url 'tivoli-akcio' %}">
             <img class="img-fluid" src="/static/sanbox1.png" alt=""></a></p>
           </div>
-          <div class="box box5 shadow5">
-            <a href="{% url 'sumssangyong' %}">
-            <img class="img-fluid" src="/static/asx-4.png" alt=""></a></p>
-          </div>
-          <div class="box box1 shadow1">
-                  <a href="{% url 'nagycsalados' %}">
-            <img class="img-fluid" src="/static/7ules/7szemeleyautok.jpg" alt=""></a>
 
-          </div>
         </div>
       </div>
       <br />
@@ -157,8 +162,9 @@
             </div>
         </footer>
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script defer type="text/javascript" src="{% static '/js/scroll.js' %}"></script>
+
 
     <!-- Start of LiveChat code -->
   <script type="text/javascript">

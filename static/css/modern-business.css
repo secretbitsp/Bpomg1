@@ -37,7 +37,7 @@ html, body{
 
 
 .w_text{
-    padding-top: 5.25rem;
+    padding-top: 7.25rem;
     padding-bottom: 2.25rem;
 
 }
@@ -167,3 +167,62 @@ html, body{
      make sure you have an empty gif
   background-image: url('empty.gif');*/
 }
+
+
+
+  .wrapper{
+    display:grid;
+    grid-auto-flow: dense;
+    grid-template-columns:1fr 1fr ;
+    grid-auto-rows:minmax(250px, auto);
+    grid-gap:1em;
+    justify-items:stretch;
+    align-items:stretch;
+    padding: 1px;
+  }
+
+@media screen and (max-width: 500px) {
+  .wrapper{
+    display: block;
+  }
+
+}
+
+  .wrapper > div{
+    background:;
+    padding:1em;
+  }
+  .wrapper > div:hover{
+    box-shadow: 0px 0px 80px -30px rgba(0,0,0, 0.5);
+    transition: all 0.8s;
+    border: 1px solid #000;
+
+  }
+
+  .wrapper> div:nth-child(odd){
+    background:;
+  }
+
+  .box1{
+    /*align-self:start;*/
+    grid-column:2;
+    grid-row:1;
+  }
+
+
+  .box2{
+    /*align-self:end;*/
+    grid-column:1;
+    grid-row:1;
+  }
+
+  .box3{
+    /*justify-self:end;*/
+    grid-column:1;
+    grid-row:2
+  }
+
+  .box4{
+    grid-column:2;
+    grid-row:2
+    }

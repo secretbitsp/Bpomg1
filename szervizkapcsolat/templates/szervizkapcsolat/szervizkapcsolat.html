@@ -3,151 +3,189 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Budapest Autószalon új és használtautók</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title> Szerviz Ajanlat Budapest Autószalon</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
-    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
+    <meta name="description" content="A Magyar használt autó kereskedés és Új autó szalon Budapest Autoszalon(használt autó, használt autók, használtautó,) Közép-Európában. Legkeresettebb márkák: Škoda, Ford, Peugeot, Renault, Citroen, Daewoo, Audi, Fiat, Opel, Seat, VW, Volvo, Honda, Kia, Mazda, Subaru, SsangYong, Mitsubishi, Opel Astra">
+    <meta name="keywords" content="">
+    <meta name="author" content="Follow the white rabbit">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" href="{%  static 'icons/favinew.png' %}">
+    <link rel="shortcut icon" sizes="196x196" href="{%  static 'icons/favinew.png' %}">
+    <link rel="apple-touch-icon" href="{%  static 'icons/favinew.png' %}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS File -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
-    <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <link href="{% static 'css/test.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+    <!-- Main Stylesheet File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
   </head>
-<body>
-      <!--==========================
-      Top menu
-      ============================-->
-        <nav class="menu-top" >
-          <ul class="menu__list-top">
-            <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
-            <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
-            <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
-            <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
-          </ul>
-        </nav>
-        <!-- End Top Menu -->
-        <br />
-        <!--==========================
-        Navigation
-        ============================-->
-        <nav class="navbar navbar-light bg-light navbar-expand-sm">
-          <a class="navbar-brand" href="{% url 'fooldal' %}">
-            <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
-          </a>
-          <div class="title-name">
-            <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbar-list-2">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-
-                <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'hasznalt' %}">Használt autók</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
-              </li>
+  <body>
+    <!--==========================
+    Navbar Start
+    ============================-->
+        <nav id="navbar" class="home">
+          <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+              <!-- This is the place for the logo the greatest logo of all time -->
+              <a href="{% url 'fooldal' %}"><img class="logo-image" src={% static "../static/logo2.png" %}></a>
+            </div>
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li class="nav-item active">
+                  <a   href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+                </li>
+                <li  >
+                  <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+                </li>
+                <li  >
+                  <a href="{% url 'szerviz' %}">Szerviz</a>
+                </li>
+                <li  >
+                  <a    href="{% url 'hasznalt' %}">Használt autók</a>
+                </li>
+                <li  >
+                  <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+                </li>
+                <li  >
+                  <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+                </li>
             </ul>
           </div>
         </nav>
-      <!-- End Main Navigation -->
-      <hr >
+        <!-- Menu Icon -->
+        <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+        <span class="icon icon-bars overlay"></span>
 
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <h3>Már régi Ügyfelünk, vagy most lépne velünk kapcsolatba először? <br />Küldje el üzenetét és kollégáink válaszolnak Önnek!</h3>
-                <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i>
-                   Küldjön üzenetet.
-                </div>
-                <div class="card-body">
-                  <div class="col-xs-7 col-xs-6" >
-                  <form method="post">
-                    {% csrf_token %}
-                    {{ form.as_p }}</div>
-                    <input class="btn btn-primary btn-block" type="submit" value="Küldés" />
-
-                  </form>
-                </div>
-            </div>
         </div>
-
-        <div class="col-xs-5 col-sm-6 col-lg-4" >
-          <div class="card bg-light mb-3">
-              <div class="card-header bg-dark text-white text-uppercase"><i class="fa fa-home"></i> Cimünk </div>
-                <div class="card-body">
-                    <p>Váci út 76-80</p>
-                    <p>1044 Budapest</p>
-                    <p>H-P 8:00 - 17:00</p>
-                    <p>Email : info@budapestautoszalon.hu</p>
-                    <p>Tel: +36 1 803 6056</p>
+        <div class="overlay-menu">
+        <ul id="menu">
+          <span> </span>
+          <li  >
+            <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+          </li>
+          <li  >
+            <a href="{% url 'szerviz' %}">Szerviz</a>
+          </li>
+          <li  >
+            <a    href="{% url 'hasznalt' %}">Használt autók</a>
+          </li>
+          <li  >
+            <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+          </li>
+          <li  >
+            <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+          </li>
+          </ul>
+        </div>
+        <!-- End Main Navigation -->
+    <section id="sec1" class="paralax-mf footer-paralax bg-image sect-mt4 route">
+      <div  class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2">
+                        <h5 class="title-left" id="xd" >
+                          Szerviz bejelentkezés
+                        </h5>
+                      </div>
+                      <div>
+                          <div class="row">
+                            <form method="post">
+                              <div class="col-md-12 mb-3">
+                                  {% csrf_token %}
+                                  {{ form.as_p }}
+                              </div>
+                              <div class="col-md-12">
+                                <button type="submit" class="button button-a button-big button-rouded">Elküld</button>
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">
+                          Kapcsolat
+                        </h5>
+                      </div>
+                      <div class="more-info">
+                        <p class="lead">
+                          Kérjük, adja meg adatait, munkatársunk hamarosan felveszi Önnel a kapcsolatot.
+                        </p>
+                        <hr />
+                        <p class="lead">
+                          <strong>Címünk:</strong> Budapest Külső Váci út 76-80
+                        </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Footer -->
-        <footer id="myFooter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <h5>Kezdőlap</h5>
-                        <ul>
-                            <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
-                            <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
-                            <li><a href="#">Adatvédelmi nyilatkozat</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
-                        <h5>Rólunk</h5>
-                        <ul>
-                            <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
-                            <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
-                            <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <h5>Külső linkek</h5>
-                        <ul>
-                            <li><a href="http://www.ssangyongbudapest.hu/">Sangyong Budapest</a></li>
-                            <li><a href="http://www.mitsubishibudapest.hu/">Mitsubishi Budapest</a></li>
-                            <li><a href="http://www.subarubudapest.hu/">Subaru Budapest</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3 info">
-                        <h5>Budapest Autószalon</h5>
-                        <p>   Opel-Mitsubishi-Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
-
-                            h-1044 Budapest Váci út 76-80</br>Tel: 061-803-6050  </br>Fax: 061-803-6051</br>  </p>
-                    </div>
+      </section>
+    <!-- Footer -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Kezdőlap</h5>
+                    <ul>
+                        <li><a href="{% url 'fooldal' %}">Nyitólap</a></li>
+                        <li><a href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a></li>
+                        <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                    </ul>
                 </div>
-            </div>
-        </footer>
-      </footer>
-      <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+                <div class="col-sm-3">
+                    <h5>Rólunk</h5>
+                    <ul>
+                        <li><a href="{% url 'kapcsolat:kapcsolat' %}">Cégünkről</a></li>
+                        <li><a href="{% url 'szervizkap:szervizkapcsi' %}">Szerviz bejelentkezés</a></li>
+                        <li><a href="{% url 'hasznalt' %}">Használtautók</a></li>
+                    </ul>
+                </div>
 
-      <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-      <!-- Start of LiveChat code -->
+                <div class="col-sm-3 info">
+                    <h5>Nyitva tartás</h5>
+                    <p>
+                      Új- és használt autó<br />
+                      H-P: 9-18 / Sz: 9-13<br />
+                      <p> </p>
+                      Szerviz, Alkatrész<br />
+                      H-P: 8-17 / Sz: Zárva</p>
+                </div>
+                <div class="col-sm-3 info">
+                    <h5>Budapest Autószalon</h5>
+                    <p>   Opel-Mitsubishi-<br />Subaru-Ssangyong</br>Márkakereskedés,használtautó-kereskedés és szerviz</br>
+
+                        h-1044 Budapest Váci út 76-80</br>Tel: 06 1-803-6050  </br>Fax: 06 1-803-6051</br>  </p>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Start of LiveChat code -->
     <script type="text/javascript">
           window.__lc = window.__lc || {};
           window.__lc.license = 8624479;
@@ -167,6 +205,15 @@
         }
       }
     </script>
+    <!-- End of LiveChat code -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script defer type="text/javascript" src="{% static '/js/scroll.js' %}"></script>
+
+
+  </div> <!-- .site-wrap -->
+
+
   </body>
 
 

@@ -38,8 +38,6 @@ def tivoli(request):
 def eclipse(request):
         return render(request,'bpcore/eclipse.html')
 
-def nagycsalados(request):
-        return render(request,'bpcore/7szemely.html')
 
 def rextong4(request):
         return render(request,'bpcore/rextongg4.html')
@@ -68,7 +66,7 @@ def flottakezeles(request):
             print(send_mail)
             print(sender_mail)
             print(message)
-            return HttpResponseRedirect('/flottakezeles')
+            return HttpResponseRedirect('/thx')
     else:
         form = flottakapcsolat()
 
@@ -92,6 +90,25 @@ def flottaajanlat(request):
         form = flottakapcsolat()
 
     return render(request,'bpcore/flottaajanlat.html', {'form': form})
+
+def teljeskoru(request):
+    if request.method == 'POST':
+        form = flottakapcsolat(request.POST)
+        if form.is_valid():
+            sender_name = form.cleaned_data['név']
+            sender_email = form.cleaned_data['email']
+            sender_phone = form.cleaned_data['telefonszám']
+            sender_mail = form.cleaned_data['megjegyzés']
+            message = "{0}  Ügyfelünk üzenetet küldött neked:\n\n{1}\nTelefonszám: {2}\nÜzenet: {3}".format(sender_name, sender_email, sender_phone, sender_mail)
+            send_mail('Új érdeklődés a weboldalról', message, 'info@budapestautoszalon.hu', ['flottakezeles@flottasziget.hu'],)
+            print(send_mail)
+            print(sender_mail)
+            print(message)
+            return HttpResponseRedirect('/thx')
+    else:
+        form = flottakapcsolat()
+
+    return render(request,'bpcore/teljeskoru-operativ-lizing.html', {'form': form})
 
 
 def szerviz(request):

@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import View
 from django.http import HttpResponse
 from django.core.mail import send_mail
+from django.http import HttpRequest, HttpResponseRedirect
 
 from .forms import hasznaltkapcsolat
 
@@ -20,7 +21,7 @@ def hasznaltkapcsi(request):
             print(send_mail)
             print(sender_mail)
             print(message)
-            return render(request, 'hahu_kapcsolat/haukapcsolat.html', {'form': form})
+            return HttpResponseRedirect('/thx')
     else:
         form = hasznaltkapcsolat()
 

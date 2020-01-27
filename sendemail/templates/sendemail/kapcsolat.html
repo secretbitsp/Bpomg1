@@ -1,92 +1,93 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
+    <title>Budapest Autószalon új és használtautók</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="A Magyar használt autó kereskedés és Új autó szalon Budapest Autoszalon(használt autó, használt autók, használtautó,) Közép-Európában. Legkeresettebb márkák: Škoda, Ford, Peugeot, Renault, Citroen, Daewoo, Audi, Fiat, Opel, Seat, VW, Volvo, Honda, Kia, Mazda, Subaru, SsangYong, Mitsubishi, Opel Astra">
+    <meta name="keywords" content="">
+    <meta name="author" content="Follow the white rabbit">
 
-    <title>Budapest Autószalon</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="shortcut icon" href="{%  static 'icons/kiskocsi.ico' %}">
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" href="{%  static 'icons/favinew.png' %}">
+    <link rel="shortcut icon" sizes="196x196" href="{%  static 'icons/favinew.png' %}">
+    <link rel="apple-touch-icon" href="{%  static 'icons/favinew.png' %}">
 
-    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
-    <link href="{% static 'css/menubar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
     <link href="{% static 'css/test.css' %}" rel="stylesheet">
 
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-    <style>
-        a:hover{
-            -webkit-stroke-width: 5.3px;
-              -webkit-stroke-color: #FFFFFF;
-              -webkit-fill-color: #FFFFFF;
-              text-shadow: 1px 0px 20px #000080;
-          }
-    </style>
   </head>
   <body>
     <!--==========================
-    Top menu
+    Navbar Start
     ============================-->
-      <nav class="menu-top" >
-        <ul class="menu__list-top">
-          <li class="menu__group-top"></i>Budapest Autószalon új és használt autók</li>
-          <li class="menu__group-top"><i class="fas fa-phone"></i><a href ="tel: +36 1 803 6056"> +36 1 803 6056</li></a>
-          <li class="menu__group-top"><i class="far fa-clock"></i> Nyitva: Hétfő - Péntek: 8:00 - 18.00</li>
-          <li class="menu__group-top"><i class="far fa-envelope"></i><a href = "mailto: info@budapestautoszalon.hu">info@budapestautoszalon.hu</li></a>
-        </ul>
-      </nav>
-      <!-- End Top Menu -->
-      <br />
-      <!--==========================
-      Navigation
-      ============================-->
-      <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a class="navbar-brand" href="{% url 'fooldal' %}">
-          <img src="/static/logo2.png" width= "20%" alt="Budapest Autoszalon Logo">
-        </a>
-        <div class="title-name" >
-          <a class="nav-link" href="{% url 'fooldal' %}">Budapest Autószalon</a>
+        <nav id="navbar" class="home">
+          <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+              <!-- This is the place for the logo the greatest logo of all time -->
+              <a href="{% url 'fooldal' %}"><img class="logo-image" src={% static "../static/logo2.png" %}></a>
+            </div>
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li class="nav-item active">
+                  <a   href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
+                </li>
+                <li  >
+                  <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+                </li>
+                <li  >
+                  <a href="{% url 'szerviz' %}">Szerviz</a>
+                </li>
+                <li  >
+                  <a    href="{% url 'hasznalt' %}">Használt autók</a>
+                </li>
+                <li  >
+                  <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+                </li>
+                <li  >
+                  <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Menu Icon -->
+        <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+        <span class="icon icon-bars overlay"></span>
+
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbar-list-2">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-
-              <a class="nav-link" href="{% url 'fooldal' %}">Főoldal <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'szerviz' %}">Szerviz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="{% url 'hasznalt' %}">Használt autók</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="{% url 'flottakezeles' %}">Flottakezelés</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
-            </li>
+        <div class="overlay-menu">
+        <ul id="menu">
+          <span> </span>
+          <li  >
+            <a   href="{% url 'autolista:ujautok' %}">Ajánlataink</a>
+          </li>
+          <li  >
+            <a href="{% url 'szerviz' %}">Szerviz</a>
+          </li>
+          <li  >
+            <a    href="{% url 'hasznalt' %}">Használt autók</a>
+          </li>
+          <li  >
+            <a    href="{% url 'flottakezeles' %}">Flottakezelés</a>
+          </li>
+          <li  >
+            <a   href="{% url 'kapcsolat:kapcsolat' %}">Kapcsolat</a>
+          </li>
           </ul>
         </div>
-      </nav>
-    <!-- End Main Navigation -->
-    <hr >
-
+        <!-- End Main Navigation -->
       <!-- Content Row -->
 
       <div class="row">
@@ -96,10 +97,10 @@
         <div class="col-lg-12 mb-5">
           <div class="container">
             <div class="w_text">
-              <h1 class="mt-4 mb-3">Kapcsolat felvétel</h1>
+              <h2 class="mt-4 mb-3">Elérhetőségeink</h2>
             </div>
           <!-- Embedded Google Map -->
-          <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.6994946328305!2d19.078489815506934!3d47.573634979182486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDM0JzI1LjEiTiAxOcKwMDQnNTAuNCJF!5e0!3m2!1shu!2shu!4v1565251988080!5m2!1shu!2shu" width="800" height="450" frameborder="0"style="border:0" ></iframe>
         <!-- Contact Details Column -->
         <br />
@@ -119,7 +120,7 @@
            </p>
           <p>
             <abbr title="Küldjön üzenetet azonnal válaszolunk">Email:</abbr>:
-            <a href="mailto:recepcio@budapestautoszalon.hu">recepcio@budapestautoszalon.hu
+            <a href="mailto:info@budapestautoszalon.hu">info@budapestautoszalon.hu
             </a>
 
 
@@ -129,6 +130,8 @@
       <!-- /.row -->
 
       <div class="table-responsive">
+        <h1 class="mt-4 mb-3">Nyitvatartás:</h1><br/>
+
         <!--Table-->
         <table class="table">
           <!--Table head-->
@@ -168,7 +171,7 @@
       </div>
 
         <div class="w_text">
-          <h1 class="mt-4 mb-3">Miben segíthetünk:</h1>
+          <h1 class="mt-4 mb-3">Munkatársaink:</h1>
         </div>
 
           <div class="wrapper">
@@ -184,8 +187,8 @@
 
                 <h4><i class="fas fa-users-cog"></i>  Varga László</h4>
                 <p> Szerviz vezető </p>
-                <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 20 334 2551"> +36 20 334 2551</p></a>
-                <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: varga.laszlo@budapestautoszalon.hu"> varga.laszlo@budapestautoszalon.hu</p></a>
+                <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 20 334 2551"> +36 20 334 2551</p></a>
+                <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: varga.laszlo@budapestautoszalon.hu"> varga.laszlo@budapestautoszalon.hu</p></a>
 
               </div>
               <hr />
@@ -194,8 +197,8 @@
 
                 <h4><i class="fas fa-users-cog"></i>Hips Attila </h4>
                 <p> Szerviz tanácsadó / Garanciás ügyintéző </p>
-                 <p class="lead"><i class="fas fa-phone"></i>Tel: <a href="tel:+36 20 402 5457"> +36 20 402 5457</p></a>
-                 <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: attila.hips@budapestautoszalon.hu"> attila.hips@budapestautoszalon.hu</p></a>
+                 <p class="lead"><i class="fas fa-phone"></i> Tel: <a href="tel:+36 20 402 5457"> +36 20 402 5457</p></a>
+                 <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: attila.hips@budapestautoszalon.hu"> attila.hips@budapestautoszalon.hu</p></a>
                  <hr />
 
               </div>
@@ -209,8 +212,8 @@
 
                 <h4 ><i class="fas fa-user"></i>Buda László </h4>
                 <p> Értékesítési vezető </p>
-                 <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 70 427 0748"> +36 70 427 0748</p></a>
-                 <p class="lead"><i class="fas fa-paper-plane"> </i>Email: <a href = "mailto: buda.laszlo@budapestautoszalon.hu"> buda.laszlo@budapestautoszalon.hu</p></a>
+                 <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 70 427 0748"> +36 70 427 0748</p></a>
+                 <p class="lead"><i class="fas fa-paper-plane"> </i> Email: <a href = "mailto: buda.laszlo@budapestautoszalon.hu"> buda.laszlo@budapestautoszalon.hu</p></a>
                  <hr />
 
               </div>
@@ -219,8 +222,8 @@
                 <h4><i class="fas fa-user"></i></i>  Horváth László</h4>
                 <p> Értékesítő </p>
 
-                <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 70 770 9032"> +36 70 770 9032</p></a>
-                <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: horvath.laszlo@budapestautoszalon.hu"> horvath.laszlo@budapestautoszalon.hu</p></a>
+                <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 70 770 9032"> +36 70 770 9032</p></a>
+                <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: horvath.laszlo@budapestautoszalon.hu"> horvath.laszlo@budapestautoszalon.hu</p></a>
                 <hr />
 
               </div>
@@ -228,8 +231,8 @@
                <h4><i class="fas fa-user"></i></i>  Sparing Béla</h4>
                <p> Gépjármű felvásárlás / beszámítás </p>
 
-               <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 20 322 2811"> +36 20 322 2811 </p></a>
-               <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: sparing.bela@budapestautoszalon.hu"> sparing.bela@budapestautoszalon.hu</p></a>
+               <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 20 322 2811"> +36 20 322 2811 </p></a>
+               <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: sparing.bela@budapestautoszalon.hu"> sparing.bela@budapestautoszalon.hu</p></a>
                <hr />
 
              </div>
@@ -242,29 +245,29 @@
               <div class="contact-info">
                 <h4><i class="fas fa-user"></i>Énekes Tóth Alexandra</h4>
                 <p>Értékesítés referens </p>
-                 <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 20 377 3100"> +36 20 242 4347</p></a>
-                 <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: toth.alexandra@budapestautoszalon.hu"> toth.alexandra@budapestautoszalon.hu</p></a>
-               <div class="wrapper2">
-                  <div><img src="/static/Logo/SsangYong-logo.png" width="90%";></div>
-                  <div><img src="/static/Logo/Subaru-logo.png" width="90%";></div>
-                  <div><img src="/static/Logo/Mitsubishi-logo.png" width="90%";></div>
-                  <div><img src="/static/Logo/opellogo.png" width="80%";></div>
-                </div>
+                 <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 20 377 3100"> +36 20 242 4347</p></a>
+                 <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: toth.alexandra@budapestautoszalon.hu"> toth.alexandra@budapestautoszalon.hu</p></a>
+                 <!--<div class="wrapper2">
+                    <div><img src="/static/Logo/SsangYong-logo.png" class="img-fluid" width="90%";></div>
+                    <div><img src="/static/Logo/Subaru-logo.png" width="90%";></div>
+                    <div><img src="/static/Logo/Mitsubishi-logo.png" width="90%";></div>
+                    <div><img src="/static/Logo/opellogo.png" width="80%";></div>
+                  </div>-->
               </div>
 
               <hr />
                 <div class="contact-info">
                    <h4 ><i class="fas fa-user"></i>Kardos Tamás</h4>
                    <p> Értékesítési referens </p>
-                    <p class="lead" ><i class="fas fa-phone"></i>Tel:<a href="tel:+36 70 770 02 01"> +36 70 770 02 01</p></a>
-                    <p class="lead" ><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: kardos.tamas@mitsubishibudapest.hu"> kardos.tamas@mitsubishibudapest.hu</p></a>
-
+                    <p class="lead" ><i class="fas fa-phone"></i> Tel:<a href="tel:+36 70 770 02 01"> +36 70 770 02 01</p></a>
+                    <p class="lead" ><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: kardos.tamas@mitsubishibudapest.hu"> kardos.tamas@mitsubishibudapest.hu</p></a>
+                    <!--
                 <div class="wrapper2">
                    <div><img src="/static/Logo/SsangYong-logo.png" width="90%";></div>
                    <div><img src="/static/Logo/Subaru-logo.png" width="90%";></div>
                    <div><img src="/static/Logo/Mitsubishi-logo.png" width="90%";></div>
                    <div><img src="/static/Logo/opellogo.png" width="80%";></div>
-                 </div>
+                 </div>-->
                 </div>
                   <hr />
             </div>
@@ -277,8 +280,8 @@
 
                 <h4><i class="fas fa-people-carry"></i>Kiss Zoltán</h4>
                 <p> Raktár vezető </p>
-                 <p class="lead"><i class="fas fa-phone"></i>Tel:<a href="tel:+36 70 770 7273"> +36 70 770 7273</p></a>
-                 <p class="lead"><i class="fas fa-paper-plane"></i>Email: <a href = "mailto: kiss.zoltan@budapestautoszalon.hu"> raktar@budapestautoszalon.hu</p></a>
+                 <p class="lead"><i class="fas fa-phone"></i> Tel:<a href="tel:+36 70 770 7273"> +36 70 770 7273</p></a>
+                 <p class="lead"><i class="fas fa-paper-plane"></i> Email: <a href = "mailto: kiss.zoltan@budapestautoszalon.hu"> raktar@budapestautoszalon.hu</p></a>
               </div>
               <hr />
 
@@ -333,8 +336,9 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script defer type="text/javascript" src="{% static '/js/scroll.js' %}"></script>
+
 
     <!-- Contact form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
