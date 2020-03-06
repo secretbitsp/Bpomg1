@@ -211,6 +211,8 @@ def hello2(request):
             car = cars.get(car_code)
             if not car:
                 continue
+            image = urlretrieve(url)
+            cached_image = CachedImage.objects.create(url=url, car=car)
             # image = urlretrieve(url)
             cached_image = CachedImage.objects.create(url=url, car=car)'''
 
@@ -219,6 +221,10 @@ def hello2(request):
     fuel = request.GET.get('fuel')
     date = request.GET.get('date')
     price = request.GET.get('price')
+    category = request.GET.get('category')
+    mileage = request.GET.get('mileage')
+    transmission = request.GET.get('transmission')
+
 
 
     contact_list = Hahudeta.objects.order_by("marka")
@@ -253,11 +259,52 @@ def hello2(request):
             contact_list = contact_list.filter(evjarat__year__gte=2009)
         if date == '2010_to_today':
             contact_list = contact_list.filter(evjarat__year__gte=2010)
-    #if price:
-            #contact_list = contact_list.filter(ar=price)
-        #    if price == '500_less':
-        #        contact_list = contact_list.filter(ar__lt=500)
+    if category:
+        contact_list = contact_list.filter(kategoria = category)
+    if mileage:
+        contact_list = contact_list.filter(futottkm = mileage)
+    if transmission:
+        contact_list = contact_list.filter(sebessegvalto = transmission)
+    
+    for cl in contact_list:
+        cl.arVal = cl.ar.replace(' ', '').replace('Ft', '')
+    for cl in contact_list:
+        print(cl.arVal)
+    import re
+    if price:
+        if price == '1M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 1000000]
+        if price == '2M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 2000000]
+        if price == '3M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 3000000]
+        if price == '4M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 4000000]
+        if price == '5M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 5000000]
+        if price == '6M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 6000000]
+        if price == '7M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 7000000]
+        if price == '8M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 8000000]
+        if price == '9M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 9000000]
+        if price == '10M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 10000000]
+        if price == '11M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 11000000]
+        if price == '12M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 12000000]
+        if price == '13M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 13000000]
+        if price == '14M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 14000000]
+        if price == '15M_less':
+            contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 15000000]
+            
 
+    total_results = len(contact_list)
     paginator = Paginator(contact_list, 25) # Show 25 car per page
     page = request.GET.get('page')
     data = paginator.get_page(page)
@@ -266,6 +313,10 @@ def hello2(request):
     makes = sorted(list(set(Hahudeta.objects.order_by('marka').values_list('marka',  flat=True))))
     fuels = list(set(Hahudeta.objects.values_list('uzemanyag',  flat=True)))
     prices = list(set(Hahudeta.objects.values_list('ar',  flat=True)))
+    categories = list(set(Hahudeta.objects.values_list('kategoria',  flat=True)))
+    mileages = list(set(Hahudeta.objects.values_list('futottkm',  flat=True)))
+    transmissions = list(set(Hahudeta.objects.values_list('sebessegvalto',  flat=True)))
+    print(mileages)
 
 
     if make:
@@ -277,7 +328,7 @@ def hello2(request):
         price = list(set(Hahudeta.objects.values_list('ar',  flat=True)))
 
     return render(request, 'hasznaltauto.html', {'data': data, 'makes': makes, 'models': sorted(models),'fuels':fuels, 'dates':dates, 'prices':prices,
-                                                 'selected_make': make, 'selected_model': model, 'selected_fuel': fuel, 'selected_date' : date, 'selected_price': price})
+                                                 'selected_make': make, 'selected_model': model, 'selected_fuel': fuel, 'selected_date' : date, 'selected_price': price, 'categories': categories, 'mileages': mileages, 'transmissions': transmissions, 'total_results': total_results})
 
 
 
