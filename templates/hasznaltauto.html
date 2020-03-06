@@ -18,6 +18,8 @@
     <link href="{% static 'css/card.css' %}" rel="stylesheet">
     <link href="{% static 'css/Footer-with-logo.css' %}" rel="stylesheet">
     <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <!-- End core CSS -->
 
     <style>
@@ -27,14 +29,61 @@
             padding-left: 6.25rem;
             padding-bottom: 3.25rem;
             margin: 0 auto;
-            width: 500px;
+            /*width: 500px;*/
           }
         }
         .grid-hahu-text{
           font-size: 30px;
           text-align: left;
         }
-
+        select{
+          padding: .875rem 1.5rem .875rem .875rem !important;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background-color: #fff;
+          background-image: url(https://cdn.motors.co.uk/v3/live/ab456fa…/v4/images/icons/triangle.svg);
+          background-position: 95% 50%;
+          background-repeat: no-repeat;
+          background-size: .5em .5em !important;
+          border-color: rgba(255,255,255,.08) !important;
+          border-radius: 10px !important;
+          border-style: 1px solid transparent !important;
+          border-width: 1px !important;
+          box-shadow: 0 1px 4px 0 rgba(0,0,0,.5) !important;
+          color: #4a4a4a;
+          cursor: pointer;
+          height: auto !important;
+        }
+        .fa-sort-down{
+          position: absolute;
+          top: 50%;
+          right: 25px;
+          font-size: 25px;
+        }
+        input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=text]:focus, select:focus, textarea:focus{
+          box-shadow: 0 0 5px #48ba7e!important;
+          border: 1px solid #48ba7e!important;
+          outline: 0;
+        }
+        .select-cont{
+          position: relative;
+          margin-bottom: 10px;
+        }
+        .filter-title{
+          color: #6d3965;
+          display: block;
+          font-family: 'Montserrat', helvetica, arial, sans-serif;
+          font-size: 1rem;
+          line-height: 20px;
+          margin-bottom: 0.5rem;
+          text-transform: none;
+          font-weight: 600;
+        }
     </style>
   </head>
   <body>
@@ -108,49 +157,140 @@
       </div>
       <form action="" method="get" accept-charset="utf-8">
         <div class="row">
-            <div class="form-group">
-              <select name="makes" id="makes" class="form-control">
-                  <option value="">Válasszon márkát</option>
-                  {% for make in makes%}
-                    <option value="{{make}}" {% if make == selected_make %}selected{% endif %}>{{make}}</option>
-                  {% endfor %}
-              </select>
+            <!-- <div class="form-group"> -->
+              <div class="select-cont col-sm-3">
+                <h3 class="filter-title">Manufacturer</h3>
+                <i class="fas fa-sort-down"></i>
+                <select name="makes" id="makes" class="form-control">
+                    <option value="">Válasszon márkát</option>
+                    {% for make in makes%}
+                      <option value="{{make}}" {% if make == selected_make %}selected{% endif %}>{{make}}</option>
+                    {% endfor %}
+                </select>
+              </div>
 
-              <select name="models" id="models" class="form-control">
-                  <option value="">Válasszon Modell-t</option>
-                  {% for model in models%}
-                    <option value='{{model}}' {% if model == selected_model %}selected{% endif %}>{{model}}</option>
-                  {% endfor %}
-              </select>
-              <select name="fuels" id="fuels" class="form-control">
-                  <option value="">Válasszon Üzemanyagot</option>
-                  {% for fuel in fuels%}
-                    <option value='{{fuel}}' {% if fuel == selected_fuel %}selected{% endif %}>{{fuel}}</option>
-                  {% endfor %}
-              </select>
-              <select name="dates" id="dates" class="form-control">
-                  <option value="">Évjárat</option>
-                  <option value="1999_less_than">1999 > </option>
-                  <option value="2000_to_today">2000 -tól</option>
-                  <option value="2001_to_today">2001 -tól</option>
-                  <option value="2002_to_today">2002 -tól</option>
-                  <option value="2003_to_today">2003 -tól</option>
-                  <option value="2004_to_today">2004 -tól</option>
-                  <option value="2005_to_today">2005 -tól</option>
-                  <option value="2006_to_today">2006 -tól</option>
-                  <option value="2007_to_today">2007 -tól</option>
-                  <option value="2008_to_today">2008 -tól</option>
-                  <option value="2009_to_today">2009 -tól</option>
-                  <option value="2010_to_today">2010 < </option>
-              </select>
-              <!--<select name="prices" id="prices" class="form-control">
-                  <option value="">Ár</option>
-                  <option value="500_less">500.000 alatt</option>
+              
+              <div class="select-cont col-sm-3">
+                <h3 class="filter-title">Categories</h3>
+                <i class="fas fa-sort-down"></i>
+                <select name="categories" id="categories" class="form-control">
+                    <option value="">Válasszon márkát</option>
+                    {% for category in categories%}
+                      <option value="{{category}}" {% if category == selected_category %}selected{% endif %}>{{category}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              
+              <div class="select-cont col-sm-3">
+                <h3 class="filter-title">Mileages</h3>
+                <i class="fas fa-sort-down"></i>
+                <select name="mileages" id="mileages" class="form-control">
+                    <option value="">Válasszon márkát</option>
+                    {% for mileage in mileages%}
+                      <option value="{{mileage}}" {% if mileage == selected_mileage %}selected{% endif %}>{{mileage}}</option>
+                    {% endfor %}
+                </select>
+              </div>
 
-              </select>-->
-          </div>
+              <!-- <div class="select-cont col-sm-3">  
+                <h3 class="filter-title">Age</h3>
+                <i class="fas fa-sort-down"></i>
+                <select class="form-control" name="Age" id="Age">
+                    <option value="-1">Age (Any)</option>
+                    <option value="1">up to 1 year old</option>
+                    <option value="2">up to 2 years old</option>
+                    <option value="3">up to 3 years old</option>
+                    <option value="4">up to 4 years old</option>
+                    <option value="5">up to 5 years old</option>
+                    <option value="6">up to 6 years old</option>
+                    <option value="7">up to 7 years old</option>
+                    <option value="8">up to 8 years old</option>
+                    <option value="9">up to 9 years old</option>
+                    <option value="10">up to 10 years old</option>
+                    <option value="11">over 10 years old</option>
+                </select>
+              </div> -->
+
+              
+              <div class="select-cont col-sm-3">
+                <h3 class="filter-title">transmissions</h3>
+                <i class="fas fa-sort-down"></i>
+                <select name="transmissions" id="transmissions" class="form-control">
+                    <option value="">Válasszon márkát</option>
+                    {% for transmission in transmissions%}
+                      <option value="{{transmission}}" {% if transmission == selected_transmission %}selected{% endif %}>{{transmission}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+
+
+              <div class="select-cont col-sm-3">
+                <h3 class="filter-title">Models</h3>
+                <i class="fas fa-sort-down"></i>
+                <select name="models" id="models" class="form-control">
+                    <option value="">Válasszon Modell-t</option>
+                    {% for model in models%}
+                      <option value='{{model}}' {% if model == selected_model %}selected{% endif %}>{{model}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="select-cont col-sm-3">
+                <h3 class="filter-title">Fuels</h3>
+                <i class="fas fa-sort-down"></i>
+                <select name="fuels" id="fuels" class="form-control">
+                    <option value="">Válasszon Üzemanyagot</option>
+                    {% for fuel in fuels%}
+                      <option value='{{fuel}}' {% if fuel == selected_fuel %}selected{% endif %}>{{fuel}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              
+              <div class="select-cont col-sm-3">
+                <h3 class="filter-title">Date of the car</h3>
+                <i class="fas fa-sort-down"></i>
+                <select name="dates" id="dates" class="form-control">
+                    <option value="">Évjárat</option>
+                    <option value="1999_less_than">1999 > </option>
+                    <option value="2000_to_today">2000 -tól</option>
+                    <option value="2001_to_today">2001 -tól</option>
+                    <option value="2002_to_today">2002 -tól</option>
+                    <option value="2003_to_today">2003 -tól</option>
+                    <option value="2004_to_today">2004 -tól</option>
+                    <option value="2005_to_today">2005 -tól</option>
+                    <option value="2006_to_today">2006 -tól</option>
+                    <option value="2007_to_today">2007 -tól</option>
+                    <option value="2008_to_today">2008 -tól</option>
+                    <option value="2009_to_today">2009 -tól</option>
+                    <option value="2010_to_today">2010 < </option>
+                </select>
+              </div>
+              <div class="select-cont col-sm-3">
+                <h3 class="filter-title">Prices</h3>
+                <i class="fas fa-sort-down"></i>
+                <select name="prices" id="prices" class="form-control">
+                    <option value="">Ár</option>
+                    <option value="1M_less">1 000 000 alatt</option>
+                    <option value="2M_less">2 000 000 alatt</option>
+                    <option value="3M_less">3 000 000 alatt</option>
+                    <option value="4M_less">4 000 000 alatt</option>
+                    <option value="5M_less">5 000 000 alatt</option>
+                    <option value="6M_less">6 000 000 alatt</option>
+                    <option value="7M_less">7 000 000 alatt</option>
+                    <option value="8M_less">8 000 000 alatt</option>
+                    <option value="9M_less">9 000 000 alatt</option>
+                    <option value="10M_less">10 000 000 alatt</option>
+                    <option value="11M_less">11 000 000 alatt</option>
+                    <option value="12M_less">12 000 000 alatt</option>
+                    <option value="13M_less">13 000 000 alatt</option>
+                    <option value="14M_less">14 000 000 alatt</option>
+                    <option value="15M_less">15 000 000 alatt</option>
+
+                </select>
+              </div>
+          <!-- </div> -->
         </div>
     </div>
+    <!-- <h2>{{ total_results }}</h2> -->
     {% for e in  data %}
       <div class="container-fluid">
         <div class="movie_card" id="tomb">
