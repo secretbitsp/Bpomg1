@@ -24,9 +24,9 @@
     var category = $('#categories').val();
     var mileage = $('#mileages').val();
     var transmission = $('#transmissions').val();
-    console.log(transmission)
+    var minPrice = $('#minPrice').val();
+    var maxPrice = $('#maxPrice').val();
     if(transmission == 'None') transmission = ""
-    console.log(transmission)
 
     var path = window.location.pathname;
     path += '?'
@@ -66,6 +66,14 @@
 
       path += path.endsWith('?') ? 'transmission=' : '&transmission=';
       path += transmission;
+    }
+    if(minPrice){
+      path += path.endsWith('?') ? 'minPrice=' : '&minPrice=';
+      path += minPrice;
+    }
+    if(maxPrice){
+      path += path.endsWith('?') ? 'maxPrice=' : '&maxPrice=';
+      path += maxPrice;
     }
   //  path += '?make=' + makeValue + '&fuel=' + fuelValue + '&model=' + modelValue ;
     window.location.href = path;
@@ -117,8 +125,14 @@ $(document).ready(function() {
       $('#fuels').val(urlParams.get(key));
     else if(key == 'date')
       $('#dates').val(urlParams.get(key));
+    else if(key == 'minPrice')
+      $('#minPrice').val(urlParams.get(key));
+    else if(key == 'maxPrice')
+      $('#maxPrice').val(urlParams.get(key));
     console.log()
   }
 });
 
-
+$('#search').click(function(){
+  filterCars();
+})

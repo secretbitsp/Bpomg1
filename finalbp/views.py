@@ -1,4 +1,5 @@
 import os
+import re
 
 from django.core.files import File
 from django.http import HttpResponse
@@ -224,6 +225,8 @@ def hello2(request):
     category = request.GET.get('category')
     mileage = request.GET.get('mileage')
     transmission = request.GET.get('transmission')
+    minPrice = int(request.GET.get('minPrice')) if request.GET.get('minPrice') else None
+    maxPrice = int(request.GET.get('maxPrice')) if request.GET.get('maxPrice') else None
 
 
 
@@ -270,7 +273,13 @@ def hello2(request):
         cl.arVal = cl.ar.replace(' ', '').replace('Ft', '')
     for cl in contact_list:
         print(cl.arVal)
-    import re
+    if minPrice and maxPrice:
+        contact_list = [x for x in contact_list if (((int(re.sub('\D', '', x.ar))) < maxPrice) and ((int(re.sub('\D', '', x.ar))) > minPrice))]
+    elif minPrice:
+        contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) > minPrice]
+    elif maxPrice:
+        contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < maxPrice]
+    
     if price:
         if price == '1M_less':
             contact_list = [x for x in contact_list if (int(re.sub('\D', '', x.ar))) < 1000000]
